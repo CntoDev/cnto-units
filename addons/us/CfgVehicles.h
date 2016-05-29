@@ -22,7 +22,7 @@ class cnto_us_sl : cnto_us_soldier_base {
     scope = 2;
     displayName = "SL";
     #define _weaps cnto_us_m4a1_gl_flash, ACE_Vector
-    #define _mags rhs_mag_30Rnd_556x45_M855A1_Stanag, rhs_mag_m713_Red, \
+    #define _mags rhs_mag_30Rnd_556x45_M855A1_Stanag, 1Rnd_SmokeRed_Grenade_shell, \
                   x10(rhs_mag_30Rnd_556x45_M855A1_Stanag), x2(rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red)
     #define _items x2(ACE_CableTie), ACE_MapTools, ACE_Flashlight_MX991, ACRE_PRC152
     #define _linked rhsusf_iotv_ucp_Squadleader, rhsusf_ach_helmet_ESS_ucp, ItemGPS
@@ -33,9 +33,9 @@ class cnto_us_sl : cnto_us_soldier_base {
 class cnto_us_sl_pack : B_AssaultPack_rgr {
     scope = 1;
     class TransportMagazines {
-        xmags(5, rhs_mag_m713_Red);
-        xmags(5, rhs_mag_m714_White);
-        xmags(5, rhs_mag_m715_Green);
+        xmags(5, 1Rnd_Smoke_Grenade_shell);
+        xmags(5, 1Rnd_SmokeRed_Grenade_shell);
+        xmags(5, 1Rnd_SmokeGreen_Grenade_shell);
         xmags(3, SmokeShell);
         xmags(5, SmokeShellGreen);
         xmags(2, SmokeShellBlue);
@@ -79,7 +79,7 @@ class cnto_us_ftl : cnto_us_soldier_base {
     scope = 2;
     displayName = "FTL";
     #define _weaps cnto_us_m4a1_gl_flash, ACE_Vector
-    #define _mags rhs_mag_30Rnd_556x45_M855A1_Stanag, rhs_mag_M441_HE, \
+    #define _mags rhs_mag_30Rnd_556x45_M855A1_Stanag, 1Rnd_HE_Grenade_shell, \
                   x10(rhs_mag_30Rnd_556x45_M855A1_Stanag), x2(rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red)
     #define _items x2(ACE_CableTie), ACE_MapTools, ACE_Flashlight_MX991
     #define _linked rhsusf_iotv_ucp_Grenadier, rhsusf_ach_helmet_ESS_ucp, ItemGPS
@@ -90,9 +90,9 @@ class cnto_us_ftl : cnto_us_soldier_base {
 class cnto_us_ftl_pack : B_AssaultPack_rgr {
     scope = 1;
     class TransportMagazines {
-        xmags(5, rhs_mag_M441_HE);
-        xmags(5, rhs_mag_m714_White);
-        xmags(5, rhs_mag_m713_Red);
+        xmags(5, 1Rnd_HE_Grenade_shell);
+        xmags(5, 1Rnd_Smoke_Grenade_shell);
+        xmags(5, 1Rnd_SmokeRed_Grenade_shell);
         xmags(3, SmokeShell);
         xmags(5, SmokeShellGreen);
         xmags(2, SmokeShellBlue);
