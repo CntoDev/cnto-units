@@ -9,33 +9,35 @@ class cnto_us_soldier_base : B_Soldier_base_F {
     scope = 0;
     faction = CNTO_US;
     #define _weaps Throw, Put, hgun_ACPC2_F
-    #define _mags x4(SmokeShell), x2(MiniGrenade), x3(9Rnd_45ACP_Mag)
-    #define _items x8(ACE_fieldDressing), x2(ACE_morphine), ACRE_PRC343
+    #define _mags 9Rnd_45ACP_Mag, \
+                  x4(SmokeShell), x2(MiniGrenade), x2(9Rnd_45ACP_Mag)
+    #define _items x8(ACE_fieldDressing), x2(ACE_morphine), ACE_Flashlight_MX991, ACRE_PRC343
     #define _linked ItemMap, ItemCompass, ItemWatch, ItemRadioAcreFlagged
     ASSIGN_GEAR;
+    uniformClass = rhs_uniform_cu_ucp;
 };
 
 /*
  * squad (lead)
  */
-class cnto_us_sl : cnto_us_soldier_base {
+class cnto_us_sq_sl : cnto_us_soldier_base {
     scope = 2;
-    displayName = "SL";
+    displayName = "SQ SL";
     #define _weaps cnto_us_m4a1_gl_flash, ACE_Vector
-    #define _mags rhs_mag_30Rnd_556x45_M855A1_Stanag, 1Rnd_SmokeRed_Grenade_shell, \
+    #define _mags rhs_mag_30Rnd_556x45_M855A1_Stanag, 1Rnd_HE_Grenade_shell, \
                   x10(rhs_mag_30Rnd_556x45_M855A1_Stanag), x2(rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red)
-    #define _items x2(ACE_CableTie), ACE_MapTools, ACE_Flashlight_MX991, ACRE_PRC152
+    #define _items x2(ACE_CableTie), ACE_MapTools, ACRE_PRC152
     #define _linked rhsusf_iotv_ucp_Squadleader, rhsusf_ach_helmet_ESS_ucp, ItemGPS
     ADD_GEAR;
-    uniformClass = rhs_uniform_cu_ucp;
-    backpack = cnto_us_sl_pack;
+    backpack = cnto_us_sq_sl_pack;
 };
-class cnto_us_sl_pack : B_AssaultPack_rgr {
+class cnto_us_sq_sl_pack : B_AssaultPack_rgr {
     scope = 1;
     class TransportMagazines {
-        xmags(5, 1Rnd_Smoke_Grenade_shell);
-        xmags(5, 1Rnd_SmokeRed_Grenade_shell);
-        xmags(5, 1Rnd_SmokeGreen_Grenade_shell);
+        xmags(4, 1Rnd_HE_Grenade_shell);
+        xmags(4, 1Rnd_Smoke_Grenade_shell);
+        xmags(4, 1Rnd_SmokeRed_Grenade_shell);
+        xmags(4, 1Rnd_SmokeGreen_Grenade_shell);
         xmags(3, SmokeShell);
         xmags(5, SmokeShellGreen);
         xmags(2, SmokeShellBlue);
@@ -45,19 +47,18 @@ class cnto_us_sl_pack : B_AssaultPack_rgr {
     };
 };
 
-class cnto_us_medic : cnto_us_soldier_base {
+class cnto_us_sq_medic : cnto_us_soldier_base {
     scope = 2;
-    displayName = "Medic";
+    displayName = "SQ Medic";
     #define _weaps cnto_us_m4a1_flash
     #define _mags rhs_mag_30Rnd_556x45_M855A1_Stanag, \
                   x10(rhs_mag_30Rnd_556x45_M855A1_Stanag), x2(rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red)
-    #define _items ACE_Flashlight_MX991
+    #define _items
     #define _linked rhsusf_iotv_ucp_Medic, rhsusf_ach_helmet_ESS_ucp, ItemGPS
     ADD_GEAR;
-    uniformClass = rhs_uniform_cu_ucp;
-    backpack = cnto_us_medic_pack;
+    backpack = cnto_us_sq_medic_pack;
 };
-class cnto_us_medic_pack : B_Kitbag_rgr {
+class cnto_us_sq_medic_pack : B_Kitbag_rgr {
     scope = 1;
     class TransportMagazines {
         xmags(16, SmokeShell);
@@ -75,23 +76,22 @@ class cnto_us_medic_pack : B_Kitbag_rgr {
 /*
  * fireteam
  */
-class cnto_us_ftl : cnto_us_soldier_base {
+class cnto_us_ft_tl : cnto_us_soldier_base {
     scope = 2;
-    displayName = "FTL";
+    displayName = "FT Lead";
     #define _weaps cnto_us_m4a1_gl_flash, ACE_Vector
     #define _mags rhs_mag_30Rnd_556x45_M855A1_Stanag, 1Rnd_HE_Grenade_shell, \
                   x10(rhs_mag_30Rnd_556x45_M855A1_Stanag), x2(rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red)
-    #define _items x2(ACE_CableTie), ACE_MapTools, ACE_Flashlight_MX991
+    #define _items x2(ACE_CableTie), ACE_MapTools
     #define _linked rhsusf_iotv_ucp_Grenadier, rhsusf_ach_helmet_ESS_ucp, ItemGPS
     ADD_GEAR;
-    uniformClass = rhs_uniform_cu_ucp;
-    backpack = cnto_us_ftl_pack;
+    backpack = cnto_us_ft_tl_pack;
 };
-class cnto_us_ftl_pack : B_AssaultPack_rgr {
+class cnto_us_ft_tl_pack : B_AssaultPack_rgr {
     scope = 1;
     class TransportMagazines {
-        xmags(5, 1Rnd_HE_Grenade_shell);
-        xmags(5, 1Rnd_Smoke_Grenade_shell);
+        xmags(8, 1Rnd_HE_Grenade_shell);
+        xmags(2, 1Rnd_Smoke_Grenade_shell);
         xmags(5, 1Rnd_SmokeRed_Grenade_shell);
         xmags(3, SmokeShell);
         xmags(5, SmokeShellGreen);
@@ -102,32 +102,30 @@ class cnto_us_ftl_pack : B_AssaultPack_rgr {
     };
 };
 
-class cnto_us_ar : cnto_us_soldier_base {
+class cnto_us_ft_ar : cnto_us_soldier_base {
     scope = 2;
-    displayName = "AR";
+    displayName = "FT AR";
     #define _weaps cnto_us_m249_flash
     #define _mags rhsusf_100Rnd_556x45_soft_pouch, \
                   x3(rhsusf_100Rnd_556x45_soft_pouch)
-    #define _items ACE_Flashlight_MX991
+    #define _items
     #define _linked rhsusf_iotv_ucp_SAW, rhsusf_ach_helmet_ESS_ucp
     ADD_GEAR;
-    uniformClass = rhs_uniform_cu_ucp;
     backpack =;
 };
 
-class cnto_us_aar : cnto_us_soldier_base {
+class cnto_us_ft_aar : cnto_us_soldier_base {
     scope = 2;
-    displayName = "AAR";
+    displayName = "FT AAR";
     #define _weaps cnto_us_m4a1_flash, ACE_Vector
     #define _mags rhs_mag_30Rnd_556x45_M855A1_Stanag, \
                   x10(rhs_mag_30Rnd_556x45_M855A1_Stanag), x2(rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red)
-    #define _items x2(ACE_CableTie), ACE_MapTools, ACE_Flashlight_MX991
+    #define _items x2(ACE_CableTie), ACE_MapTools
     #define _linked rhsusf_iotv_ucp_Teamleader, rhsusf_ach_helmet_ESS_ucp, ItemGPS
     ADD_GEAR;
-    uniformClass = rhs_uniform_cu_ucp;
-    backpack = cnto_us_aar_pack;
+    backpack = cnto_us_ft_aar_pack;
 };
-class cnto_us_aar_pack : B_Kitbag_rgr {
+class cnto_us_ft_aar_pack : B_Kitbag_rgr {
     scope = 1;
     class TransportMagazines {
         xmags(2, rhsusf_100Rnd_556x45_soft_pouch);
@@ -143,15 +141,306 @@ class cnto_us_aar_pack : B_Kitbag_rgr {
     };
 };
 
-class cnto_us_at : cnto_us_soldier_base {
+class cnto_us_ft_at : cnto_us_soldier_base {
     scope = 2;
-    displayName = "AT";
+    displayName = "FT AT";
     #define _weaps cnto_us_m4a1_flash, tf47_at4_HEDP
     #define _mags rhsusf_100Rnd_556x45_soft_pouch, \
                   x10(rhs_mag_30Rnd_556x45_M855A1_Stanag), x2(rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red)
-    #define _items ACE_Flashlight_MX991
+    #define _items
     #define _linked rhsusf_iotv_ucp_Rifleman, rhsusf_ach_helmet_ESS_ucp
     ADD_GEAR;
-    uniformClass = rhs_uniform_cu_ucp;
     backpack =;
+};
+
+/*
+ * HQ
+ */
+class cnto_us_hq_co : cnto_us_soldier_base {
+    scope = 2;
+    displayName = "PLT Commander";
+    #define _weaps cnto_us_m4a1_gl_flash, ACE_Vector
+    #define _mags rhs_mag_30Rnd_556x45_M855A1_Stanag, 1Rnd_SmokeRed_Grenade_shell, \
+                  x10(rhs_mag_30Rnd_556x45_M855A1_Stanag), x2(rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red)
+    #define _items x2(ACE_CableTie), ACE_MapTools, ACRE_PRC152, ACRE_PRC148
+    #define _linked rhsusf_iotv_ucp_Squadleader, rhsusf_patrolcap_ucp, ItemGPS
+    ADD_GEAR;
+    backpack = cnto_us_hq_co_pack;
+};
+class cnto_us_hq_co_pack : B_AssaultPack_rgr {
+    scope = 1;
+    class TransportMagazines {
+        xmags(5, 1Rnd_SmokeBlue_Grenade_shell);
+        xmags(5, 1Rnd_SmokeRed_Grenade_shell);
+        xmags(5, 1Rnd_SmokeGreen_Grenade_shell);
+        xmags(3, SmokeShell);
+        xmags(5, SmokeShellGreen);
+        xmags(2, SmokeShellBlue);
+    };
+    class TransportItems {
+        xitems(1, ACE_IR_Strobe_Item);
+    };
+};
+
+class cnto_us_hq_sgt : cnto_us_soldier_base {
+    scope = 2;
+    displayName = "PLT Sergeant";
+    #define _weaps cnto_us_m4a1_flash, ACE_Vector
+    #define _mags rhs_mag_30Rnd_556x45_M855A1_Stanag, \
+                  x10(rhs_mag_30Rnd_556x45_M855A1_Stanag), x2(rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red)
+    #define _items x2(ACE_CableTie), ACE_MapTools, ACRE_PRC152, ACRE_PRC148
+    #define _linked rhsusf_iotv_ucp_Teamleader, rhsusf_ach_helmet_headset_ucp, ItemGPS
+    ADD_GEAR;
+    backpack =;
+};
+
+class cnto_us_hq_medic : cnto_us_sq_medic {
+    displayName = "PLT Medic";
+};
+
+class cnto_us_hq_rfl : cnto_us_soldier_base {
+    scope = 2;
+    displayName = "PLT Rifleman";
+    #define _weaps cnto_us_m4a1_flash
+    #define _mags rhs_mag_30Rnd_556x45_M855A1_Stanag, \
+                  x10(rhs_mag_30Rnd_556x45_M855A1_Stanag), x2(rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red)
+    #define _items
+    #define _linked rhsusf_iotv_ucp_Rifleman, rhsusf_ach_helmet_ESS_ucp
+    ADD_GEAR;
+    backpack =;
+};
+
+/*
+ * MMG
+ */
+class cnto_us_mmg_tl : cnto_us_soldier_base {
+    scope = 2;
+    displayName = "MMG Lead";
+    #define _weaps cnto_us_m4a1_gl_flash, ACE_Vector
+    #define _mags rhs_mag_30Rnd_556x45_M855A1_Stanag, 1Rnd_HE_Grenade_shell, \
+                  x10(rhs_mag_30Rnd_556x45_M855A1_Stanag), x2(rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red)
+    #define _items x2(ACE_CableTie), ACE_MapTools, ACRE_PRC152
+    #define _linked rhsusf_iotv_ucp_Grenadier, rhsusf_ach_helmet_ESS_ucp, ItemGPS
+    ADD_GEAR;
+    backpack = cnto_us_mmg_tl_pack;
+};
+class cnto_us_mmg_tl_pack : B_AssaultPack_rgr {
+    scope = 1;
+    class TransportMagazines {
+        xmags(8, 1Rnd_HE_Grenade_shell);
+        xmags(2, 1Rnd_Smoke_Grenade_shell);
+        xmags(5, 1Rnd_SmokeRed_Grenade_shell);
+        xmags(3, SmokeShell);
+        xmags(5, SmokeShellGreen);
+        xmags(2, SmokeShellBlue);
+    };
+    class TransportItems {
+        xitems(1, ACE_IR_Strobe_Item);
+    };
+};
+
+class cnto_us_mmg_gunner : cnto_us_soldier_base {
+    scope = 2;
+    displayName = "MMG Gunner";
+    #define _weaps hlc_lmg_m60
+    #define _mags hlc_100Rnd_762x51_M_M60E4, \
+                  x2(hlc_100Rnd_762x51_M_M60E4)
+    #define _items
+    #define _linked rhsusf_iotv_ucp_SAW, rhsusf_ach_helmet_ESS_ucp
+    ADD_GEAR;
+    backpack = cnto_us_mmg_gunner_pack;
+};
+class cnto_us_mmg_gunner_pack : B_AssaultPack_rgr {
+    scope = 1;
+    class TransportMagazines {
+        xmags(2, hlc_100Rnd_762x51_M_M60E4);
+        xmags(1, hlc_100Rnd_762x51_T_M60E4);
+    };
+};
+
+class cnto_us_mmg_bearer : cnto_us_soldier_base {
+    scope = 2;
+    displayName = "MMG Ammo Bearer";
+    #define _weaps cnto_us_m4a1_flash
+    #define _mags rhs_mag_30Rnd_556x45_M855A1_Stanag, \
+                  x10(rhs_mag_30Rnd_556x45_M855A1_Stanag), x2(rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red)
+    #define _items
+    #define _linked rhsusf_iotv_ucp_Rifleman, rhsusf_ach_helmet_ESS_ucp
+    ADD_GEAR;
+    backpack = cnto_us_mmg_bearer_pack;
+};
+class cnto_us_mmg_bearer_pack : B_Kitbag_rgr {
+    scope = 1;
+    class TransportMagazines {
+        xmags(5, hlc_100Rnd_762x51_M_M60E4);
+        xmags(2, hlc_100Rnd_762x51_T_M60E4);
+    };
+};
+
+/*
+ * MAT
+ */
+class cnto_us_mat_tl : cnto_us_mmg_tl {
+    displayName = "MAT Lead";
+};
+
+class cnto_us_mat_gunner : cnto_us_soldier_base {
+    scope = 2;
+    displayName = "MAT Rocketman";
+    #define _weaps cnto_us_m4a1_flash, cnto_us_m3maaws_optic
+    #define _mags rhs_mag_30Rnd_556x45_M855A1_Stanag, tf47_m3maaws_HEAT, \
+                  x10(rhs_mag_30Rnd_556x45_M855A1_Stanag), x2(rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red)
+    #define _items
+    #define _linked rhsusf_iotv_ucp_Rifleman, rhsusf_ach_helmet_ESS_ucp
+    ADD_GEAR;
+    backpack = cnto_us_mat_gunner_pack;
+};
+class cnto_us_mat_gunner_pack : B_Kitbag_rgr {
+    scope = 1;
+    class TransportMagazines {
+        xmags(2, tf47_m3maaws_HEAT);
+        xmags(1, tf47_m3maaws_HEDP);
+    };
+};
+
+class cnto_us_mat_bearer : cnto_us_soldier_base {
+    scope = 2;
+    displayName = "MAT Carrier";
+    #define _weaps cnto_us_m4a1_flash
+    #define _mags rhs_mag_30Rnd_556x45_M855A1_Stanag, \
+                  x10(rhs_mag_30Rnd_556x45_M855A1_Stanag), x2(rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red)
+    #define _items
+    #define _linked rhsusf_iotv_ucp_Rifleman, rhsusf_ach_helmet_ESS_ucp
+    ADD_GEAR;
+    backpack = cnto_us_mat_bearer_pack;
+};
+class cnto_us_mat_bearer_pack : B_Kitbag_rgr {
+    scope = 1;
+    class TransportMagazines {
+        xmags(2, tf47_m3maaws_HEAT);
+        xmags(1, tf47_m3maaws_HEDP);
+    };
+};
+
+/*
+ * Mortar
+ */
+class cnto_us_mortar_gunner : cnto_us_soldier_base {
+    scope = 2;
+    displayName = "Mortar Gunner";
+    #define _weaps cnto_us_m4a1_flash
+    #define _mags rhs_mag_30Rnd_556x45_M855A1_Stanag, \
+                  x10(rhs_mag_30Rnd_556x45_M855A1_Stanag), x2(rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red)
+    #define _items ACE_MapTools, ACE_RangeTable_82mm
+    #define _linked rhsusf_iotv_ucp_Rifleman, rhsusf_ach_helmet_ESS_ucp
+    ADD_GEAR;
+    backpack = B_Mortar_01_weapon_F;
+};
+class cnto_us_mortar_assist : cnto_us_soldier_base {
+    scope = 2;
+    displayName = "Mortar Ass. Gunner";
+    #define _weaps cnto_us_m4a1_flash, ACE_Vector
+    #define _mags rhs_mag_30Rnd_556x45_M855A1_Stanag, \
+                  x10(rhs_mag_30Rnd_556x45_M855A1_Stanag), x2(rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red), x2(SmokeShellGreen), SmokeShellBlue
+    #define _items ACE_MapTools, ACE_RangeTable_82mm, ACRE_PRC152
+    #define _linked rhsusf_iotv_ucp_Teamleader, rhsusf_ach_helmet_ESS_ucp
+    ADD_GEAR;
+    backpack = B_Mortar_01_support_F;
+};
+
+/*
+ * Vehicle Crew
+ */
+class cnto_us_crew_base : B_Soldier_base_F {
+    scope = 0;
+    faction = CNTO_US;
+    #define _weaps Throw, Put, SMG_02_F, hgun_P07_F
+    #define _mags 30Rnd_9x21_Mag, 16Rnd_9x21_Mag, \
+                  x2(SmokeShell), x2(SmokeShellGreen), x2(SmokeShellBlue), x2(MiniGrenade), x5(30Rnd_9x21_Mag)
+    #define _items x8(ACE_fieldDressing), x2(ACE_morphine), ACE_Flashlight_MX991, ACRE_PRC343
+    #define _linked ItemMap, ItemCompass, ItemWatch, ItemRadioAcreFlagged, ACE_NVG_Wide
+    ASSIGN_GEAR;
+};
+
+class cnto_us_veh_co : cnto_us_crew_base {
+    scope = 2;
+    displayName = "Vehicle Commander";
+    #define _weaps ACE_Vector
+    #define _mags
+    #define _items ACE_MapTools, ACRE_PRC152, ACRE_PRC148
+    #define _linked TacVest_black, H_HelmetCrew_I
+    ADD_GEAR;
+    backpack =;
+    uniformClass = U_BG_Guerrilla_6_1;
+};
+
+class cnto_us_veh_driver : cnto_us_crew_base {
+    scope = 2;
+    displayName = "Vehicle Driver";
+    #define _weaps
+    #define _mags
+    #define _items
+    #define _linked TacVest_black, H_HelmetCrew_I
+    ADD_GEAR;
+    backpack = cnto_us_veh_driver_pack;
+    uniformClass = U_BG_Guerrilla_6_1;
+    engineer = 1;
+};
+class cnto_us_veh_driver_pack : B_AssaultPack_rgr {
+    scope = 1;
+    class TransportMagazines {
+        xmags(4, 30Rnd_9x21_Mag);
+    };
+    class TransportItems {
+        xitems(1, ToolKit);
+    };
+};
+
+class cnto_us_veh_gunner : cnto_us_crew_base {
+    scope = 2;
+    displayName = "Vehicle Gunner";
+    #define _weaps
+    #define _mags
+    #define _items
+    #define _linked TacVest_black, H_HelmetCrew_I
+    ADD_GEAR;
+    backpack =;
+    uniformClass = U_BG_Guerrilla_6_1;
+};
+
+/*
+ * Air crew
+ */
+class cnto_us_air_pilot : cnto_us_crew_base {
+    scope = 2;
+    displayName = "Air Pilot";
+    #define _weaps ACE_Vector
+    #define _mags
+    #define _items ACE_MapTools, ACRE_PRC152, ACRE_PRC148
+    #define _linked TacVest_black, H_PilotHelmetHeli_B
+    ADD_GEAR;
+    backpack =;
+    uniformClass = U_B_PilotCoveralls;
+};
+
+class cnto_us_air_copilot : cnto_us_crew_base {
+    scope = 2;
+    displayName = "Air Copilot";
+    #define _weaps
+    #define _mags
+    #define _items
+    #define _linked TacVest_black, H_PilotHelmetHeli_B
+    ADD_GEAR;
+    backpack = cnto_us_air_copilot_pack;
+    uniformClass = U_B_PilotCoveralls;
+    engineer = 1;
+};
+class cnto_us_air_copilot_pack : B_AssaultPack_rgr {
+    scope = 1;
+    class TransportMagazines {
+        xmags(4, 30Rnd_9x21_Mag);
+    };
+    class TransportItems {
+        xitems(1, ToolKit);
+    };
 };
