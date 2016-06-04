@@ -19,3 +19,11 @@ class CfgVehicles {
 class CfgWeapons {
 #include "CfgWeapons.h"
 };
+class CfgGroups {
+    class West {
+        class CNTO_US {
+            name = "CNTO US Army";
+#include "groups\groups.h"
+        };
+    };
+};

@@ -5,3 +5,9 @@ class CfgPatches {
         requiredAddons[] = {};
     };
 };
+
+class CfgFunctions {
+    class cnto_units {
+#include "CfgFunctions.h"
+    };
+};

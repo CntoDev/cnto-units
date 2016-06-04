@@ -57,6 +57,7 @@ class cnto_us_sq_medic : cnto_us_soldier_base {
     #define _linked rhsusf_iotv_ucp_Medic, rhsusf_ach_helmet_ESS_ucp, ItemGPS
     ADD_GEAR;
     backpack = cnto_us_sq_medic_pack;
+    attendant = true;
 };
 class cnto_us_sq_medic_pack : B_Kitbag_rgr {
     scope = 1;
@@ -260,7 +261,7 @@ class cnto_us_mmg_gunner_pack : B_AssaultPack_rgr {
 
 class cnto_us_mmg_bearer : cnto_us_soldier_base {
     scope = 2;
-    displayName = "MMG Ammo Bearer";
+    displayName = "MMG Bearer";
     #define _weaps cnto_us_m4a1_flash
     #define _mags rhs_mag_30Rnd_556x45_M855A1_Stanag, \
                   x10(rhs_mag_30Rnd_556x45_M855A1_Stanag), x2(rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red)
@@ -348,9 +349,8 @@ class cnto_us_mortar_assist : cnto_us_soldier_base {
     backpack = B_Mortar_01_support_F;
 };
 
-/*
- * Vehicle Crew
- */
+/* ------------------------------------------------------------------------- */
+
 class cnto_us_crew_base : B_Soldier_base_F {
     scope = 0;
     faction = CNTO_US;
@@ -362,6 +362,9 @@ class cnto_us_crew_base : B_Soldier_base_F {
     ASSIGN_GEAR;
 };
 
+/*
+ * Vehicle Crew
+ */
 class cnto_us_veh_co : cnto_us_crew_base {
     scope = 2;
     displayName = "Vehicle Commander";
@@ -384,7 +387,7 @@ class cnto_us_veh_driver : cnto_us_crew_base {
     ADD_GEAR;
     backpack = cnto_us_veh_driver_pack;
     uniformClass = U_BG_Guerrilla_6_1;
-    engineer = 1;
+    engineer = true;
 };
 class cnto_us_veh_driver_pack : B_AssaultPack_rgr {
     scope = 1;
@@ -433,7 +436,7 @@ class cnto_us_air_copilot : cnto_us_crew_base {
     ADD_GEAR;
     backpack = cnto_us_air_copilot_pack;
     uniformClass = U_B_PilotCoveralls;
-    engineer = 1;
+    engineer = true;
 };
 class cnto_us_air_copilot_pack : B_AssaultPack_rgr {
     scope = 1;
@@ -444,3 +447,40 @@ class cnto_us_air_copilot_pack : B_AssaultPack_rgr {
         xitems(1, ToolKit);
     };
 };
+
+/* ------------------------------------------------------------------------- */
+
+/*
+ * Trainer
+ */
+class cnto_us_trainer : cnto_us_soldier_base {
+    scope = 2;
+    displayName = "Trainer";
+    #define _weaps ACE_Vector
+    #define _mags
+    #define _items x2(ACE_CableTie), x10(ACE_epinephrine), x5(ACE_bloodIV), ACE_MapTools, ACRE_PRC152, ACRE_PRC148
+    #define _linked rhsusf_iotv_ucp_Squadleader, rhsusf_patrolcap_ucp, ItemGPS
+    ADD_GEAR;
+    backpack =;
+};
+
+/*
+ * GM - completely custom soldier, not from base
+ */
+class cnto_us_gm : B_Soldier_base_F {
+    scope = 2;
+    faction = CNTO_US;
+    displayName = "GM";
+    #define _weaps Throw, Put, hgun_ACPC2_F
+    #define _mags 9Rnd_45ACP_Mag, \
+                  x10(9Rnd_45ACP_Mag)
+    #define _items ACE_MapTools, ACE_Flashlight_MX991, ACRE_PRC343, ACRE_PRC152, ACRE_PRC148
+    #define _linked ItemMap, ItemCompass, ItemWatch, ItemRadioAcreFlagged, ItemGPS, G_Goggles_VR
+    ASSIGN_GEAR;
+    backpack =;
+    uniformClass = U_B_Protagonist_VR;
+};
+
+/* ------------------------------------------------------------------------- */
+
+#include "groups\units.h"
