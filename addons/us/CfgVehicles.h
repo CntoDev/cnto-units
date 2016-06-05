@@ -1,7 +1,10 @@
 #include "\cnto\units\shared\gear.h"
 #include "\cnto\units\shared\cnt_cargo.h"
 
-class B_Soldier_base_F;
+class SoldierWB;
+class B_Soldier_base_F : SoldierWB {
+    class EventHandlers;
+};
 class B_AssaultPack_rgr;
 class B_Kitbag_rgr;
 
@@ -462,6 +465,9 @@ class cnto_us_trainer : cnto_us_soldier_base {
     #define _linked rhsusf_iotv_ucp_Squadleader, rhsusf_patrolcap_ucp, ItemGPS
     ADD_GEAR;
     backpack =;
+    class EventHandlers : EventHandlers {
+        class godlike { init = "(_this select 0) call cnto_units_fnc_godlike"; };
+    };
 };
 
 /*
@@ -479,8 +485,125 @@ class cnto_us_gm : B_Soldier_base_F {
     ASSIGN_GEAR;
     backpack =;
     uniformClass = U_B_Protagonist_VR;
+    class EventHandlers : EventHandlers {
+        class godlike { init = "(_this select 0) call cnto_units_fnc_godlike"; };
+    };
 };
 
 /* ------------------------------------------------------------------------- */
 
 #include "groups\units.h"
+
+/* ------------------------------------------------------------------------- */
+
+/*
+ * Crates
+ */
+
+#define QUOTE(x) #x
+#define ADD_SCOPE(item, name) \
+    class item { \
+        displayName = name; \
+        displayNameDefault =; \
+        showWindow = 0; \
+        priority = 1; \
+        radius = 3; \
+        position = "camera"; \
+        condition = "true"; \
+        onlyForPlayer = 1; \
+        statement = QUOTE(player addPrimaryWeaponItem QUOTE(QUOTE(item))); \
+    }
+
+class Box_NATO_Support_F;
+class cnto_us_scopebox : Box_NATO_Support_F {
+    editorCategory = CNTO_US;
+    editorSubcategory = CNTO_US_Crates;
+    displayName = "Scopebox";
+    class TransportWeapons {};
+    class TransportMagazines {};
+    class TransportItems {};
+    class TransportBackpacks {};
+    class UserActions {
+        ADD_SCOPE(optic_ACO_grn,     "<t color='#e05200'>ACO Green</t>");
+        ADD_SCOPE(optic_Aco,         "<t color='#e05200'>ACO Red</t>");
+        ADD_SCOPE(optic_ACO_grn_smg, "<t color='#e05200'>ACO SMG Green</t>");
+        ADD_SCOPE(optic_Aco_smg,     "<t color='#e05200'>ACO SMG Red</t>");
+
+        ADD_SCOPE(RH_compM2,      "<t color='#008ee0'>Aimpoint CompM2</t>");
+        //ADD_SCOPE(RH_compM21,     "<t color='#008ee0'>Aimpoint CompM2 Low</t>");
+        ADD_SCOPE(RH_compM2_tan,  "<t color='#008ee0'>Aimpoint CompM2 Tan</t>");
+        //ADD_SCOPE(RH_compM21_tan, "<t color='#008ee0'>Aimpoint CompM2 Tan Low</t>");
+
+        ADD_SCOPE(RH_t1,         "<t color='#e05200'>Aimpoint T1</t>");
+        ADD_SCOPE(RH_t1_tan,     "<t color='#e05200'>Aimpoint T1 Tan</t>");
+        ADD_SCOPE(RH_barska_rds, "<t color='#e05200'>Barska RDS</t>");
+        ADD_SCOPE(RH_cmore,      "<t color='#e05200'>C-More RDS</t>");
+
+        ADD_SCOPE(RH_eotech553,     "<t color='#008ee0'>Eotech 553</t>");
+        ADD_SCOPE(RH_eotech553_tan, "<t color='#008ee0'>Eotech 553 Tan</t>");
+        ADD_SCOPE(RH_LTdocter,      "<t color='#008ee0'>Larue Docter</t>");
+        //ADD_SCOPE(RH_LTdocter1,     "<t color='#008ee0'>Larue Docter low</t>");
+
+        ADD_SCOPE(rhsusf_acc_eotech_552, "<t color='#e05200'>M552 CCO</t>");
+        ADD_SCOPE(rhsusf_acc_compm4,     "<t color='#e05200'>M68 CCO</t>");
+        ADD_SCOPE(optic_holosight,       "<t color='#e05200'>Mk17 Holosight</t>");
+        ADD_SCOPE(optic_holosight_smg,   "<t color='#e05200'>Mk17 Holosight SMG</t>");
+
+        ADD_SCOPE(RH_refles,         "<t color='#008ee0'>Trijicon Reflex</t>");
+        ADD_SCOPE(rhsusf_acc_eotech, "<t color='#008ee0'>XPS3</t>");
+        ADD_SCOPE(RH_zpoint,         "<t color='#008ee0'>Zeiss Z-point</t>");
+    };
+};
+
+class Box_NATO_Ammo_F;
+class cnto_us_resupply_small : Box_NATO_Ammo_F {
+    editorCategory = CNTO_US;
+    editorSubcategory = CNTO_US_Crates;
+    displayName = "Infantry Resupply (Small)";
+    class TransportWeapons {
+        xweaps(1, tf47_at4_HEDP);
+    };
+    class TransportMagazines {
+        xmags(24, rhs_mag_30Rnd_556x45_M855A1_Stanag);
+        xmags(6, rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red);
+        xmags(4, rhsusf_100Rnd_556x45_soft_pouch);
+        xmags(12, SmokeShell);
+        xmags(10, MiniGrenade);
+        xmags(5, rhs_mag_M441_HE);
+    };
+    class TransportItems {
+        xitems(16, ACE_fieldDressing);
+        xitems(6, ACE_morphine);
+    };
+    class TransportBackpacks {};
+};
+
+class B_supplyCrate_F;
+class cnto_us_resupply_medium : B_supplyCrate_F {
+    editorCategory = CNTO_US;
+    editorSubcategory = CNTO_US_Crates;
+    displayName = "Infantry Resupply (Medium)";
+    class TransportWeapons {
+        xweaps(4, tf47_at4_HEDP);
+    };
+    class TransportMagazines {
+        xmags(80, rhs_mag_30Rnd_556x45_M855A1_Stanag);
+        xmags(20, rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red);
+        xmags(12, rhsusf_100Rnd_556x45_soft_pouch);
+        xmags(30, SmokeShell);
+        xmags(8, SmokeShellGreen);
+        xmags(4, SmokeShellBlue);
+        xmags(24, MiniGrenade);
+        xmags(15, rhs_mag_M441_HE);
+        xmags(4, hlc_100Rnd_762x51_M_M60E4);
+        xmags(4, tf47_m3maaws_HEAT);
+        xmags(2, tf47_m3maaws_HEDP);
+    };
+    class TransportItems {
+        xitems(40, ACE_fieldDressing);
+        xitems(20, ACE_morphine);
+        xitems(10, ACE_epinephrine);
+        xitems(4, ACE_bloodIV);
+    };
+    class TransportBackpacks {};
+};

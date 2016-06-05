@@ -8,12 +8,10 @@
     class base##_##suffix : base { \
         scope = 1; \
         displayName = dname; \
-        class EventHandlers { \
-            init = QUOTE(INIT_EH(grpid, color)); \
+        class EventHandlers : EventHandlers { \
+            class group_attr { init = QUOTE(INIT_EH(grpid, color)); }; \
         }; \
     }
-
-// TODO: scope = 1  and add it to a group in CfgGroups
 
 SOLDIER(cnto_us_sq_sl,asl,    "Alpha 1 Squad Leader",         'ASL', 'MAIN');
 SOLDIER(cnto_us_sq_medic,asl, "Alpha 1 Squad Medic",          'ASL', 'MAIN');
