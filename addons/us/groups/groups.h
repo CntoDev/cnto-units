@@ -1,12 +1,12 @@
 class High_Command {
     name = "High Command";
-    class HQ {
-        name = "HQ";
+    class PLT_Lead {
+        name = "PLT Lead";
         icon = "\A3\ui_f\data\map\markers\nato\b_hq.paa";
-        class Unit0 { vehicle = cnto_us_hq_co_1;    position[] = {0,0,0}; rank = "SERGEANT"; dir = 180; };
-        class Unit1 { vehicle = cnto_us_hq_sgt_1;   position[] = {1,0,0}; rank = "PRIVATE";  dir = 180; };
-        class Unit2 { vehicle = cnto_us_hq_medic_1; position[] = {2,0,0}; rank = "PRIVATE";  dir = 180; };
-        class Unit3 { vehicle = cnto_us_hq_rfl_1;   position[] = {3,0,0}; rank = "PRIVATE";  dir = 180; };
+        class Unit0 { vehicle = cnto_us_plt_co_1;    position[] = {0,0,0}; rank = "SERGEANT"; dir = 180; };
+        class Unit1 { vehicle = cnto_us_plt_sgt_1;   position[] = {1,0,0}; rank = "PRIVATE";  dir = 180; };
+        class Unit2 { vehicle = cnto_us_plt_medic_1; position[] = {2,0,0}; rank = "PRIVATE";  dir = 180; };
+        class Unit3 { vehicle = cnto_us_plt_rfl_1;   position[] = {3,0,0}; rank = "PRIVATE";  dir = 180; };
     };
 };
 class Infantry {
@@ -108,7 +108,7 @@ class Crew {
         class Unit2 { vehicle = cnto_us_veh_gunner_3; position[] = {2,0,0}; rank = "PRIVATE"; };
     };
     class Thunder {
-        name = "Thunder";
+        name = "Thunder (Tank)";
         icon = "\A3\ui_f\data\map\markers\nato\b_armor.paa";
         class Unit0 { vehicle = cnto_us_veh_co_4;     position[] = {0,0,0}; rank = "SERGEANT"; };
         class Unit1 { vehicle = cnto_us_veh_driver_4; position[] = {1,0,0}; rank = "PRIVATE"; };
@@ -133,7 +133,7 @@ class Crew {
         class Unit1 { vehicle = cnto_us_air_copilot_3; position[] = {1,0,0}; rank = "PRIVATE"; };
     };
     class Reaper {
-        name = "Reaper";
+        name = "Reaper (CAS)";
         icon = "\A3\ui_f\data\map\markers\nato\b_air.paa";
         class Unit0 { vehicle = cnto_us_air_pilot_4;   position[] = {0,0,0}; rank = "SERGEANT"; };
         class Unit1 { vehicle = cnto_us_air_copilot_4; position[] = {1,0,0}; rank = "PRIVATE"; };

@@ -4,4 +4,5 @@ class All {
     class initGroupAttr;
     class registerInitExec { preInit = 1; };
     class godlike;
+    class markerOnInit;
 };

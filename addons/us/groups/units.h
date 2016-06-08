@@ -39,10 +39,10 @@ SOLDIER(cnto_us_ft_ar,b2,     "Bravo 2 Autorifleman",         'B2',  'YELLOW');
 SOLDIER(cnto_us_ft_aar,b2,    "Bravo 2 Assist. autorifleman", 'B2',  'YELLOW');
 SOLDIER(cnto_us_ft_at,b2,     "Bravo 2 Rifleman AT",          'B2',  'RED');
 
-SOLDIER(cnto_us_hq_co,1,         "HQ Commander",       'HQ',  'MAIN');
-SOLDIER(cnto_us_hq_sgt,1,        "HQ Sergeant",        'HQ',  'MAIN');
-SOLDIER(cnto_us_hq_medic,1,      "HQ Medic",           'HQ',  'MAIN');
-SOLDIER(cnto_us_hq_rfl,1,        "HQ Rifleman",        'HQ',  'MAIN');
+SOLDIER(cnto_us_plt_co,1,        "PLT Commander",      'PLT', 'MAIN');
+SOLDIER(cnto_us_plt_sgt,1,       "PLT Sergeant",       'PLT', 'MAIN');
+SOLDIER(cnto_us_plt_medic,1,     "PLT Medic",          'PLT', 'MAIN');
+SOLDIER(cnto_us_plt_rfl,1,       "PLT Rifleman",       'PLT', 'MAIN');
 
 SOLDIER(cnto_us_mmg_tl,1,        "MMG Team Leader",    'MMG', 'MAIN');
 SOLDIER(cnto_us_mmg_gunner,1,    "MMG Gunner",         'MMG', 'MAIN');
