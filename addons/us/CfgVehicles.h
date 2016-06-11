@@ -501,18 +501,6 @@ class cnto_us_gm : B_Soldier_base_F {
  * Crates
  */
 
-//class NATO_Box_Base;
-//class Box_NATO_Support_F : NATO_Box_Base {
-//    class EventHandlers;
-//};
-//class Box_NATO_Ammo_F : NATO_Box_Base {
-//    class EventHandlers;
-//};
-//class ReammoBox_F;
-//class B_supplyCrate_F : ReammoBox_F {
-//    class EventHandlers;
-//};
-
 #define QUOTE(x) #x
 #define ADD_SCOPE(item, name) \
     class item { \
@@ -529,8 +517,8 @@ class cnto_us_gm : B_Soldier_base_F {
 
 class Box_NATO_Support_F;
 class cnto_us_scopebox : Box_NATO_Support_F {
-    editorCategory = CNTO_US;
-    editorSubcategory = CNTO_US_Crates;
+    editorCategory = CNTO;
+    editorSubcategory = CNTO_US_Supplies;
     displayName = "Scopebox";
     class TransportWeapons {};
     class TransportMagazines {};
@@ -573,8 +561,8 @@ class cnto_us_scopebox : Box_NATO_Support_F {
 
 class Box_NATO_Ammo_F;
 class cnto_us_resupply_small : Box_NATO_Ammo_F {
-    editorCategory = CNTO_US;
-    editorSubcategory = CNTO_US_Crates;
+    editorCategory = CNTO;
+    editorSubcategory = CNTO_US_Supplies;
     displayName = "Infantry Resupply (Small)";
     class TransportWeapons {
         xweaps(1, tf47_at4_HEDP);
@@ -596,8 +584,8 @@ class cnto_us_resupply_small : Box_NATO_Ammo_F {
 
 class B_supplyCrate_F;
 class cnto_us_resupply_medium : B_supplyCrate_F {
-    editorCategory = CNTO_US;
-    editorSubcategory = CNTO_US_Crates;
+    editorCategory = CNTO;
+    editorSubcategory = CNTO_US_Supplies;
     displayName = "Infantry Resupply (Medium)";
     class TransportWeapons {
         xweaps(4, tf47_at4_HEDP);

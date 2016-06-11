@@ -11,3 +11,15 @@ class CfgFunctions {
 #include "CfgFunctions.h"
     };
 };
+
+/* for Empty objects */
+class CfgEditorCategories {
+    class CNTO { displayName = "CNTO"; };
+};
+class CfgGroups {
+    class Empty {
+        class CNTO_Other {
+            name = "CNTO Other";
+        };
+    };
+};

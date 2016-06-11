@@ -13,12 +13,8 @@ class CfgFactionClasses {
     };
 };
 
-/* for Empty objects */
-class CfgEditorCategories {
-    class CNTO_US { displayName = "CNTO US Supplies"; };
-};
 class CfgEditorSubcategories {
-    class CNTO_US_Crates { displayName = "Crates and boxes"; };
+    class CNTO_US_Supplies { displayName = "US Supplies"; };
 };
 
 class CfgVehicles {
