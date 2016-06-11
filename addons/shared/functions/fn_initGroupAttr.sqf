@@ -10,7 +10,11 @@ if (is3DEN) then {
         waitUntil { !isNull group _unit };  /* wait for Eden group init */
         private _grp = group _unit;
         if (leader _grp == _unit) then {
-            _grp set3DENAttribute ["groupID", _id];
+            private _grpid = (_grp get3DENAttribute "groupID") select 0;
+            /* don't override custom callsigns on scenario load (unit init) */
+            if (_grpid call cnto_units_fnc_isDefaultCallsign) then {
+                _grp set3DENAttribute ["groupID", _id];
+            };
         };
         _unit set3DENAttribute ["ControlMP", true];  /* playable */
     };
