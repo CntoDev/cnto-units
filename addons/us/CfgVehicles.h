@@ -517,7 +517,7 @@ class cnto_us_gm : B_Soldier_base_F {
 
 class Box_NATO_Support_F;
 class cnto_us_scopebox : Box_NATO_Support_F {
-    editorCategory = CNTO;
+    editorCategory = CNTO_Other;
     editorSubcategory = CNTO_US_Supplies;
     displayName = "Scopebox";
     class TransportWeapons {};
@@ -561,7 +561,7 @@ class cnto_us_scopebox : Box_NATO_Support_F {
 
 class Box_NATO_Ammo_F;
 class cnto_us_resupply_small : Box_NATO_Ammo_F {
-    editorCategory = CNTO;
+    editorCategory = CNTO_Other;
     editorSubcategory = CNTO_US_Supplies;
     displayName = "Infantry Resupply (Small)";
     class TransportWeapons {
@@ -584,7 +584,7 @@ class cnto_us_resupply_small : Box_NATO_Ammo_F {
 
 class B_supplyCrate_F;
 class cnto_us_resupply_medium : B_supplyCrate_F {
-    editorCategory = CNTO;
+    editorCategory = CNTO_Other;
     editorSubcategory = CNTO_US_Supplies;
     displayName = "Infantry Resupply (Medium)";
     class TransportWeapons {

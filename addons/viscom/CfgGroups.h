@@ -1,5 +1,6 @@
 class Table_Camo_Net {
     name = "VISCOM Camo Net";
+    icon = "\a3\Ui_f\data\Map\VehicleIcons\iconVehicle_ca.paa";
     class Object0 { vehicle = cnto_viscom_table;      position[] = {0,0,0}; rank = ""; };
     class Object1 { vehicle = cnto_viscom_screen;     position[] = {0,0,1}; rank = ""; };
     class Object2 { vehicle = cnto_viscom_keyboard;   position[] = {0,-0.25,1}; rank = ""; };

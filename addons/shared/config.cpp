@@ -14,7 +14,9 @@ class CfgFunctions {
 
 /* for Empty objects */
 class CfgEditorCategories {
-    class CNTO { displayName = "CNTO"; };
+    class CNTO_Other {
+        displayName = "CNTO Other";
+    };
 };
 class CfgGroups {
     class Empty {
