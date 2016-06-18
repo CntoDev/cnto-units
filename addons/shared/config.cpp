@@ -25,3 +25,7 @@ class CfgGroups {
         };
     };
 };
+
+class Cfg3DEN {
+#include "Cfg3DEN.h"
+};
