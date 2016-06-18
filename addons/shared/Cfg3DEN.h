@@ -52,7 +52,7 @@ class Mission {
                         property = "cnto_chk_mdefaults";
                         displayName = "Set mission defaults";
                         control = "Checkbox";
-                        tooltip = "In the main menu toolbar (above), in Attributes, click one of ""Set CNTO defaults"" options. This sets the respawn options, timers, as well as any other mission-wide defaults.";
+                        tooltip = "In the main menu toolbar (above), in Tools, click one of ""Set CNTO defaults"" options. This sets the respawn options, timers, as well as any other mission-wide defaults.";
                         defaultValue = "false";
                     };
                     class Mission_Details {

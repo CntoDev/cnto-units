@@ -6,4 +6,5 @@ class All {
     class registerInitExec { preInit = 1; };
     class godlike;
     class markerOnInit;
+    class setMissionDefaults;
 };
