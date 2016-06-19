@@ -45,7 +45,7 @@ class Mission {
                         property = "cnto_chk_briefing";
                         displayName = "Configure briefing";
                         control = "Checkbox";
-                        tooltip = "From editor modules (F5), under A3EE, place down a briefing module and provide a written (text) briefing to players in respective sections of the module config.\n\nIf PvP, you can place one briefing module per side.\n\nIn more complex scenarios, you can provide separate briefings for certain player groups (ie. hostages / specops / etc.) by synchronizing the module with at least one unit in each of the groups. In this case, the global or per-side briefing is ignored and only the synchronized one is used.";
+                        tooltip = "From editor modules (F5), under A3EE, place down a briefing module and provide a written (text) briefing to players in respective sections of the module config.\n\nIf PvP, you can place one briefing module per side.";
                         defaultValue = "false";
                     };
                     class Mission_Defaults {
