@@ -9,7 +9,6 @@ class Mission {
                         property = "cnto_chk_units";
                         displayName = "Place units/groups";
                         control = "Checkbox";
-                        //expression = "";
                         tooltip = "Place down individual playable units (F1) or groups (F2) from any CNTO factions for all sides in the mission (one in Coop, multiple in PvP). Do not place any groups or assets that should be unavailable to players. If desired, create your own groups and assign them custom names / unit role descriptions (names).\n\nAlso place any other assets (like vehicles / helicopters) you want the players to have.";
                         defaultValue = "false";
                     };
