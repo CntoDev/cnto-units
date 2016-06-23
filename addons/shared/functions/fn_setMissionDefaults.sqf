@@ -24,10 +24,10 @@ set3DENMissionAttributes [
     ["Multiplayer", "JoinUnassigned", true],
     ["Multiplayer", "Respawn", 3],  // on custom location
     ["Multiplayer", "RespawnTemplates", []],
-    ["Multiplayer", "RespawnDelay", 5],
-    ["Multiplayer", "RespawnVehicleDelay", 5],
+    ["Multiplayer", "RespawnDelay", 10],
+    ["Multiplayer", "RespawnVehicleDelay", 10],
     ["Multiplayer", "RespawnDialog", false],
-    ["Multiplayer", "RespawnButton", true],
+    ["Multiplayer", "RespawnButton", 1],  // Number, not Bool
     ["Multiplayer", "EnableTeamSwitch", false],
     ["Multiplayer", "AIKills", false]
 ];
@@ -38,6 +38,6 @@ if (_this == "pvp") then {
         ["Multiplayer", "Respawn", 1],  // to spectator
         ["Multiplayer", "RespawnDelay", 0],
         ["Multiplayer", "RespawnVehicleDelay", 0],
-        ["Multiplayer", "RespawnButton", false]
+        ["Multiplayer", "RespawnButton", 0]
     ];
 };
