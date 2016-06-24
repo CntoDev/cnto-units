@@ -550,13 +550,10 @@ class cnto_us_scopebox : Box_NATO_Support_F {
         ADD_SCOPE(optic_holosight,       "<t color='#e05200'>Mk17 Holosight</t>");
         ADD_SCOPE(optic_holosight_smg,   "<t color='#e05200'>Mk17 Holosight SMG</t>");
 
-        ADD_SCOPE(RH_refles,         "<t color='#008ee0'>Trijicon Reflex</t>");
+        //ADD_SCOPE(RH_refles,         "<t color='#008ee0'>Trijicon Reflex</t>");
         ADD_SCOPE(rhsusf_acc_eotech, "<t color='#008ee0'>XPS3</t>");
         ADD_SCOPE(RH_zpoint,         "<t color='#008ee0'>Zeiss Z-point</t>");
     };
-    //class EventHandlers : EventHandlers {
-    //    class marker { init = "[(_this select 0), ""mil_box"", ""Scope Box"", ""ColorGreen"", 0.5] call cnto_units_fnc_markerOnInit"; };
-    //};
 };
 
 class Box_NATO_Ammo_F;
