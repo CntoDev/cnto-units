@@ -1,9 +1,10 @@
 class Mission {
-    class Scenario {
+    class CNTO_Mission_Data {
+        displayName = "CNTO Mission Data";
         class AttributeCategories {
             class CNTO_Checklist {
                 displayName = "CNTO Mission Checklist";
-                collapsed = 1;
+                collapsed = 0;
                 class Attributes {
                     class Units {
                         property = "cnto_chk_units";

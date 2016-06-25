@@ -52,6 +52,16 @@ class display3DEN {
     class Controls {
         class MenuStrip: ctrlMenuStrip {
             class Items {
+                /* Attributes menu */
+                class Attributes {
+                    items[] += {"CNTO_Mission_Data"};
+                };
+                class CNTO_Mission_Data {
+                    text = "CNTO Mission Data";
+                    /* from Cfg3DEN */
+                    action = "edit3DENMissionAttributes ""CNTO_Mission_Data""";
+                };
+                /* Tools menu */
                 class Tools {
                     items[] += {"CNTO_Defaults_Coop","CNTO_Defaults_PvP"};
                 };
