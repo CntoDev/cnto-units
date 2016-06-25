@@ -13,8 +13,8 @@
         }; \
     }
 
-SOLDIER(cnto_us_sq_sl,asl,    "Alpha 1 Squad Leader",         'ASL', 'MAIN');
-SOLDIER(cnto_us_sq_medic,asl, "Alpha 1 Squad Medic",          'ASL', 'MAIN');
+SOLDIER(cnto_us_sq_sl,asl,    "Alpha Squad Leader",           'ASL', 'MAIN');
+SOLDIER(cnto_us_sq_medic,asl, "Alpha Squad Medic",            'ASL', 'MAIN');
 SOLDIER(cnto_us_ft_tl,a1,     "Alpha 1 Fireteam Leader",      'A1',  'BLUE');
 SOLDIER(cnto_us_ft_ar,a1,     "Alpha 1 Autorifleman",         'A1',  'GREEN');
 SOLDIER(cnto_us_ft_aar,a1,    "Alpha 1 Assist. autorifleman", 'A1',  'GREEN');
@@ -28,8 +28,8 @@ SOLDIER(cnto_us_ft_ar,a3,     "Alpha 3 Autorifleman",         'A3',  'GREEN');
 SOLDIER(cnto_us_ft_aar,a3,    "Alpha 3 Assist. autorifleman", 'A3',  'GREEN');
 SOLDIER(cnto_us_ft_at,a3,     "Alpha 3 Rifleman AT",          'A3',  'BLUE');
 
-SOLDIER(cnto_us_sq_sl,bsl,    "Bravo 1 Squad Leader",         'BSL', 'MAIN');
-SOLDIER(cnto_us_sq_medic,bsl, "Bravo 1 Squad Medic",          'BSL', 'MAIN');
+SOLDIER(cnto_us_sq_sl,bsl,    "Bravo Squad Leader",           'BSL', 'MAIN');
+SOLDIER(cnto_us_sq_medic,bsl, "Bravo Squad Medic",            'BSL', 'MAIN');
 SOLDIER(cnto_us_ft_tl,b1,     "Bravo 1 Fireteam Leader",      'B1',  'BLUE');
 SOLDIER(cnto_us_ft_ar,b1,     "Bravo 1 Autorifleman",         'B1',  'GREEN');
 SOLDIER(cnto_us_ft_aar,b1,    "Bravo 1 Assist. autorifleman", 'B1',  'GREEN');
