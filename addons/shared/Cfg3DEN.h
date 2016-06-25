@@ -10,12 +10,12 @@ class Mission {
                         property = "cnto_chk_units";
                         displayName = "Place units/groups";
                         control = "Checkbox";
-                        tooltip = "Place down individual playable units (F1) or groups (F2) from any CNTO factions for all sides in the mission (one in Coop, multiple in PvP). Do not place any groups or assets that should be unavailable to players. If desired, create your own groups and assign them custom names / unit role descriptions (names).\n\nAlso place any other assets (like vehicles / helicopters) you want the players to have.";
+                        tooltip = "Place down individual playable units (F1) or groups (F2) from any CNTO factions for all sides in the mission (one in Coop, multiple in PvP). Do not place any groups or assets that should be unavailable to players. If desired, create your own groups and assign them custom group names / unit role descriptions.\n\nAlso place any other assets (like vehicles / helicopters) you want the players to have.";
                         defaultValue = "false";
                     };
                     class Supplies {
                         property = "cnto_chk_supplies";
-                        displayName = "Place supply boxes";
+                        displayName = "Place supply/misc boxes";
                         control = "Checkbox";
                         tooltip = "From the units (F1) Empty category, place down whatever resupplies you want the players to have. Optionally, place a map marker on the supplies to make them easy to find.\n\n***Don't forget to place Scope Box from the Misc subcategory if you want players to have scopes.***";
                         defaultValue = "false";
