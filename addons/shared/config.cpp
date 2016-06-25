@@ -58,6 +58,7 @@ class display3DEN {
                 };
                 class CNTO_Mission_Data {
                     text = "CNTO Mission Data";
+                    picture = "\cnto\units\shared\data\cnto_icon.paa";
                     /* from Cfg3DEN */
                     action = "edit3DENMissionAttributes ""CNTO_Mission_Data""";
                 };
@@ -67,10 +68,12 @@ class display3DEN {
                 };
                 class CNTO_Defaults_Coop {
                     text = "Set CNTO Defaults (Coop)";
+                    picture = "\cnto\units\shared\data\cnto_icon.paa";
                     action = "collect3DENHistory {""coop"" call cnto_units_fnc_setMissionDefaults; ""coop"" call cnto_units_fnc_placeDefaultModules;}";
                 };
                 class CNTO_Defaults_PvP {
                     text = "Set CNTO Defaults (PvP)";
+                    picture = "\cnto\units\shared\data\cnto_icon.paa";
                     action = "collect3DENHistory {""pvp"" call cnto_units_fnc_setMissionDefaults; ""pvp"" call cnto_units_fnc_placeDefaultModules;}";
                 };
             };
