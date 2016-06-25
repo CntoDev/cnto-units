@@ -28,12 +28,19 @@ class CfgEditorCategories {
         displayName = "CNTO Other";
     };
 };
+class CfgEditorSubcategories {
+    class CNTO_Misc { displayName = "Misc"; };
+};
 class CfgGroups {
     class Empty {
         class CNTO_Other {
             name = "CNTO Other";
         };
     };
+};
+
+class CfgVehicles {
+#include "CfgVehicles.h"
 };
 
 class Cfg3DEN {
