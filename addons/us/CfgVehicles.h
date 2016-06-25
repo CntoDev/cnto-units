@@ -515,7 +515,7 @@ class cnto_us_resupply_small : Box_NATO_Ammo_F {
         xmags(4, rhsusf_100Rnd_556x45_soft_pouch);
         xmags(12, SmokeShell);
         xmags(10, MiniGrenade);
-        xmags(5, rhs_mag_M441_HE);
+        xmags(5, 1Rnd_HE_Grenade_shell);
     };
     class TransportItems {
         xitems(16, ACE_fieldDressing);
@@ -540,7 +540,7 @@ class cnto_us_resupply_medium : B_supplyCrate_F {
         xmags(8, SmokeShellGreen);
         xmags(4, SmokeShellBlue);
         xmags(24, MiniGrenade);
-        xmags(15, rhs_mag_M441_HE);
+        xmags(15, 1Rnd_HE_Grenade_shell);
         xmags(4, hlc_100Rnd_762x51_M_M60E4);
         xmags(4, tf47_m3maaws_HEAT);
         xmags(2, tf47_m3maaws_HEDP);
