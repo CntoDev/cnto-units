@@ -30,16 +30,8 @@ private _modules = [
         _this set3DENAttribute ["ControlMP", true];
     }],
     /*
-     * ACRE
+     * ACRE (shared settings)
      */
-    ["acre_api_basicMissionSetup", {
-        _this set3DENAttribute ["acre_api_basicMissionSetup_RadioSetup", true];
-        _this set3DENAttribute ["acre_api_basicMissionSetup_BabelSetup", 0];
-        _this set3DENAttribute ["acre_api_basicMissionSetup_DefaultRadio", ""];
-        _this set3DENAttribute ["acre_api_basicMissionSetup_DefaultRadio_Two", ""];
-        _this set3DENAttribute ["acre_api_basicMissionSetup_DefaultRadio_Three", ""];
-        _this set3DENAttribute ["acre_api_basicMissionSetup_DefaultRadio_Four", ""];
-    }],
     ["acre_api_DifficultySettings", {
         _this set3DENAttribute ["acre_api_DifficultySettings_FullDuplex", true];
         _this set3DENAttribute ["acre_api_DifficultySettings_Interference", false];
@@ -110,6 +102,13 @@ private _modules = [
 
 if (_this == "coop") then {
 _modules append [
+    /*
+     * ACRE
+     */
+    ["acre_api_basicMissionSetup", {
+        //_this set3DENAttribute ["acre_api_basicMissionSetup_RadioSetup", false];  // channels per-side
+        _this set3DENAttribute ["acre_api_basicMissionSetup_BabelSetup", 0];
+    }],
     ["acre_api_nameChannels", {
         _this set3DENAttribute ["acre_api_nameChannels_SideSelect", 1];
         _this set3DENAttribute ["acre_api_nameChannels_Channel_1", "Plt Net 1"];
@@ -123,6 +122,9 @@ _modules append [
         _this set3DENAttribute ["acre_api_nameChannels_Channel_9", ""];
         _this set3DENAttribute ["acre_api_nameChannels_Channel_10", ""];
     }],
+    /*
+     * ACE
+     */
     ["ACE_ModuleMap", {
         _this set3DENAttribute ["ACE_ModuleMap_MapGlow", false];
         _this set3DENAttribute ["ACE_ModuleMap_MapShake", false];
@@ -144,6 +146,16 @@ _modules append [
 
 if (_this == "pvp") then {
 _modules append [
+    /*
+     * ACRE
+     */
+    ["acre_api_basicMissionSetup", {
+        _this set3DENAttribute ["acre_api_basicMissionSetup_RadioSetup", true];  // channels per-side
+        //_this set3DENAttribute ["acre_api_basicMissionSetup_BabelSetup", 2];
+    }],
+    /*
+     * ACE
+     */
     ["ACE_ModuleMap", {
         _this set3DENAttribute ["ACE_ModuleMap_MapGlow", false];
         _this set3DENAttribute ["ACE_ModuleMap_MapShake", false];
