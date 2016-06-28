@@ -95,7 +95,7 @@ class cnto_us_ft_tl_pack : B_AssaultPack_rgr {
     scope = 1;
     class TransportMagazines {
         xmags(8, 1Rnd_HE_Grenade_shell);
-        xmags(2, 1Rnd_Smoke_Grenade_shell);
+        xmags(5, 1Rnd_Smoke_Grenade_shell);
         xmags(5, 1Rnd_SmokeRed_Grenade_shell);
         xmags(3, SmokeShell);
         xmags(5, SmokeShellGreen);
