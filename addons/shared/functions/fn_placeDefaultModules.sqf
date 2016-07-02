@@ -8,85 +8,90 @@ if (!is3DEN) exitWith {};
 /* newline char */
 private _n = toString [10];
 
+/*
+ * array of arrays where each member defines
+ *   0: logic unit class
+ *   1: (optional) array of attributes to set, each as ["name", value]
+ *   2: (optional) CODE to run, newly spawned unit passed as _this
+ */
 private _modules = [
     /*
      * ACRE2 Init settings (from init.sqf)
      */
-    ["Logic", {
-        _this set3DENAttribute ["Init", "if (!is3DEN) then {" + _n +
-                                        "    ACRE_TEST_OCCLUSION = false;" + _n +
-                                        "    [0.2] call acre_api_fnc_setLossModelScale;" + _n +
-                                        "};"];
-    }],
+    ["Logic", [
+        ["Init", "if (!is3DEN) then {" + _n +
+                 "    ACRE_TEST_OCCLUSION = false;" + _n +
+                 "    [0.2] call acre_api_fnc_setLossModelScale;" + _n +
+                 "}"]
+    ]],
     /*
      * Headless clients
      */
-    ["HeadlessClient_F", {
-        _this set3DENAttribute ["Name", "HC_0"];
-        _this set3DENAttribute ["ControlMP", true];
-    }],
-    ["HeadlessClient_F", {
-        _this set3DENAttribute ["Name", "HC_1"];
-        _this set3DENAttribute ["ControlMP", true];
-    }],
+    ["HeadlessClient_F", [
+        ["Name", "HC_0"],
+        ["ControlMP", true]
+    ]],
+    ["HeadlessClient_F", [
+        ["Name", "HC_1"],
+        ["ControlMP", true]
+    ]],
     /*
      * ACRE (shared settings)
      */
-    ["acre_api_DifficultySettings", {
-        _this set3DENAttribute ["acre_api_DifficultySettings_FullDuplex", true];
-        _this set3DENAttribute ["acre_api_DifficultySettings_Interference", false];
-    }],
+    ["acre_api_DifficultySettings", [
+        ["acre_api_DifficultySettings_FullDuplex", true],
+        ["acre_api_DifficultySettings_Interference", false]
+    ]],
     /*
      * ACE
      */
-    ["ACE_ModuleBlueForceTracking", {
-        _this set3DENAttribute ["ACE_ModuleBlueForceTracking_Enabled", true];
-        _this set3DENAttribute ["ACE_ModuleBlueForceTracking_Interval", 2];
-    }],
-    ["ace_captives_moduleSettings", {
-        _this set3DENAttribute ["ace_captives_moduleSettings_requireSurrender", 0];
-        _this set3DENAttribute ["ace_captives_moduleSettings_allowHandcuffOwnSide", false];
-    }],
-    ["ACE_ModuleCheckPBOs", {
-        _this set3DENAttribute ["ACE_ModuleCheckPBOs_Action", 2];
-    }],
-    ["ACE_ModuleExplosive", {
-        _this set3DENAttribute ["ACE_ModuleExplosive_ExplodeOnDefuse", false];
-    }],
-    ["ACE_ModuleHearing", {
-        _this set3DENAttribute ["ACE_ModuleHearing_EnableCombatDeafness", false];
-        _this set3DENAttribute ["ACE_ModuleHearing_DisableEarRinging", 1];
-        _this set3DENAttribute ["ACE_ModuleHearing_enabledForZeusUnits", false];
-        _this set3DENAttribute ["ACE_ModuleHearing_autoAddEarplugsToUnits", false];
-    }],
+    ["ACE_ModuleBlueForceTracking", [
+        ["ACE_ModuleBlueForceTracking_Enabled", true],
+        ["ACE_ModuleBlueForceTracking_Interval", 2]
+    ]],
+    ["ace_captives_moduleSettings", [
+        ["ace_captives_moduleSettings_requireSurrender", 0],
+        ["ace_captives_moduleSettings_allowHandcuffOwnSide", false]
+    ]],
+    ["ACE_ModuleCheckPBOs", [
+        ["ACE_ModuleCheckPBOs_Action", 2]
+    ]],
+    ["ACE_ModuleExplosive", [
+        ["ACE_ModuleExplosive_ExplodeOnDefuse", false]
+    ]],
+    ["ACE_ModuleHearing", [
+        ["ACE_ModuleHearing_EnableCombatDeafness", false],
+        ["ACE_ModuleHearing_DisableEarRinging", 1],
+        ["ACE_ModuleHearing_enabledForZeusUnits", false],
+        ["ACE_ModuleHearing_autoAddEarplugsToUnits", false]
+    ]],
     ["ace_map_gestures_moduleSettings"],
-    ["ACE_ModuleNameTags", {
-        _this set3DENAttribute ["ACE_ModuleNameTags_showPlayerNames", 1];
-        _this set3DENAttribute ["ACE_ModuleNameTags_playerNamesViewDistance", 30];
-        _this set3DENAttribute ["ACE_ModuleNameTags_showNamesForAI", 0];
-        _this set3DENAttribute ["ACE_ModuleNameTags_showVehicleCrewInfo", 1];
-        _this set3DENAttribute ["ACE_ModuleNameTags_showCursorTagForVehicles", true];
-        _this set3DENAttribute ["", 0];
-    }],
-    ["ace_nightvision_ModuleSettings", {
-        _this set3DENAttribute ["ace_nightvision_ModuleSettings_disableNVGsWithSights", false];
-    }],
-    ["ace_finger_moduleSettings", {
-        _this set3DENAttribute ["ace_finger_moduleSettings_maxRange", 7];
-    }],
+    ["ACE_ModuleNameTags", [
+        ["ACE_ModuleNameTags_showPlayerNames", 1],
+        ["ACE_ModuleNameTags_playerNamesViewDistance", 30],
+        ["ACE_ModuleNameTags_showNamesForAI", 0],
+        ["ACE_ModuleNameTags_showVehicleCrewInfo", 1],
+        ["ACE_ModuleNameTags_showCursorTagForVehicles", true]
+    ]],
+    ["ace_nightvision_ModuleSettings", [
+        ["ace_nightvision_ModuleSettings_disableNVGsWithSights", false]
+    ]],
+    ["ace_finger_moduleSettings", [
+        ["ace_finger_moduleSettings_maxRange", 7]
+    ]],
     ["ACE_ModuleSitting"],
-    ["ace_spectator_moduleSettings", {
-        _this set3DENAttribute ["ace_spectator_moduleSettings_unitsFilter", 1];
-        _this set3DENAttribute ["ace_spectator_moduleSettings_cameraModes", 3];
-        _this set3DENAttribute ["ace_spectator_moduleSettings_visionModes", 3];
-    }],
-    ["ace_weather_ModuleSettings", {
-        _this set3DENAttribute ["ace_weather_ModuleSettings_enableServerController", false];
-        _this set3DENAttribute ["ace_weather_ModuleSettings_useACEWeather", false];
-        _this set3DENAttribute ["ace_weather_ModuleSettings_syncRain", false];
-        _this set3DENAttribute ["ace_weather_ModuleSettings_syncWind", false];
-        _this set3DENAttribute ["ace_weather_ModuleSettings_syncMisc", false];
-    }],
+    ["ace_spectator_moduleSettings", [
+        ["ace_spectator_moduleSettings_unitsFilter", 1],
+        ["ace_spectator_moduleSettings_cameraModes", 3],
+        ["ace_spectator_moduleSettings_visionModes", 3]
+    ]],
+    ["ace_weather_ModuleSettings", [
+        ["ace_weather_ModuleSettings_enableServerController", false],
+        ["ace_weather_ModuleSettings_useACEWeather", false],
+        ["ace_weather_ModuleSettings_syncRain", false],
+        ["ace_weather_ModuleSettings_syncWind", false],
+        ["ace_weather_ModuleSettings_syncMisc", false]
+    ]],
     ["ace_zeus_moduleSettings"],
     /*
      * ACE Logistics
@@ -105,42 +110,40 @@ _modules append [
     /*
      * ACRE
      */
-    ["acre_api_basicMissionSetup", {
-        //_this set3DENAttribute ["acre_api_basicMissionSetup_RadioSetup", false];  // channels per-side
-        _this set3DENAttribute ["acre_api_basicMissionSetup_BabelSetup", 0];
-    }],
-    ["acre_api_nameChannels", {
-        _this set3DENAttribute ["acre_api_nameChannels_SideSelect", 1];
-        _this set3DENAttribute ["acre_api_nameChannels_Channel_1", "Plt Net 1"];
-        _this set3DENAttribute ["acre_api_nameChannels_Channel_2", ""];
-        _this set3DENAttribute ["acre_api_nameChannels_Channel_3", ""];
-        _this set3DENAttribute ["acre_api_nameChannels_Channel_4", ""];
-        _this set3DENAttribute ["acre_api_nameChannels_Channel_5", ""];
-        _this set3DENAttribute ["acre_api_nameChannels_Channel_6", ""];
-        _this set3DENAttribute ["acre_api_nameChannels_Channel_7", ""];
-        _this set3DENAttribute ["acre_api_nameChannels_Channel_8", ""];
-        _this set3DENAttribute ["acre_api_nameChannels_Channel_9", ""];
-        _this set3DENAttribute ["acre_api_nameChannels_Channel_10", ""];
-    }],
+    ["acre_api_basicMissionSetup", [
+        ["acre_api_basicMissionSetup_BabelSetup", 0]
+    ]],
+    ["acre_api_nameChannels", [
+        ["acre_api_nameChannels_Channel_1", "Plt Net 1"],
+        ["acre_api_nameChannels_Channel_2", ""],
+        ["acre_api_nameChannels_Channel_3", ""],
+        ["acre_api_nameChannels_Channel_4", ""],
+        ["acre_api_nameChannels_Channel_5", ""],
+        ["acre_api_nameChannels_Channel_6", ""],
+        ["acre_api_nameChannels_Channel_7", ""],
+        ["acre_api_nameChannels_Channel_8", ""],
+        ["acre_api_nameChannels_Channel_9", ""],
+        ["acre_api_nameChannels_Channel_10", ""]
+    ]],
     /*
      * ACE
      */
-    ["ACE_ModuleMap", {
-        _this set3DENAttribute ["ACE_ModuleMap_MapGlow", false];
-        _this set3DENAttribute ["ACE_ModuleMap_MapShake", false];
-        _this set3DENAttribute ["ACE_ModuleMap_MapShowCursorCoordinates", true];
-        _this set3DENAttribute ["ACE_ModuleMap_DefaultChannel", 0];
-    }],
+    ["ACE_ModuleMap", [
+        ["ACE_ModuleMap_MapGlow", false],
+        ["ACE_ModuleMap_MapShake", false],
+        ["ACE_ModuleMap_MapShowCursorCoordinates", true],
+        ["ACE_ModuleMap_DefaultChannel", 0]
+    ]],
     /*
      * channels disable - all except global (0)
      */
-    ["Logic", {
-        _this set3DENAttribute ["Init", "1 enableChannel false;" + _n +
-                                        "2 enableChannel false;" + _n +
-                                        "3 enableChannel false;" + _n +
-                                        "4 enableChannel false;" + _n +
-                                        "5 enableChannel false;"];
-    }]
+    ["Logic", [
+        ["Init", "1 enableChannel false;" + _n +
+                 "2 enableChannel false;" + _n +
+                 "3 enableChannel false;" + _n +
+                 "4 enableChannel false;" + _n +
+                 "5 enableChannel false;"]
+    ]]
 ];
 };
 
@@ -149,28 +152,27 @@ _modules append [
     /*
      * ACRE
      */
-    ["acre_api_basicMissionSetup", {
-        _this set3DENAttribute ["acre_api_basicMissionSetup_RadioSetup", true];  // channels per-side
-        //_this set3DENAttribute ["acre_api_basicMissionSetup_BabelSetup", 2];
-    }],
+    ["acre_api_basicMissionSetup", [
+        ["acre_api_basicMissionSetup_RadioSetup", true]  // channels per-side
+    ]],
     /*
      * ACE
      */
-    ["ACE_ModuleMap", {
-        _this set3DENAttribute ["ACE_ModuleMap_MapGlow", false];
-        _this set3DENAttribute ["ACE_ModuleMap_MapShake", false];
-        _this set3DENAttribute ["ACE_ModuleMap_MapShowCursorCoordinates", true];
-        _this set3DENAttribute ["ACE_ModuleMap_DefaultChannel", 1];
-    }],
+    ["ACE_ModuleMap", [
+        ["ACE_ModuleMap_MapGlow", false],
+        ["ACE_ModuleMap_MapShake", false],
+        ["ACE_ModuleMap_MapShowCursorCoordinates", true],
+        ["ACE_ModuleMap_DefaultChannel", 1]
+    ]],
     /*
      * channels disable - all except global+side (0+1)
      */
-    ["Logic", {
-        _this set3DENAttribute ["Init", "2 enableChannel false;" + _n +
-                                        "3 enableChannel false;" + _n +
-                                        "4 enableChannel false;" + _n +
-                                        "5 enableChannel false;"];
-    }]
+    ["Logic", [
+        ["Init", "2 enableChannel false;" + _n +
+                 "3 enableChannel false;" + _n +
+                 "4 enableChannel false;" + _n +
+                 "5 enableChannel false;"]
+    ]]
 ];
 };
 
@@ -190,10 +192,48 @@ if (get3DENActionState "ToggleMap" == 0) then {
     };
 };
 
+private _module_setattr = {
+    params ["_mod", "_modclass", "_attr"];
+    _attr params ["_name", "_val"];
+
+    /* does the module exist? */
+    if (isNil "_mod") exitWith {
+        diag_log format [
+            "placeDefaultModules: module '%1' does not exist",
+            _modclass
+        ];
+    };
+    /* does the attr exist? */
+    private _defval = (_mod get3DENAttribute _name) select 0;
+    if (isNil "_defval") exitWith {
+        diag_log format [
+            "placeDefaultModules: '%1' tried to set '%2' which doesn't exist",
+            _modclass, _name
+        ];
+    };
+    /* are we setting the same data type? */
+    if (!(_val isEqualType _defval)) exitWith {
+        diag_log format [
+            "placeDefaultModules: '%1' tried to set '%2' (%3) as %4 (different data type)",
+            _modclass, _name, typeName _defval, typeName _val
+        ];
+    };
+    /* are we setting a value which is already set by default? */
+    if (_val isEqualTo _defval) exitWith {
+        diag_log format [
+            "placeDefaultModules: '%1' tried to set '%2' to '%3' which is already '%3' by default",
+            _modclass, _name, _val
+        ];
+    };
+
+    _mod set3DENAttribute [_name, _val];
+};
+
 private _root = ceil sqrt count _modules;
 {
-    _x params ["_class", ["_code", {}]];
+    _x params ["_class", ["_attrs", []], ["_code", {}]];
     private _pos = _start vectorAdd [_forEachIndex % _root, - floor (_forEachIndex / _root), 0];
     private _module = create3DENEntity ["Logic", _class, _pos];
+    { [_module, _class, _x] call _module_setattr } forEach _attrs;
     _module call _code;
 } forEach _modules;
