@@ -469,6 +469,9 @@ class cnto_us_trainer : cnto_us_soldier_base {
     class EventHandlers : EventHandlers {
         class godlike { init = "(_this select 0) call cnto_units_fnc_godlike"; };
     };
+    attendant = true;
+    engineer = true;
+    uavHacker = true;
 };
 
 /*
@@ -489,6 +492,9 @@ class cnto_us_gm : B_Soldier_base_F {
     class EventHandlers : EventHandlers {
         class godlike { init = "(_this select 0) call cnto_units_fnc_godlike"; };
     };
+    attendant = true;
+    engineer = true;
+    uavHacker = true;
 };
 
 /* ------------------------------------------------------------------------- */
