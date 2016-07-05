@@ -79,7 +79,7 @@ private _modules = [
     ["ace_finger_moduleSettings", [
         ["ace_finger_moduleSettings_maxRange", 7]
     ]],
-    ["ACE_ModuleSitting"],
+    ["ACEX_ModuleSitting"],
     ["ace_spectator_moduleSettings", [
         ["ace_spectator_moduleSettings_unitsFilter", 1],
         ["ace_spectator_moduleSettings_cameraModes", 3],
