@@ -50,8 +50,7 @@ private _modules = [
         ["ACE_ModuleBlueForceTracking_Interval", 2]
     ]],
     ["ace_captives_moduleSettings", [
-        ["ace_captives_moduleSettings_requireSurrender", 0],
-        ["ace_captives_moduleSettings_allowHandcuffOwnSide", true]
+        ["ace_captives_moduleSettings_requireSurrender", 0]
     ]],
     ["ACE_ModuleCheckPBOs", [
         ["ACE_ModuleCheckPBOs_Action", 2]
