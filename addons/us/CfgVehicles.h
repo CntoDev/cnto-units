@@ -55,7 +55,7 @@ class cnto_us_sq_medic : cnto_us_soldier_base {
     displayName = "SQ Medic";
     #define _weaps cnto_us_m4a1_flash, hgun_ACPC2_F, Throw, Put
     #define _mags rhs_mag_30Rnd_556x45_M855A1_Stanag, 9Rnd_45ACP_Mag, \
-                  x10(rhs_mag_30Rnd_556x45_M855A1_Stanag), x2(rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red), x2(9Rnd_45ACP_Mag)
+                  x8(rhs_mag_30Rnd_556x45_M855A1_Stanag), x2(rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red), x2(9Rnd_45ACP_Mag)
     #define _items
     #define _linked rhsusf_iotv_ucp_Medic, rhsusf_ach_helmet_ucp, ItemGPS
     ADD_GEAR;
@@ -123,7 +123,7 @@ class cnto_us_ft_aar : cnto_us_soldier_base {
     displayName = "FT AAR";
     #define _weaps cnto_us_m4a1_flash, hgun_ACPC2_F, ACE_Vector, Throw, Put
     #define _mags rhs_mag_30Rnd_556x45_M855A1_Stanag, 9Rnd_45ACP_Mag, \
-                  x10(rhs_mag_30Rnd_556x45_M855A1_Stanag), x2(rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red), x2(9Rnd_45ACP_Mag)
+                  x8(rhs_mag_30Rnd_556x45_M855A1_Stanag), x2(rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red), x2(9Rnd_45ACP_Mag)
     #define _items x2(ACE_CableTie), ACE_MapTools
     #define _linked rhsusf_iotv_ucp_Teamleader, rhsusf_ach_helmet_ucp, ItemGPS
     ADD_GEAR;
@@ -150,7 +150,7 @@ class cnto_us_ft_at : cnto_us_soldier_base {
     displayName = "FT AT";
     #define _weaps cnto_us_m4a1_flash, tf47_at4_HEDP, hgun_ACPC2_F, Throw, Put
     #define _mags rhs_mag_30Rnd_556x45_M855A1_Stanag, 9Rnd_45ACP_Mag, \
-                  x10(rhs_mag_30Rnd_556x45_M855A1_Stanag), x2(rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red), x2(9Rnd_45ACP_Mag)
+                  x8(rhs_mag_30Rnd_556x45_M855A1_Stanag), x2(rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red), x2(9Rnd_45ACP_Mag)
     #define _items
     #define _linked rhsusf_iotv_ucp_Rifleman, rhsusf_ach_helmet_ucp
     ADD_GEAR;
@@ -207,7 +207,7 @@ class cnto_us_plt_rfl : cnto_us_soldier_base {
     displayName = "PLT Rifleman";
     #define _weaps cnto_us_m4a1_flash, hgun_ACPC2_F, Throw, Put
     #define _mags rhs_mag_30Rnd_556x45_M855A1_Stanag, 9Rnd_45ACP_Mag, \
-                  x10(rhs_mag_30Rnd_556x45_M855A1_Stanag), x2(rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red), x2(9Rnd_45ACP_Mag)
+                  x8(rhs_mag_30Rnd_556x45_M855A1_Stanag), x2(rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red), x2(9Rnd_45ACP_Mag)
     #define _items
     #define _linked rhsusf_iotv_ucp_Rifleman, rhsusf_ach_helmet_ucp
     ADD_GEAR;
@@ -222,7 +222,7 @@ class cnto_us_mmg_tl : cnto_us_soldier_base {
     displayName = "MMG Lead";
     #define _weaps cnto_us_m4a1_gl_flash, hgun_ACPC2_F, ACE_Vector, Throw, Put
     #define _mags rhs_mag_30Rnd_556x45_M855A1_Stanag, 1Rnd_HE_Grenade_shell, 9Rnd_45ACP_Mag, \
-                  x10(rhs_mag_30Rnd_556x45_M855A1_Stanag), x2(rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red), x2(9Rnd_45ACP_Mag)
+                  x8(rhs_mag_30Rnd_556x45_M855A1_Stanag), x2(rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red), x2(9Rnd_45ACP_Mag)
     #define _items x2(ACE_CableTie), ACE_MapTools, ACRE_PRC152
     #define _linked rhsusf_iotv_ucp_Grenadier, rhsusf_ach_helmet_headset_ucp, ItemGPS
     ADD_GEAR;
@@ -267,7 +267,7 @@ class cnto_us_mmg_bearer : cnto_us_soldier_base {
     displayName = "MMG Bearer";
     #define _weaps cnto_us_m4a1_flash, hgun_ACPC2_F, Throw, Put
     #define _mags rhs_mag_30Rnd_556x45_M855A1_Stanag, 9Rnd_45ACP_Mag, \
-                  x10(rhs_mag_30Rnd_556x45_M855A1_Stanag), x2(rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red), x2(9Rnd_45ACP_Mag)
+                  x8(rhs_mag_30Rnd_556x45_M855A1_Stanag), x2(rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red), x2(9Rnd_45ACP_Mag)
     #define _items
     #define _linked rhsusf_iotv_ucp_Rifleman, rhsusf_ach_helmet_ucp
     ADD_GEAR;
@@ -293,7 +293,7 @@ class cnto_us_mat_gunner : cnto_us_soldier_base {
     displayName = "MAT Rocketman";
     #define _weaps cnto_us_m4a1_flash, cnto_us_m3maaws_optic, hgun_ACPC2_F, Throw, Put
     #define _mags rhs_mag_30Rnd_556x45_M855A1_Stanag, tf47_m3maaws_HEAT, 9Rnd_45ACP_Mag, \
-                  x10(rhs_mag_30Rnd_556x45_M855A1_Stanag), x2(rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red), x2(9Rnd_45ACP_Mag)
+                  x8(rhs_mag_30Rnd_556x45_M855A1_Stanag), x2(rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red), x2(9Rnd_45ACP_Mag)
     #define _items
     #define _linked rhsusf_iotv_ucp_Rifleman, rhsusf_ach_helmet_ESS_ucp
     ADD_GEAR;
@@ -312,7 +312,7 @@ class cnto_us_mat_bearer : cnto_us_soldier_base {
     displayName = "MAT Carrier";
     #define _weaps cnto_us_m4a1_flash, hgun_ACPC2_F, Throw, Put
     #define _mags rhs_mag_30Rnd_556x45_M855A1_Stanag, 9Rnd_45ACP_Mag, \
-                  x10(rhs_mag_30Rnd_556x45_M855A1_Stanag), x2(rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red), x2(9Rnd_45ACP_Mag)
+                  x8(rhs_mag_30Rnd_556x45_M855A1_Stanag), x2(rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red), x2(9Rnd_45ACP_Mag)
     #define _items
     #define _linked rhsusf_iotv_ucp_Rifleman, rhsusf_ach_helmet_ucp
     ADD_GEAR;
@@ -334,7 +334,7 @@ class cnto_us_mortar_gunner : cnto_us_soldier_base {
     displayName = "Mortar Gunner";
     #define _weaps cnto_us_m4a1_flash, hgun_ACPC2_F, Throw, Put
     #define _mags rhs_mag_30Rnd_556x45_M855A1_Stanag, 9Rnd_45ACP_Mag, \
-                  x10(rhs_mag_30Rnd_556x45_M855A1_Stanag), x2(rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red), x2(9Rnd_45ACP_Mag)
+                  x8(rhs_mag_30Rnd_556x45_M855A1_Stanag), x2(rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red), x2(9Rnd_45ACP_Mag)
     #define _items ACE_MapTools, ACE_RangeTable_82mm
     #define _linked rhsusf_iotv_ucp_Rifleman, rhsusf_ach_helmet_ucp
     ADD_GEAR;
@@ -346,7 +346,7 @@ class cnto_us_mortar_assist : cnto_us_soldier_base {
     displayName = "Mortar Ass. Gunner";
     #define _weaps cnto_us_m4a1_flash, hgun_ACPC2_F, ACE_Vector, Throw, Put
     #define _mags rhs_mag_30Rnd_556x45_M855A1_Stanag, 9Rnd_45ACP_Mag, \
-                  x2(SmokeShellGreen), SmokeShellBlue, x10(rhs_mag_30Rnd_556x45_M855A1_Stanag), x2(rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red), x2(9Rnd_45ACP_Mag)
+                  x2(SmokeShellGreen), SmokeShellBlue, x8(rhs_mag_30Rnd_556x45_M855A1_Stanag), x2(rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red), x2(9Rnd_45ACP_Mag)
     #define _items ACE_MapTools, ACE_RangeTable_82mm, ACRE_PRC152
     #define _linked rhsusf_iotv_ucp_Teamleader, rhsusf_ach_helmet_headset_ucp, ItemGPS
     ADD_GEAR;
