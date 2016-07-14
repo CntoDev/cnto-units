@@ -51,7 +51,7 @@ private _modules = [
     ]],
     ["ace_captives_moduleSettings", [
         ["ace_captives_moduleSettings_requireSurrender", 0],
-        ["ace_captives_moduleSettings_allowHandcuffOwnSide", false]
+        ["ace_captives_moduleSettings_allowHandcuffOwnSide", true]
     ]],
     ["ACE_ModuleCheckPBOs", [
         ["ACE_ModuleCheckPBOs_Action", 2]
