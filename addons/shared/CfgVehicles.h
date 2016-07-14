@@ -16,15 +16,11 @@
         statement = QUOTE(player addPrimaryWeaponItem QUOTE(QUOTE(item))); \
     }
 
-class Box_NATO_Support_F;
-class cnto_shared_scopebox : Box_NATO_Support_F {
+class Land_PlasticCase_01_small_F;
+class cnto_shared_scopebox : Land_PlasticCase_01_small_F {
     editorCategory = CNTO_Other;
     editorSubcategory = CNTO_Misc;
     displayName = "Scopebox";
-    class TransportWeapons {};
-    class TransportMagazines {};
-    class TransportItems {};
-    class TransportBackpacks {};
     class UserActions {
         ADD_SCOPE(optic_ACO_grn,     "<t color='#e05200'>ACO Green</t>");
         ADD_SCOPE(optic_Aco,         "<t color='#e05200'>ACO Red</t>");
@@ -55,4 +51,7 @@ class cnto_shared_scopebox : Box_NATO_Support_F {
         ADD_SCOPE(rhsusf_acc_eotech, "<t color='#008ee0'>XPS3</t>");
         ADD_SCOPE(RH_zpoint,         "<t color='#008ee0'>Zeiss Z-point</t>");
     };
+    ace_cargo_canLoad = 0;
+    ace_dragging_canCarry = 0;
+    ace_dragging_canDrag = 0;
 };
