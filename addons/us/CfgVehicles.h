@@ -28,7 +28,7 @@ class cnto_us_sq_sl : cnto_us_soldier_base {
     displayName = "SQ SL";
     #define _weaps cnto_us_m4a1_gl_flash, hgun_ACPC2_F, ACE_Vector, Throw, Put
     #define _mags rhs_mag_30Rnd_556x45_M855A1_Stanag, 1Rnd_HE_Grenade_shell, 9Rnd_45ACP_Mag, \
-                  x8(rhs_mag_30Rnd_556x45_M855A1_Stanag), x4(rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red), x2(9Rnd_45ACP_Mag)
+                  x6(rhs_mag_30Rnd_556x45_M855A1_Stanag), x4(rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red), x2(9Rnd_45ACP_Mag)
     #define _items x2(ACE_CableTie), ACE_MapTools, ACRE_PRC152
     #define _linked rhsusf_iotv_ucp_Squadleader, rhsusf_ach_helmet_headset_ucp, ItemGPS
     ADD_GEAR;
@@ -85,7 +85,7 @@ class cnto_us_ft_tl : cnto_us_soldier_base {
     displayName = "FT Lead";
     #define _weaps cnto_us_m4a1_gl_flash, hgun_ACPC2_F, ACE_Vector, Throw, Put
     #define _mags rhs_mag_30Rnd_556x45_M855A1_Stanag, 1Rnd_HE_Grenade_shell, 9Rnd_45ACP_Mag, \
-                  x8(rhs_mag_30Rnd_556x45_M855A1_Stanag), x4(rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red), x2(9Rnd_45ACP_Mag)
+                  x6(rhs_mag_30Rnd_556x45_M855A1_Stanag), x4(rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red), x2(9Rnd_45ACP_Mag)
     #define _items x2(ACE_CableTie), ACE_MapTools
     #define _linked rhsusf_iotv_ucp_Grenadier, rhsusf_ach_helmet_headset_ucp, ItemGPS
     ADD_GEAR;
@@ -165,7 +165,7 @@ class cnto_us_plt_co : cnto_us_soldier_base {
     displayName = "PLT Commander";
     #define _weaps cnto_us_m4a1_gl_flash, hgun_ACPC2_F, ACE_Vector, Throw, Put
     #define _mags rhs_mag_30Rnd_556x45_M855A1_Stanag, 1Rnd_SmokeRed_Grenade_shell, 9Rnd_45ACP_Mag, \
-                  x8(rhs_mag_30Rnd_556x45_M855A1_Stanag), x4(rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red), x2(9Rnd_45ACP_Mag)
+                  x6(rhs_mag_30Rnd_556x45_M855A1_Stanag), x4(rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red), x2(9Rnd_45ACP_Mag)
     #define _items x2(ACE_CableTie), ACE_MapTools, ACRE_PRC152, ACRE_PRC148
     #define _linked rhsusf_iotv_ucp_Squadleader, rhsusf_patrolcap_ucp, ItemGPS
     ADD_GEAR;
@@ -191,7 +191,7 @@ class cnto_us_plt_sgt : cnto_us_soldier_base {
     displayName = "PLT Sergeant";
     #define _weaps cnto_us_m4a1_flash, hgun_ACPC2_F, ACE_Vector, Throw, Put
     #define _mags rhs_mag_30Rnd_556x45_M855A1_Stanag, 9Rnd_45ACP_Mag, \
-                  x8(rhs_mag_30Rnd_556x45_M855A1_Stanag), x4(rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red), x2(9Rnd_45ACP_Mag)
+                  x6(rhs_mag_30Rnd_556x45_M855A1_Stanag), x4(rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red), x2(9Rnd_45ACP_Mag)
     #define _items x2(ACE_CableTie), ACE_MapTools, ACRE_PRC152, ACRE_PRC148
     #define _linked rhsusf_iotv_ucp_Teamleader, rhsusf_ach_helmet_headset_ucp, ItemGPS
     ADD_GEAR;
