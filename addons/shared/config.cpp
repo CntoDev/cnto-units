@@ -2,7 +2,10 @@ class CfgPatches {
     class cnto_units_shared {
         units[] = {};
         weapons[] = {};
-        requiredAddons[] = {"3den"};
+        requiredAddons[] = {
+            "3den",
+            "A3_Structures_F_Heli_Items_Luggage"  // scopebox
+        };
     };
 };
 
