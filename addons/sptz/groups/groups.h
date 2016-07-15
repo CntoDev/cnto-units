@@ -114,19 +114,19 @@ class Crew {
         class Unit1 { vehicle = cnto_sptz_veh_driver_4; position[] = {1,0,0}; rank = "PRIVATE"; };
         class Unit2 { vehicle = cnto_sptz_veh_gunner_4; position[] = {2,0,0}; rank = "CORPORAL"; };
     };
-    class Yastreo_1 {
+    class Yastreb_1 {
         name = "Yastreb 1";
         icon = "\A3\ui_f\data\map\markers\nato\o_air.paa";
         class Unit0 { vehicle = cnto_sptz_air_pilot_1;   position[] = {0,0,0}; rank = "LIEUTENANT"; };
         class Unit1 { vehicle = cnto_sptz_air_copilot_1; position[] = {1,0,0}; rank = "PRIVATE"; };
     };
-    class Yastreo_2 {
+    class Yastreb_2 {
         name = "Yastreb 2";
         icon = "\A3\ui_f\data\map\markers\nato\o_air.paa";
         class Unit0 { vehicle = cnto_sptz_air_pilot_2;   position[] = {0,0,0}; rank = "LIEUTENANT"; };
         class Unit1 { vehicle = cnto_sptz_air_copilot_2; position[] = {1,0,0}; rank = "PRIVATE"; };
     };
-    class Yastreo_3 {
+    class Yastreb_3 {
         name = "Yastreb 3";
         icon = "\A3\ui_f\data\map\markers\nato\o_air.paa";
         class Unit0 { vehicle = cnto_sptz_air_pilot_3;   position[] = {0,0,0}; rank = "LIEUTENANT"; };
