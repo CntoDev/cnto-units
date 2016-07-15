@@ -111,7 +111,7 @@ class cnto_sptz_ft_tl_pack : B_TacticalPack_blk {
 class cnto_sptz_ft_ar : cnto_sptz_soldier_base {
     scope = 2;
     displayName = "FT AR";
-    #define _weaps cnto_sptz_pkm, hgun_ACPC2_F, Throw, Put
+    #define _weaps rhs_weap_pkm, hgun_ACPC2_F, Throw, Put
     #define _mags rhs_100Rnd_762x54mmR, 9Rnd_45ACP_Mag, \
                   rhs_100Rnd_762x54mmR, rhs_100Rnd_762x54mmR_green, x1(9Rnd_45ACP_Mag)
     #define _items

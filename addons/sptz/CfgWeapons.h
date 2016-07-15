@@ -12,11 +12,6 @@ class cnto_sptz_ak74m_gl : rhs_weap_ak74m_gp25_npz {
     class LinkedItems { side(rhs_acc_dtk3); };
 };
 
-class rhs_weap_pkm;
-class cnto_sptz_pkm : rhs_weap_pkm {
-    scope = 1;
-};
-
 class rhs_weap_rpg7;
 class cnto_sptz_rpg7_optic : rhs_weap_rpg7 {
     scope = 1;
