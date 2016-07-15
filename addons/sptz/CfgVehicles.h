@@ -177,6 +177,7 @@ class cnto_sptz_coy_co : cnto_sptz_soldier_base {
 class cnto_sptz_coy_co_pack : B_TacticalPack_blk {
     scope = 1;
     class TransportMagazines {
+        xmags(5, rhs_VG40MD_White);
         xmags(5, rhs_VG40MD_Red);
         xmags(5, rhs_VG40MD_Green);
         xmags(3, SmokeShell);
@@ -215,7 +216,7 @@ class cnto_sptz_coy_rfl : cnto_sptz_soldier_base {
     ADD_GEAR;
     backpack =;
 };
-    class cnto_col_plt_rfl_pack : B_TacticalPack_blk {
+class cnto_col_plt_rfl_pack : B_TacticalPack_blk {
     scope = 1;
     class TransportMagazines {
         xmags(5, rhs_30Rnd_545x39_AK);

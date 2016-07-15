@@ -174,7 +174,7 @@ class cnto_tfn_plt_co : cnto_tfn_soldier_base {
 class cnto_tfn_plt_co_pack : cnto_flecktarn_b_ap_mediterranean {
     scope = 1;
     class TransportMagazines {
-        xmags(5, 1Rnd_SmokeBlue_Grenade_shell);
+        xmags(5, 1Rnd_Smoke_Grenade_shell);
         xmags(5, 1Rnd_SmokeRed_Grenade_shell);
         xmags(5, 1Rnd_SmokeGreen_Grenade_shell);
         xmags(3, SmokeShell);

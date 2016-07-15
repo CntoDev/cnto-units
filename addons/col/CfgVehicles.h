@@ -174,6 +174,7 @@ class cnto_col_coy_co : cnto_col_soldier_base {
 class cnto_col_coy_co_pack : B_TacticalPack_blk {
     scope = 1;
     class TransportMagazines {
+        xmags(5, 1Rnd_Smoke_Grenade_shell);
         xmags(5, 1Rnd_SmokeRed_Grenade_shell);
         xmags(5, 1Rnd_SmokeGreen_Grenade_shell);
         xmags(3, SmokeShell);
