@@ -338,6 +338,7 @@ class cnto_tfn_mortar_gunner : cnto_tfn_soldier_base {
     ADD_GEAR;
     backpack = B_Mortar_01_weapon_F;
 };
+
 class cnto_tfn_mortar_assist : cnto_tfn_soldier_base {
     scope = 2;
     displayName = "Mortar Ass. Gunner";

@@ -344,6 +344,7 @@ class cnto_col_mortar_gunner : cnto_col_soldier_base {
     ADD_GEAR;
     backpack = I_Mortar_01_weapon_F;
 };
+
 class cnto_col_mortar_assist : cnto_col_soldier_base {
     scope = 2;
     displayName = "Mortar Ass. Gunner";
