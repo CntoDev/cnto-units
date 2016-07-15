@@ -2,7 +2,13 @@ class CfgPatches {
     class cnto_units_us {
         units[] = {};
         weapons[] = {};
-        requiredAddons[] = {"cnto_units_shared", "A3_Characters_F", "rhsusf_c_weapons"};
+        requiredAddons[] = {
+            "cnto_units_shared",
+            "A3_Characters_F",
+            "A3_Weapons_F_Ammoboxes",
+            "rhsusf_c_weapons",
+            "tf47_m3maaws"
+        };
     };
 };
 

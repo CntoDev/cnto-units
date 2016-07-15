@@ -2,7 +2,15 @@ class CfgPatches {
     class cnto_units_tfn {
         units[] = {};
         weapons[] = {};
-        requiredAddons[] = {"cnto_units_shared", "cnto_assets", "A3_Characters_F", "hlcweapons_g3", "hlcweapons_saw", "rhs_c_weapons"};
+        requiredAddons[] = {
+            "cnto_units_shared",
+            "cnto_assets",
+            "A3_Characters_F",
+            "A3_Weapons_F_Ammoboxes",
+            "hlcweapons_ar15",
+            "hlcweapons_SAW",
+            "tf47_m3maaws"
+        };
     };
 };
 
