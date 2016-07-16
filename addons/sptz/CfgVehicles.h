@@ -426,7 +426,7 @@ class cnto_sptz_air_pilot : cnto_sptz_crew_base {
     #define _weaps ACE_Vector
     #define _mags
     #define _items ACE_MapTools, ACRE_PRC152, ACRE_PRC148
-    #define _linked AAFVest01_l_TigerJ, H_PilotHelmetHeli_O
+    #define _linked AAFVest01_l_TigerJ, H_PilotHelmetHeli_O, ItemGPS
     ADD_GEAR;
     backpack =;
     uniformClass = U_O_PilotCoveralls;

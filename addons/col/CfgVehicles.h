@@ -353,7 +353,7 @@ class cnto_col_mortar_assist : cnto_col_soldier_base {
     #define _mags hlc_20rnd_762x51_b_G3, 9Rnd_45ACP_Mag, \
                   SmokeShellGreen, SmokeShellBlue, x4(hlc_20rnd_762x51_b_G3), x2(hlc_20rnd_762x51_T_G3), x1(9Rnd_45ACP_Mag)
     #define _items ACE_MapTools, ACE_RangeTable_82mm, ACRE_PRC152
-    #define _linked AAFVest01_l_CamoW, CamoH_CamoW
+    #define _linked AAFVest01_l_CamoW, CamoH_CamoW, ItemGPS
     ADD_GEAR;
     backpack = I_Mortar_01_support_F;
 };
@@ -380,7 +380,7 @@ class cnto_col_veh_co : cnto_col_crew_base {
     #define _weaps ACE_Vector
     #define _mags
     #define _items ACE_MapTools, ACRE_PRC152, ACRE_PRC148
-    #define _linked AAFVest01_h_CamoW, CamoH_Black
+    #define _linked AAFVest01_h_CamoW, CamoH_Black, ItemGPS
     ADD_GEAR;
     backpack =;
     uniformClass = CamoU_Black;
@@ -429,7 +429,7 @@ class cnto_col_air_pilot : cnto_col_crew_base {
     #define _weaps ACE_Vector
     #define _mags
     #define _items ACE_MapTools, ACRE_PRC152, ACRE_PRC148
-    #define _linked AAFVest01_l_CamoW, H_PilotHelmetHeli_B
+    #define _linked AAFVest01_l_CamoW, H_PilotHelmetHeli_B, ItemGPS
     ADD_GEAR;
     backpack =;
     uniformClass = U_I_pilotCoveralls;

@@ -346,7 +346,7 @@ class cnto_tfn_mortar_assist : cnto_tfn_soldier_base {
     #define _mags 30Rnd_556x45_Stanag, 9Rnd_45ACP_Mag, \
                   x2(SmokeShellGreen), SmokeShellBlue, x6(30Rnd_556x45_Stanag), x4(30Rnd_556x45_Stanag_Tracer_Red), x2(9Rnd_45ACP_Mag)
     #define _items ACE_MapTools, ACE_RangeTable_82mm, ACRE_PRC152
-    #define _linked cnto_flecktarn_v_l_mediterranean, cnto_flecktarn_h_c_mediterranean
+    #define _linked cnto_flecktarn_v_l_mediterranean, cnto_flecktarn_h_c_mediterranean, ItemGPS
     ADD_GEAR;
     backpack = B_Mortar_01_support_F;
 };
@@ -373,7 +373,7 @@ class cnto_tfn_veh_co : cnto_tfn_crew_base {
     #define _weaps ACE_Vector
     #define _mags
     #define _items ACE_MapTools, ACRE_PRC152, ACRE_PRC148
-    #define _linked cnto_flecktarn_v_l_mediterranean, H_HelmetCrew_I
+    #define _linked cnto_flecktarn_v_l_mediterranean, H_HelmetCrew_I, ItemGPS
     ADD_GEAR;
     backpack =;
     uniformClass = U_IG_Guerrilla_6_1;
@@ -422,7 +422,7 @@ class cnto_tfn_air_pilot : cnto_tfn_crew_base {
     #define _weaps ACE_Vector
     #define _mags
     #define _items ACE_MapTools, ACRE_PRC152, ACRE_PRC148
-    #define _linked cnto_flecktarn_v_l_mediterranean, H_PilotHelmetHeli_B
+    #define _linked cnto_flecktarn_v_l_mediterranean, H_PilotHelmetHeli_B, ItemGPS
     ADD_GEAR;
     backpack =;
     uniformClass = U_I_pilotCoveralls;
