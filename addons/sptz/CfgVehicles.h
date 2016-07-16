@@ -44,7 +44,6 @@ class cnto_sptz_sq_sl_pack : B_TacticalPack_blk {
         xmags(3, SmokeShell);
         xmags(5, SmokeShellGreen);
         xmags(2, SmokeShellBlue);
-        xmags(2, rhs_45Rnd_545X39_AK);
         xmags(2, 9Rnd_45ACP_Mag);
     };
     class TransportItems {
@@ -137,7 +136,7 @@ class cnto_sptz_ft_aar_pack : B_Kitbag_rgr {
         xmags(2, rhs_100Rnd_762x54mmR);
         xmags(1, rhs_100Rnd_762x54mmR_green);
         xmags(6, rhs_30Rnd_545x39_AK);
-        xmags(2, rhs_45Rnd_545X39_AK);
+        xmags(2, rhs_30Rnd_545x39_AK_green);
         xmags(2, MiniGrenade);
         xmags(3, SmokeShell);
         xmags(2, SmokeShellGreen);
@@ -168,7 +167,7 @@ class cnto_sptz_coy_co : cnto_sptz_soldier_base {
     displayName = "COY Commander";
     #define _weaps cnto_sptz_ak74m_gl, hgun_ACPC2_F, ACE_Vector, Throw, Put
     #define _mags rhs_30Rnd_545x39_AK, rhs_VG40MD_Red, 9Rnd_45ACP_Mag, \
-                  x6(rhs_30Rnd_545x39_AK), x2(rhs_30Rnd_545x39_AK_green), x2(9Rnd_45ACP_Mag)
+                  x6(rhs_30Rnd_545x39_AK), x3(rhs_30Rnd_545x39_AK_green), x1(9Rnd_45ACP_Mag)
     #define _items x2(ACE_CableTie), ACE_MapTools, ACRE_PRC152, ACRE_PRC148
     #define _linked Helmet_S_tiger, AAFVest01_l_TigerJ, ItemGPS
     ADD_GEAR;
@@ -216,13 +215,6 @@ class cnto_sptz_coy_rfl : cnto_sptz_soldier_base {
     ADD_GEAR;
     backpack =;
 };
-class cnto_col_plt_rfl_pack : B_TacticalPack_blk {
-    scope = 1;
-    class TransportMagazines {
-        xmags(5, rhs_30Rnd_545x39_AK);
-        xmags(3, rhs_30Rnd_545x39_AK_green);
-    };
-};
 
 /*
  * MMG
@@ -258,7 +250,7 @@ class cnto_sptz_mmg_gunner : cnto_sptz_soldier_base {
     displayName = "MMG Gunner";
     #define _weaps rhs_weap_pkp, hgun_ACPC2_F, Throw, Put
     #define _mags rhs_100Rnd_762x54mmR, 9Rnd_45ACP_Mag, \
-                  rhs_100Rnd_762x54mmR, rhs_100Rnd_762x54mmR_green, x2(9Rnd_45ACP_Mag)
+                  rhs_100Rnd_762x54mmR, rhs_100Rnd_762x54mmR_green, x1(9Rnd_45ACP_Mag)
     #define _items
     #define _linked Helmet_S_tiger, AAFVest01_l_TigerJ
     ADD_GEAR;
@@ -277,7 +269,7 @@ class cnto_sptz_mmg_bearer : cnto_sptz_soldier_base {
     displayName = "MMG Bearer";
     #define _weaps cnto_sptz_ak74m_flash, hgun_ACPC2_F, Throw, Put
     #define _mags rhs_30Rnd_545x39_AK, 9Rnd_45ACP_Mag, \
-                  x6(rhs_30Rnd_545x39_AK), x2(rhs_30Rnd_545x39_AK_green), x2(9Rnd_45ACP_Mag)
+                  x8(rhs_30Rnd_545x39_AK), x2(rhs_30Rnd_545x39_AK_green), x2(9Rnd_45ACP_Mag)
     #define _items
     #define _linked Helmet_S_tiger, AAFVest01_l_TigerJ
     ADD_GEAR;
@@ -346,7 +338,7 @@ class cnto_sptz_mortar_gunner : cnto_sptz_soldier_base {
     #define _mags rhs_30Rnd_545x39_AK, 9Rnd_45ACP_Mag, \
                   x8(rhs_30Rnd_545x39_AK), x2(rhs_30Rnd_545x39_AK_green), x2(9Rnd_45ACP_Mag)
     #define _items ACE_MapTools, ACE_RangeTable_82mm
-    #define _linked Helmet_S_tiger, AAFVest01_l_TigerJ
+    #define _linked Helmet_S_tiger, AAFVest01_l_TigerJ, ItemGPS
     ADD_GEAR;
     backpack = I_Mortar_01_weapon_F;
 };
@@ -356,9 +348,9 @@ class cnto_sptz_mortar_assist : cnto_sptz_soldier_base {
     displayName = "Mortar Ass. Gunner";
     #define _weaps cnto_sptz_ak74m_flash, hgun_ACPC2_F, ACE_Vector, Throw, Put
     #define _mags rhs_30Rnd_545x39_AK, 9Rnd_45ACP_Mag, \
-                  x2(SmokeShellGreen), SmokeShellBlue, x6(rhs_30Rnd_545x39_AK), x2(rhs_30Rnd_545x39_AK_green), x1(9Rnd_45ACP_Mag)
-    #define _items ACE_MapTools, ACE_RangeTable_82mm, ACRE_PRC152, ItemGPS
-    #define _linked Helmet_S_tiger, AAFVest01_l_TigerJ
+                  x2(SmokeShellGreen), SmokeShellBlue, x6(rhs_30Rnd_545x39_AK), x3(rhs_30Rnd_545x39_AK_green), x1(9Rnd_45ACP_Mag)
+    #define _items ACE_MapTools, ACE_RangeTable_82mm, ACRE_PRC152
+    #define _linked Helmet_S_tiger, AAFVest01_l_TigerJ, ItemGPS
     ADD_GEAR;
     backpack = I_Mortar_01_support_F;
 };
