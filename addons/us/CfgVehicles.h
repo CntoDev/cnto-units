@@ -222,7 +222,7 @@ class cnto_us_mmg_tl : cnto_us_soldier_base {
     displayName = "MMG Lead";
     #define _weaps cnto_us_m4a1_gl_flash, hgun_ACPC2_F, ACE_Vector, Throw, Put
     #define _mags rhs_mag_30Rnd_556x45_M855A1_Stanag, 1Rnd_HE_Grenade_shell, 9Rnd_45ACP_Mag, \
-                  x8(rhs_mag_30Rnd_556x45_M855A1_Stanag), x2(rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red), x2(9Rnd_45ACP_Mag)
+                  x6(rhs_mag_30Rnd_556x45_M855A1_Stanag), x4(rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red), x2(9Rnd_45ACP_Mag)
     #define _items x2(ACE_CableTie), ACE_MapTools, ACRE_PRC152
     #define _linked rhsusf_iotv_ucp_Grenadier, rhsusf_ach_helmet_headset_ucp, ItemGPS
     ADD_GEAR;
