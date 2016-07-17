@@ -52,8 +52,8 @@ SOLDIER(cnto_sptz_mat_tl,1,        "MAT Team Leader",    'MAT', 'MAIN');
 SOLDIER(cnto_sptz_mat_gunner,1,    "MAT Gunner",         'MAT', 'MAIN');
 SOLDIER(cnto_sptz_mat_bearer,1,    "MAT Ammo Bearer",    'MAT', 'MAIN');
 
-SOLDIER(cnto_sptz_mortar_gunner,1, "Mortar Gunner",      'MTR', 'MAIN');
 SOLDIER(cnto_sptz_mortar_assist,1, "Mortar Ass. Gunner", 'MTR', 'MAIN');
+SOLDIER(cnto_sptz_mortar_gunner,1, "Mortar Gunner",      'MTR', 'MAIN');
 
 SOLDIER(cnto_sptz_veh_co,1,      "Vehicle Commander ""Grozney 1""",       'GRZNY 1', 'MAIN');
 SOLDIER(cnto_sptz_veh_driver,1,  "Vehicle Driver ""Grozney 1"" (Repair)", 'GRZNY 1', 'MAIN');

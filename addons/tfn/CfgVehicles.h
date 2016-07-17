@@ -327,18 +327,6 @@ class cnto_tfn_mat_bearer_pack : cnto_flecktarn_b_kb_mediterranean {
 /*
  * Mortar
  */
-class cnto_tfn_mortar_gunner : cnto_tfn_soldier_base {
-    scope = 2;
-    displayName = "Mortar Gunner";
-    #define _weaps cnto_tfn_416_flash, hgun_ACPC2_F, Throw, Put
-    #define _mags 30Rnd_556x45_Stanag, 9Rnd_45ACP_Mag, \
-                  x8(30Rnd_556x45_Stanag), x2(30Rnd_556x45_Stanag_Tracer_Red), x2(9Rnd_45ACP_Mag)
-    #define _items ACE_MapTools, ACE_RangeTable_82mm
-    #define _linked cnto_flecktarn_v_l_mediterranean, cnto_flecktarn_h_c_mediterranean
-    ADD_GEAR;
-    backpack = B_Mortar_01_weapon_F;
-};
-
 class cnto_tfn_mortar_assist : cnto_tfn_soldier_base {
     scope = 2;
     displayName = "Mortar Ass. Gunner";
@@ -349,6 +337,18 @@ class cnto_tfn_mortar_assist : cnto_tfn_soldier_base {
     #define _linked cnto_flecktarn_v_l_mediterranean, cnto_flecktarn_h_c_mediterranean, ItemGPS
     ADD_GEAR;
     backpack = B_Mortar_01_support_F;
+};
+
+class cnto_tfn_mortar_gunner : cnto_tfn_soldier_base {
+    scope = 2;
+    displayName = "Mortar Gunner";
+    #define _weaps cnto_tfn_416_flash, hgun_ACPC2_F, Throw, Put
+    #define _mags 30Rnd_556x45_Stanag, 9Rnd_45ACP_Mag, \
+                  x8(30Rnd_556x45_Stanag), x2(30Rnd_556x45_Stanag_Tracer_Red), x2(9Rnd_45ACP_Mag)
+    #define _items ACE_MapTools, ACE_RangeTable_82mm
+    #define _linked cnto_flecktarn_v_l_mediterranean, cnto_flecktarn_h_c_mediterranean
+    ADD_GEAR;
+    backpack = B_Mortar_01_weapon_F;
 };
 
 /* ------------------------------------------------------------------------- */

@@ -334,18 +334,6 @@ class cnto_col_mat_bearer_pack : B_Kitbag_rgr {
 /*
  * Mortar
  */
-class cnto_col_mortar_gunner : cnto_col_soldier_base {
-    scope = 2;
-    displayName = "Mortar Gunner";
-    #define _weaps cnto_col_g3_flash, hgun_ACPC2_F, Throw, Put
-    #define _mags hlc_20rnd_762x51_b_G3, 9Rnd_45ACP_Mag, \
-                  x5(hlc_20rnd_762x51_b_G3), x2(hlc_20rnd_762x51_T_G3), x1(9Rnd_45ACP_Mag)
-    #define _items ACE_MapTools, ACE_RangeTable_82mm
-    #define _linked AAFVest01_l_CamoW, CamoH_CamoW
-    ADD_GEAR;
-    backpack = I_Mortar_01_weapon_F;
-};
-
 class cnto_col_mortar_assist : cnto_col_soldier_base {
     scope = 2;
     displayName = "Mortar Ass. Gunner";
@@ -356,6 +344,18 @@ class cnto_col_mortar_assist : cnto_col_soldier_base {
     #define _linked AAFVest01_l_CamoW, CamoH_CamoW, ItemGPS
     ADD_GEAR;
     backpack = I_Mortar_01_support_F;
+};
+
+class cnto_col_mortar_gunner : cnto_col_soldier_base {
+    scope = 2;
+    displayName = "Mortar Gunner";
+    #define _weaps cnto_col_g3_flash, hgun_ACPC2_F, Throw, Put
+    #define _mags hlc_20rnd_762x51_b_G3, 9Rnd_45ACP_Mag, \
+                  x5(hlc_20rnd_762x51_b_G3), x2(hlc_20rnd_762x51_T_G3), x1(9Rnd_45ACP_Mag)
+    #define _items ACE_MapTools, ACE_RangeTable_82mm
+    #define _linked AAFVest01_l_CamoW, CamoH_CamoW
+    ADD_GEAR;
+    backpack = I_Mortar_01_weapon_F;
 };
 
 /* ------------------------------------------------------------------------- */

@@ -52,8 +52,8 @@ SOLDIER(cnto_tfn_mat_tl,1,        "MAT Team Leader",    'MAT', 'MAIN');
 SOLDIER(cnto_tfn_mat_gunner,1,    "MAT Gunner",         'MAT', 'MAIN');
 SOLDIER(cnto_tfn_mat_bearer,1,    "MAT Ammo Bearer",    'MAT', 'MAIN');
 
-SOLDIER(cnto_tfn_mortar_gunner,1, "Mortar Gunner",      'MTR', 'MAIN');
 SOLDIER(cnto_tfn_mortar_assist,1, "Mortar Ass. Gunner", 'MTR', 'MAIN');
+SOLDIER(cnto_tfn_mortar_gunner,1, "Mortar Gunner",      'MTR', 'MAIN');
 
 SOLDIER(cnto_tfn_veh_co,1,      "Vehicle Commander ""Axe 1""",       'AXE 1', 'MAIN');
 SOLDIER(cnto_tfn_veh_driver,1,  "Vehicle Driver ""Axe 1"" (Repair)", 'AXE 1', 'MAIN');

@@ -80,8 +80,8 @@ class Infantry {
     class Mortar {
         name = "Mortar";
         icon = "\A3\ui_f\data\map\markers\nato\n_mortar.paa";
-        class Unit0 { vehicle = cnto_tfn_mortar_gunner_1; position[] = {0,0,0}; rank = "SERGEANT"; };
-        class Unit1 { vehicle = cnto_tfn_mortar_assist_1; position[] = {1,0,0}; rank = "PRIVATE"; };
+        class Unit0 { vehicle = cnto_tfn_mortar_assist_1; position[] = {0,0,0}; rank = "SERGEANT"; };
+        class Unit1 { vehicle = cnto_tfn_mortar_gunner_1; position[] = {1,0,0}; rank = "PRIVATE"; };
     };
 };
 class Crew {
