@@ -338,7 +338,7 @@ class cnto_sptz_mortar_gunner : cnto_sptz_soldier_base {
     #define _mags rhs_30Rnd_545x39_AK, 9Rnd_45ACP_Mag, \
                   x8(rhs_30Rnd_545x39_AK), x2(rhs_30Rnd_545x39_AK_green), x2(9Rnd_45ACP_Mag)
     #define _items ACE_MapTools, ACE_RangeTable_82mm
-    #define _linked Helmet_S_tiger, AAFVest01_l_TigerJ, ItemGPS
+    #define _linked Helmet_S_tiger, AAFVest01_l_TigerJ
     ADD_GEAR;
     backpack = I_Mortar_01_weapon_F;
 };
