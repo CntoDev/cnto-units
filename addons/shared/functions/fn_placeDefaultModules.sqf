@@ -134,12 +134,11 @@ _modules append [
         ["ACE_ModuleMap_DefaultChannel", 0]
     ]],
     /*
-     * channels disable - all except global (0)
+     * channels disable - all except global+group (0+3)
      */
     ["Logic", [
         ["Init", "1 enableChannel false;" + _n +
                  "2 enableChannel false;" + _n +
-                 "3 enableChannel false;" + _n +
                  "4 enableChannel false;" + _n +
                  "5 enableChannel false;"]
     ]]
@@ -164,11 +163,10 @@ _modules append [
         ["ACE_ModuleMap_DefaultChannel", 1]
     ]],
     /*
-     * channels disable - all except global+side (0+1)
+     * channels disable - all except global+side+group (0+1+3)
      */
     ["Logic", [
         ["Init", "2 enableChannel false;" + _n +
-                 "3 enableChannel false;" + _n +
                  "4 enableChannel false;" + _n +
                  "5 enableChannel false;"]
     ]]
