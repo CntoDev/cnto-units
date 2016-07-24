@@ -32,6 +32,7 @@ class CfgEditorCategories {
     };
 };
 class CfgEditorSubcategories {
+    class CNTO_MenSpecial { displayName = "Men (Special)"; };
     class CNTO_Misc { displayName = "Misc"; };
 };
 class CfgGroups {
