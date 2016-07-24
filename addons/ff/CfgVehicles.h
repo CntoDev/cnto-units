@@ -25,6 +25,7 @@ class cnto_ff_soldier_base : I_Soldier_base_F {
     uniformClass = U_BasicBody;
     class EventHandlers : EventHandlers {
         class facewear { init = "if (local (_this select 0)) then { removeGoggles (_this select 0) }"; };
+        class guerrilla { init = "(_this select 0) call cnto_units_ff_fnc_doGuerrillaFunctions"; };
     };
 };
 

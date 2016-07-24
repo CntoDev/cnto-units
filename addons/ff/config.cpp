@@ -34,3 +34,16 @@ class CfgGroups {
         };
     };
 };
+
+class CfgFunctions {
+    class cnto_units_ff {
+        class All {
+            file = "\cnto\units\ff\functions";
+            class doGuerrillaFunctions;  //aggregate
+            class nerfMapMarkers;
+            class globalChannelOnly;
+            class disableTaoFoldmap;
+            //class forceNoGroup;
+        };
+    };
+};
