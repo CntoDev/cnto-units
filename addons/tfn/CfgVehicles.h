@@ -431,10 +431,10 @@ class cnto_tfn_air_pilot : cnto_tfn_crew_base {
 class cnto_tfn_air_copilot : cnto_tfn_crew_base {
     scope = 2;
     displayName = "Air Copilot";
-    #define _weaps
+    #define _weaps ACE_Vector
     #define _mags
-    #define _items
-    #define _linked cnto_flecktarn_v_l_mediterranean, H_CrewHelmetHeli_B
+    #define _items ACE_MapTools, ACRE_PRC152, ACRE_PRC148
+    #define _linked cnto_flecktarn_v_l_mediterranean, H_PilotHelmetHeli_B, ItemGPS
     ADD_GEAR;
     backpack = cnto_tfn_air_copilot_pack;
     uniformClass = U_I_pilotCoveralls;

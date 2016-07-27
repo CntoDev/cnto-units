@@ -435,10 +435,10 @@ class cnto_sptz_air_pilot : cnto_sptz_crew_base {
 class cnto_sptz_air_copilot : cnto_sptz_crew_base {
     scope = 2;
     displayName = "Air Copilot";
-    #define _weaps
+    #define _weaps ACE_Vector
     #define _mags
-    #define _items
-    #define _linked AAFVest01_l_TigerJ, H_CrewHelmetHeli_O
+    #define _items ACE_MapTools, ACRE_PRC152, ACRE_PRC148
+    #define _linked AAFVest01_l_TigerJ, H_PilotHelmetHeli_O, ItemGPS
     ADD_GEAR;
     backpack = cnto_sptz_air_copilot_pack;
     uniformClass = U_O_PilotCoveralls;
