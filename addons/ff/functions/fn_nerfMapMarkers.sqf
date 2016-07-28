@@ -1,23 +1,8 @@
-/* make map markers local only, delete any newly user-created ones
- * and re-create them as local - iterating over all markers is
- * a resource-intensive operation, but there's no good alternative */
+/* keep only own map markers - locally delete any user-created markers */
 0 = [] spawn {
-    /* leave briefing-time global / channel-specific */
-    waitUntil { time > 0 };
     waitUntil {
         {
-            private _text = markerText _x;
-            private _pos = getMarkerPos _x;
-            private _icon = getMarkerType _x;
-            private _color = getMarkerColor _x;
-            deleteMarker _x;
-
-            /* generate suitable name based on position */
-            private _newname = "mkr_" + ((str _pos) call BIS_fnc_filterString);
-            private _new = createMarkerLocal [_newname, _pos];
-            _new setMarkerTextLocal _text;
-            _new setMarkerTypeLocal _icon;
-            _new setMarkerColorLocal _color;
+            deleteMarkerLocal _x;
         } forEach (allMapMarkers select { _x find "_USER_DEFINED" != -1 });
         false;
     };
@@ -25,40 +10,60 @@
 
 /* disable swt markers beyond the briefing screen */
 0 = [] spawn {
-    waitUntil { time > 0 };
-    waitUntil { !isNull finddisplay 12 };
+    private _disable_swt = {
+        /* MouseButtonDown also breaks ACE pointing, but we cannot leave it
+         * enabled as it would allow players to use ctrl/alt/shift click to
+         * create series of global dots
+         *   -- swt uses spawn in preInit, so do a small loop, just in case */
+        private _ctrl = _this displayCtrl 51;
+        /* big hammer overkill, but SWT hardcodes a piece of CODE
+         * into at least DblClick, not a function call, sadly */
+        for "_i" from 0 to 30 do {
+            { _ctrl ctrlRemoveAllEventHandlers _x } forEach
+                ["MouseButtonDblClick"];
+                //"MouseButtonDown",
+                //"MouseButtonUp",
+                //"MouseHolding"
+
+            /* disable double-click marker placement (vanilla) */
+            _ctrl ctrlAddEventHandler ["MouseButtonDblClick", {
+                0 = [] spawn { (findDisplay 54) closeDisplay 2 };
+                true;
+            }];
+            //TODO: ctrl-drag drawing, will be seen by other factions as
+            //      we only delete it locally, deleteMarkerLocal :(
+
+            swt_markers_MapMouseDown = { false };
+            swt_markers_MapMouseUp = { false };
+            swt_markers_MapKeyDown = { false };
+            swt_markers_MapMouseMoving = { false };
+            swt_markers_MapMouseHold = { false };
+            swt_markers_MapMouseZ = { false };
+            uiSleep 0.1;
+        };
+    };
+
+    waitUntil { !isNull findDisplay 12 || !isNull findDisplay 37 || !isNull findDisplay 52 || !isNull findDisplay 53 };
+    private _map = {
+        if (!isNull findDisplay _x) exitWith { _x };
+    } forEach [12, 37, 52, 53];
 
     disableSerialization;
-    private _ctrl = (finddisplay 12) displayCtrl 51;
-    if (isNull _ctrl) exitWith {};
 
-    /* MouseButtonDown also breaks ACE pointing, but we cannot leave it
-     * enabled as it would allow players to use ctrl/alt/shift click to
-     * create series of global dots
-     * -- actually, we can just empty out the swt functions here as they're
-     *    defined in preInit and we run after time > 0
-     *    -- swt uses spawn in preInit, so do a small loop, just in case */
-    private _end = time + 3;
-    waitUntil {
-        /* big hammer overkill, but SWT hardcodes a piece of CODE
-        * into at least DblClick, not a function call, sadly */
-        { _ctrl ctrlRemoveAllEventHandlers _x } forEach
-            ["MouseButtonDblClick"];
-            //"MouseButtonDown",
-            //"MouseButtonUp",
-            //"MouseHolding"
-        swt_markers_MapMouseDown = { false };
-        swt_markers_MapMouseUp = { false };
-        swt_markers_MapKeyDown = { false };
-        swt_markers_MapMouseMoving = { false };
-        swt_markers_MapMouseHold = { false };
-        swt_markers_MapMouseZ = { false };
-        _end < time;
+    private _mapd = findDisplay _map;
+    if (_map == 12) then {
+        _mapd call _disable_swt;
+    } else {
+        _mapd call _disable_swt;
+        sleep 1;  // waitUntil { time > 1 }
+        waitUntil { !isNull findDisplay 12 };
+        (findDisplay 12) call _disable_swt;
     };
 };
 
 /* disable the Delete key on map, preventing marker deletion */
-/* not needed as re-creating the markers without _USER_DEFINED prevents removal */
+/* not needed as re-creating the markers without _USER_DEFINED prevents removal
+ * -- and we disable marker creation anyway */
 #ifdef not_needed
 0 = [] spawn {
     /* allow deletion on briefing screen, before game start */
