@@ -12,12 +12,15 @@ class B_FieldPack_blk;
 class cnto_tfnsf_base : I_Soldier_base_F {
     scope = 0;
     faction = CNTO_TFNSF;
+    backpack =;
     nameSound = veh_infantry_SF_s;
     camouflage = 0.4;
     audible = 0.005;
     attendant = true;
     engineer = true;
     uavHacker = true;
+    canDeactivateMines = true;
+    canHideBodies = true;
 };
 
 /* ------------------------------------------------------------------------- */
@@ -60,7 +63,7 @@ class cnto_tfnsf_blackop_rifle : cnto_tfnsf_blackop_base {
     #define _mags 30Rnd_65x39_caseless_green, 1Rnd_Smoke_Grenade_shell, 30Rnd_9x21_Mag, \
                   x8(30Rnd_65x39_caseless_green), x2(ACE_30Rnd_65x39_caseless_green_mag_Tracer_Dim)
     #define _items
-    #define _linked AAFVest01_l_black, rhsusf_protech_helmet, cnto_flecktarn_f_bala_forest
+    #define _linked AAFVest01_m_black, rhsusf_protech_helmet, cnto_flecktarn_f_bala_forest
     ADD_GEAR;
     backpack = cnto_tfnsf_blackop_rifle_pack;
 };
@@ -81,24 +84,31 @@ class cnto_tfnsf_blackop_rifle_pack : B_AssaultPack_blk {
 
 class cnto_tfnsf_blackop_mark : cnto_tfnsf_blackop_base {
     scope = 2;
-    displayName = "Marksman (AT)";
+    displayName = "Marksman (AT/Utility)";
     #define _weaps cnto_tfnsf_m14sopmod, rhs_weap_m72a7, hgun_P07_snds_F, ACE_Vector, Throw, Put
     #define _mags hlc_20Rnd_762x51_barrier_M14, 30Rnd_9x21_Mag, \
                   x10(hlc_20Rnd_762x51_barrier_M14), x2(30Rnd_9x21_Mag)
     #define _items
-    #define _linked AAFVest01_l_black, rhsusf_protech_helmet, cnto_flecktarn_f_bala_forest
+    #define _linked AAFVest01_l_black, H_Watchcap_blk, G_Bandanna_blk
     ADD_GEAR;
-    backpack =;
+    backpack = cnto_tfnsf_blackop_mark_pack;
+};
+class cnto_tfnsf_blackop_mark_pack : B_AssaultPack_blk {
+    scope = 1;
+    class TransportItems {
+        xitems(1, ToolKit);
+        xitems(1, ACE_wirecutter);
+    };
 };
 
 class cnto_tfnsf_blackop_demo : cnto_tfnsf_blackop_base {
     scope = 2;
     displayName = "Demo Expert";
-    #define _weaps cnto_tfnsf_katiba_carb, hgun_P07_snds_F, ACE_Vector, Throw, Put
+    #define _weaps cnto_tfnsf_katiba, hgun_P07_snds_F, ACE_Vector, Throw, Put
     #define _mags 30Rnd_65x39_caseless_green, 30Rnd_9x21_Mag, \
                   x8(30Rnd_65x39_caseless_green), x2(ACE_30Rnd_65x39_caseless_green_mag_Tracer_Dim)
     #define _items ACE_DeadManSwitch, ACE_DefusalKit
-    #define _linked AAFVest01_l_black, rhsusf_protech_helmet, cnto_flecktarn_f_bala_forest
+    #define _linked AAFVest01_m_black, rhsusf_protech_helmet, cnto_flecktarn_f_bala_forest
     ADD_GEAR;
     backpack = cnto_tfnsf_blackop_demo_pack;
 };
@@ -118,7 +128,7 @@ class cnto_tfnsf_blackop_mg : cnto_tfnsf_blackop_base {
     #define _mags hlc_100Rnd_762x51_B_M60E4, 30Rnd_9x21_Mag, \
                   x4(hlc_100Rnd_762x51_B_M60E4)
     #define _items ACE_EarPlugs
-    #define _linked AAFVest01_l_black, rhsusf_protech_helmet, cnto_flecktarn_f_bala_forest
+    #define _linked AAFVest01_m_black, H_Bandanna_gry, G_Bandanna_blk
     ADD_GEAR;
     backpack = cnto_tfnsf_blackop_mg_pack;
 };
@@ -130,4 +140,41 @@ class cnto_tfnsf_blackop_mg_pack : B_FieldPack_blk {
     };
 };
 
-//TODO: headgear / facewear variety for marksman / support gunner / demo expert ?
+class cnto_tfnsf_blackop_sniper : cnto_tfnsf_blackop_base {
+    scope = 2;
+    displayName = "Support Sniper";
+    #define _weaps cnto_tfnsf_gm6lynx, hgun_P07_snds_F, ACE_Vector, Throw, Put
+    #define _mags 5Rnd_127x108_APDS_Mag, 30Rnd_9x21_Mag, \
+                  x6(5Rnd_127x108_APDS_Mag), 30Rnd_9x21_Mag
+    #define _items ACE_ATragMX, ACE_Kestrel4500
+    #define _linked AAFVest01_l_black, H_Watchcap_blk, G_Bandanna_blk
+    ADD_GEAR;
+};
+/*class cnto_tfnsf_blackop_sniper_pack : B_AssaultPack_blk {
+    scope = 1;
+    class TransportMagazines {
+        xmags(4, 5Rnd_127x108_APDS_Mag);
+        xmags(2, 30Rnd_9x21_Mag);
+    };
+};*/
+
+/* disabled for now - javelin/titan bugged in current ACE
+class cnto_tfnsf_blackop_missile : cnto_tfnsf_blackop_base {
+    scope = 2;
+    displayName = "Missile Master";
+    #define _weaps cnto_tfnsf_m60, launch_O_Titan_short_F, hgun_P07_snds_F, ACE_Vector, Throw, Put
+    #define _mags hlc_100Rnd_762x51_B_M60E4, 30Rnd_9x21_Mag, \
+                  x4(hlc_100Rnd_762x51_B_M60E4)
+    #define _items ACE_EarPlugs
+    #define _linked AAFVest01_l_black, rhsusf_protech_helmet, cnto_flecktarn_f_bala_forest
+    ADD_GEAR;
+    backpack = cnto_tfnsf_blackop_missile_pack;
+};
+class cnto_tfnsf_blackop_missile_pack : B_FieldPack_blk {
+    scope = 1;
+    class TransportMagazines {
+        xmags(7, hlc_100Rnd_762x51_B_M60E4);
+        xmags(1, 30Rnd_9x21_Mag);
+    };
+};
+*/

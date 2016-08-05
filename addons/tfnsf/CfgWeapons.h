@@ -10,8 +10,8 @@ class cnto_tfnsf_sting : SMG_02_F {
     };
 };
 
-class arifle_Katiba_GL_F;
-class cnto_tfnsf_katiba_gl : arifle_Katiba_GL_F {
+class arifle_Katiba_F;
+class cnto_tfnsf_katiba : arifle_Katiba_F {
     scope = 1;
     class LinkedItems {
         optic(optic_Aco);
@@ -20,8 +20,8 @@ class cnto_tfnsf_katiba_gl : arifle_Katiba_GL_F {
     };
 };
 
-class arifle_Katiba_C_F;
-class cnto_tfnsf_katiba_carb : arifle_Katiba_C_F {
+class arifle_Katiba_GL_F;
+class cnto_tfnsf_katiba_gl : arifle_Katiba_GL_F {
     scope = 1;
     class LinkedItems {
         optic(optic_Aco);
@@ -34,7 +34,7 @@ class hlc_rifle_m14sopmod;
 class cnto_tfnsf_m14sopmod : hlc_rifle_m14sopmod {
     scope = 1;
     class LinkedItems {
-        optic(rhsusf_acc_ACOG2_USMC);
+        optic(rhsusf_acc_ACOG2);
         muzzle(hlc_muzzle_snds_M14);
         side(acc_pointer_IR);
         //under() doesn't seem to work
@@ -45,6 +45,14 @@ class hlc_lmg_M60E4;
 class cnto_tfnsf_m60 : hlc_lmg_M60E4 {
     scope = 1;
     class LinkedItems {
-        optic(rhsusf_acc_ACOG2_USMC);
+        optic(rhsusf_acc_ELCAN);
+    };
+};
+
+class srifle_GM6_F;
+class cnto_tfnsf_gm6lynx : srifle_GM6_F {
+    scope = 1;
+    class LinkedItems {
+        optic(optic_LRPS);
     };
 };
