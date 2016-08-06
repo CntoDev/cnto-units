@@ -8,6 +8,7 @@ class I_Soldier_base_F : SoldierGB {
 
 class B_AssaultPack_blk;
 class B_FieldPack_blk;
+class B_Carryall_oli;
 
 class cnto_tfnsf_base : I_Soldier_base_F {
     scope = 0;
@@ -16,11 +17,11 @@ class cnto_tfnsf_base : I_Soldier_base_F {
     nameSound = veh_infantry_SF_s;
     camouflage = 0.4;
     audible = 0.005;
-    attendant = true;
-    engineer = true;
-    uavHacker = true;
-    canDeactivateMines = true;
-    canHideBodies = true;
+    attendant = 1;
+    engineer = 1;
+    uavHacker = 1;
+    canDeactivateMines = 1;
+    canHideBodies = 1;
 };
 
 /* ------------------------------------------------------------------------- */
@@ -108,18 +109,38 @@ class cnto_tfnsf_blackop_demo : cnto_tfnsf_blackop_base {
     #define _mags 30Rnd_65x39_caseless_green, 30Rnd_9x21_Mag, \
                   x8(30Rnd_65x39_caseless_green), x2(ACE_30Rnd_65x39_caseless_green_mag_Tracer_Dim)
     #define _items ACE_DeadManSwitch, ACE_DefusalKit
-    #define _linked AAFVest01_m_black, rhsusf_protech_helmet, cnto_flecktarn_f_bala_forest
+    #define _linked AAFVest01_m_black, H_Beret_blk, G_Balaclava_blk
     ADD_GEAR;
     backpack = cnto_tfnsf_blackop_demo_pack;
 };
 class cnto_tfnsf_blackop_demo_pack : B_FieldPack_blk {
     scope = 1;
     class TransportMagazines {
-        xmags(4, HandGrenade);
         xmags(6, DemoCharge_Remote_Mag);
         xmags(2, SLAMDirectionalMine_Wire_Mag);
+        xmags(1, IEDUrbanSmall_Remote_Mag);
     };
+    /* vanilla mine detector doesn't work with ACE */
 };
+
+class cnto_tfnsf_blackop_sniper : cnto_tfnsf_blackop_base {
+    scope = 2;
+    displayName = "Support Sniper";
+    #define _weaps cnto_tfnsf_gm6lynx, hgun_P07_snds_F, ACE_Vector, Throw, Put
+    #define _mags 5Rnd_127x108_APDS_Mag, 30Rnd_9x21_Mag, \
+                  x6(5Rnd_127x108_APDS_Mag), 30Rnd_9x21_Mag
+    #define _items ACE_ATragMX, ACE_Kestrel4500
+    #define _linked AAFVest01_l_black, BoonieH_black, G_Balaclava_blk
+    ADD_GEAR;
+};
+/* no backpack - the AP rounds are very powerful, limited supply is needed
+class cnto_tfnsf_blackop_sniper_pack : B_AssaultPack_blk {
+    scope = 1;
+    class TransportMagazines {
+        xmags(4, 5Rnd_127x108_APDS_Mag);
+        xmags(2, 30Rnd_9x21_Mag);
+    };
+};*/
 
 class cnto_tfnsf_blackop_mg : cnto_tfnsf_blackop_base {
     scope = 2;
@@ -140,41 +161,20 @@ class cnto_tfnsf_blackop_mg_pack : B_FieldPack_blk {
     };
 };
 
-class cnto_tfnsf_blackop_sniper : cnto_tfnsf_blackop_base {
-    scope = 2;
-    displayName = "Support Sniper";
-    #define _weaps cnto_tfnsf_gm6lynx, hgun_P07_snds_F, ACE_Vector, Throw, Put
-    #define _mags 5Rnd_127x108_APDS_Mag, 30Rnd_9x21_Mag, \
-                  x6(5Rnd_127x108_APDS_Mag), 30Rnd_9x21_Mag
-    #define _items ACE_ATragMX, ACE_Kestrel4500
-    #define _linked AAFVest01_l_black, H_Watchcap_blk, G_Bandanna_blk
-    ADD_GEAR;
-};
-/*class cnto_tfnsf_blackop_sniper_pack : B_AssaultPack_blk {
-    scope = 1;
-    class TransportMagazines {
-        xmags(4, 5Rnd_127x108_APDS_Mag);
-        xmags(2, 30Rnd_9x21_Mag);
-    };
-};*/
-
-/* disabled for now - javelin/titan bugged in current ACE
 class cnto_tfnsf_blackop_missile : cnto_tfnsf_blackop_base {
     scope = 2;
-    displayName = "Missile Master";
-    #define _weaps cnto_tfnsf_m60, launch_O_Titan_short_F, hgun_P07_snds_F, ACE_Vector, Throw, Put
-    #define _mags hlc_100Rnd_762x51_B_M60E4, 30Rnd_9x21_Mag, \
-                  x4(hlc_100Rnd_762x51_B_M60E4)
-    #define _items ACE_EarPlugs
-    #define _linked AAFVest01_l_black, rhsusf_protech_helmet, cnto_flecktarn_f_bala_forest
+    displayName = "Missile Master (AT)";
+    #define _weaps cnto_tfnsf_katiba, launch_I_Titan_short_F, hgun_P07_snds_F, ACE_Vector, Throw, Put
+    #define _mags 30Rnd_65x39_caseless_green, Titan_AT, 30Rnd_9x21_Mag, \
+                  x4(30Rnd_65x39_caseless_green), x2(ACE_30Rnd_65x39_caseless_green_mag_Tracer_Dim)
+    #define _items
+    #define _linked AAFVest01_m_black, H_Bandanna_gry, G_Bandanna_blk
     ADD_GEAR;
     backpack = cnto_tfnsf_blackop_missile_pack;
 };
-class cnto_tfnsf_blackop_missile_pack : B_FieldPack_blk {
+class cnto_tfnsf_blackop_missile_pack : B_Carryall_oli {
     scope = 1;
     class TransportMagazines {
-        xmags(7, hlc_100Rnd_762x51_B_M60E4);
-        xmags(1, 30Rnd_9x21_Mag);
+        xmags(3, Titan_AT);
     };
 };
-*/

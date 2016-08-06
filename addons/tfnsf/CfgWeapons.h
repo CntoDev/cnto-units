@@ -37,15 +37,7 @@ class cnto_tfnsf_m14sopmod : hlc_rifle_m14sopmod {
         optic(rhsusf_acc_ACOG2);
         muzzle(hlc_muzzle_snds_M14);
         side(acc_pointer_IR);
-        //under() doesn't seem to work
-    };
-};
-
-class hlc_lmg_M60E4;
-class cnto_tfnsf_m60 : hlc_lmg_M60E4 {
-    scope = 1;
-    class LinkedItems {
-        optic(rhsusf_acc_ELCAN);
+        /* under() doesn't seem to work, custom UGL slot */
     };
 };
 
@@ -54,5 +46,13 @@ class cnto_tfnsf_gm6lynx : srifle_GM6_F {
     scope = 1;
     class LinkedItems {
         optic(optic_LRPS);
+    };
+};
+
+class hlc_lmg_M60E4;
+class cnto_tfnsf_m60 : hlc_lmg_M60E4 {
+    scope = 1;
+    class LinkedItems {
+        optic(rhsusf_acc_ELCAN);
     };
 };
