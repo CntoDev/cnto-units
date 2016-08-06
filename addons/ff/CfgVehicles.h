@@ -166,9 +166,8 @@ class cnto_ff_guerrilla_scout : cnto_ff_guerrilla_base {
 class cnto_ff_guerrilla_hunter : cnto_ff_guerrilla_base {
     scope = 2;
     displayName = "Hunter";
-    #define _weaps hlc_rifle_awcovert_FDE, Binocular, Throw, Put
-    #define _mags hlc_5rnd_300WM_FMJ_AWM, \
-                  hlc_5rnd_300WM_FMJ_AWM
+    #define _weaps cnto_ff_m14, Binocular, Throw, Put
+    #define _mags hlc_20Rnd_762x51_B_M14
     #define _items
     #define _linked H_Booniehat_oli, ItemMap, ItemCompass
     ADD_GEAR_EMPTY_RESPAWN;

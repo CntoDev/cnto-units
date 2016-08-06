@@ -5,7 +5,8 @@ class CfgPatches {
         requiredAddons[] = {
             "cnto_units_shared",
             "A3_Characters_F",
-            "A3_Weapons_F_Ammoboxes"
+            "A3_Weapons_F_Ammoboxes",
+            "hlcweapons_m14"
         };
     };
 };
@@ -25,6 +26,9 @@ class CfgEditorSubcategories {
 
 class CfgVehicles {
 #include "CfgVehicles.h"
+};
+class CfgWeapons {
+#include "CfgWeapons.h"
 };
 class CfgGroups {
     class Indep {
