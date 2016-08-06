@@ -61,7 +61,7 @@ class cnto_sptz_sq_medic : cnto_sptz_soldier_base {
     #define _linked Helmet_S_tiger, AAFVest01_l_TigerJ, ItemGPS
     ADD_GEAR;
     backpack = cnto_sptz_sq_medic_pack;
-    attendant = true;
+    attendant = 1;
 };
 class cnto_sptz_sq_medic_pack : B_Kitbag_rgr {
     scope = 1;
@@ -393,7 +393,7 @@ class cnto_sptz_veh_driver : cnto_sptz_crew_base {
     ADD_GEAR;
     backpack = cnto_sptz_veh_driver_pack;
     uniformClass = CamoU_khaki;
-    engineer = true;
+    engineer = 1;
 };
 class cnto_sptz_veh_driver_pack : B_TacticalPack_blk {
     scope = 1;
@@ -442,7 +442,7 @@ class cnto_sptz_air_copilot : cnto_sptz_crew_base {
     ADD_GEAR;
     backpack = cnto_sptz_air_copilot_pack;
     uniformClass = U_O_PilotCoveralls;
-    engineer = true;
+    engineer = 1;
 };
 class cnto_sptz_air_copilot_pack : B_TacticalPack_blk {
     scope = 1;
@@ -472,9 +472,9 @@ class cnto_sptz_trainer : cnto_sptz_soldier_base {
     class EventHandlers : EventHandlers {
         class godlike { init = "(_this select 0) call cnto_units_fnc_godlike"; };
     };
-    attendant = true;
-    engineer = true;
-    uavHacker = true;
+    attendant = 1;
+    engineer = 1;
+    uavHacker = 1;
 };
 
 /*
@@ -495,9 +495,9 @@ class cnto_sptz_gm : O_Soldier_base_F {
     class EventHandlers : EventHandlers {
         class godlike { init = "(_this select 0) call cnto_units_fnc_godlike"; };
     };
-    attendant = true;
-    engineer = true;
-    uavHacker = true;
+    attendant = 1;
+    engineer = 1;
+    uavHacker = 1;
 };
 
 /* ------------------------------------------------------------------------- */

@@ -60,7 +60,7 @@ class cnto_col_sq_medic : cnto_col_soldier_base {
     #define _linked AAFVest01_l_CamoW, CamoH_CamoW, ItemGPS
     ADD_GEAR;
     backpack = cnto_col_sq_medic_pack;
-    attendant = true;
+    attendant = 1;
 };
 class cnto_col_sq_medic_pack : B_Kitbag_rgr {
     scope = 1;
@@ -396,7 +396,7 @@ class cnto_col_veh_driver : cnto_col_crew_base {
     ADD_GEAR;
     backpack = cnto_col_veh_driver_pack;
     uniformClass = CamoU_Black;
-    engineer = true;
+    engineer = 1;
 };
 class cnto_col_veh_driver_pack : B_TacticalPack_blk {
     scope = 1;
@@ -445,7 +445,7 @@ class cnto_col_air_copilot : cnto_col_crew_base {
     ADD_GEAR;
     backpack = cnto_col_air_copilot_pack;
     uniformClass = U_I_pilotCoveralls;
-    engineer = true;
+    engineer = 1;
 };
 class cnto_col_air_copilot_pack : B_TacticalPack_blk {
     scope = 1;
@@ -472,9 +472,9 @@ class cnto_col_trainer : cnto_col_soldier_base {
     class EventHandlers : EventHandlers {
         class godlike { init = "(_this select 0) call cnto_units_fnc_godlike"; };
     };
-    attendant = true;
-    engineer = true;
-    uavHacker = true;
+    attendant = 1;
+    engineer = 1;
+    uavHacker = 1;
 };
 
 /*
@@ -495,9 +495,9 @@ class cnto_col_gm : I_Soldier_base_F {
     class EventHandlers : EventHandlers {
         class godlike { init = "(_this select 0) call cnto_units_fnc_godlike"; };
     };
-    attendant = true;
-    engineer = true;
-    uavHacker = true;
+    attendant = 1;
+    engineer = 1;
+    uavHacker = 1;
 };
 
 /* ------------------------------------------------------------------------- */

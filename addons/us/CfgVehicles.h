@@ -60,7 +60,7 @@ class cnto_us_sq_medic : cnto_us_soldier_base {
     #define _linked rhsusf_iotv_ucp_Medic, rhsusf_ach_helmet_ucp, ItemGPS
     ADD_GEAR;
     backpack = cnto_us_sq_medic_pack;
-    attendant = true;
+    attendant = 1;
 };
 class cnto_us_sq_medic_pack : B_Kitbag_rgr {
     scope = 1;
@@ -391,7 +391,7 @@ class cnto_us_veh_driver : cnto_us_crew_base {
     ADD_GEAR;
     backpack = cnto_us_veh_driver_pack;
     uniformClass = U_BG_Guerrilla_6_1;
-    engineer = true;
+    engineer = 1;
 };
 class cnto_us_veh_driver_pack : B_AssaultPack_rgr {
     scope = 1;
@@ -440,7 +440,7 @@ class cnto_us_air_copilot : cnto_us_crew_base {
     ADD_GEAR;
     backpack = cnto_us_air_copilot_pack;
     uniformClass = U_B_PilotCoveralls;
-    engineer = true;
+    engineer = 1;
 };
 class cnto_us_air_copilot_pack : B_AssaultPack_rgr {
     scope = 1;
@@ -470,9 +470,9 @@ class cnto_us_trainer : cnto_us_soldier_base {
     class EventHandlers : EventHandlers {
         class godlike { init = "(_this select 0) call cnto_units_fnc_godlike"; };
     };
-    attendant = true;
-    engineer = true;
-    uavHacker = true;
+    attendant = 1;
+    engineer = 1;
+    uavHacker = 1;
 };
 
 /*
@@ -493,9 +493,9 @@ class cnto_us_gm : B_Soldier_base_F {
     class EventHandlers : EventHandlers {
         class godlike { init = "(_this select 0) call cnto_units_fnc_godlike"; };
     };
-    attendant = true;
-    engineer = true;
-    uavHacker = true;
+    attendant = 1;
+    engineer = 1;
+    uavHacker = 1;
 };
 
 /* ------------------------------------------------------------------------- */

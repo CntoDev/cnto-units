@@ -60,7 +60,7 @@ class cnto_tfn_sq_medic : cnto_tfn_soldier_base {
     #define _linked cnto_flecktarn_v_l_mediterranean, cnto_flecktarn_h_c_mediterranean, ItemGPS
     ADD_GEAR;
     backpack = cnto_tfn_sq_medic_pack;
-    attendant = true;
+    attendant = 1;
 };
 class cnto_tfn_sq_medic_pack : cnto_flecktarn_b_kb_mediterranean {
     scope = 1;
@@ -389,7 +389,7 @@ class cnto_tfn_veh_driver : cnto_tfn_crew_base {
     ADD_GEAR;
     backpack = cnto_tfn_veh_driver_pack;
     uniformClass = U_IG_Guerrilla_6_1;
-    engineer = true;
+    engineer = 1;
 };
 class cnto_tfn_veh_driver_pack : cnto_flecktarn_b_ap_mediterranean {
     scope = 1;
@@ -438,7 +438,7 @@ class cnto_tfn_air_copilot : cnto_tfn_crew_base {
     ADD_GEAR;
     backpack = cnto_tfn_air_copilot_pack;
     uniformClass = U_I_pilotCoveralls;
-    engineer = true;
+    engineer = 1;
 };
 class cnto_tfn_air_copilot_pack : cnto_flecktarn_b_ap_mediterranean {
     scope = 1;
@@ -468,9 +468,9 @@ class cnto_tfn_trainer : cnto_tfn_soldier_base {
     class EventHandlers : EventHandlers {
         class godlike { init = "(_this select 0) call cnto_units_fnc_godlike"; };
     };
-    attendant = true;
-    engineer = true;
-    uavHacker = true;
+    attendant = 1;
+    engineer = 1;
+    uavHacker = 1;
 };
 
 /*
@@ -491,9 +491,9 @@ class cnto_tfn_gm : I_Soldier_base_F {
     class EventHandlers : EventHandlers {
         class godlike { init = "(_this select 0) call cnto_units_fnc_godlike"; };
     };
-    attendant = true;
-    engineer = true;
-    uavHacker = true;
+    attendant = 1;
+    engineer = 1;
+    uavHacker = 1;
 };
 
 /* ------------------------------------------------------------------------- */

@@ -91,7 +91,7 @@ class cnto_ff_urban_doctor : cnto_ff_urban_base {
     ADD_GEAR_EMPTY_RESPAWN;
     backpack = cnto_ff_urban_doctor_pack;
     uniformClass = U_Marshal;
-    attendant = true;
+    attendant = 1;
 };
 class cnto_ff_urban_doctor_pack : B_TacticalPack_blk {
     scope = 1;
@@ -118,7 +118,7 @@ class cnto_ff_urban_repairman : cnto_ff_urban_base {
     class EventHandlers : EventHandlers {
         class facewear { init = "if (local (_this select 0)) then { (_this select 0) addGoggles ""G_Aviator"" }"; };
     };
-    engineer = true;
+    engineer = 1;
 };
 class cnto_ff_urban_repairman_pack : B_FieldPack_blk {
     scope = 1;
@@ -140,7 +140,7 @@ class cnto_ff_urban_itnerd : cnto_ff_urban_base {
     #define _linked H_Cap_grn_BI, ItemMap, ItemCompass, ItemWatch, I_UavTerminal
     ADD_GEAR_EMPTY_RESPAWN;
     uniformClass = U_C_Poloshirt_burgundy;
-    uavHacker = true;
+    uavHacker = 1;
 };
 
 /* ------------------------------------------------------------------------- */
@@ -196,7 +196,7 @@ class cnto_ff_gm : I_Soldier_base_F {
     class EventHandlers : EventHandlers {
         class godlike { init = "(_this select 0) call cnto_units_fnc_godlike"; };
     };
-    attendant = true;
-    engineer = true;
-    uavHacker = true;
+    attendant = 1;
+    engineer = 1;
+    uavHacker = 1;
 };
