@@ -86,9 +86,9 @@ class cnto_tfnsf_blackop_rifle_pack : B_AssaultPack_blk {
 class cnto_tfnsf_blackop_mark : cnto_tfnsf_blackop_base {
     scope = 2;
     displayName = "Marksman (AT/Utility)";
-    #define _weaps cnto_tfnsf_m14sopmod, rhs_weap_m72a7, hgun_P07_snds_F, ACE_Vector, Throw, Put
-    #define _mags hlc_20Rnd_762x51_barrier_M14, 30Rnd_9x21_Mag, \
-                  x10(hlc_20Rnd_762x51_barrier_M14), x2(30Rnd_9x21_Mag)
+    #define _weaps rhs_weap_asval, rhs_weap_m72a7, hgun_P07_snds_F, ACE_Vector, Throw, Put
+    #define _mags rhs_20rnd_9x39mm_SP5, 30Rnd_9x21_Mag, \
+                  x6(rhs_20rnd_9x39mm_SP5), x2(30Rnd_9x21_Mag)
     #define _items
     #define _linked AAFVest01_l_black, H_Watchcap_blk, G_Bandanna_blk
     ADD_GEAR;

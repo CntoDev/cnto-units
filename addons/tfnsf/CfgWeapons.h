@@ -15,7 +15,7 @@ class cnto_tfnsf_katiba : arifle_Katiba_F {
     scope = 1;
     class LinkedItems {
         optic(optic_Aco);
-        muzzle(RH_fa762);
+        muzzle(muzzle_snds_H);
         side(acc_pointer_IR);
     };
 };
@@ -25,19 +25,8 @@ class cnto_tfnsf_katiba_gl : arifle_Katiba_GL_F {
     scope = 1;
     class LinkedItems {
         optic(optic_Aco);
-        muzzle(RH_fa762);
+        muzzle(muzzle_snds_H);
         side(acc_pointer_IR);
-    };
-};
-
-class hlc_rifle_m14sopmod;
-class cnto_tfnsf_m14sopmod : hlc_rifle_m14sopmod {
-    scope = 1;
-    class LinkedItems {
-        optic(rhsusf_acc_ACOG2);
-        muzzle(hlc_muzzle_snds_M14);
-        side(acc_pointer_IR);
-        /* under() doesn't seem to work, custom UGL slot */
     };
 };
 

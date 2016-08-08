@@ -9,7 +9,6 @@ class CfgPatches {
             "A3_Weapons_F_SMGs_SMG_02",         // sting smg
             "A3_Weapons_F_Rifles_Khaybar",      // katiba
             "A3_Weapons_F_LongRangeRifles_GM6", // gm6 lynx
-            "hlcweapons_m14",
             "hlcweapons_m60e4"
         };
     };
