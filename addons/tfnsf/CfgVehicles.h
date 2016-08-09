@@ -31,7 +31,7 @@ class cnto_tfnsf_blackop_base : cnto_tfnsf_base {
     #define _weaps
     #define _mags \
                   x2(SmokeShellGreen), x2(MiniGrenade)
-    #define _items x4(ACE_fieldDressing), x2(ACE_morphine), ACE_Flashlight_XL50, x4(ACE_CableTie), x2(ACE_IR_Strobe_Item), ACE_MapTools, ACRE_PRC148
+    #define _items x4(ACE_fieldDressing), x2(ACE_morphine), ACE_Flashlight_XL50, x2(ACE_CableTie), x2(ACE_IR_Strobe_Item), ACE_MapTools, ACRE_PRC148
     #define _linked ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadioAcreFlagged, NVGoggles_OPFOR
     ASSIGN_GEAR;
     uniformClass = CamoU_Black;
@@ -43,7 +43,7 @@ class cnto_tfnsf_blackop_cqb : cnto_tfnsf_blackop_base {
     #define _weaps cnto_tfnsf_sting, ACE_Vector, Throw, Put
     #define _mags 30Rnd_9x21_Mag_SMG_02, \
                   x8(30Rnd_9x21_Mag_SMG_02), x4(ACE_M84)
-    #define _items
+    #define _items x4(ACE_CableTie)
     #define _linked AAFVest01_l_black, rhsusf_protech_helmet, cnto_flecktarn_f_bala_forest
     ADD_GEAR;
     backpack = cnto_tfnsf_blackop_cqb_pack;
