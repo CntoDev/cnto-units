@@ -10,6 +10,15 @@ class cnto_tfnsf_sting : SMG_02_F {
     };
 };
 
+class hgun_PDW2000_F;
+class cnto_tfnsf_pdw : hgun_PDW2000_F {
+    scope = 1;
+    class LinkedItems {
+        optic(optic_Aco);
+        muzzle(muzzle_snds_L);
+    };
+};
+
 class arifle_Katiba_F;
 class cnto_tfnsf_katiba : arifle_Katiba_F {
     scope = 1;

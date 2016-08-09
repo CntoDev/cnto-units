@@ -123,6 +123,28 @@ class cnto_tfnsf_blackop_demo_pack : B_FieldPack_blk {
     /* vanilla mine detector doesn't work with ACE */
 };
 
+class cnto_tfnsf_blackop_scout : cnto_tfnsf_blackop_base {
+    scope = 2;
+    displayName = "Scout";
+    #define _weaps cnto_tfnsf_pdw, Laserdesignator_03, Throw, Put
+    #define _mags 30Rnd_9x21_Mag, Laserbatteries, \
+                  x4(30Rnd_9x21_Mag)
+    #define _items
+    #define _linked AAFVest01_l_black, BoonieH_black, G_Balaclava_blk
+    ADD_GEAR;
+    class EventHandlers : EventHandlers {
+        /* is a weapon, doesn't work in _items or _weaps and having a backpack
+         * just for it is not enough of a justification */
+        class add_thermal_binos { init = "if (!is3DEN) then { (_this select 0) addItemToVest ""ACE_MX2A"" }"; };
+        /* since we already use EH for the above, add these explicitly
+         * into the vest, leaving items shared by other classes in the uniform
+         * (although all of these can be added via _items) */
+        class add_vector { init = "if (!is3DEN) then { (_this select 0) addItemToVest ""ACE_Vector"" }"; };
+        class add_uav_terminal { init = "if (!is3DEN) then { (_this select 0) addItemToVest ""I_UavTerminal"" }"; };
+        class add_microdagr { init = "if (!is3DEN) then { (_this select 0) addItemToVest ""ACE_microDAGR"" }"; };
+    };
+};
+
 class cnto_tfnsf_blackop_sniper : cnto_tfnsf_blackop_base {
     scope = 2;
     displayName = "Support Sniper";
