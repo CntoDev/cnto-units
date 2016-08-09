@@ -41,8 +41,8 @@ class cnto_tfnsf_blackop_cqb : cnto_tfnsf_blackop_base {
     scope = 2;
     displayName = "CQB Specialist";
     #define _weaps cnto_tfnsf_sting, ACE_Vector, Throw, Put
-    #define _mags 30Rnd_9x21_Mag_SMG_02, \
-                  x8(30Rnd_9x21_Mag_SMG_02), x4(ACE_M84)
+    #define _mags 30Rnd_9x21_Mag, \
+                  x8(30Rnd_9x21_Mag), x8(ACE_M84)
     #define _items x4(ACE_CableTie)
     #define _linked AAFVest01_l_black, rhsusf_protech_helmet, cnto_flecktarn_f_bala_forest
     ADD_GEAR;
@@ -51,7 +51,7 @@ class cnto_tfnsf_blackop_cqb : cnto_tfnsf_blackop_base {
 class cnto_tfnsf_blackop_cqb_pack : B_AssaultPack_blk {
     scope = 1;
     class TransportMagazines {
-        xmags(8, 30Rnd_9x21_Mag_SMG_02);
+        xmags(8, 30Rnd_9x21_Mag);
         xmags(4, MiniGrenade);
         xmags(12, ACE_M84);
     };
