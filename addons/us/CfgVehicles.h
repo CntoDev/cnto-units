@@ -358,8 +358,8 @@ class cnto_us_mortar_gunner : cnto_us_soldier_base {
 class cnto_us_crew_base : B_Soldier_base_F {
     scope = 0;
     faction = CNTO_US;
-    #define _weaps rhs_weap_m4_carryhandle_mstock, hgun_P07_F, Throw, Put
-    #define _mags rhs_mag_30Rnd_556x45_M855A1_Stanag, 16Rnd_9x21_Mag, \
+    #define _weaps rhs_weap_m4_carryhandle_mstock, rhsusf_weap_m9, Throw, Put
+    #define _mags rhs_mag_30Rnd_556x45_M855A1_Stanag, rhsusf_mag_15Rnd_9x19_JHP, \
                   x2(SmokeShell), x2(SmokeShellGreen), x2(SmokeShellBlue), x2(MiniGrenade), x5(rhs_mag_30Rnd_556x45_M855A1_Stanag)
     #define _items x8(ACE_fieldDressing), x2(ACE_morphine), ACE_Flashlight_MX991, ACRE_PRC343
     #define _linked ItemMap, ItemCompass, ItemWatch, ItemRadioAcreFlagged, ACE_NVG_Wide

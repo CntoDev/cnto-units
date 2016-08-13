@@ -360,8 +360,8 @@ class cnto_sptz_mortar_gunner : cnto_sptz_soldier_base {
 class cnto_sptz_crew_base : O_Soldier_base_F {
     scope = 0;
     faction = CNTO_SPTZ;
-    #define _weaps rhs_weap_aks74un_folded, hgun_P07_F, Throw, Put
-    #define _mags rhs_30Rnd_545x39_AK, 16Rnd_9x21_Mag, \
+    #define _weaps rhs_weap_aks74un_folded, rhs_weap_pya, Throw, Put
+    #define _mags rhs_30Rnd_545x39_AK, rhs_mag_9x19_17, \
                   x2(SmokeShell), x2(SmokeShellGreen), x2(SmokeShellBlue), x2(MiniGrenade), x5(rhs_30Rnd_545x39_AK)
     #define _items x8(ACE_fieldDressing), x2(ACE_morphine), ACE_Flashlight_MX991, ACRE_PRC343, cnto_flecktarn_h_beret
     #define _linked ItemMap, ItemCompass, ItemWatch, ItemRadioAcreFlagged, ACE_NVG_Wide
