@@ -8,4 +8,5 @@ if (!hasInterface) exitWith {};
     call cnto_units_ff_fnc_nerfMapMarkers;
     call cnto_units_ff_fnc_globalChannelOnly;
     call cnto_units_ff_fnc_disableTaoFoldmap;
+    missionNamespace setVariable ["ace_map_BFT_Enabled", false];
 };
