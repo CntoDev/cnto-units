@@ -26,7 +26,7 @@ class cnto_us_soldier_base : B_Soldier_base_F {
 class cnto_us_sq_sl : cnto_us_soldier_base {
     scope = 2;
     displayName = "SQ SL";
-    #define _weaps cnto_us_m4a1_gl_flash, rhsusf_weap_m9, ACE_Vector, Throw, Put
+    #define _weaps cnto_us_m4a1_gl_flash, rhsusf_weap_m9, ACE_VectorDay, Throw, Put
     #define _mags rhs_mag_30Rnd_556x45_M855A1_Stanag, 1Rnd_HE_Grenade_shell, rhsusf_mag_15Rnd_9x19_JHP, \
                   x6(rhs_mag_30Rnd_556x45_M855A1_Stanag), x4(rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red), x2(rhsusf_mag_15Rnd_9x19_JHP)
     #define _items x2(ACE_CableTie), ACE_MapTools, ACRE_PRC152
@@ -83,7 +83,7 @@ class cnto_us_sq_medic_pack : B_Kitbag_rgr {
 class cnto_us_ft_tl : cnto_us_soldier_base {
     scope = 2;
     displayName = "FT Lead";
-    #define _weaps cnto_us_m4a1_gl_flash, rhsusf_weap_m9, ACE_Vector, Throw, Put
+    #define _weaps cnto_us_m4a1_gl_flash, rhsusf_weap_m9, ACE_VectorDay, Throw, Put
     #define _mags rhs_mag_30Rnd_556x45_M855A1_Stanag, 1Rnd_HE_Grenade_shell, rhsusf_mag_15Rnd_9x19_JHP, \
                   x6(rhs_mag_30Rnd_556x45_M855A1_Stanag), x4(rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red), x2(rhsusf_mag_15Rnd_9x19_JHP)
     #define _items x2(ACE_CableTie), ACE_MapTools
@@ -121,7 +121,7 @@ class cnto_us_ft_ar : cnto_us_soldier_base {
 class cnto_us_ft_aar : cnto_us_soldier_base {
     scope = 2;
     displayName = "FT AAR";
-    #define _weaps cnto_us_m4a1_flash, rhsusf_weap_m9, ACE_Vector, Throw, Put
+    #define _weaps cnto_us_m4a1_flash, rhsusf_weap_m9, ACE_VectorDay, Throw, Put
     #define _mags rhs_mag_30Rnd_556x45_M855A1_Stanag, rhsusf_mag_15Rnd_9x19_JHP, \
                   x8(rhs_mag_30Rnd_556x45_M855A1_Stanag), x2(rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red), x2(rhsusf_mag_15Rnd_9x19_JHP)
     #define _items x2(ACE_CableTie), ACE_MapTools
@@ -163,7 +163,7 @@ class cnto_us_ft_at : cnto_us_soldier_base {
 class cnto_us_plt_co : cnto_us_soldier_base {
     scope = 2;
     displayName = "PLT Commander";
-    #define _weaps cnto_us_m4a1_gl_flash, rhsusf_weap_m9, ACE_Vector, Throw, Put
+    #define _weaps cnto_us_m4a1_gl_flash, rhsusf_weap_m9, ACE_VectorDay, Throw, Put
     #define _mags rhs_mag_30Rnd_556x45_M855A1_Stanag, 1Rnd_SmokeRed_Grenade_shell, rhsusf_mag_15Rnd_9x19_JHP, \
                   x6(rhs_mag_30Rnd_556x45_M855A1_Stanag), x4(rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red), x2(rhsusf_mag_15Rnd_9x19_JHP)
     #define _items x2(ACE_CableTie), ACE_MapTools, ACRE_PRC152, ACRE_PRC148
@@ -189,7 +189,7 @@ class cnto_us_plt_co_pack : B_AssaultPack_rgr {
 class cnto_us_plt_sgt : cnto_us_soldier_base {
     scope = 2;
     displayName = "PLT Sergeant";
-    #define _weaps cnto_us_m4a1_flash, rhsusf_weap_m9, ACE_Vector, Throw, Put
+    #define _weaps cnto_us_m4a1_flash, rhsusf_weap_m9, ACE_VectorDay, Throw, Put
     #define _mags rhs_mag_30Rnd_556x45_M855A1_Stanag, rhsusf_mag_15Rnd_9x19_JHP, \
                   x6(rhs_mag_30Rnd_556x45_M855A1_Stanag), x4(rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red), x2(rhsusf_mag_15Rnd_9x19_JHP)
     #define _items x2(ACE_CableTie), ACE_MapTools, ACRE_PRC152, ACRE_PRC148
@@ -220,7 +220,7 @@ class cnto_us_plt_rfl : cnto_us_soldier_base {
 class cnto_us_mmg_tl : cnto_us_soldier_base {
     scope = 2;
     displayName = "MMG Lead";
-    #define _weaps cnto_us_m4a1_gl_flash, rhsusf_weap_m9, ACE_Vector, Throw, Put
+    #define _weaps cnto_us_m4a1_gl_flash, rhsusf_weap_m9, ACE_VectorDay, Throw, Put
     #define _mags rhs_mag_30Rnd_556x45_M855A1_Stanag, 1Rnd_HE_Grenade_shell, rhsusf_mag_15Rnd_9x19_JHP, \
                   x6(rhs_mag_30Rnd_556x45_M855A1_Stanag), x4(rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red), x2(rhsusf_mag_15Rnd_9x19_JHP)
     #define _items x2(ACE_CableTie), ACE_MapTools, ACRE_PRC152
@@ -332,7 +332,7 @@ class cnto_us_mat_bearer_pack : B_Kitbag_rgr {
 class cnto_us_mortar_assist : cnto_us_soldier_base {
     scope = 2;
     displayName = "Mortar Ass. Gunner";
-    #define _weaps cnto_us_m4a1_flash, rhsusf_weap_m9, ACE_Vector, Throw, Put
+    #define _weaps cnto_us_m4a1_flash, rhsusf_weap_m9, ACE_VectorDay, Throw, Put
     #define _mags rhs_mag_30Rnd_556x45_M855A1_Stanag, rhsusf_mag_15Rnd_9x19_JHP, \
                   x2(SmokeShellGreen), SmokeShellBlue, x8(rhs_mag_30Rnd_556x45_M855A1_Stanag), x2(rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red), x2(rhsusf_mag_15Rnd_9x19_JHP)
     #define _items ACE_MapTools, ACE_RangeTable_82mm, ACRE_PRC152

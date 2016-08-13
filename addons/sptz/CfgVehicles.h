@@ -26,7 +26,7 @@ class cnto_sptz_soldier_base : O_Soldier_base_F {
 class cnto_sptz_sq_sl : cnto_sptz_soldier_base {
     scope = 2;
     displayName = "SQ SL";
-    #define _weaps cnto_sptz_ak74m_gl, rhs_weap_pya, ACE_Vector, Throw, Put
+    #define _weaps cnto_sptz_ak74m_gl, rhs_weap_pya, ACE_VectorDay, Throw, Put
     #define _mags rhs_30Rnd_545x39_AK, rhs_VOG25, rhs_mag_9x19_17, \
                   x6(rhs_30Rnd_545x39_AK), x4(rhs_30Rnd_545x39_AK_green)
     #define _items x2(ACE_CableTie), ACE_MapTools, ACRE_PRC152
@@ -84,7 +84,7 @@ class cnto_sptz_sq_medic_pack : B_Kitbag_rgr {
 class cnto_sptz_ft_tl : cnto_sptz_soldier_base {
     scope = 2;
     displayName = "FT Lead";
-    #define _weaps cnto_sptz_ak74m_gl, rhs_weap_pya, ACE_Vector, Throw, Put
+    #define _weaps cnto_sptz_ak74m_gl, rhs_weap_pya, ACE_VectorDay, Throw, Put
     #define _mags rhs_30Rnd_545x39_AK, rhs_VOG25, rhs_mag_9x19_17, \
                   x6(rhs_30Rnd_545x39_AK), x4(rhs_30Rnd_545x39_AK_green), x2(rhs_mag_9x19_17)
     #define _items x2(ACE_CableTie), ACE_MapTools
@@ -122,7 +122,7 @@ class cnto_sptz_ft_ar : cnto_sptz_soldier_base {
 class cnto_sptz_ft_aar : cnto_sptz_soldier_base {
     scope = 2;
     displayName = "FT AAR";
-    #define _weaps cnto_sptz_ak74m_flash, rhs_weap_pya, ACE_Vector, Throw, Put
+    #define _weaps cnto_sptz_ak74m_flash, rhs_weap_pya, ACE_VectorDay, Throw, Put
     #define _mags rhs_30Rnd_545x39_AK, rhs_mag_9x19_17, \
                   x8(rhs_30Rnd_545x39_AK), x2(rhs_30Rnd_545x39_AK_green), x2(rhs_mag_9x19_17)
     #define _items x2(ACE_CableTie), ACE_MapTools
@@ -165,7 +165,7 @@ class cnto_sptz_ft_at : cnto_sptz_soldier_base {
 class cnto_sptz_coy_co : cnto_sptz_soldier_base {
     scope = 2;
     displayName = "COY Commander";
-    #define _weaps cnto_sptz_ak74m_gl, rhs_weap_pya, ACE_Vector, Throw, Put
+    #define _weaps cnto_sptz_ak74m_gl, rhs_weap_pya, ACE_VectorDay, Throw, Put
     #define _mags rhs_30Rnd_545x39_AK, rhs_VG40MD_Red, rhs_mag_9x19_17, \
                   x6(rhs_30Rnd_545x39_AK), x3(rhs_30Rnd_545x39_AK_green), x1(rhs_mag_9x19_17)
     #define _items x2(ACE_CableTie), ACE_MapTools, ACRE_PRC152, ACRE_PRC148
@@ -191,7 +191,7 @@ class cnto_sptz_coy_co_pack : B_TacticalPack_blk {
 class cnto_sptz_coy_sgt : cnto_sptz_soldier_base {
     scope = 2;
     displayName = "COY Sergeant";
-    #define _weaps cnto_sptz_ak74m_flash, rhs_weap_pya, ACE_Vector, Throw, Put
+    #define _weaps cnto_sptz_ak74m_flash, rhs_weap_pya, ACE_VectorDay, Throw, Put
     #define _mags rhs_30Rnd_545x39_AK, rhs_mag_9x19_17, \
                   x8(rhs_30Rnd_545x39_AK), x2(rhs_30Rnd_545x39_AK_green), x2(rhs_mag_9x19_17)
     #define _items x2(ACE_CableTie), ACE_MapTools, ACRE_PRC152, ACRE_PRC148
@@ -222,7 +222,7 @@ class cnto_sptz_coy_rfl : cnto_sptz_soldier_base {
 class cnto_sptz_mmg_tl : cnto_sptz_soldier_base {
     scope = 2;
     displayName = "MMG Lead";
-    #define _weaps cnto_sptz_ak74m_gl, rhs_weap_pya, ACE_Vector, Throw, Put
+    #define _weaps cnto_sptz_ak74m_gl, rhs_weap_pya, ACE_VectorDay, Throw, Put
     #define _mags rhs_30Rnd_545x39_AK, rhs_VOG25, rhs_mag_9x19_17, \
                   x8(rhs_30Rnd_545x39_AK), x2(rhs_30Rnd_545x39_AK_green), x1(rhs_mag_9x19_17)
     #define _items x2(ACE_CableTie), ACE_MapTools, ACRE_PRC152
@@ -334,7 +334,7 @@ class cnto_sptz_mat_bearer_pack : B_Kitbag_rgr {
 class cnto_sptz_mortar_assist : cnto_sptz_soldier_base {
     scope = 2;
     displayName = "Mortar Ass. Gunner";
-    #define _weaps cnto_sptz_ak74m_flash, rhs_weap_pya, ACE_Vector, Throw, Put
+    #define _weaps cnto_sptz_ak74m_flash, rhs_weap_pya, ACE_VectorDay, Throw, Put
     #define _mags rhs_30Rnd_545x39_AK, rhs_mag_9x19_17, \
                   x2(SmokeShellGreen), SmokeShellBlue, x6(rhs_30Rnd_545x39_AK), x3(rhs_30Rnd_545x39_AK_green), x1(rhs_mag_9x19_17)
     #define _items ACE_MapTools, ACE_RangeTable_82mm, ACRE_PRC152

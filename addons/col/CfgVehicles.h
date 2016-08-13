@@ -26,7 +26,7 @@ class cnto_col_soldier_base : I_Soldier_base_F {
 class cnto_col_sq_sl : cnto_col_soldier_base {
     scope = 2;
     displayName = "SQ SL";
-    #define _weaps cnto_col_g3_gl_flash, hgun_ACPC2_F, ACE_Vector, Throw, Put
+    #define _weaps cnto_col_g3_gl_flash, hgun_ACPC2_F, ACE_VectorDay, Throw, Put
     #define _mags hlc_20rnd_762x51_b_G3, 1Rnd_HE_Grenade_shell, 9Rnd_45ACP_Mag, \
                   x4(hlc_20rnd_762x51_b_G3), x2(hlc_20rnd_762x51_T_G3), x1(9Rnd_45ACP_Mag)
     #define _items x2(ACE_CableTie), ACE_MapTools, ACRE_PRC152
@@ -83,7 +83,7 @@ class cnto_col_sq_medic_pack : B_Kitbag_rgr {
 class cnto_col_ft_tl : cnto_col_soldier_base {
     scope = 2;
     displayName = "FT Lead";
-    #define _weaps cnto_col_g3_gl_flash, hgun_ACPC2_F, ACE_Vector, Throw, Put
+    #define _weaps cnto_col_g3_gl_flash, hgun_ACPC2_F, ACE_VectorDay, Throw, Put
     #define _mags hlc_20rnd_762x51_b_G3, 1Rnd_HE_Grenade_shell, 9Rnd_45ACP_Mag, \
                   x4(hlc_20rnd_762x51_b_G3), x3(hlc_20rnd_762x51_T_G3), x1(9Rnd_45ACP_Mag)
     #define _items x2(ACE_CableTie), ACE_MapTools
@@ -121,7 +121,7 @@ class cnto_col_ft_ar : cnto_col_soldier_base {
 class cnto_col_ft_aar : cnto_col_soldier_base {
     scope = 2;
     displayName = "FT AAR";
-    #define _weaps cnto_col_g3_flash, hgun_ACPC2_F, ACE_Vector, Throw, Put
+    #define _weaps cnto_col_g3_flash, hgun_ACPC2_F, ACE_VectorDay, Throw, Put
     #define _mags hlc_20rnd_762x51_b_G3, 9Rnd_45ACP_Mag, \
                   x5(hlc_20rnd_762x51_b_G3), x2(hlc_20rnd_762x51_T_G3), x1(9Rnd_45ACP_Mag)
     #define _items x2(ACE_CableTie), ACE_MapTools
@@ -163,7 +163,7 @@ class cnto_col_ft_at : cnto_col_soldier_base {
 class cnto_col_coy_co : cnto_col_soldier_base {
     scope = 2;
     displayName = "COY Commander";
-    #define _weaps cnto_col_g3_gl_flash, hgun_ACPC2_F, ACE_Vector, Throw, Put
+    #define _weaps cnto_col_g3_gl_flash, hgun_ACPC2_F, ACE_VectorDay, Throw, Put
     #define _mags hlc_20rnd_762x51_b_G3, 1Rnd_SmokeRed_Grenade_shell, 9Rnd_45ACP_Mag, \
                   x4(hlc_20rnd_762x51_b_G3), x2(hlc_20rnd_762x51_T_G3), x1(9Rnd_45ACP_Mag)
     #define _items x2(ACE_CableTie), ACE_MapTools, ACRE_PRC152, ACRE_PRC148
@@ -189,7 +189,7 @@ class cnto_col_coy_co_pack : B_TacticalPack_blk {
 class cnto_col_coy_sgt : cnto_col_soldier_base {
     scope = 2;
     displayName = "COY Sergeant";
-    #define _weaps cnto_col_g3_flash, hgun_ACPC2_F, ACE_Vector, Throw, Put
+    #define _weaps cnto_col_g3_flash, hgun_ACPC2_F, ACE_VectorDay, Throw, Put
     #define _mags hlc_20rnd_762x51_b_G3, 9Rnd_45ACP_Mag, \
                   x4(hlc_20rnd_762x51_b_G3), x2(hlc_20rnd_762x51_T_G3), x1(9Rnd_45ACP_Mag)
     #define _items x2(ACE_CableTie), ACE_MapTools, ACRE_PRC152, ACRE_PRC148
@@ -227,7 +227,7 @@ class cnto_col_coy_rfl_pack : B_TacticalPack_blk {
 class cnto_col_mmg_tl : cnto_col_soldier_base {
     scope = 2;
     displayName = "MMG Lead";
-    #define _weaps cnto_col_g3_gl_flash, hgun_ACPC2_F, ACE_Vector, Throw, Put
+    #define _weaps cnto_col_g3_gl_flash, hgun_ACPC2_F, ACE_VectorDay, Throw, Put
     #define _mags hlc_20rnd_762x51_b_G3, 1Rnd_HE_Grenade_shell, 9Rnd_45ACP_Mag, \
                   x4(hlc_20rnd_762x51_b_G3), x2(hlc_20rnd_762x51_T_G3), x1(9Rnd_45ACP_Mag)
     #define _items x2(ACE_CableTie), ACE_MapTools, ACRE_PRC152
@@ -337,7 +337,7 @@ class cnto_col_mat_bearer_pack : B_Kitbag_rgr {
 class cnto_col_mortar_assist : cnto_col_soldier_base {
     scope = 2;
     displayName = "Mortar Ass. Gunner";
-    #define _weaps cnto_col_g3_flash, hgun_ACPC2_F, ACE_Vector, Throw, Put
+    #define _weaps cnto_col_g3_flash, hgun_ACPC2_F, ACE_VectorDay, Throw, Put
     #define _mags hlc_20rnd_762x51_b_G3, 9Rnd_45ACP_Mag, \
                   SmokeShellGreen, SmokeShellBlue, x4(hlc_20rnd_762x51_b_G3), x2(hlc_20rnd_762x51_T_G3), x1(9Rnd_45ACP_Mag)
     #define _items ACE_MapTools, ACE_RangeTable_82mm, ACRE_PRC152
