@@ -358,9 +358,9 @@ class cnto_us_mortar_gunner : cnto_us_soldier_base {
 class cnto_us_crew_base : B_Soldier_base_F {
     scope = 0;
     faction = CNTO_US;
-    #define _weaps SMG_02_F, hgun_P07_F, Throw, Put
-    #define _mags 30Rnd_9x21_Mag, 16Rnd_9x21_Mag, \
-                  x2(SmokeShell), x2(SmokeShellGreen), x2(SmokeShellBlue), x2(MiniGrenade), x5(30Rnd_9x21_Mag)
+    #define _weaps rhs_weap_m4_carryhandle_mstock, hgun_P07_F, Throw, Put
+    #define _mags rhs_mag_30Rnd_556x45_M855A1_Stanag, 16Rnd_9x21_Mag, \
+                  x2(SmokeShell), x2(SmokeShellGreen), x2(SmokeShellBlue), x2(MiniGrenade), x5(rhs_mag_30Rnd_556x45_M855A1_Stanag)
     #define _items x8(ACE_fieldDressing), x2(ACE_morphine), ACE_Flashlight_MX991, ACRE_PRC343
     #define _linked ItemMap, ItemCompass, ItemWatch, ItemRadioAcreFlagged, ACE_NVG_Wide
     ASSIGN_GEAR;
@@ -396,7 +396,7 @@ class cnto_us_veh_driver : cnto_us_crew_base {
 class cnto_us_veh_driver_pack : B_AssaultPack_rgr {
     scope = 1;
     class TransportMagazines {
-        xmags(4, 30Rnd_9x21_Mag);
+        xmags(4, rhs_mag_30Rnd_556x45_M855A1_Stanag);
     };
     class TransportItems {
         xitems(1, ToolKit);
@@ -445,7 +445,7 @@ class cnto_us_air_copilot : cnto_us_crew_base {
 class cnto_us_air_copilot_pack : B_AssaultPack_rgr {
     scope = 1;
     class TransportMagazines {
-        xmags(4, 30Rnd_9x21_Mag);
+        xmags(4, rhs_mag_30Rnd_556x45_M855A1_Stanag);
     };
     class TransportItems {
         xitems(1, ToolKit);
