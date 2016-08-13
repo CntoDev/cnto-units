@@ -415,6 +415,7 @@ class cnto_sptz_veh_gunner : cnto_sptz_crew_base {
     ADD_GEAR;
     backpack =;
     uniformClass = CamoU_khaki;
+    engineer = 1;
 };
 
 /*
@@ -430,6 +431,7 @@ class cnto_sptz_air_pilot : cnto_sptz_crew_base {
     ADD_GEAR;
     backpack =;
     uniformClass = U_O_PilotCoveralls;
+    engineer = 1;
 };
 
 class cnto_sptz_air_copilot : cnto_sptz_crew_base {

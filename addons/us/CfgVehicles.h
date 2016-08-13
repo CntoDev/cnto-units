@@ -413,6 +413,7 @@ class cnto_us_veh_gunner : cnto_us_crew_base {
     ADD_GEAR;
     backpack =;
     uniformClass = U_BG_Guerrilla_6_1;
+    engineer = 1;
 };
 
 /*
@@ -428,6 +429,7 @@ class cnto_us_air_pilot : cnto_us_crew_base {
     ADD_GEAR;
     backpack =;
     uniformClass = U_B_PilotCoveralls;
+    engineer = 1;
 };
 
 class cnto_us_air_copilot : cnto_us_crew_base {

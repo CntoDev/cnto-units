@@ -418,6 +418,7 @@ class cnto_col_veh_gunner : cnto_col_crew_base {
     ADD_GEAR;
     backpack =;
     uniformClass = CamoU_Black;
+    engineer = 1;
 };
 
 /*
@@ -433,6 +434,7 @@ class cnto_col_air_pilot : cnto_col_crew_base {
     ADD_GEAR;
     backpack =;
     uniformClass = U_I_pilotCoveralls;
+    engineer = 1;
 };
 
 class cnto_col_air_copilot : cnto_col_crew_base {
