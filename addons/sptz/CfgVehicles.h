@@ -56,7 +56,7 @@ class cnto_sptz_sq_medic : cnto_sptz_soldier_base {
     displayName = "SQ Medic";
     #define _weaps cnto_sptz_ak74m_flash, rhs_weap_pya, Throw, Put
     #define _mags rhs_30Rnd_545x39_AK, rhs_mag_9x19_17, \
-                  x8(rhs_30Rnd_545x39_AK), x2(rhs_30Rnd_545x39_AK_green), x2(rhs_mag_9x19_17)
+                  x8(rhs_30Rnd_545x39_AK), x2(rhs_30Rnd_545x39_AK_green), rhs_mag_9x19_17
     #define _items
     #define _linked Helmet_S_tiger, AAFVest01_l_TigerJ, ItemGPS
     ADD_GEAR;
@@ -86,7 +86,7 @@ class cnto_sptz_ft_tl : cnto_sptz_soldier_base {
     displayName = "FT Lead";
     #define _weaps cnto_sptz_ak74m_gl, rhs_weap_pya, ACE_VectorDay, Throw, Put
     #define _mags rhs_30Rnd_545x39_AK, rhs_VOG25, rhs_mag_9x19_17, \
-                  x6(rhs_30Rnd_545x39_AK), x4(rhs_30Rnd_545x39_AK_green), x2(rhs_mag_9x19_17)
+                  x6(rhs_30Rnd_545x39_AK), x4(rhs_30Rnd_545x39_AK_green), rhs_mag_9x19_17
     #define _items x2(ACE_CableTie), ACE_MapTools
     #define _linked Helmet_S_tiger, AAFVest01_l_TigerJ, ItemGPS
     ADD_GEAR;
@@ -112,7 +112,7 @@ class cnto_sptz_ft_ar : cnto_sptz_soldier_base {
     displayName = "FT AR";
     #define _weaps rhs_weap_pkm, rhs_weap_pya, Throw, Put
     #define _mags rhs_100Rnd_762x54mmR, rhs_mag_9x19_17, \
-                  rhs_100Rnd_762x54mmR, rhs_100Rnd_762x54mmR_green, x1(rhs_mag_9x19_17)
+                  rhs_100Rnd_762x54mmR, rhs_100Rnd_762x54mmR_green
     #define _items
     #define _linked Helmet_S_tiger, AAFVest01_l_TigerJ
     ADD_GEAR;
@@ -124,7 +124,7 @@ class cnto_sptz_ft_aar : cnto_sptz_soldier_base {
     displayName = "FT AAR";
     #define _weaps cnto_sptz_ak74m_flash, rhs_weap_pya, ACE_VectorDay, Throw, Put
     #define _mags rhs_30Rnd_545x39_AK, rhs_mag_9x19_17, \
-                  x8(rhs_30Rnd_545x39_AK), x2(rhs_30Rnd_545x39_AK_green), x2(rhs_mag_9x19_17)
+                  x8(rhs_30Rnd_545x39_AK), x2(rhs_30Rnd_545x39_AK_green), rhs_mag_9x19_17
     #define _items x2(ACE_CableTie), ACE_MapTools
     #define _linked Helmet_S_tiger, AAFVest01_l_TigerJ, ItemGPS
     ADD_GEAR;
@@ -152,7 +152,7 @@ class cnto_sptz_ft_at : cnto_sptz_soldier_base {
     displayName = "FT AT";
     #define _weaps cnto_sptz_ak74m_flash, tf47_at4_HEDP, rhs_weap_pya, Throw, Put
     #define _mags rhs_30Rnd_545x39_AK, rhs_mag_9x19_17, \
-                  x8(rhs_30Rnd_545x39_AK), x2(rhs_30Rnd_545x39_AK_green), x2(rhs_mag_9x19_17)
+                  x8(rhs_30Rnd_545x39_AK), x2(rhs_30Rnd_545x39_AK_green), rhs_mag_9x19_17
     #define _items
     #define _linked Helmet_S_tiger, AAFVest01_l_TigerJ
     ADD_GEAR;
@@ -167,7 +167,7 @@ class cnto_sptz_coy_co : cnto_sptz_soldier_base {
     displayName = "COY Commander";
     #define _weaps cnto_sptz_ak74m_gl, rhs_weap_pya, ACE_VectorDay, Throw, Put
     #define _mags rhs_30Rnd_545x39_AK, rhs_VG40MD_Red, rhs_mag_9x19_17, \
-                  x6(rhs_30Rnd_545x39_AK), x3(rhs_30Rnd_545x39_AK_green), x1(rhs_mag_9x19_17)
+                  x6(rhs_30Rnd_545x39_AK), x3(rhs_30Rnd_545x39_AK_green)
     #define _items x2(ACE_CableTie), ACE_MapTools, ACRE_PRC152, ACRE_PRC148
     #define _linked Helmet_S_tiger, AAFVest01_l_TigerJ, ItemGPS
     ADD_GEAR;
@@ -193,7 +193,7 @@ class cnto_sptz_coy_sgt : cnto_sptz_soldier_base {
     displayName = "COY Sergeant";
     #define _weaps cnto_sptz_ak74m_flash, rhs_weap_pya, ACE_VectorDay, Throw, Put
     #define _mags rhs_30Rnd_545x39_AK, rhs_mag_9x19_17, \
-                  x8(rhs_30Rnd_545x39_AK), x2(rhs_30Rnd_545x39_AK_green), x2(rhs_mag_9x19_17)
+                  x8(rhs_30Rnd_545x39_AK), x2(rhs_30Rnd_545x39_AK_green), rhs_mag_9x19_17
     #define _items x2(ACE_CableTie), ACE_MapTools, ACRE_PRC152, ACRE_PRC148
     #define _linked Helmet_S_tiger, AAFVest01_l_TigerJ, ItemGPS
     ADD_GEAR;
@@ -209,7 +209,7 @@ class cnto_sptz_coy_rfl : cnto_sptz_soldier_base {
     displayName = "COY Rifleman";
     #define _weaps cnto_sptz_ak74m_flash, rhs_weap_pya, Throw, Put
     #define _mags rhs_30Rnd_545x39_AK, rhs_mag_9x19_17, \
-                  x8(rhs_30Rnd_545x39_AK), x2(rhs_30Rnd_545x39_AK_green), x2(rhs_mag_9x19_17)
+                  x8(rhs_30Rnd_545x39_AK), x2(rhs_30Rnd_545x39_AK_green), rhs_mag_9x19_17
     #define _items
     #define _linked Helmet_S_tiger, AAFVest01_l_TigerJ
     ADD_GEAR;
@@ -224,7 +224,7 @@ class cnto_sptz_mmg_tl : cnto_sptz_soldier_base {
     displayName = "MMG Lead";
     #define _weaps cnto_sptz_ak74m_gl, rhs_weap_pya, ACE_VectorDay, Throw, Put
     #define _mags rhs_30Rnd_545x39_AK, rhs_VOG25, rhs_mag_9x19_17, \
-                  x8(rhs_30Rnd_545x39_AK), x2(rhs_30Rnd_545x39_AK_green), x1(rhs_mag_9x19_17)
+                  x8(rhs_30Rnd_545x39_AK), x2(rhs_30Rnd_545x39_AK_green)
     #define _items x2(ACE_CableTie), ACE_MapTools, ACRE_PRC152
     #define _linked Helmet_S_tiger, AAFVest01_l_TigerJ, ItemGPS
     ADD_GEAR;
@@ -250,7 +250,7 @@ class cnto_sptz_mmg_gunner : cnto_sptz_soldier_base {
     displayName = "MMG Gunner";
     #define _weaps rhs_weap_pkp, rhs_weap_pya, Throw, Put
     #define _mags rhs_100Rnd_762x54mmR, rhs_mag_9x19_17, \
-                  rhs_100Rnd_762x54mmR, rhs_100Rnd_762x54mmR_green, x1(rhs_mag_9x19_17)
+                  rhs_100Rnd_762x54mmR, rhs_100Rnd_762x54mmR_green
     #define _items
     #define _linked Helmet_S_tiger, AAFVest01_l_TigerJ
     ADD_GEAR;
@@ -269,7 +269,7 @@ class cnto_sptz_mmg_bearer : cnto_sptz_soldier_base {
     displayName = "MMG Bearer";
     #define _weaps cnto_sptz_ak74m_flash, rhs_weap_pya, Throw, Put
     #define _mags rhs_30Rnd_545x39_AK, rhs_mag_9x19_17, \
-                  x8(rhs_30Rnd_545x39_AK), x2(rhs_30Rnd_545x39_AK_green), x2(rhs_mag_9x19_17)
+                  x8(rhs_30Rnd_545x39_AK), x2(rhs_30Rnd_545x39_AK_green), rhs_mag_9x19_17
     #define _items
     #define _linked Helmet_S_tiger, AAFVest01_l_TigerJ
     ADD_GEAR;
@@ -295,7 +295,7 @@ class cnto_sptz_mat_gunner : cnto_sptz_soldier_base {
     displayName = "MAT Rocketman";
     #define _weaps cnto_sptz_ak74m_flash, cnto_sptz_rpg7_optic, rhs_weap_pya, Throw, Put
     #define _mags rhs_30Rnd_545x39_AK, rhs_rpg7_PG7VL_mag, rhs_mag_9x19_17, \
-                  x8(rhs_30Rnd_545x39_AK), x2(rhs_30Rnd_545x39_AK_green), x2(rhs_mag_9x19_17)
+                  x8(rhs_30Rnd_545x39_AK), x2(rhs_30Rnd_545x39_AK_green), rhs_mag_9x19_17
     #define _items
     #define _linked Helmet_S_tiger, AAFVest01_l_TigerJ
     ADD_GEAR;
@@ -314,7 +314,7 @@ class cnto_sptz_mat_bearer : cnto_sptz_soldier_base {
     displayName = "MAT Carrier";
     #define _weaps cnto_sptz_ak74m_flash, rhs_weap_pya, Throw, Put
     #define _mags rhs_30Rnd_545x39_AK, rhs_mag_9x19_17, \
-                  x8(rhs_30Rnd_545x39_AK), x2(rhs_30Rnd_545x39_AK_green), x2(rhs_mag_9x19_17)
+                  x8(rhs_30Rnd_545x39_AK), x2(rhs_30Rnd_545x39_AK_green), rhs_mag_9x19_17
     #define _items
     #define _linked Helmet_S_tiger, AAFVest01_l_TigerJ
     ADD_GEAR;
@@ -336,7 +336,7 @@ class cnto_sptz_mortar_assist : cnto_sptz_soldier_base {
     displayName = "Mortar Ass. Gunner";
     #define _weaps cnto_sptz_ak74m_flash, rhs_weap_pya, ACE_VectorDay, Throw, Put
     #define _mags rhs_30Rnd_545x39_AK, rhs_mag_9x19_17, \
-                  x2(SmokeShellGreen), SmokeShellBlue, x6(rhs_30Rnd_545x39_AK), x3(rhs_30Rnd_545x39_AK_green), x1(rhs_mag_9x19_17)
+                  x2(SmokeShellGreen), SmokeShellBlue, x6(rhs_30Rnd_545x39_AK), x3(rhs_30Rnd_545x39_AK_green)
     #define _items ACE_MapTools, ACE_RangeTable_82mm, ACRE_PRC152
     #define _linked Helmet_S_tiger, AAFVest01_l_TigerJ, ItemGPS
     ADD_GEAR;
@@ -348,7 +348,7 @@ class cnto_sptz_mortar_gunner : cnto_sptz_soldier_base {
     displayName = "Mortar Gunner";
     #define _weaps cnto_sptz_ak74m_flash, rhs_weap_pya, Throw, Put
     #define _mags rhs_30Rnd_545x39_AK, rhs_mag_9x19_17, \
-                  x8(rhs_30Rnd_545x39_AK), x2(rhs_30Rnd_545x39_AK_green), x2(rhs_mag_9x19_17)
+                  x8(rhs_30Rnd_545x39_AK), x2(rhs_30Rnd_545x39_AK_green), rhs_mag_9x19_17
     #define _items ACE_MapTools, ACE_RangeTable_82mm
     #define _linked Helmet_S_tiger, AAFVest01_l_TigerJ
     ADD_GEAR;
