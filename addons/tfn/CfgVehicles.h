@@ -246,19 +246,12 @@ class cnto_tfn_mmg_tl_pack : cnto_flecktarn_b_ap_mediterranean {
 class cnto_tfn_mmg_gunner : cnto_tfn_soldier_base {
     scope = 2;
     displayName = "MMG Gunner";
-    #define _weaps MMG_02_black_F, hgun_ACPC2_F, Throw, Put
-    #define _mags 130Rnd_338_Mag, 9Rnd_45ACP_Mag, \
-                  130Rnd_338_Mag, x2(9Rnd_45ACP_Mag)
+    #define _weaps hlc_lmg_M60E4, hgun_ACPC2_F, Throw, Put
+    #define _mags hlc_100Rnd_762x51_M_M60E4, 9Rnd_45ACP_Mag, \
+                  x3(hlc_100Rnd_762x51_M_M60E4), hlc_100Rnd_762x51_T_M60E4, x2(9Rnd_45ACP_Mag)
     #define _items
     #define _linked cnto_flecktarn_v_h_mediterranean, cnto_flecktarn_h_c_mediterranean
     ADD_GEAR;
-    backpack = cnto_tfn_mmg_gunner_pack;
-};
-class cnto_tfn_mmg_gunner_pack : cnto_flecktarn_b_ap_mediterranean {
-    scope = 1;
-    class TransportMagazines {
-        xmags(3, 130Rnd_338_Mag);
-    };
 };
 
 class cnto_tfn_mmg_bearer : cnto_tfn_soldier_base {
@@ -275,7 +268,8 @@ class cnto_tfn_mmg_bearer : cnto_tfn_soldier_base {
 class cnto_tfn_mmg_bearer_pack : cnto_flecktarn_b_kb_mediterranean {
     scope = 1;
     class TransportMagazines {
-        xmags(4, 130Rnd_338_Mag);
+        xmags(5, hlc_100Rnd_762x51_M_M60E4);
+        xmags(2, hlc_100Rnd_762x51_T_M60E4);
     };
 };
 
