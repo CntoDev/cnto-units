@@ -211,7 +211,7 @@ class cnto_col_coy_rfl : cnto_col_soldier_base {
     #define _items
     #define _linked AAFVest01_l_CamoW, CamoH_CamoW
     ADD_GEAR;
-    backpack = cnto_col_plt_rfl_pack;
+    backpack = cnto_col_coy_rfl_pack;
 };
 class cnto_col_coy_rfl_pack : B_TacticalPack_blk {
     scope = 1;
