@@ -15,7 +15,7 @@ class cnto_tfnsf_base : I_Soldier_base_F {
     faction = CNTO_TFNSF;
     backpack =;
     nameSound = veh_infantry_SF_s;
-    camouflage = 0.4;
+    camouflage = 0.3;  //we use 0.7 spotdistance skill
     audible = 0.005;
     attendant = 1;
     engineer = 1;
