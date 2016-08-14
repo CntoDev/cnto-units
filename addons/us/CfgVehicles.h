@@ -248,18 +248,10 @@ class cnto_us_mmg_gunner : cnto_us_soldier_base {
     displayName = "MMG Gunner";
     #define _weaps hlc_lmg_m60, rhsusf_weap_m9, Throw, Put
     #define _mags hlc_100Rnd_762x51_M_M60E4, rhsusf_mag_15Rnd_9x19_JHP, \
-                  x2(hlc_100Rnd_762x51_M_M60E4), rhsusf_mag_15Rnd_9x19_JHP
+                  x3(hlc_100Rnd_762x51_M_M60E4), hlc_100Rnd_762x51_T_M60E4, rhsusf_mag_15Rnd_9x19_JHP
     #define _items
     #define _linked rhsusf_iotv_ucp_SAW, rhsusf_ach_helmet_ESS_ucp
     ADD_GEAR;
-    backpack = cnto_us_mmg_gunner_pack;
-};
-class cnto_us_mmg_gunner_pack : B_AssaultPack_rgr {
-    scope = 1;
-    class TransportMagazines {
-        xmags(2, hlc_100Rnd_762x51_M_M60E4);
-        xmags(1, hlc_100Rnd_762x51_T_M60E4);
-    };
 };
 
 class cnto_us_mmg_bearer : cnto_us_soldier_base {
