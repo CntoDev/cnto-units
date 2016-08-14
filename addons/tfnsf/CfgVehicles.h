@@ -61,7 +61,7 @@ class cnto_tfnsf_blackop_rifle : cnto_tfnsf_blackop_base {
     scope = 2;
     displayName = "Grenadier";
     #define _weaps cnto_tfnsf_katiba_gl, hgun_P07_snds_F, ACE_Vector, Throw, Put
-    #define _mags 30Rnd_65x39_caseless_green, 1Rnd_Smoke_Grenade_shell, 30Rnd_9x21_Mag, \
+    #define _mags 30Rnd_65x39_caseless_green, 1Rnd_HE_Grenade_shell, 30Rnd_9x21_Mag, \
                   x8(30Rnd_65x39_caseless_green), x2(ACE_30Rnd_65x39_caseless_green_mag_Tracer_Dim)
     #define _items
     #define _linked AAFVest01_m_black, rhsusf_protech_helmet, cnto_flecktarn_f_bala_forest
@@ -71,10 +71,9 @@ class cnto_tfnsf_blackop_rifle : cnto_tfnsf_blackop_base {
 class cnto_tfnsf_blackop_rifle_pack : B_AssaultPack_blk {
     scope = 1;
     class TransportMagazines {
-        xmags(6, 1Rnd_HE_Grenade_shell);
+        xmags(12, 1Rnd_HE_Grenade_shell);
         xmags(4, 1Rnd_Smoke_Grenade_shell);
         xmags(4, UGL_FlareWhite_F);
-        xmags(4, UGL_FlareRed_F);
         xmags(8, ACE_HuntIR_M203);
         xmags(2, I_IR_Grenade);
     };
