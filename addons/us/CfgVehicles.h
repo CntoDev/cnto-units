@@ -17,7 +17,7 @@ class cnto_us_soldier_base : B_Soldier_base_F {
     #define _items x8(ACE_fieldDressing), x2(ACE_morphine), ACE_Flashlight_MX991, ACRE_PRC343
     #define _linked ItemMap, ItemCompass, ItemWatch, ItemRadioAcreFlagged
     ASSIGN_GEAR;
-    uniformClass = rhs_uniform_cu_ucp;
+    uniformClass = rhs_uniform_cu_ocp;
 };
 
 /*
@@ -30,7 +30,7 @@ class cnto_us_sq_sl : cnto_us_soldier_base {
     #define _mags rhs_mag_30Rnd_556x45_M855A1_Stanag, 1Rnd_HE_Grenade_shell, rhsusf_mag_15Rnd_9x19_JHP, \
                   x6(rhs_mag_30Rnd_556x45_M855A1_Stanag), x4(rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red), rhsusf_mag_15Rnd_9x19_JHP
     #define _items x2(ACE_CableTie), ACE_MapTools, ACRE_PRC152
-    #define _linked rhsusf_iotv_ucp_Squadleader, rhsusf_ach_helmet_headset_ucp, ItemGPS
+    #define _linked rhsusf_iotv_ocp_Squadleader, rhsusf_ach_helmet_headset_ocp, ItemGPS
     ADD_GEAR;
     backpack = cnto_us_sq_sl_pack;
 };
@@ -57,7 +57,7 @@ class cnto_us_sq_medic : cnto_us_soldier_base {
     #define _mags rhs_mag_30Rnd_556x45_M855A1_Stanag, rhsusf_mag_15Rnd_9x19_JHP, \
                   x8(rhs_mag_30Rnd_556x45_M855A1_Stanag), x2(rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red), rhsusf_mag_15Rnd_9x19_JHP
     #define _items
-    #define _linked rhsusf_iotv_ucp_Medic, rhsusf_ach_helmet_ucp, ItemGPS
+    #define _linked rhsusf_iotv_ocp_Medic, rhsusf_ach_helmet_ocp, ItemGPS
     ADD_GEAR;
     backpack = cnto_us_sq_medic_pack;
     attendant = 1;
@@ -87,7 +87,7 @@ class cnto_us_ft_tl : cnto_us_soldier_base {
     #define _mags rhs_mag_30Rnd_556x45_M855A1_Stanag, 1Rnd_HE_Grenade_shell, rhsusf_mag_15Rnd_9x19_JHP, \
                   x6(rhs_mag_30Rnd_556x45_M855A1_Stanag), x4(rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red), rhsusf_mag_15Rnd_9x19_JHP
     #define _items x2(ACE_CableTie), ACE_MapTools
-    #define _linked rhsusf_iotv_ucp_Grenadier, rhsusf_ach_helmet_headset_ucp, ItemGPS
+    #define _linked rhsusf_iotv_ocp_Grenadier, rhsusf_ach_helmet_headset_ocp, ItemGPS
     ADD_GEAR;
     backpack = cnto_us_ft_tl_pack;
 };
@@ -113,7 +113,7 @@ class cnto_us_ft_ar : cnto_us_soldier_base {
     #define _mags rhsusf_100Rnd_556x45_soft_pouch, rhsusf_mag_15Rnd_9x19_JHP, \
                   x3(rhsusf_100Rnd_556x45_soft_pouch), rhsusf_mag_15Rnd_9x19_JHP
     #define _items
-    #define _linked rhsusf_iotv_ucp_SAW, rhsusf_ach_helmet_ESS_ucp
+    #define _linked rhsusf_iotv_ocp_SAW, rhsusf_ach_helmet_ESS_ocp
     ADD_GEAR;
     backpack =;
 };
@@ -125,7 +125,7 @@ class cnto_us_ft_aar : cnto_us_soldier_base {
     #define _mags rhs_mag_30Rnd_556x45_M855A1_Stanag, rhsusf_mag_15Rnd_9x19_JHP, \
                   x8(rhs_mag_30Rnd_556x45_M855A1_Stanag), x2(rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red), rhsusf_mag_15Rnd_9x19_JHP
     #define _items x2(ACE_CableTie), ACE_MapTools
-    #define _linked rhsusf_iotv_ucp_Teamleader, rhsusf_ach_helmet_ucp, ItemGPS
+    #define _linked rhsusf_iotv_ocp_Teamleader, rhsusf_ach_helmet_ocp, ItemGPS
     ADD_GEAR;
     backpack = cnto_us_ft_aar_pack;
 };
@@ -152,7 +152,7 @@ class cnto_us_ft_at : cnto_us_soldier_base {
     #define _mags rhs_mag_30Rnd_556x45_M855A1_Stanag, rhsusf_mag_15Rnd_9x19_JHP, \
                   x8(rhs_mag_30Rnd_556x45_M855A1_Stanag), x2(rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red), rhsusf_mag_15Rnd_9x19_JHP
     #define _items
-    #define _linked rhsusf_iotv_ucp_Rifleman, rhsusf_ach_helmet_ucp
+    #define _linked rhsusf_iotv_ocp_Rifleman, rhsusf_ach_helmet_ocp
     ADD_GEAR;
     backpack =;
 };
@@ -167,7 +167,7 @@ class cnto_us_plt_co : cnto_us_soldier_base {
     #define _mags rhs_mag_30Rnd_556x45_M855A1_Stanag, 1Rnd_SmokeRed_Grenade_shell, rhsusf_mag_15Rnd_9x19_JHP, \
                   x6(rhs_mag_30Rnd_556x45_M855A1_Stanag), x4(rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red), rhsusf_mag_15Rnd_9x19_JHP
     #define _items x2(ACE_CableTie), ACE_MapTools, ACRE_PRC152, ACRE_PRC148
-    #define _linked rhsusf_iotv_ucp_Squadleader, rhsusf_patrolcap_ucp, ItemGPS
+    #define _linked rhsusf_iotv_ocp_Squadleader, rhsusf_patrolcap_ocp, ItemGPS
     ADD_GEAR;
     backpack = cnto_us_plt_co_pack;
 };
@@ -193,7 +193,7 @@ class cnto_us_plt_sgt : cnto_us_soldier_base {
     #define _mags rhs_mag_30Rnd_556x45_M855A1_Stanag, rhsusf_mag_15Rnd_9x19_JHP, \
                   x6(rhs_mag_30Rnd_556x45_M855A1_Stanag), x4(rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red), rhsusf_mag_15Rnd_9x19_JHP
     #define _items x2(ACE_CableTie), ACE_MapTools, ACRE_PRC152, ACRE_PRC148
-    #define _linked rhsusf_iotv_ucp_Teamleader, rhsusf_ach_helmet_headset_ucp, ItemGPS
+    #define _linked rhsusf_iotv_ocp_Teamleader, rhsusf_ach_helmet_headset_ocp, ItemGPS
     ADD_GEAR;
     backpack =;
 };
@@ -209,7 +209,7 @@ class cnto_us_plt_rfl : cnto_us_soldier_base {
     #define _mags rhs_mag_30Rnd_556x45_M855A1_Stanag, rhsusf_mag_15Rnd_9x19_JHP, \
                   x8(rhs_mag_30Rnd_556x45_M855A1_Stanag), x2(rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red), rhsusf_mag_15Rnd_9x19_JHP
     #define _items
-    #define _linked rhsusf_iotv_ucp_Rifleman, rhsusf_ach_helmet_ucp
+    #define _linked rhsusf_iotv_ocp_Rifleman, rhsusf_ach_helmet_ocp
     ADD_GEAR;
     backpack =;
 };
@@ -224,7 +224,7 @@ class cnto_us_mmg_tl : cnto_us_soldier_base {
     #define _mags rhs_mag_30Rnd_556x45_M855A1_Stanag, 1Rnd_HE_Grenade_shell, rhsusf_mag_15Rnd_9x19_JHP, \
                   x6(rhs_mag_30Rnd_556x45_M855A1_Stanag), x4(rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red), rhsusf_mag_15Rnd_9x19_JHP
     #define _items x2(ACE_CableTie), ACE_MapTools, ACRE_PRC152
-    #define _linked rhsusf_iotv_ucp_Grenadier, rhsusf_ach_helmet_headset_ucp, ItemGPS
+    #define _linked rhsusf_iotv_ocp_Grenadier, rhsusf_ach_helmet_headset_ocp, ItemGPS
     ADD_GEAR;
     backpack = cnto_us_mmg_tl_pack;
 };
@@ -250,7 +250,7 @@ class cnto_us_mmg_gunner : cnto_us_soldier_base {
     #define _mags hlc_100Rnd_762x51_M_M60E4, rhsusf_mag_15Rnd_9x19_JHP, \
                   x3(hlc_100Rnd_762x51_M_M60E4), hlc_100Rnd_762x51_T_M60E4, rhsusf_mag_15Rnd_9x19_JHP
     #define _items
-    #define _linked rhsusf_iotv_ucp_SAW, rhsusf_ach_helmet_ESS_ucp
+    #define _linked rhsusf_iotv_ocp_SAW, rhsusf_ach_helmet_ESS_ocp
     ADD_GEAR;
 };
 
@@ -261,7 +261,7 @@ class cnto_us_mmg_bearer : cnto_us_soldier_base {
     #define _mags rhs_mag_30Rnd_556x45_M855A1_Stanag, rhsusf_mag_15Rnd_9x19_JHP, \
                   x8(rhs_mag_30Rnd_556x45_M855A1_Stanag), x2(rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red), rhsusf_mag_15Rnd_9x19_JHP
     #define _items
-    #define _linked rhsusf_iotv_ucp_Rifleman, rhsusf_ach_helmet_ucp
+    #define _linked rhsusf_iotv_ocp_Rifleman, rhsusf_ach_helmet_ocp
     ADD_GEAR;
     backpack = cnto_us_mmg_bearer_pack;
 };
@@ -287,7 +287,7 @@ class cnto_us_mat_gunner : cnto_us_soldier_base {
     #define _mags rhs_mag_30Rnd_556x45_M855A1_Stanag, tf47_m3maaws_HEAT, rhsusf_mag_15Rnd_9x19_JHP, \
                   x8(rhs_mag_30Rnd_556x45_M855A1_Stanag), x2(rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red), rhsusf_mag_15Rnd_9x19_JHP
     #define _items
-    #define _linked rhsusf_iotv_ucp_Rifleman, rhsusf_ach_helmet_ESS_ucp
+    #define _linked rhsusf_iotv_ocp_Rifleman, rhsusf_ach_helmet_ESS_ocp
     ADD_GEAR;
     backpack = cnto_us_mat_gunner_pack;
 };
@@ -306,7 +306,7 @@ class cnto_us_mat_bearer : cnto_us_soldier_base {
     #define _mags rhs_mag_30Rnd_556x45_M855A1_Stanag, rhsusf_mag_15Rnd_9x19_JHP, \
                   x8(rhs_mag_30Rnd_556x45_M855A1_Stanag), x2(rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red), rhsusf_mag_15Rnd_9x19_JHP
     #define _items
-    #define _linked rhsusf_iotv_ucp_Rifleman, rhsusf_ach_helmet_ucp
+    #define _linked rhsusf_iotv_ocp_Rifleman, rhsusf_ach_helmet_ocp
     ADD_GEAR;
     backpack = cnto_us_mat_bearer_pack;
 };
@@ -328,7 +328,7 @@ class cnto_us_mortar_assist : cnto_us_soldier_base {
     #define _mags rhs_mag_30Rnd_556x45_M855A1_Stanag, rhsusf_mag_15Rnd_9x19_JHP, \
                   x2(SmokeShellGreen), SmokeShellBlue, x8(rhs_mag_30Rnd_556x45_M855A1_Stanag), x2(rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red), rhsusf_mag_15Rnd_9x19_JHP
     #define _items ACE_MapTools, ACE_RangeTable_82mm, ACRE_PRC152
-    #define _linked rhsusf_iotv_ucp_Teamleader, rhsusf_ach_helmet_headset_ucp, ItemGPS
+    #define _linked rhsusf_iotv_ocp_Teamleader, rhsusf_ach_helmet_headset_ocp, ItemGPS
     ADD_GEAR;
     backpack = B_Mortar_01_support_F;
 };
@@ -340,7 +340,7 @@ class cnto_us_mortar_gunner : cnto_us_soldier_base {
     #define _mags rhs_mag_30Rnd_556x45_M855A1_Stanag, rhsusf_mag_15Rnd_9x19_JHP, \
                   x8(rhs_mag_30Rnd_556x45_M855A1_Stanag), x2(rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red), rhsusf_mag_15Rnd_9x19_JHP
     #define _items ACE_MapTools, ACE_RangeTable_82mm
-    #define _linked rhsusf_iotv_ucp_Rifleman, rhsusf_ach_helmet_ucp
+    #define _linked rhsusf_iotv_ocp_Rifleman, rhsusf_ach_helmet_ocp
     ADD_GEAR;
     backpack = B_Mortar_01_weapon_F;
 };
@@ -458,7 +458,7 @@ class cnto_us_trainer : cnto_us_soldier_base {
     #define _mags rhsusf_mag_15Rnd_9x19_JHP, \
                   x4(rhsusf_mag_15Rnd_9x19_JHP)
     #define _items x2(ACE_CableTie), x10(ACE_epinephrine), x5(ACE_bloodIV), ACE_MapTools, ACRE_PRC152, ACRE_PRC148
-    #define _linked rhsusf_iotv_ucp_Squadleader, rhsusf_patrolcap_ucp, ItemGPS
+    #define _linked rhsusf_iotv_ocp_Squadleader, rhsusf_patrolcap_ocp, ItemGPS
     ADD_GEAR;
     backpack =;
     class EventHandlers : EventHandlers {
