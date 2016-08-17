@@ -36,6 +36,7 @@ if (_this == "pvp") then {
     set3DENMissionAttributes [
         ["Multiplayer", "GameType", "DM"],
         ["Multiplayer", "Respawn", 1],  // to spectator
+        ["Multiplayer", "RespawnTemplates", ["EndMission","Spectator"]],
         ["Multiplayer", "RespawnDelay", 0],
         ["Multiplayer", "RespawnVehicleDelay", 0],
         ["Multiplayer", "RespawnButton", 0]

@@ -167,6 +167,18 @@ _modules append [
         ["Init", "2 enableChannel false;" + _n +
                  "4 enableChannel false;" + _n +
                  "5 enableChannel false;"]
+    ]],
+    /*
+     * - set up killed EH to switch ACRE2 to spectator
+     * - kill player on JIP in PvP (respawn taken care of elsewhere)
+     */
+    ["Logic", [
+        ["Init", "if (!hasInterface) exitWith {};" + _n +
+                 "0 = [] spawn {" + _n +
+                 "    waitUntil { !isNull player };" + _n +
+                 "    player addEventHandler [""Killed"", { [true] call acre_api_fnc_setSpectator }];" + _n +
+                 "    if (didJIP) then { player setDamage 1 };" + _n +
+                 "};"]
     ]]
 ];
 };
