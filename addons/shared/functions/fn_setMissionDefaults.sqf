@@ -20,7 +20,7 @@ set3DENMissionAttributes [
     ["Multiplayer", "GameType", "Coop"],
     ["Multiplayer", "MinPlayers", 0],
     ["Multiplayer", "MaxPlayers", 0],
-    ["Multiplayer", "DisabledAI", false],
+    ["Multiplayer", "DisabledAI", true],
     ["Multiplayer", "JoinUnassigned", true],
     ["Multiplayer", "Respawn", 3],  // on custom location
     ["Multiplayer", "RespawnTemplates", []],
