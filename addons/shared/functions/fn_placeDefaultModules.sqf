@@ -66,10 +66,8 @@ private _modules = [
     ]],
     ["ace_map_gestures_moduleSettings"],
     ["ACE_ModuleNameTags", [
-        ["ACE_ModuleNameTags_showPlayerNames", 1],
         ["ACE_ModuleNameTags_playerNamesViewDistance", 30],
         ["ACE_ModuleNameTags_showNamesForAI", 0],
-        ["ACE_ModuleNameTags_showVehicleCrewInfo", 1],
         ["ACE_ModuleNameTags_showCursorTagForVehicles", true]
     ]],
     ["ace_nightvision_ModuleSettings", [
