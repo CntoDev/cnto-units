@@ -22,6 +22,12 @@ class cnto_tfnsf_base : I_Soldier_base_F {
     uavHacker = 1;
     canDeactivateMines = 1;
     canHideBodies = 1;
+    /* I should actually just re-define all of the 9000 sounds, but with lower
+     * volume .. though it would be a lot of variables to break on Arma update.
+     * This is really lazy, but as there are still *some* quiet footstep
+     * sounds, it works reasonably well in practice. */
+    class SoundEnvironExt {};
+    class SoundGear {};
 };
 
 /* ------------------------------------------------------------------------- */
