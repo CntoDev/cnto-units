@@ -2,16 +2,7 @@
  * "named" units, for ruse in CfgGroups, with lobby-friendly names
  */
 
-#define QUOTE(x) #x
-#define INIT_EH(id, color) [(_this select 0), id, color] call cnto_units_fnc_initGroupAttr
-#define SOLDIER(base, suffix, dname, grpid, color) \
-    class base##_##suffix : base { \
-        scope = 1; \
-        displayName = dname; \
-        class EventHandlers : EventHandlers { \
-            class group_attr { init = QUOTE(INIT_EH(grpid, color)); }; \
-        }; \
-    }
+#include "\cnto\units\shared\group_units.h"
 
 SOLDIER(cnto_rus_sq_sl,asl,    "Amur Squad Leader",           'ASL', 'MAIN');
 SOLDIER(cnto_rus_sq_medic,asl, "Amur Squad Medic",            'ASL', 'MAIN');

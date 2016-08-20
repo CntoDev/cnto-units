@@ -2,16 +2,7 @@
  * "named" units, for Task Force Noctem Faction in CfgGroups, with lobby-friendly names
  */
 
-#define QUOTE(x) #x
-#define INIT_EH(id, cntoor) [(_this select 0), id, cntoor] call cnto_units_fnc_initGroupAttr
-#define SOLDIER(base, suffix, dname, grpid, cntoor) \
-    class base##_##suffix : base { \
-        scope = 1; \
-        displayName = dname; \
-        class EventHandlers : EventHandlers { \
-            class group_attr { init = QUOTE(INIT_EH(grpid, cntoor)); }; \
-        }; \
-    }
+#include "\cnto\units\shared\group_units.h"
 
 SOLDIER(cnto_tfn_sq_sl,tsl,    "Templar Squad Leader",           'TSL', 'MAIN');
 SOLDIER(cnto_tfn_sq_medic,tsl, "Templar Squad Medic",            'TSL', 'MAIN');
