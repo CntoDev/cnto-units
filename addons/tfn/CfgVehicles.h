@@ -148,7 +148,7 @@ class cnto_tfn_ft_aar_pack : cnto_flecktarn_b_kb_mediterranean {
 class cnto_tfn_ft_at : cnto_tfn_soldier_base {
     scope = 2;
     displayName = "FT AT";
-    #define _weaps cnto_tfn_416_flash, tf47_at4_HEDP, hgun_ACPC2_F, Throw, Put
+    #define _weaps cnto_tfn_416_flash, rhs_weap_M136, hgun_ACPC2_F, Throw, Put
     #define _mags 30Rnd_556x45_Stanag, 9Rnd_45ACP_Mag, \
                   x8(30Rnd_556x45_Stanag), x2(30Rnd_556x45_Stanag_Tracer_Red), x2(9Rnd_45ACP_Mag)
     #define _items
@@ -508,7 +508,7 @@ class cnto_tfn_resupply_small : Box_NATO_Ammo_F {
     editorSubcategory = CNTO_TFN_Supplies;
     displayName = "Infantry Resupply (Small)";
     class TransportWeapons {
-        xweaps(1, tf47_at4_HEDP);
+        xweaps(1, rhs_weap_M136);
     };
     class TransportMagazines {
         xmags(24, 30Rnd_556x45_Stanag);
@@ -531,7 +531,7 @@ class cnto_tfn_resupply_medium : B_supplyCrate_F {
     editorSubcategory = CNTO_TFN_Supplies;
     displayName = "Infantry Resupply (Medium)";
     class TransportWeapons {
-        xweaps(4, tf47_at4_HEDP);
+        xweaps(4, rhs_weap_M136);
     };
     class TransportMagazines {
         xmags(80, 30Rnd_556x45_Stanag);

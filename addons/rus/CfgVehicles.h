@@ -149,7 +149,7 @@ class cnto_rus_ft_aar_pack : B_Kitbag_rgr {
 class cnto_rus_ft_at : cnto_rus_soldier_base {
     scope = 2;
     displayName = "FT AT";
-    #define _weaps cnto_rus_ak74m_flash, tf47_at4_HEDP, rhs_weap_pya, Throw, Put
+    #define _weaps cnto_rus_ak74m_flash, rhs_weap_rpg26, rhs_weap_pya, Throw, Put
     #define _mags rhs_30Rnd_545x39_AK, rhs_mag_9x19_17, \
                   x8(rhs_30Rnd_545x39_AK), x2(rhs_30Rnd_545x39_AK_green), rhs_mag_9x19_17
     #define _items
@@ -517,7 +517,7 @@ class cnto_rus_resupply_small : Box_EAST_Ammo_F {
     editorSubcategory = CNTO_RUS_Supplies;
     displayName = "Infantry Resupply (Small)";
     class TransportWeapons {
-        xweaps(1, tf47_at4_HEDP);
+        xweaps(1, rhs_weap_rpg26);
     };
     class TransportMagazines {
         xmags(24, rhs_30Rnd_545x39_AK);
@@ -540,7 +540,7 @@ class cnto_rus_resupply_medium : O_supplyCrate_F {
     editorSubcategory = CNTO_RUS_Supplies;
     displayName = "Infantry Resupply (Medium)";
     class TransportWeapons {
-        xweaps(4, tf47_at4_HEDP);
+        xweaps(4, rhs_weap_rpg26);
     };
     class TransportMagazines {
         xmags(80, rhs_30Rnd_545x39_AK);

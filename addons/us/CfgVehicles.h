@@ -148,7 +148,7 @@ class cnto_us_ft_aar_pack : B_Kitbag_rgr {
 class cnto_us_ft_at : cnto_us_soldier_base {
     scope = 2;
     displayName = "FT AT";
-    #define _weaps cnto_us_m4a1_flash, tf47_at4_HEDP, rhsusf_weap_m9, Throw, Put
+    #define _weaps cnto_us_m4a1_flash, rhs_weap_M136, rhsusf_weap_m9, Throw, Put
     #define _mags rhs_mag_30Rnd_556x45_M855A1_Stanag, rhsusf_mag_15Rnd_9x19_JHP, \
                   x8(rhs_mag_30Rnd_556x45_M855A1_Stanag), x2(rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red), rhsusf_mag_15Rnd_9x19_JHP
     #define _items
@@ -508,7 +508,7 @@ class cnto_us_resupply_small : Box_NATO_Ammo_F {
     editorSubcategory = CNTO_US_Supplies;
     displayName = "Infantry Resupply (Small)";
     class TransportWeapons {
-        xweaps(1, tf47_at4_HEDP);
+        xweaps(1, rhs_weap_M136);
     };
     class TransportMagazines {
         xmags(24, rhs_mag_30Rnd_556x45_M855A1_Stanag);
@@ -531,7 +531,7 @@ class cnto_us_resupply_medium : B_supplyCrate_F {
     editorSubcategory = CNTO_US_Supplies;
     displayName = "Infantry Resupply (Medium)";
     class TransportWeapons {
-        xweaps(4, tf47_at4_HEDP);
+        xweaps(4, rhs_weap_M136);
     };
     class TransportMagazines {
         xmags(80, rhs_mag_30Rnd_556x45_M855A1_Stanag);

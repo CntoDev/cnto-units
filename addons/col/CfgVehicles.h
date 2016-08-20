@@ -148,7 +148,7 @@ class cnto_col_ft_aar_pack : B_Kitbag_rgr {
 class cnto_col_ft_at : cnto_col_soldier_base {
     scope = 2;
     displayName = "FT AT";
-    #define _weaps cnto_col_g3_flash, tf47_at4_HEDP, hgun_ACPC2_F, Throw, Put
+    #define _weaps cnto_col_g3_flash, rhs_weap_M136, hgun_ACPC2_F, Throw, Put
     #define _mags hlc_20rnd_762x51_b_G3, 9Rnd_45ACP_Mag, \
                   x5(hlc_20rnd_762x51_b_G3), x2(hlc_20rnd_762x51_T_G3), x1(9Rnd_45ACP_Mag)
     #define _items
@@ -518,7 +518,7 @@ class cnto_col_resupply_small : Box_IND_Ammo_F {
     editorSubcategory = CNTO_COL_Supplies;
     displayName = "Infantry Resupply (Small)";
     class TransportWeapons {
-        xweaps(1, tf47_at4_HEDP);
+        xweaps(1, rhs_weap_M136);
     };
     class TransportMagazines {
         xmags(24, hlc_20rnd_762x51_b_G3);
@@ -541,7 +541,7 @@ class cnto_col_resupply_medium : I_supplyCrate_F {
     editorSubcategory = CNTO_COL_Supplies;
     displayName = "Infantry Resupply (Medium)";
     class TransportWeapons {
-        xweaps(4, tf47_at4_HEDP);
+        xweaps(4, rhs_weap_M136);
     };
     class TransportMagazines {
         xmags(80, hlc_20rnd_762x51_b_G3);
