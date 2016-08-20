@@ -11,4 +11,8 @@
 
     _this allowDamage false;
     _this setCaptive true;
+
+    /* hide on the map (ACE BluFor Tracking) */
+    _this setVariable ["ACE_map_hideBlueForceMarker", true, true];
+    (group _this) setVariable ["ACE_map_hideBlueForceMarker", true, true];
 };
