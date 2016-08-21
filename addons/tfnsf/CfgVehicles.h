@@ -57,7 +57,7 @@ class cnto_tfnsf_blackop_cqb : cnto_tfnsf_blackop_base {
 class cnto_tfnsf_blackop_cqb_pack : B_AssaultPack_blk {
     scope = 1;
     class TransportMagazines {
-        xmags(8, 30Rnd_9x21_Mag);
+        xmags(8, 16Rnd_9x21_Mag);
         xmags(4, MiniGrenade);
         xmags(12, ACE_M84);
     };
@@ -67,7 +67,7 @@ class cnto_tfnsf_blackop_rifle : cnto_tfnsf_blackop_base {
     scope = 2;
     displayName = "Grenadier";
     #define _weaps cnto_tfnsf_katiba_gl, hgun_P07_snds_F, ACE_Vector, Throw, Put
-    #define _mags 30Rnd_65x39_caseless_green, 1Rnd_HE_Grenade_shell, 30Rnd_9x21_Mag, \
+    #define _mags 30Rnd_65x39_caseless_green, 1Rnd_HE_Grenade_shell, 16Rnd_9x21_Mag, \
                   x8(30Rnd_65x39_caseless_green), x2(ACE_30Rnd_65x39_caseless_green_mag_Tracer_Dim)
     #define _items
     #define _linked AAFVest01_m_black, rhsusf_protech_helmet, cnto_flecktarn_f_bala_forest
@@ -92,8 +92,8 @@ class cnto_tfnsf_blackop_mark : cnto_tfnsf_blackop_base {
     scope = 2;
     displayName = "Marksman (AT/Utility)";
     #define _weaps rhs_weap_asval, rhs_weap_m72a7, hgun_P07_snds_F, ACE_Vector, Throw, Put
-    #define _mags rhs_20rnd_9x39mm_SP5, 30Rnd_9x21_Mag, \
-                  x6(rhs_20rnd_9x39mm_SP5), x2(30Rnd_9x21_Mag)
+    #define _mags SW_10rnd_SP5_SuperHeavy_Frag, 16Rnd_9x21_Mag, \
+                  x5(SW_10rnd_SP5_SuperHeavy_Frag), x3(16Rnd_9x21_Mag)
     #define _items
     #define _linked AAFVest01_l_black, H_Watchcap_blk, G_Bandanna_blk
     ADD_GEAR;
@@ -111,7 +111,7 @@ class cnto_tfnsf_blackop_demo : cnto_tfnsf_blackop_base {
     scope = 2;
     displayName = "Demo Expert";
     #define _weaps cnto_tfnsf_katiba, hgun_P07_snds_F, ACE_Vector, Throw, Put
-    #define _mags 30Rnd_65x39_caseless_green, 30Rnd_9x21_Mag, \
+    #define _mags 30Rnd_65x39_caseless_green, 16Rnd_9x21_Mag, \
                   x8(30Rnd_65x39_caseless_green), x2(ACE_30Rnd_65x39_caseless_green_mag_Tracer_Dim)
     #define _items ACE_DeadManSwitch, ACE_DefusalKit
     #define _linked AAFVest01_m_black, H_Beret_blk, G_Balaclava_blk
@@ -153,8 +153,8 @@ class cnto_tfnsf_blackop_sniper : cnto_tfnsf_blackop_base {
     scope = 2;
     displayName = "Support Sniper";
     #define _weaps cnto_tfnsf_gm6lynx, hgun_P07_snds_F, ACE_Vector, Throw, Put
-    #define _mags 5Rnd_127x108_APDS_Mag, 30Rnd_9x21_Mag, \
-                  x6(5Rnd_127x108_APDS_Mag), 30Rnd_9x21_Mag
+    #define _mags 5Rnd_127x108_APDS_Mag, 16Rnd_9x21_Mag, \
+                  x6(5Rnd_127x108_APDS_Mag), 16Rnd_9x21_Mag
     #define _items ACE_ATragMX, ACE_Kestrel4500
     #define _linked AAFVest01_l_black, BoonieH_black, G_Balaclava_blk
     ADD_GEAR;
@@ -164,7 +164,7 @@ class cnto_tfnsf_blackop_sniper_pack : B_AssaultPack_blk {
     scope = 1;
     class TransportMagazines {
         xmags(4, 5Rnd_127x108_APDS_Mag);
-        xmags(2, 30Rnd_9x21_Mag);
+        xmags(2, 16Rnd_9x21_Mag);
     };
 };*/
 
@@ -172,7 +172,7 @@ class cnto_tfnsf_blackop_mg : cnto_tfnsf_blackop_base {
     scope = 2;
     displayName = "Support Gunner";
     #define _weaps cnto_tfnsf_m60, hgun_P07_snds_F, ACE_Vector, Throw, Put
-    #define _mags hlc_100Rnd_762x51_B_M60E4, 30Rnd_9x21_Mag, \
+    #define _mags hlc_100Rnd_762x51_B_M60E4, 16Rnd_9x21_Mag, \
                   x4(hlc_100Rnd_762x51_B_M60E4)
     #define _items ACE_EarPlugs
     #define _linked AAFVest01_m_black, H_Bandanna_gry, G_Bandanna_blk
@@ -183,7 +183,7 @@ class cnto_tfnsf_blackop_mg_pack : B_FieldPack_blk {
     scope = 1;
     class TransportMagazines {
         xmags(7, hlc_100Rnd_762x51_B_M60E4);
-        xmags(1, 30Rnd_9x21_Mag);
+        xmags(1, 16Rnd_9x21_Mag);
     };
 };
 
@@ -191,7 +191,7 @@ class cnto_tfnsf_blackop_missile : cnto_tfnsf_blackop_base {
     scope = 2;
     displayName = "Missile Master (AT)";
     #define _weaps cnto_tfnsf_katiba, launch_I_Titan_short_F, hgun_P07_snds_F, ACE_Vector, Throw, Put
-    #define _mags 30Rnd_65x39_caseless_green, Titan_AT, 30Rnd_9x21_Mag, \
+    #define _mags 30Rnd_65x39_caseless_green, Titan_AT, 16Rnd_9x21_Mag, \
                   x4(30Rnd_65x39_caseless_green), x2(ACE_30Rnd_65x39_caseless_green_mag_Tracer_Dim)
     #define _items
     #define _linked AAFVest01_m_black, H_Bandanna_gry, G_Bandanna_blk
