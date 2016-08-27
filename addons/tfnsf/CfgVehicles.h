@@ -154,8 +154,8 @@ class cnto_tfnsf_blackop_sniper : cnto_tfnsf_blackop_base {
     displayName = "Support Sniper";
     #define _weaps cnto_tfnsf_gm6lynx, hgun_P07_snds_F, ACE_Vector, Throw, Put
     #define _mags 5Rnd_127x108_APDS_Mag, 16Rnd_9x21_Mag, \
-                  x6(5Rnd_127x108_APDS_Mag), 16Rnd_9x21_Mag
-    #define _items ACE_ATragMX, ACE_Kestrel4500
+                  x5(5Rnd_127x108_APDS_Mag), x2(16Rnd_9x21_Mag)
+    #define _items ACE_ATragMX, ACE_Kestrel4500, optic_NVS
     #define _linked AAFVest01_l_black, BoonieH_black, G_Balaclava_blk
     ADD_GEAR;
 };
@@ -173,7 +173,7 @@ class cnto_tfnsf_blackop_mg : cnto_tfnsf_blackop_base {
     displayName = "Support Gunner";
     #define _weaps cnto_tfnsf_m60, hgun_P07_snds_F, ACE_Vector, Throw, Put
     #define _mags hlc_100Rnd_762x51_B_M60E4, 16Rnd_9x21_Mag, \
-                  x4(hlc_100Rnd_762x51_B_M60E4)
+                  x4(hlc_100Rnd_762x51_B_M60E4), 16Rnd_9x21_Mag
     #define _items ACE_EarPlugs
     #define _linked AAFVest01_m_black, H_Bandanna_gry, G_Bandanna_blk
     ADD_GEAR;
