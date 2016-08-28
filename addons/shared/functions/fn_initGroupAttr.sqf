@@ -19,16 +19,21 @@ if (is3DEN) then {
         _unit set3DENAttribute ["ControlMP", true];  /* playable */
     };
 } else {
-    /* not on JIP / on a running mission - colors are managed by grp leader */
-    if (time > 0) exitWith {};
-    /* run on all clients, even where the unit is REMOTE - it doesn't matter
-     * for assignTeam, we actually want it to run everywhere! */
     if (!isNil "_color" && !isDedicated) then {
         0 = [_unit, _color] spawn {
             params ["_unit", "_color"];
             /* special requirement for assignTeam */
             waitUntil { !isNull player };
+            /* wait for other teammates to be created and in place, so they can
+             * receive the color update - Arma v1.62 made assignTeam have global
+             * effect, but it seems to re-set colors on game start, so wait
+             * a second or two (ugh) */
+            waitUntil { time > 0 };
+            sleep 3;
+            /* Arma v1.62 ignores the command for non-leaders, so just run it
+             * on all clients */
             _unit assignTeam _color;
+            systemchat format ["setting colors: %1 / %2", _unit, _color];
         };
     };
 };
