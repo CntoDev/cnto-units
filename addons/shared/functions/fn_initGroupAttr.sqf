@@ -33,7 +33,6 @@ if (is3DEN) then {
             /* Arma v1.62 ignores the command for non-leaders, so just run it
              * on all clients */
             _unit assignTeam _color;
-            systemchat format ["setting colors: %1 / %2", _unit, _color];
         };
     };
 };
