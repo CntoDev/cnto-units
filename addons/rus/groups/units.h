@@ -46,6 +46,9 @@ SOLDIER(cnto_rus_mat_bearer,1,    "MAT Ammo Bearer",    'MAT', 'MAIN');
 SOLDIER(cnto_rus_mortar_assist,1, "Mortar Ass. Gunner", 'MTR', 'MAIN');
 SOLDIER(cnto_rus_mortar_gunner,1, "Mortar Gunner",      'MTR', 'MAIN');
 
+SOLDIER(cnto_rus_eng_tl,1,  "Engineer Team Leader ""Bobr""", 'Bobr', 'MAIN');
+SOLDIER(cnto_rus_eng_rfl,1, "Engineer Rifleman ""Bobr""",    'Bobr', 'MAIN');
+
 SOLDIER(cnto_rus_veh_co,1,      "Vehicle Commander ""Medved 1""",       'MDVD 1', 'MAIN');
 SOLDIER(cnto_rus_veh_driver,1,  "Vehicle Driver ""Medved 1"" (Repair)", 'MDVD 1', 'MAIN');
 SOLDIER(cnto_rus_veh_gunner,1,  "Vehicle Gunner ""Medved 1""",          'MDVD 1', 'MAIN');

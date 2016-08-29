@@ -83,6 +83,14 @@ class Infantry {
         class Unit0 { vehicle = cnto_us_mortar_assist_1; position[] = {0,0,0}; rank = "SERGEANT"; };
         class Unit1 { vehicle = cnto_us_mortar_gunner_1; position[] = {1,0,0}; rank = "PRIVATE"; };
     };
+    class Engineers {
+        name = "Engineers";
+        icon = "\A3\ui_f\data\map\markers\nato\b_inf.paa";
+        class Unit0 { vehicle = cnto_us_eng_tl_1; position[] = {0,0,0}; rank = "SERGEANT"; };
+        class Unit1 { vehicle = cnto_us_eng_rfl_1; position[] = {1,0,0}; rank = "PRIVATE"; };
+        class Unit2 { vehicle = cnto_us_eng_rfl_1; position[] = {2,0,0}; rank = "PRIVATE"; };
+        class Unit3 { vehicle = cnto_us_eng_rfl_1; position[] = {3,0,0}; rank = "PRIVATE"; };
+    };
 };
 class Crew {
     name = "Crew";

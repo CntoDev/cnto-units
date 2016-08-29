@@ -7,6 +7,7 @@ class B_Soldier_base_F : SoldierWB {
 };
 class B_AssaultPack_rgr;
 class B_Kitbag_rgr;
+class B_Carryall_cbr;
 
 class cnto_us_soldier_base : B_Soldier_base_F {
     scope = 0;
@@ -343,6 +344,43 @@ class cnto_us_mortar_gunner : cnto_us_soldier_base {
     #define _linked rhsusf_iotv_ocp_Rifleman, rhsusf_ach_helmet_ocp
     ADD_GEAR;
     backpack = B_Mortar_01_weapon_F;
+};
+
+/*
+ * Engineering Team
+ */
+class cnto_us_eng_tl : cnto_us_soldier_base {
+    scope = 2;
+    displayName = "Eng TL";
+    #define _weaps cnto_us_m4a1_flash, rhsusf_weap_m9, ACE_VectorDay, Throw, Put
+    #define _mags rhs_mag_30Rnd_556x45_M855A1_Stanag, rhsusf_mag_15Rnd_9x19_JHP, \
+                  x4(rhs_mag_30Rnd_556x45_M855A1_Stanag)
+    #define _items ACE_MapTools, ACRE_PRC148, ACRE_PRC152, ACE_M26_Clacker, ACE_DefusalKit, ACE_EntrenchingTool, ACE_wirecutter
+    #define _linked rhsusf_iotv_ocp_Teamleader, rhsusf_ach_helmet_headset_ocp, ItemGPS
+    ADD_GEAR;
+    backpack = cnto_us_eng_tl_pack;
+    engineer = 1;
+    canDeactivateMines = 1;
+};
+class cnto_us_eng_tl_pack : B_Carryall_cbr {
+    scope = 1;
+    class TransportItems {
+        xitems(1, ToolKit);
+    };
+};
+
+class cnto_us_eng_rfl : cnto_us_soldier_base {
+    scope = 2;
+    displayName = "Eng Rifleman";
+    #define _weaps cnto_us_m4a1_flash, rhsusf_weap_m9, ACE_VectorDay, Throw, Put
+    #define _mags rhs_mag_30Rnd_556x45_M855A1_Stanag, rhsusf_mag_15Rnd_9x19_JHP, \
+                  x4(rhs_mag_30Rnd_556x45_M855A1_Stanag)
+    #define _items ACE_MapTools, ACRE_PRC148, ACE_M26_Clacker, ACE_DefusalKit, ACE_EntrenchingTool, ACE_wirecutter
+    #define _linked rhsusf_iotv_ocp_SAW, rhsusf_ach_helmet_ocp, ItemGPS
+    ADD_GEAR;
+    backpack = cnto_us_eng_tl_pack;
+    engineer = 1;
+    canDeactivateMines = 1;
 };
 
 /* ------------------------------------------------------------------------- */

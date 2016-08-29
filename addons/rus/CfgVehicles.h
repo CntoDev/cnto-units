@@ -7,6 +7,7 @@ class O_Soldier_base_F : SoldierEB {
 };
 class B_TacticalPack_blk;
 class B_Kitbag_rgr;
+class B_Carryall_cbr;
 
 class cnto_rus_soldier_base : O_Soldier_base_F {
     scope = 0;
@@ -352,6 +353,43 @@ class cnto_rus_mortar_gunner : cnto_rus_soldier_base {
     #define _linked rhs_6b7_1m_olive, rhs_6b23_6sh116_od
     ADD_GEAR;
     backpack = I_Mortar_01_weapon_F;
+};
+
+/*
+ * Engineering Team
+ */
+class cnto_rus_eng_tl : cnto_rus_soldier_base {
+    scope = 2;
+    displayName = "Eng TL";
+    #define _weaps cnto_rus_ak74m_flash, rhs_weap_pya, Throw, Put
+    #define _mags rhs_30Rnd_545x39_AK, rhs_mag_9x19_17, \
+                  x4(rhs_30Rnd_545x39_AK)
+    #define _items ACE_MapTools, ACRE_PRC148, ACRE_PRC152, ACE_M26_Clacker, ACE_DefusalKit, ACE_EntrenchingTool, ACE_wirecutter
+    #define _linked rhs_6b23_6sh116_od, rhs_6b7_1m_olive, ItemGPS
+    ADD_GEAR;
+    backpack = cnto_rus_eng_tl_pack;
+    engineer = 1;
+    canDeactivateMines = 1;
+};
+class cnto_rus_eng_tl_pack : B_Carryall_cbr {
+    scope = 1;
+    class TransportItems {
+        xitems(1, ToolKit);
+    };
+};
+
+class cnto_rus_eng_rfl : cnto_rus_soldier_base {
+    scope = 2;
+    displayName = "Eng Rifleman";
+    #define _weaps cnto_rus_ak74m_flash, rhs_weap_pya, Throw, Put
+    #define _mags rhs_30Rnd_545x39_AK, rhs_mag_9x19_17, \
+                  x4(rhs_30Rnd_545x39_AK)
+    #define _items ACE_MapTools, ACRE_PRC148, ACE_M26_Clacker, ACE_DefusalKit, ACE_EntrenchingTool, ACE_wirecutter
+    #define _linked rhs_6b23_6sh116_od, rhs_6b7_1m_olive, ItemGPS
+    ADD_GEAR;
+    backpack = cnto_rus_eng_tl_pack;
+    engineer = 1;
+    canDeactivateMines = 1;
 };
 
 /* ------------------------------------------------------------------------- */
