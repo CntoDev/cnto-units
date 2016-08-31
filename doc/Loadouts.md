@@ -225,3 +225,48 @@ otherwise animation glitches occur. Make sure to have
 
 See the explanation on wiki for more details (end of the section):
 https://community.bistudio.com/wiki/Arma_3_Characters_And_Gear_Encoding_Guide#Character_configuration
+
+
+Conventions and standards
+=========================
+
+Please try to keep / follow any conventions outlined here, to avoid confusion
+when other people read the configs after you.
+
+Soldier spec
+------------
+
+In the code below, anything inside `<` `>` is something that should be replaced
+with an actual value. Also, not all items need to be specified, omit unwanted
+ones.
+```
+class cnto_<faction>_<unittype> : <baseclass> {
+    scope = 2;
+    displayName = "Some Soldier Type";
+    #define _weaps <primary_weapon>, <launcher>, <secondary_weapon>, <binoculars>, Throw, Put
+    #define _mags <loaded_primary_mags>, <loaded_launcher_rocket>, <loaded_handgun_mags>, <loaded_laser_batteries>, \
+                  <any_additional_mags_for_uniform_or_vest_same_order_as_above>
+    #define _items <radios>, <any_items_for_uniform_or_vest>
+    #define _linked <vest>, <helmet>, <any_other_linked_items>
+    ADD_GEAR;
+    backpack = cnto_<faction>_<unittype>_pack;
+    ... any soldier specific tunables (like medic/engineer) here ..
+    ... any EventHandlers here ...
+};
+class cnto_<faction>_<unittype>_pack : <baseclass> {
+    scope = 1;
+    class TransportWeapons {
+        xweaps(123, <weapclass>);
+    };
+    class TransportMagazines {
+        xmags(123, <magclass>);
+    };
+    class TransportItems {
+        xitems(123, <itemclass>);
+    };
+    class TransportBackpacks {
+        xbackpacks(123, <bpclass>);
+    };
+};
+```
+For examples, see one of the factions in `addons`, look in `CfgVehicles.h`.
