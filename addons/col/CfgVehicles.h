@@ -253,9 +253,9 @@ class cnto_col_mmg_tl_pack : B_TacticalPack_blk {
 class cnto_col_mmg_gunner : cnto_col_soldier_base {
     scope = 2;
     displayName = "MMG Gunner";
-    #define _weaps MMG_02_black_F, hgun_ACPC2_F, Throw, Put
-    #define _mags 130Rnd_338_Mag, 9Rnd_45ACP_Mag, \
-                  130Rnd_338_Mag, x2(9Rnd_45ACP_Mag)
+    #define _weaps hlc_lmg_M60E4, hgun_ACPC2_F, Throw, Put
+    #define _mags hlc_100Rnd_762x51_M_M60E4, 9Rnd_45ACP_Mag, \
+                  hlc_100Rnd_762x51_M_M60E4, hlc_100Rnd_762x51_T_M60E4, x2(9Rnd_45ACP_Mag)
     #define _items
     #define _linked AAFVest01_l_CamoW, CamoH_CamoW
     ADD_GEAR;
@@ -264,7 +264,7 @@ class cnto_col_mmg_gunner : cnto_col_soldier_base {
 class cnto_col_mmg_gunner_pack : B_TacticalPack_blk {
     scope = 1;
     class TransportMagazines {
-        xmags(3, 130Rnd_338_Mag);
+        xmags(2, hlc_100Rnd_762x51_M_M60E4);
     };
 };
 
@@ -282,7 +282,8 @@ class cnto_col_mmg_bearer : cnto_col_soldier_base {
 class cnto_col_mmg_bearer_pack : B_Kitbag_rgr {
     scope = 1;
     class TransportMagazines {
-        xmags(4, 130Rnd_338_Mag);
+        xmags(5, hlc_100Rnd_762x51_M_M60E4);
+        xmags(2, hlc_100Rnd_762x51_T_M60E4);
     };
 };
 
@@ -552,7 +553,7 @@ class cnto_col_resupply_medium : I_supplyCrate_F {
         xmags(4, SmokeShellBlue);
         xmags(24, MiniGrenade);
         xmags(15, 1Rnd_HE_Grenade_shell);
-        xmags(4, 130Rnd_338_Mag);
+        xmags(4, hlc_100Rnd_762x51_M_M60E4);
         xmags(4, rhs_rpg7_PG7VL_mag);
         xmags(2, rhs_rpg7_PG7VR_mag);
     };
