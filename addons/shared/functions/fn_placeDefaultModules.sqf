@@ -98,7 +98,20 @@ private _modules = [
     /*
      * ACE Medical
      */
-    ["ACE_moduleMedicalSettings"],
+    ["ACE_moduleMedicalSettings", [
+        ["ACE_moduleMedicalSettings_litterCleanUpDelay", 900],
+        ["ACE_moduleMedicalSettings_bleedingCoefficient", 0.80000001],
+        ["ACE_moduleMedicalSettings_level", 2]
+    ]],
+	["ACE_moduleAdvancedMedicalSettings", [
+        ["ACE_moduleAdvancedMedicalSettings_enableAdvancedWounds", true],
+        ["ACE_moduleAdvancedMedicalSettings_consumeItem_PAK", 0],
+        ["ACE_moduleAdvancedMedicalSettings_useLocation_PAK", 0],
+        ["ACE_moduleAdvancedMedicalSettings_consumeItem_SurgicalKit", 0],
+        ["ACE_moduleAdvancedMedicalSettings_useLocation_SurgicalKit", 0],
+        ["ACE_moduleAdvancedMedicalSettings_useCondition_SurgicalKit", 1],
+        ["ACE_moduleAdvancedMedicalSettings_healHitPointAfterAdvBandage", true]
+    ]],
     ["ACE_moduleMedicalMenuSettings"]
 ];
 
