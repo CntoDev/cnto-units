@@ -564,6 +564,7 @@ class cnto_us_resupply_small : Box_NATO_Ammo_F {
     class TransportItems {
         xitems(16, ACE_packingBandage);
         xitems(4, ACE_elasticBandage);
+        xitems(6, ACE_morphine);
     };
     class TransportBackpacks {};
 };
