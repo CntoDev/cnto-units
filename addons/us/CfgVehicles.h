@@ -79,7 +79,7 @@ class cnto_us_sq_medic_pack : B_Kitbag_rgr {
         xitems(25, ACE_morphine);
         xitems(10, ACE_epinephrine);
         xitems(5, ACE_atropine);
-        xitems(5, ACE_bloodIV);
+        xitems(5, ACE_tourniquet);
     };
 };
 
