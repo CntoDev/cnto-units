@@ -12,10 +12,10 @@ class cnto_col_g3_gl_flash : HLC_Rifle_g3ka4_GL {
     class LinkedItems { side(RH_SFM952V); };
 };
 
-class hlc_m249_SQuantoon;
-class cnto_col_m249 : hlc_m249_SQuantoon {
+class rhs_weap_m249_pip_S_vfg;
+class cnto_col_m249_flash : rhs_weap_m249_pip_S_vfg {
     scope = 1;
-    class LinkedItems { side(RH_SFM952V); };
+    class LinkedItems { side(acc_flashlight); };
 };
 
 class rhs_weap_rpg7;

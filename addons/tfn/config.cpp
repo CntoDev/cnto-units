@@ -7,8 +7,8 @@ class CfgPatches {
             "cnto_assets",
             "A3_Characters_F",
             "A3_Weapons_F_Ammoboxes",
+            "rhsusf_c_weapons",
             "hlcweapons_ar15",
-            "hlcweapons_SAW",
             "tf47_m3maaws"
         };
     };

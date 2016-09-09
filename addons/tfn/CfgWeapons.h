@@ -18,8 +18,8 @@ class cnto_tfn_416_gl_flash : rhs_weap_hk416d145_m320 {
     class LinkedItems { side(acc_flashlight); };
 };
 
-class hlc_m249_SQuantoon;
-class cnto_tfn_m249 : hlc_m249_SQuantoon {
+class rhs_weap_m249_pip_S_vfg;
+class cnto_tfn_m249_flash : rhs_weap_m249_pip_S_vfg {
     scope = 1;
     class LinkedItems { side(acc_flashlight); };
 };

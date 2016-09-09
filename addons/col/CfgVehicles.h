@@ -109,9 +109,9 @@ class cnto_col_ft_tl_pack : B_TacticalPack_blk {
 class cnto_col_ft_ar : cnto_col_soldier_base {
     scope = 2;
     displayName = "FT AR";
-    #define _weaps cnto_col_m249, hgun_ACPC2_F, Throw, Put
-    #define _mags hlc_200rnd_556x45_M_SAW, 9Rnd_45ACP_Mag, \
-                  hlc_200rnd_556x45_M_SAW, x1(9Rnd_45ACP_Mag)
+    #define _weaps cnto_col_m249_flash, hgun_ACPC2_F, Throw, Put
+    #define _mags rhsusf_200Rnd_556x45_soft_pouch, 9Rnd_45ACP_Mag, \
+                  rhsusf_200Rnd_556x45_soft_pouch, x1(9Rnd_45ACP_Mag)
     #define _items
     #define _linked AAFVest01_l_CamoW, CamoH_CamoW
     ADD_GEAR;
@@ -132,7 +132,7 @@ class cnto_col_ft_aar : cnto_col_soldier_base {
 class cnto_col_ft_aar_pack : B_Kitbag_rgr {
     scope = 1;
     class TransportMagazines {
-        xmags(1, hlc_200rnd_556x45_T_SAW);
+        xmags(1, rhsusf_200Rnd_556x45_soft_pouch);
         xmags(6, hlc_20rnd_762x51_b_G3);
         xmags(2, hlc_20rnd_762x51_T_G3);
         xmags(2, MiniGrenade);
@@ -524,7 +524,7 @@ class cnto_col_resupply_small : Box_IND_Ammo_F {
     class TransportMagazines {
         xmags(24, hlc_20rnd_762x51_b_G3);
         xmags(6, hlc_20rnd_762x51_T_G3);
-        xmags(4, hlc_200rnd_556x45_M_SAW);
+        xmags(4, rhsusf_200Rnd_556x45_soft_pouch);
         xmags(12, SmokeShell);
         xmags(10, MiniGrenade);
         xmags(5, 1Rnd_HE_Grenade_shell);
@@ -547,7 +547,7 @@ class cnto_col_resupply_medium : I_supplyCrate_F {
     class TransportMagazines {
         xmags(80, hlc_20rnd_762x51_b_G3);
         xmags(20, hlc_20rnd_762x51_T_G3);
-        xmags(12, hlc_200rnd_556x45_M_SAW);
+        xmags(12, rhsusf_200Rnd_556x45_soft_pouch);
         xmags(30, SmokeShell);
         xmags(8, SmokeShellGreen);
         xmags(4, SmokeShellBlue);

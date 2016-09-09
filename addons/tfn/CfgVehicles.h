@@ -109,9 +109,9 @@ class cnto_tfn_ft_tl_pack : cnto_flecktarn_b_ap_mediterranean {
 class cnto_tfn_ft_ar : cnto_tfn_soldier_base {
     scope = 2;
     displayName = "FT AR";
-    #define _weaps cnto_tfn_m249, hgun_ACPC2_F, Throw, Put
-    #define _mags hlc_200rnd_556x45_M_SAW, 9Rnd_45ACP_Mag, \
-                  hlc_200rnd_556x45_M_SAW, x2(9Rnd_45ACP_Mag)
+    #define _weaps cnto_tfn_m249_flash, hgun_ACPC2_F, Throw, Put
+    #define _mags rhsusf_200Rnd_556x45_soft_pouch, 9Rnd_45ACP_Mag, \
+                  rhsusf_200Rnd_556x45_soft_pouch, x2(9Rnd_45ACP_Mag)
     #define _items
     #define _linked cnto_flecktarn_v_h_mediterranean, cnto_flecktarn_h_c_mediterranean
     ADD_GEAR;
@@ -132,7 +132,7 @@ class cnto_tfn_ft_aar : cnto_tfn_soldier_base {
 class cnto_tfn_ft_aar_pack : cnto_flecktarn_b_kb_mediterranean {
     scope = 1;
     class TransportMagazines {
-        xmags(1, hlc_200rnd_556x45_M_SAW);
+        xmags(1, rhsusf_200Rnd_556x45_soft_pouch);
         xmags(6, 30Rnd_556x45_Stanag);
         xmags(2, 30Rnd_556x45_Stanag_Tracer_Red);
         xmags(2, MiniGrenade);
@@ -513,7 +513,7 @@ class cnto_tfn_resupply_small : Box_NATO_Ammo_F {
     class TransportMagazines {
         xmags(24, 30Rnd_556x45_Stanag);
         xmags(6, 30Rnd_556x45_Stanag_Tracer_Red);
-        xmags(4, hlc_200rnd_556x45_M_SAW);
+        xmags(4, rhsusf_200Rnd_556x45_soft_pouch);
         xmags(12, SmokeShell);
         xmags(10, MiniGrenade);
         xmags(5, 1Rnd_HE_Grenade_shell);
@@ -536,7 +536,7 @@ class cnto_tfn_resupply_medium : B_supplyCrate_F {
     class TransportMagazines {
         xmags(80, 30Rnd_556x45_Stanag);
         xmags(20, 30Rnd_556x45_Stanag_Tracer_Red);
-        xmags(12, hlc_200rnd_556x45_M_SAW);
+        xmags(12, rhsusf_200Rnd_556x45_soft_pouch);
         xmags(30, SmokeShell);
         xmags(8, SmokeShellGreen);
         xmags(4, SmokeShellBlue);
