@@ -153,6 +153,13 @@ _modules append [
                  "4 enableChannel false;" + _n +
                  "5 enableChannel false;"]
     ]]
+    /*
+     * adds rating to player, so it won't become a renegade
+     * (fixes that players cannot enter vehicle and get fired upon by friendly AI)
+     */
+    ["Logic", [
+        ["Init", "player addRating 99999999"]
+    ]]
 ];
 };
 
