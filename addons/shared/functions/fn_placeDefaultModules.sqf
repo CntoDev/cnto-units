@@ -112,7 +112,14 @@ private _modules = [
         ["ACE_moduleAdvancedMedicalSettings_useCondition_SurgicalKit", 1],
         ["ACE_moduleAdvancedMedicalSettings_healHitPointAfterAdvBandage", true]
     ]],
-    ["ACE_moduleMedicalMenuSettings"]
+    ["ACE_moduleMedicalMenuSettings"],
+    /*
+     * adds rating to player, so it won't become a renegade
+     * (fixes that players cannot enter vehicle and get fired upon by friendly AI)
+     */
+    ["Logic", [
+        ["Init", "player addRating 99999999;"]
+    ]]
 ];
 
 if (_this == "coop") then {
@@ -152,13 +159,6 @@ _modules append [
                  "2 enableChannel false;" + _n +
                  "4 enableChannel false;" + _n +
                  "5 enableChannel false;"]
-    ]]
-    /*
-     * adds rating to player, so it won't become a renegade
-     * (fixes that players cannot enter vehicle and get fired upon by friendly AI)
-     */
-    ["Logic", [
-        ["Init", "player addRating 99999999"]
     ]]
 ];
 };
