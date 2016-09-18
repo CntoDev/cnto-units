@@ -57,7 +57,7 @@ class cnto_tfnsf_blackop_cqb : cnto_tfnsf_blackop_base {
 class cnto_tfnsf_blackop_cqb_pack : B_AssaultPack_blk {
     scope = 1;
     class TransportMagazines {
-        xmags(8, 16Rnd_9x21_Mag);
+        xmags(8, 30Rnd_9x21_Mag);
         xmags(4, MiniGrenade);
         xmags(12, ACE_M84);
     };
