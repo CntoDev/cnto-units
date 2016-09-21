@@ -18,7 +18,6 @@ class CfgFunctions {
             class initGroupAttr;
             class registerInitExec { preInit = 1; };
             class godlike;
-            class markerOnInit;
             class setMissionDefaults;
             class placeDefaultModules;
         };
