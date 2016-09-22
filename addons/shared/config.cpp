@@ -16,7 +16,6 @@ class CfgFunctions {
             class groupIDSync { postInit = 1; };
             class isDefaultCallsign;
             class initGroupAttr;
-            class registerInitExec { preInit = 1; };
             class godlike;
             class setMissionDefaults;
             class placeDefaultModules;
