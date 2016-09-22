@@ -11,14 +11,20 @@ class CfgPatches {
 
 class CfgFunctions {
     class cnto_units {
-        class All {
-            file = "\cnto\units\shared\functions";
+        class MissionDefaults {
+            file = "\cnto\units\shared\functions\mission_defaults";
+            class setMissionDefaults;
+            class placeDefaultModules;
+        };
+        class OnStart {
+            file = "\cnto\units\shared\functions\onstart";
             class groupIDSync { postInit = 1; };
+        };
+        class Misc {
+            file = "\cnto\units\shared\functions\misc";
             class isDefaultCallsign;
             class initGroupAttr;
             class godlike;
-            class setMissionDefaults;
-            class placeDefaultModules;
         };
     };
 };
