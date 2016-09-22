@@ -19,12 +19,16 @@ class CfgFunctions {
         class OnStart {
             file = "\cnto\units\shared\functions\onstart";
             class groupIDSync { postInit = 1; };
+            class ignoreFriendlyFire { postInit = 1; };
+            class disableChannels { postInit = 1; };
+            class preparePvpDeath { postInit = 1; };
         };
         class Misc {
             file = "\cnto\units\shared\functions\misc";
             class isDefaultCallsign;
             class initGroupAttr;
             class godlike;
+            class isPvp;
         };
     };
 };

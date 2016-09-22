@@ -112,14 +112,7 @@ private _modules = [
         ["ACE_moduleAdvancedMedicalSettings_useCondition_SurgicalKit", 1],
         ["ACE_moduleAdvancedMedicalSettings_healHitPointAfterAdvBandage", true]
     ]],
-    ["ACE_moduleMedicalMenuSettings"],
-    /*
-     * adds rating to player, so it won't become a renegade
-     * (fixes that players cannot enter vehicle and get fired upon by friendly AI)
-     */
-    ["Logic", [
-        ["Init", "player addRating 99999999;"]
-    ]]
+    ["ACE_moduleMedicalMenuSettings"]
 ];
 
 if (_this == "coop") then {
@@ -150,15 +143,6 @@ _modules append [
         ["ACE_ModuleMap_MapShake", false],
         ["ACE_ModuleMap_MapShowCursorCoordinates", true],
         ["ACE_ModuleMap_DefaultChannel", 0]
-    ]],
-    /*
-     * channels disable - all except global+group (0+3)
-     */
-    ["Logic", [
-        ["Init", "1 enableChannel false;" + _n +
-                 "2 enableChannel false;" + _n +
-                 "4 enableChannel false;" + _n +
-                 "5 enableChannel false;"]
     ]]
 ];
 };
@@ -179,26 +163,6 @@ _modules append [
         ["ACE_ModuleMap_MapShake", false],
         ["ACE_ModuleMap_MapShowCursorCoordinates", true],
         ["ACE_ModuleMap_DefaultChannel", 1]
-    ]],
-    /*
-     * channels disable - all except global+side+group (0+1+3)
-     */
-    ["Logic", [
-        ["Init", "2 enableChannel false;" + _n +
-                 "4 enableChannel false;" + _n +
-                 "5 enableChannel false;"]
-    ]],
-    /*
-     * - set up killed EH to switch ACRE2 to spectator
-     * - kill player on JIP in PvP (respawn taken care of elsewhere)
-     */
-    ["Logic", [
-        ["Init", "if (!hasInterface) exitWith {};" + _n +
-                 "0 = [] spawn {" + _n +
-                 "    waitUntil { !isNull player };" + _n +
-                 "    player addEventHandler [""Killed"", { [true] call acre_api_fnc_setSpectator }];" + _n +
-                 "    if (didJIP) then { player setDamage 1 };" + _n +
-                 "};"]
     ]]
 ];
 };
