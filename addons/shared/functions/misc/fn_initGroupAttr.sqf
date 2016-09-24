@@ -13,7 +13,17 @@ if (is3DEN) then {
             private _grpid = (_grp get3DENAttribute "groupID") select 0;
             /* don't override custom callsigns on scenario load (unit init) */
             if (_grpid call cnto_units_fnc_isDefaultCallsign) then {
-                _grp set3DENAttribute ["groupID", _id];
+                /* does it already exist ? */
+                if (_id in (allGroups apply { groupId _x })) then {
+                    disableSerialization;
+                    [
+                        format ["Callsign %1 already exists, using %2.",
+                                _id, groupId _grp],
+                        1
+                    ] call BIS_fnc_3DENNotification;
+                } else {
+                    _grp set3DENAttribute ["groupID", _id];
+                };
             };
         };
         _unit set3DENAttribute ["ControlMP", true];  /* playable */
