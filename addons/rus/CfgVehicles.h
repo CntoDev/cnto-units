@@ -129,7 +129,7 @@ class cnto_rus_ft_aar : cnto_rus_soldier_base {
     displayName = "FT AAR";
     #define _weaps cnto_rus_ak74m_flash, rhs_weap_pya, ACE_VectorDay, Throw, Put
     #define _mags rhs_30Rnd_545x39_AK, rhs_mag_9x19_17, \
-                  x8(rhs_30Rnd_545x39_AK), x2(rhs_30Rnd_545x39_AK_green), rhs_mag_9x19_17
+                  x6(rhs_30Rnd_545x39_AK), x4(rhs_30Rnd_545x39_AK_green), rhs_mag_9x19_17
     #define _items x2(ACE_CableTie), ACE_MapTools
     #define _linked rhs_6b7_1m_olive, rhs_6b23_6sh116_od, ItemGPS
     ADD_GEAR;
@@ -140,8 +140,7 @@ class cnto_rus_ft_aar_pack : B_Kitbag_rgr {
     class TransportMagazines {
         xmags(1, rhs_100Rnd_762x54mmR);
         xmags(1, rhs_100Rnd_762x54mmR_green);
-        xmags(6, rhs_30Rnd_545x39_AK);
-        xmags(2, rhs_30Rnd_545x39_AK_green);
+        xmags(8, rhs_30Rnd_545x39_AK);
         xmags(2, MiniGrenade);
         xmags(3, SmokeShell);
         xmags(2, SmokeShellGreen);

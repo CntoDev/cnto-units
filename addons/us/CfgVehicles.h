@@ -129,7 +129,7 @@ class cnto_us_ft_aar : cnto_us_soldier_base {
     displayName = "FT AAR";
     #define _weaps cnto_us_m4a1_flash, rhsusf_weap_m9, ACE_VectorDay, Throw, Put
     #define _mags rhs_mag_30Rnd_556x45_M855A1_Stanag, rhsusf_mag_15Rnd_9x19_JHP, \
-                  x8(rhs_mag_30Rnd_556x45_M855A1_Stanag), x2(rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red), rhsusf_mag_15Rnd_9x19_JHP
+                  x6(rhs_mag_30Rnd_556x45_M855A1_Stanag), x4(rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red), rhsusf_mag_15Rnd_9x19_JHP
     #define _items x2(ACE_CableTie), ACE_MapTools
     #define _linked rhsusf_iotv_ocp_Teamleader, rhsusf_ach_helmet_ocp, ItemGPS
     ADD_GEAR;
@@ -139,8 +139,7 @@ class cnto_us_ft_aar_pack : B_Kitbag_rgr {
     scope = 1;
     class TransportMagazines {
         xmags(2, rhsusf_100Rnd_556x45_soft_pouch);
-        xmags(6, rhs_mag_30Rnd_556x45_M855A1_Stanag);
-        xmags(2, rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red);
+        xmags(8, rhs_mag_30Rnd_556x45_M855A1_Stanag);
         xmags(2, MiniGrenade);
         xmags(3, SmokeShell);
         xmags(2, SmokeShellGreen);
