@@ -406,7 +406,7 @@ class cnto_rus_crew_base : O_Soldier_base_F {
     #define _mags rhs_30Rnd_545x39_AK, rhs_mag_9x19_17, \
                   x2(SmokeShell), x2(SmokeShellGreen), x2(SmokeShellBlue), x2(MiniGrenade), x5(rhs_30Rnd_545x39_AK)
     #define _items x8(ACE_fieldDressing), x2(ACE_morphine), ACE_Flashlight_MX991, ACRE_PRC343
-    #define _linked ItemMap, ItemCompass, ItemWatch, ItemRadioAcreFlagged, ACE_NVG_Wide
+    #define _linked ItemMap, ItemCompass, ItemWatch, ItemRadioAcreFlagged
     ASSIGN_GEAR;
 };
 
@@ -419,7 +419,7 @@ class cnto_rus_veh_co : cnto_rus_crew_base {
     #define _weaps ACE_Vector
     #define _mags
     #define _items ACE_MapTools, ACRE_PRC152, ACRE_PRC148
-    #define _linked rhs_6b23_6sh116_od, rhs_6b7_1m_olive, ItemGPS
+    #define _linked rhs_6b23_6sh116_od, rhs_6b7_1m_olive, ACE_NVG_Wide, ItemGPS
     ADD_GEAR;
     backpack =;
     uniformClass = rhs_uniform_gorka_r_g;
@@ -431,7 +431,7 @@ class cnto_rus_veh_driver : cnto_rus_crew_base {
     #define _weaps
     #define _mags
     #define _items
-    #define _linked rhs_6b23_6sh116_od, rhs_6b7_1m_olive
+    #define _linked rhs_6b23_6sh116_od, rhs_6b7_1m_olive, ACE_NVG_Wide
     ADD_GEAR;
     backpack = cnto_rus_veh_driver_pack;
     uniformClass = rhs_uniform_gorka_r_g;
@@ -453,7 +453,7 @@ class cnto_rus_veh_gunner : cnto_rus_crew_base {
     #define _weaps
     #define _mags
     #define _items
-    #define _linked rhs_6b23_6sh116_od, rhs_6b7_1m_olive
+    #define _linked rhs_6b23_6sh116_od, rhs_6b7_1m_olive, ACE_NVG_Wide
     ADD_GEAR;
     backpack =;
     uniformClass = rhs_uniform_gorka_r_g;
@@ -469,7 +469,7 @@ class cnto_rus_air_pilot : cnto_rus_crew_base {
     #define _weaps ACE_Vector
     #define _mags
     #define _items ACE_MapTools, ACRE_PRC152, ACRE_PRC148
-    #define _linked rhs_6b23_6sh116_od, H_PilotHelmetHeli_O, ItemGPS
+    #define _linked rhs_6b23_6sh116_od, H_PilotHelmetHeli_O, ACE_NVG_Wide, ItemGPS
     ADD_GEAR;
     backpack =;
     uniformClass = U_O_PilotCoveralls;
@@ -482,7 +482,7 @@ class cnto_rus_air_copilot : cnto_rus_crew_base {
     #define _weaps ACE_Vector
     #define _mags
     #define _items ACE_MapTools, ACRE_PRC152, ACRE_PRC148
-    #define _linked rhs_6b23_6sh116_od, H_PilotHelmetHeli_O, ItemGPS
+    #define _linked rhs_6b23_6sh116_od, H_PilotHelmetHeli_O, ACE_NVG_Wide, ItemGPS
     ADD_GEAR;
     backpack = cnto_rus_air_copilot_pack;
     uniformClass = U_O_PilotCoveralls;
@@ -496,6 +496,19 @@ class cnto_rus_air_copilot_pack : B_TacticalPack_blk {
     class TransportItems {
         xitems(1, ToolKit);
     };
+};
+
+class cnto_rus_air_jetpilot : cnto_rus_crew_base {
+    scope = 2;
+    displayName = "Jet Pilot";
+    #define _weaps ACE_Vector
+    #define _mags
+    #define _items ACE_MapTools, ACRE_PRC152, ACRE_PRC148
+    #define _linked rhs_6b23_6sh116_od, H_PilotHelmetFighter_O, ItemGPS
+    ADD_GEAR;
+    backpack = B_Parachute;
+    uniformClass = U_O_PilotCoveralls;
+    engineer = 1;
 };
 
 /* ------------------------------------------------------------------------- */

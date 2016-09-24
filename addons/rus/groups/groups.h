@@ -146,6 +146,11 @@ class Crew {
         class Unit0 { vehicle = cnto_rus_air_pilot_4;   position[] = {0,0,0}; rank = "LIEUTENANT"; };
         class Unit1 { vehicle = cnto_rus_air_copilot_4; position[] = {1,0,0}; rank = "PRIVATE"; };
     };
+    class Kanyuk {
+        name = "Kanyuk (Jet)";
+        icon = "\A3\ui_f\data\map\markers\nato\b_air.paa";
+        class Unit0 { vehicle = cnto_rus_air_jetpilot_1;position[] = {0,0,0}; rank = "LIEUTENANT"; };
+    };
 };
 class Special {
     name = "Special";

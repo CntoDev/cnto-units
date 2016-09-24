@@ -397,7 +397,7 @@ class cnto_us_crew_base : B_Soldier_base_F {
     #define _mags rhs_mag_30Rnd_556x45_M855A1_Stanag, rhsusf_mag_15Rnd_9x19_JHP, \
                   x2(SmokeShell), x2(SmokeShellGreen), x2(SmokeShellBlue), x2(MiniGrenade), x5(rhs_mag_30Rnd_556x45_M855A1_Stanag)
     #define _items x8(ACE_fieldDressing), x2(ACE_morphine), ACE_Flashlight_MX991, ACRE_PRC343
-    #define _linked ItemMap, ItemCompass, ItemWatch, ItemRadioAcreFlagged, ACE_NVG_Wide
+    #define _linked ItemMap, ItemCompass, ItemWatch, ItemRadioAcreFlagged
     ASSIGN_GEAR;
 };
 
@@ -410,7 +410,7 @@ class cnto_us_veh_co : cnto_us_crew_base {
     #define _weaps ACE_Vector
     #define _mags
     #define _items ACE_MapTools, ACRE_PRC152, ACRE_PRC148
-    #define _linked TacVest_black, H_HelmetCrew_I, ItemGPS
+    #define _linked TacVest_black, H_HelmetCrew_I, ACE_NVG_Wide, ItemGPS
     ADD_GEAR;
     backpack =;
     uniformClass = U_BG_Guerrilla_6_1;
@@ -422,7 +422,7 @@ class cnto_us_veh_driver : cnto_us_crew_base {
     #define _weaps
     #define _mags
     #define _items
-    #define _linked TacVest_black, H_HelmetCrew_I
+    #define _linked TacVest_black, H_HelmetCrew_I, ACE_NVG_Wide
     ADD_GEAR;
     backpack = cnto_us_veh_driver_pack;
     uniformClass = U_BG_Guerrilla_6_1;
@@ -444,7 +444,7 @@ class cnto_us_veh_gunner : cnto_us_crew_base {
     #define _weaps
     #define _mags
     #define _items
-    #define _linked TacVest_black, H_HelmetCrew_I
+    #define _linked TacVest_black, H_HelmetCrew_I, ACE_NVG_Wide
     ADD_GEAR;
     backpack =;
     uniformClass = U_BG_Guerrilla_6_1;
@@ -460,7 +460,7 @@ class cnto_us_air_pilot : cnto_us_crew_base {
     #define _weaps ACE_Vector
     #define _mags
     #define _items ACE_MapTools, ACRE_PRC152, ACRE_PRC148
-    #define _linked TacVest_black, H_PilotHelmetHeli_B, ItemGPS
+    #define _linked TacVest_black, H_PilotHelmetHeli_B, ACE_NVG_Wide, ItemGPS
     ADD_GEAR;
     backpack =;
     uniformClass = U_B_PilotCoveralls;
@@ -473,7 +473,7 @@ class cnto_us_air_copilot : cnto_us_crew_base {
     #define _weaps ACE_Vector
     #define _mags
     #define _items ACE_MapTools, ACRE_PRC152, ACRE_PRC148
-    #define _linked TacVest_black, H_PilotHelmetHeli_B, ItemGPS
+    #define _linked TacVest_black, H_PilotHelmetHeli_B, ACE_NVG_Wide, ItemGPS
     ADD_GEAR;
     backpack = cnto_us_air_copilot_pack;
     uniformClass = U_B_PilotCoveralls;
@@ -487,6 +487,19 @@ class cnto_us_air_copilot_pack : B_AssaultPack_rgr {
     class TransportItems {
         xitems(1, ToolKit);
     };
+};
+
+class cnto_us_air_jetpilot : cnto_us_crew_base {
+    scope = 2;
+    displayName = "Jet Pilot";
+    #define _weaps ACE_Vector
+    #define _mags
+    #define _items ACE_MapTools, ACRE_PRC152, ACRE_PRC148
+    #define _linked TacVest_black, H_PilotHelmetFighter_B, ItemGPS
+    ADD_GEAR;
+    backpack = B_Parachute;
+    uniformClass = U_B_PilotCoveralls;
+    engineer = 1;
 };
 
 /* ------------------------------------------------------------------------- */

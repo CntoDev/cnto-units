@@ -58,9 +58,9 @@ SOLDIER(cnto_rus_veh_gunner,2,  "Vehicle Gunner ""Medved 2""",          'MDVD 2'
 SOLDIER(cnto_rus_veh_co,3,      "Vehicle Commander ""Medved 3""",       'MDVD 3', 'MAIN');
 SOLDIER(cnto_rus_veh_driver,3,  "Vehicle Driver ""Medved 3"" (Repair)", 'MDVD 3', 'MAIN');
 SOLDIER(cnto_rus_veh_gunner,3,  "Vehicle Gunner ""Medved 3""",          'MDVD 3', 'MAIN');
-SOLDIER(cnto_rus_veh_co,4,      "Vehicle Commander ""Kamchatka""",        'Kamchatka', 'MAIN');
-SOLDIER(cnto_rus_veh_driver,4,  "Vehicle Driver ""Kamchatka"" (Repair)",  'Kamchatka', 'MAIN');
-SOLDIER(cnto_rus_veh_gunner,4,  "Vehicle Gunner ""Kamchatka""",           'Kamchatka', 'MAIN');
+SOLDIER(cnto_rus_veh_co,4,      "Vehicle Commander ""Kamchatka""",      'Kamchatka', 'MAIN');
+SOLDIER(cnto_rus_veh_driver,4,  "Vehicle Driver ""Kamchatka"" (Repair)",'Kamchatka', 'MAIN');
+SOLDIER(cnto_rus_veh_gunner,4,  "Vehicle Gunner ""Kamchatka""",         'Kamchatka', 'MAIN');
 
 SOLDIER(cnto_rus_air_pilot,1,   "Pilot ""Yastreb 1""",                'YSTB 1', 'MAIN');
 SOLDIER(cnto_rus_air_copilot,1, "Co-pilot ""Yastreb 1"" (Repair)",    'YSTB 1', 'MAIN');
@@ -70,6 +70,8 @@ SOLDIER(cnto_rus_air_pilot,3,   "Pilot ""Yastreb 3""",                'YSTB 3', 
 SOLDIER(cnto_rus_air_copilot,3, "Co-pilot ""Yastreb 3"" (Repair)",    'YSTB 3', 'MAIN');
 SOLDIER(cnto_rus_air_pilot,4,   "Pilot ""Sova""",                     'SOVA', 'MAIN');
 SOLDIER(cnto_rus_air_copilot,4, "Co-pilot ""Sova"" (Repair)",         'SOVA', 'MAIN');
+
+SOLDIER(cnto_rus_air_jetpilot,1,"Jet Pilot ""Kanyuk""",               'Kanyuk', 'MAIN');
 
 SOLDIER(cnto_rus_trainer,1, "Trainer 1", 'Trg', 'MAIN');
 SOLDIER(cnto_rus_trainer,2, "Trainer 2", 'Trg', 'MAIN');

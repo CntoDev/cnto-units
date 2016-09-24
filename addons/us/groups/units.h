@@ -71,6 +71,8 @@ SOLDIER(cnto_us_air_copilot,3, "Co-pilot ""Nightbird 3"" (Repair)",    'NB3', 'M
 SOLDIER(cnto_us_air_pilot,4,   "Pilot ""Reaper""",                     'RPR', 'MAIN');
 SOLDIER(cnto_us_air_copilot,4, "Co-pilot ""Reaper"" (Repair)",         'RPR', 'MAIN');
 
+SOLDIER(cnto_us_air_jetpilot,1,"Jet Pilot ""Wildcat""",                'Wild', 'MAIN');
+
 SOLDIER(cnto_us_trainer,1, "Trainer 1", 'Trains', 'MAIN');
 SOLDIER(cnto_us_trainer,2, "Trainer 2", 'Trains', 'MAIN');
 SOLDIER(cnto_us_trainer,3, "Trainer 3", 'Trains', 'MAIN');
