@@ -70,9 +70,6 @@ private _modules = [
         ["ACE_ModuleNameTags_showNamesForAI", 0],
         ["ACE_ModuleNameTags_showCursorTagForVehicles", true]
     ]],
-    ["ace_nightvision_ModuleSettings", [
-        ["ace_nightvision_ModuleSettings_disableNVGsWithSights", false]
-    ]],
     ["ace_finger_moduleSettings", [
         ["ace_finger_moduleSettings_maxRange", 7]
     ]],
@@ -111,8 +108,7 @@ private _modules = [
         ["ACE_moduleAdvancedMedicalSettings_useLocation_SurgicalKit", 0],
         ["ACE_moduleAdvancedMedicalSettings_useCondition_SurgicalKit", 1],
         ["ACE_moduleAdvancedMedicalSettings_healHitPointAfterAdvBandage", true]
-    ]],
-    ["ACE_moduleMedicalMenuSettings"]
+    ]]
 ];
 
 if (_this == "coop") then {
