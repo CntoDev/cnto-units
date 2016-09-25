@@ -12,7 +12,7 @@ clearItemCargoGlobal _this;
 
 if (_this isKindOf "Car") then {
     _this addItemCargoGlobal ["ACE_fieldDressing", floor random [0, 2, 8]];
-    _this addItemCargoGlobal ["ACE_morphine", floor random [0, 1, 4]];
+    _this addItemCargoGlobal ["ACE_morphine", floor random [0, 1, 2]];
 
     if (random 100 < 1) then { _this addItemCargoGlobal ["ItemGPS", 1] };
     if (random 20 < 1) then { _this addItemCargoGlobal ["SmokeShell", floor random 4] };
@@ -26,7 +26,7 @@ if (_this isKindOf "Car") then {
 
 if (_this isKindOf "Tank" || _this isKindOf "Helicopter" || _this isKindOf "Plane" || _this isKindOf "Ship") then {
     _this addItemCargoGlobal ["ACE_fieldDressing", floor random [4, 8, 12]];
-    _this addItemCargoGlobal ["ACE_morphine", floor random [2, 4, 6]];
+    _this addItemCargoGlobal ["ACE_morphine", floor random [1, 2, 4]];
 };
 
 /* transportRepair is vanilla, but ACE resets it to 0, so it can enforce
