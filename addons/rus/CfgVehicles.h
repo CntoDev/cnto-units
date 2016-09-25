@@ -15,7 +15,7 @@ class cnto_rus_soldier_base : O_Soldier_base_F {
     #define _weaps
     #define _mags \
                   x4(SmokeShell), x2(MiniGrenade)
-    #define _items x2(ACE_elasticBandage), x8(ACE_packingBandage), x2(ACE_morphine), ACE_tourniquet, ACE_Flashlight_MX991, ACRE_PRC343
+    #define _items x4(ACE_fieldDressing), x6(ACE_quikclot), ACE_morphine, ACE_tourniquet, ACE_Flashlight_MX991, ACRE_PRC343
     #define _linked ItemMap, ItemCompass, ItemWatch, ItemRadioAcreFlagged
     ASSIGN_GEAR;
     uniformClass = rhsgref_uniform_ttsko_mountain;
@@ -67,19 +67,20 @@ class cnto_rus_sq_medic : cnto_rus_soldier_base {
 class cnto_rus_sq_medic_pack : B_Kitbag_rgr {
     scope = 1;
     class TransportMagazines {
-        xmags(16, SmokeShell);
-        xmags(4, SmokeShellGreen);
-        xmags(2, SmokeShellBlue);
+        xmags(8, SmokeShell);
+        xmags(2, SmokeShellGreen);
     };
     class TransportItems {
-        xitems(1, ACE_surgicalKit);
-        xitems(14, ACE_elasticBandage);
-        xitems(56, ACE_packingBandage);
-        xitems(16, ACE_bloodIV_500);
-        xitems(25, ACE_morphine);
+        xitems(20, ACE_fieldDressing);
+        xitems(30, ACE_quikclot);
+        xitems(20, ACE_packingBandage);
+        xitems(20, ACE_elasticBandage);
+        xitems(20, ACE_morphine);
         xitems(10, ACE_epinephrine);
         xitems(5, ACE_atropine);
-        xitems(5, ACE_tourniquet);
+        xitems(8, ACE_bloodIV_500);
+        xitems(4, ACE_tourniquet);
+        xitems(1, ACE_surgicalKit);
     };
 };
 
@@ -404,7 +405,7 @@ class cnto_rus_crew_base : O_Soldier_base_F {
     #define _weaps rhs_weap_aks74un_folded, rhs_weap_pya, Throw, Put
     #define _mags rhs_30Rnd_545x39_AK, rhs_mag_9x19_17, \
                   x2(SmokeShell), x2(SmokeShellGreen), x2(SmokeShellBlue), x2(MiniGrenade), x5(rhs_30Rnd_545x39_AK)
-    #define _items x8(ACE_fieldDressing), x2(ACE_morphine), ACE_Flashlight_MX991, ACRE_PRC343
+    #define _items x10(ACE_quikclot), ACE_morphine, ACE_Flashlight_MX991, ACRE_PRC343
     #define _linked ItemMap, ItemCompass, ItemWatch, ItemRadioAcreFlagged
     ASSIGN_GEAR;
 };
@@ -521,7 +522,7 @@ class cnto_rus_trainer : cnto_rus_soldier_base {
     #define _weaps rhs_weap_pya, ACE_Vector, Throw, Put
     #define _mags rhs_mag_9x19_17, \
                   x4(rhs_mag_9x19_17)
-    #define _items x2(ACE_CableTie), x10(ACE_epinephrine), x5(ACE_bloodIV), ACE_MapTools, ACRE_PRC152, ACRE_PRC148
+    #define _items x2(ACE_CableTie), x5(ACE_epinephrine), x2(ACE_bloodIV), ACE_MapTools, ACRE_PRC152, ACRE_PRC148
     #define _linked rhs_6b23_6sh116_od, cnto_flecktarn_h_beret, ItemGPS
     ADD_GEAR;
     backpack =;
@@ -583,9 +584,9 @@ class cnto_rus_resupply_small : Box_EAST_Ammo_F {
         xmags(5, rhs_VOG25);
     };
     class TransportItems {
-        xitems(16, ACE_packingBandage);
-        xitems(4, ACE_elasticBandage);
-        xitems(6, ACE_morphine);
+        xitems(12, ACE_fieldDressing);
+        xitems(18, ACE_quikclot);
+        xitems(4, ACE_morphine);
     };
     class TransportBackpacks {};
 };
@@ -612,8 +613,10 @@ class cnto_rus_resupply_medium : O_supplyCrate_F {
         xmags(2, rhs_rpg7_PG7VR_mag);
     };
     class TransportItems {
-        xitems(40, ACE_packingBandage);
-        xitems(10, ACE_elasticBandage);
+        xitems(40, ACE_fieldDressing);
+        xitems(60, ACE_quikclot);
+        xitems(20, ACE_packingBandage);
+        xitems(20, ACE_elasticBandage);
         xitems(20, ACE_morphine);
         xitems(10, ACE_epinephrine);
         xitems(5, ACE_atropine);
