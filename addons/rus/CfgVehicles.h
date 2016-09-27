@@ -77,7 +77,7 @@ class cnto_rus_sq_medic_pack : B_Kitbag_rgr {
         xitems(20, ACE_elasticBandage);
         xitems(20, ACE_morphine);
         xitems(10, ACE_epinephrine);
-        xitems(5, ACE_atropine);
+        xitems(5, ACE_adenosine);
         xitems(8, ACE_bloodIV_500);
         xitems(4, ACE_tourniquet);
         xitems(1, ACE_surgicalKit);
@@ -619,7 +619,7 @@ class cnto_rus_resupply_medium : O_supplyCrate_F {
         xitems(20, ACE_elasticBandage);
         xitems(20, ACE_morphine);
         xitems(10, ACE_epinephrine);
-        xitems(5, ACE_atropine);
+        xitems(5, ACE_adenosine);
         xitems(8, ACE_bloodIV_500);
     };
     class TransportBackpacks {};
