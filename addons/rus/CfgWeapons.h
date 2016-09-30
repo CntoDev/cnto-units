@@ -1,5 +1,3 @@
-#include "\cnto\units\shared\weap_linked.h"
-
 class rhs_weap_ak74m_camo_npz;
 class cnto_rus_ak74m_flash : rhs_weap_ak74m_camo_npz {
     scope = 1;

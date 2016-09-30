@@ -1,6 +1,3 @@
-#include "\cnto\units\shared\gear.h"
-#include "\cnto\units\shared\cnt_cargo.h"
-
 class SoldierEB;
 class O_Soldier_base_F : SoldierEB {
     class EventHandlers;

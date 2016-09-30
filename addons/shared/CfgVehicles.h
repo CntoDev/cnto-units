@@ -2,7 +2,6 @@
  * Crates
  */
 
-#define QUOTE(x) #x
 #define ADD_SCOPE(item, name) \
     class item { \
         displayName = name; \

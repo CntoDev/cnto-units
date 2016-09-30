@@ -1,5 +1,3 @@
-#include "\cnto\units\shared\weap_linked.h"
-
 class SMG_02_F;
 class cnto_tfnsf_sting : SMG_02_F {
     scope = 1;

@@ -1,5 +1,3 @@
-#include "\cnto\units\shared\weap_linked.h"
-
 class hlc_rifle_g3ka4;
 class cnto_col_g3_flash : hlc_rifle_g3ka4 {
     scope = 1;

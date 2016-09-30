@@ -1,5 +1,3 @@
-#include "\cnto\units\shared\weap_linked.h"
-
 class hlc_rifle_SAMR;
 class cnto_tfn_samr_flash : hlc_rifle_SAMR {
     scope = 1;

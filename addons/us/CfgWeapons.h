@@ -1,5 +1,3 @@
-#include "\cnto\units\shared\weap_linked.h"
-
 class rhs_weap_m4a1_carryhandle_pmag;
 class cnto_us_m4a1_flash : rhs_weap_m4a1_carryhandle_pmag {
     scope = 1;
