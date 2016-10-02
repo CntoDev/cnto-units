@@ -14,28 +14,9 @@ class CfgPatches {
     };
 };
 
-class CfgFactionClasses {
-    class CNTO_US {
-        displayName = "CNTO US Army";
-        side = 1;
-    };
-};
+#include "defines.h"
+#include "\cnto\units\shared\template\config.h"
 
-class CfgEditorSubcategories {
-    class CNTO_US_Supplies { displayName = "US Supplies"; };
-};
-
-class CfgVehicles {
-#include "CfgVehicles.h"
-};
 class CfgWeapons {
 #include "CfgWeapons.h"
-};
-class CfgGroups {
-    class West {
-        class CNTO_US {
-            name = "CNTO US Army";
-#include "groups\groups.h"
-        };
-    };
 };
