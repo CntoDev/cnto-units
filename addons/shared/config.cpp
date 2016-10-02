@@ -28,7 +28,6 @@ class CfgFunctions {
         };
         class Misc {
             file = "\cnto\units\shared\functions\misc";
-            class isDefaultCallsign;
             class initGroupAttr;
             class godlike;
             class isPvp;
