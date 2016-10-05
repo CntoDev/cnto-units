@@ -567,6 +567,7 @@ class SOLDIER_CLASS(gm) : BASE_BASE_CLASS {
     #define UNIFORM_CLASS_GM U_O_Protagonist_VR
     #endif
     uniformClass = UNIFORM_CLASS_GM;
+    #undef UNIFORM_CLASS_GM
     class EventHandlers : EventHandlers {
         class godlike { init = "(_this select 0) call cnto_units_fnc_godlike"; };
     };

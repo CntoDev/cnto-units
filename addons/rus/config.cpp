@@ -6,6 +6,7 @@ class CfgPatches {
         weapons[] = {};
         requiredAddons[] = {
             "cnto_units_shared",
+            "cnto_units_us",
             "A3_Characters_F",
             "A3_Weapons_F_Ammoboxes",
             "rhs_c_weapons"
@@ -13,28 +14,9 @@ class CfgPatches {
     };
 };
 
-class CfgFactionClasses {
-    class CNTO_RUS {
-        displayName = "CNTO RUS";
-        side = 1;
-    };
-};
+#include "defines.h"
+#include "\cnto\units\shared\template\config.h"
 
-class CfgEditorSubcategories {
-    class CNTO_RUS_Supplies { displayName = "Russian Supplies"; };
-};
-
-class CfgVehicles {
-#include "CfgVehicles.h"
-};
 class CfgWeapons {
 #include "CfgWeapons.h"
-};
-class CfgGroups {
-    class East {
-        class CNTO_RUS {
-            name = "CNTO RUS";
-#include "groups\groups.h"
-        };
-    };
 };
