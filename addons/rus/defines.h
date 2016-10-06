@@ -36,8 +36,8 @@
 #define HELMET_CREW_JETPILOT  H_PilotHelmetFighter_O
 
 
-#define WEAPON_PRIMARY_LEADER  cnto_rus_ak74m_gl
-#define WEAPON_PRIMARY_OTHER   cnto_rus_ak74m_flash
+#define WEAPON_PRIMARY_LEADER  rhs_weap_ak74m_gp25_npz
+#define WEAPON_PRIMARY_OTHER   rhs_weap_ak74m_camo_npz
 #define WEAPON_PRIMARY_AR      rhs_weap_pkm
 #define WEAPON_PRIMARY_MMG     rhs_weap_pkp
 #define WEAPON_PRIMARY_CREW    rhs_weap_aks74un_folded
@@ -58,6 +58,8 @@
 #define MAGAZINE_GL_SMOKE_WHITE  rhs_GRD40_White
 #define MAGAZINE_GL_SMOKE_RED    rhs_GRD40_Red
 #define MAGAZINE_GL_SMOKE_GREEN  rhs_GRD40_Green
+
+#define FLASHLIGHT  rhs_acc_2dpZenit
 
 #define RESUPPLY_BOX_SMALL   Box_EAST_Ammo_F
 #define RESUPPLY_BOX_MEDIUM  O_supplyCrate_F

@@ -1,3 +1,35 @@
+/*
+ * check for mandatory defines
+ */
+#define DEFINE_CHECK_WARNING you_are_seeing_this_because_you_didnt_specify_some_of_the_mandatory_defines
+
+#undef FACTION_SIDE_IS_DEFINED
+#ifdef FACTION_SIDE_WEST
+#define FACTION_SIDE_IS_DEFINED
+#endif
+#ifdef FACTION_SIDE_EAST
+#define FACTION_SIDE_IS_DEFINED
+#endif
+#ifdef FACTION_SIDE_GUER
+#define FACTION_SIDE_IS_DEFINED
+#endif
+#ifdef FACTION_SIDE_CIV
+#define FACTION_SIDE_IS_DEFINED
+#endif
+#ifndef FACTION_SIDE_IS_DEFINED
+DEFINE_CHECK_WARNING
+#endif
+#undef FACTION_SIDE_IS_DEFINED
+
+#ifndef FACTION_META
+DEFINE_CHECK_WARNING
+#endif
+#ifndef FACTION_HUMAN
+DEFINE_CHECK_WARNING
+#endif
+
+#undef DEFINE_CHECK_WARNING
+
 class CfgFactionClasses {
     class JOIN2(CNTO_,FACTION_META) {
         displayName = QUOTE(JOIN2(CNTO ,FACTION_HUMAN));

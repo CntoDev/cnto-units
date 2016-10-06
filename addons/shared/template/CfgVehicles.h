@@ -32,7 +32,7 @@ class Civilian_F : Civilian {
 
 class BACKPACK_MAIN;
 class BACKPACK_ALT;
-class BACKPACK_ENGINEER;
+class BACKPACK_BIG;
 
 class SOLDIER_CLASS(soldier_base) : BASE_BASE_CLASS {
     scope = 0;
@@ -40,7 +40,7 @@ class SOLDIER_CLASS(soldier_base) : BASE_BASE_CLASS {
     #define _weaps
     #define _mags \
                   x4(SmokeShell), x2(MiniGrenade)
-    #define _items x4(ACE_fieldDressing), x6(ACE_quikclot), ACE_morphine, ACE_tourniquet, ACE_Flashlight_MX991, ACRE_PRC343
+    #define _items x4(ACE_fieldDressing), x6(ACE_quikclot), ACE_morphine, ACE_tourniquet, FLASHLIGHT, ACRE_PRC343
     #define _linked ItemMap, ItemCompass, ItemWatch, ItemRadioAcreFlagged
     ASSIGN_GEAR;
     uniformClass = UNIFORM_DEFAULT;
@@ -389,7 +389,7 @@ class SOLDIER_CLASS(eng_tl) : SOLDIER_CLASS(soldier_base) {
     engineer = 1;
     canDeactivateMines = 1;
 };
-class BACKPACK_CLASS(eng_tl) : BACKPACK_ENGINEER {
+class BACKPACK_CLASS(eng_tl) : BACKPACK_BIG {
     scope = 1;
     class TransportItems {
         xitems(1, ToolKit);
@@ -418,7 +418,7 @@ class SOLDIER_CLASS(crew_base) : BASE_BASE_CLASS {
     #define _weaps WEAPONS_CREW, Throw, Put
     #define _mags MAGAZINES_LOADED_CREW, \
                   x2(SmokeShell), x2(SmokeShellGreen), x2(SmokeShellBlue), x2(MiniGrenade), MAGAZINES_CARRY_CREW
-    #define _items x10(ACE_quikclot), ACE_morphine, ACE_Flashlight_MX991, ACRE_PRC343
+    #define _items x10(ACE_quikclot), ACE_morphine, FLASHLIGHT, ACRE_PRC343
     #define _linked ItemMap, ItemCompass, ItemWatch, ItemRadioAcreFlagged
     ASSIGN_GEAR;
     backpack =;
@@ -554,7 +554,7 @@ class SOLDIER_CLASS(gm) : BASE_BASE_CLASS {
     #define _weaps WEAPON_SECONDARY, Throw, Put
     #define _mags MAGAZINE_SECONDARY, \
                   x10(MAGAZINE_SECONDARY)
-    #define _items ACE_MapTools, ACE_Flashlight_MX991, ACRE_PRC343, ACRE_PRC152, ACRE_PRC148
+    #define _items ACE_MapTools, FLASHLIGHT, ACRE_PRC343, ACRE_PRC152, ACRE_PRC148
     #define _linked ItemMap, ItemCompass, ItemWatch, ItemRadioAcreFlagged, ItemGPS, G_Goggles_VR
     ASSIGN_GEAR;
     backpack =;

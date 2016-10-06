@@ -25,9 +25,9 @@
 #define VEST_OTHER  rhsusf_iotv_ocp_Rifleman
 #define VEST_CREW   TacVest_black
 
-#define BACKPACK_MAIN      B_AssaultPack_rgr
-#define BACKPACK_ALT       B_Kitbag_rgr
-#define BACKPACK_ENGINEER  B_Carryall_cbr
+#define BACKPACK_MAIN  B_AssaultPack_rgr
+#define BACKPACK_ALT   B_Kitbag_rgr
+#define BACKPACK_BIG   B_Carryall_cbr
 
 #define HELMET_COMMANDER      rhsusf_patrolcap_ocp
 #define HELMET_LEADER         rhsusf_ach_helmet_headset_ocp
@@ -41,9 +41,9 @@
 #define BINOCULARS_CREW  ACE_Vector
 
 
-#define WEAPON_PRIMARY_LEADER  cnto_us_m4a1_gl_flash
-#define WEAPON_PRIMARY_OTHER   cnto_us_m4a1_flash
-#define WEAPON_PRIMARY_AR      cnto_us_m249_flash
+#define WEAPON_PRIMARY_LEADER  rhs_weap_m4a1_carryhandle_m203S
+#define WEAPON_PRIMARY_OTHER   rhs_weap_m4a1_carryhandle_pmag
+#define WEAPON_PRIMARY_AR      rhs_weap_m249_pip_L
 #define WEAPON_PRIMARY_MMG     hlc_lmg_m60
 #define WEAPON_PRIMARY_CREW    rhs_weap_m4_carryhandle_mstock
 #define WEAPON_SECONDARY       rhsusf_weap_m9
@@ -63,6 +63,8 @@
 #define MAGAZINE_GL_SMOKE_WHITE  1Rnd_Smoke_Grenade_shell
 #define MAGAZINE_GL_SMOKE_RED    1Rnd_SmokeRed_Grenade_shell
 #define MAGAZINE_GL_SMOKE_GREEN  1Rnd_SmokeGreen_Grenade_shell
+
+#define FLASHLIGHT  rhsusf_acc_M952V
 
 #define RESUPPLY_BOX_SMALL   Box_NATO_Ammo_F
 #define RESUPPLY_BOX_MEDIUM  B_supplyCrate_F
