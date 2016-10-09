@@ -47,7 +47,8 @@ private _modules = [
      */
     ["ACE_ModuleBlueForceTracking", [
         ["ACE_ModuleBlueForceTracking_Enabled", true],
-        ["ACE_ModuleBlueForceTracking_Interval", 2]
+        ["ACE_ModuleBlueForceTracking_Interval", 2],
+        ["ACE_ModuleBlueForceTracking_HideAiGroups", true]
     ]],
     ["ace_captives_moduleSettings", [
         ["ace_captives_moduleSettings_requireSurrender", 0]
@@ -56,6 +57,7 @@ private _modules = [
         ["ACE_ModuleCheckPBOs_Action", 2]
     ]],
     ["ACE_ModuleExplosive", [
+        ["ACE_ModuleExplosive_RequireSpecialist", true],
         ["ACE_ModuleExplosive_ExplodeOnDefuse", false]
     ]],
     ["ACE_ModuleHearing", [
@@ -90,7 +92,9 @@ private _modules = [
     /*
      * ACE Logistics
      */
-    ["ACE_moduleRearmSettings"],
+    ["ACE_moduleRearmSettings", [
+        ["ACE_moduleRearmSettings_level", 1]
+    ]],
     ["ACE_moduleRepairSettings"],
     /*
      * ACE Medical
