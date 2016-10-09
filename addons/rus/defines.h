@@ -1,8 +1,13 @@
+#include "\cnto\units\us\defines.h"
+/* reset side setting */
+#undef FACTION_SIDE_WEST
+#undef FACTION_SIDE_EAST
+#undef FACTION_SIDE_GUER
+#undef FACTION_SIDE_CIV
+
 /*
  * Basic faction info
  */
-
-#include "\cnto\units\us\defines.h"
 
 /* metadata identifier, for internal use */
 #define FACTION_META rus
@@ -38,7 +43,6 @@
 #define HELMET_CREW_VEHICLE   rhs_6b7_1m_olive
 #define HELMET_CREW_PILOT     H_PilotHelmetHeli_O
 #define HELMET_CREW_JETPILOT  H_PilotHelmetFighter_O
-
 
 #define WEAPON_PRIMARY_LEADER  rhs_weap_ak74m_gp25_npz
 #define WEAPON_PRIMARY_OTHER   rhs_weap_ak74m_camo_npz

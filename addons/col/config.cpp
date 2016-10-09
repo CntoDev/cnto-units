@@ -6,37 +6,17 @@ class CfgPatches {
         weapons[] = {};
         requiredAddons[] = {
             "cnto_units_shared",
+            "cnto_units_us",
             "A3_Characters_F",
             "A3_Weapons_F_Ammoboxes",
-            "rhsusf_c_weapons",
-            "hlcweapons_g3",
             "rhs_c_weapons"
         };
     };
 };
 
-class CfgFactionClasses {
-    class CNTO_COL {
-        displayName = "CNTO Colombian Army";
-        side = 2;
-    };
-};
+#include "defines.h"
+#include "\cnto\units\shared\template\config.h"
 
-class CfgEditorSubcategories {
-    class CNTO_COL_Supplies { displayName = "Colombian Supplies"; };
-};
-
-class CfgVehicles {
-#include "CfgVehicles.h"
-};
 class CfgWeapons {
 #include "CfgWeapons.h"
-};
-class CfgGroups {
-    class Indep {
-        class CNTO_COL {
-            name = "CNTO Colombian Army";
-#include "groups\groups.h"
-        };
-    };
 };

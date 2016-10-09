@@ -423,9 +423,6 @@ class SOLDIER_CLASS(veh_driver) : SOLDIER_CLASS(crew_base) {
 };
 class BACKPACK_CLASS(veh_driver) : BACKPACK_MAIN {
     scope = 1;
-    class TransportMagazines {
-        MAGAZINES_PACK_CREW
-    };
     class TransportItems {
         xitems(1, ToolKit);
     };
@@ -472,9 +469,6 @@ class SOLDIER_CLASS(air_copilot) : SOLDIER_CLASS(crew_base) {
 };
 class BACKPACK_CLASS(air_copilot) : BACKPACK_MAIN {
     scope = 1;
-    class TransportMagazines {
-        xmags(4, MAGAZINE_PRIMARY);
-    };
     class TransportItems {
         xitems(1, ToolKit);
     };
