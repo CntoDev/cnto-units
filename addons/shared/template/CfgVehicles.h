@@ -40,7 +40,7 @@ class SOLDIER_CLASS(soldier_base) : BASE_BASE_CLASS {
     #define _weaps
     #define _mags \
                   x4(SmokeShell), x2(MiniGrenade)
-    #define _items x4(ACE_fieldDressing), x6(ACE_quikclot), ACE_morphine, ACE_tourniquet, FLASHLIGHT, ACRE_PRC343
+    #define _items MEDICAL_ITEMS, FLASHLIGHT, ACRE_PRC343
     #define _linked ItemMap, ItemCompass, ItemWatch, ItemRadioAcreFlagged
     ASSIGN_GEAR;
     uniformClass = UNIFORM_DEFAULT;
@@ -55,20 +55,17 @@ class SOLDIER_CLASS(sq_sl) : SOLDIER_CLASS(soldier_base) {
     displayName = "SQ SL";
     #define _weaps WEAPONS_LEADER, BINOCULARS, Throw, Put
     #define _mags MAGAZINES_LOADED_LEADER, \
-                  MAGAZINES_CARRY_LEADER
+                  MAGAZINES_VEST_LEADER
     #define _items x2(ACE_CableTie), ACE_MapTools, ACRE_PRC152
     #define _linked VEST_SL, HELMET_LEADER, ItemGPS
     ADD_GEAR;
     backpack = BACKPACK_CLASS(sq_sl);
     attendant = 1;
 };
-class BACKPACK_CLASS(sq_sl) : BACKPACK_MAIN {
+class BACKPACK_CLASS(sq_sl) : BACKPACK_LEADER {
     scope = 1;
     class TransportMagazines {
-        xmags(4, MAGAZINE_GL_HE);
-        xmags(4, MAGAZINE_GL_SMOKE_WHITE);
-        xmags(4, MAGAZINE_GL_SMOKE_RED);
-        xmags(4, MAGAZINE_GL_SMOKE_GREEN);
+        MAGAZINES_PACK_SL
         xmags(3, SmokeShell);
         xmags(5, SmokeShellGreen);
         xmags(2, SmokeShellBlue);
@@ -83,14 +80,14 @@ class SOLDIER_CLASS(sq_medic) : SOLDIER_CLASS(soldier_base) {
     displayName = "SQ Medic";
     #define _weaps WEAPONS_OTHER, Throw, Put
     #define _mags MAGAZINES_LOADED_OTHER, \
-                  MAGAZINES_CARRY_OTHER
+                  MAGAZINES_VEST_OTHER
     #define _items
     #define _linked VEST_MEDIC, HELMET_OTHER, ItemGPS
     ADD_GEAR;
     backpack = BACKPACK_CLASS(sq_medic);
     attendant = 1;
 };
-class BACKPACK_CLASS(sq_medic) : BACKPACK_ALT {
+class BACKPACK_CLASS(sq_medic) : BACKPACK_MEDIC {
     scope = 1;
     class TransportMagazines {
         xmags(8, SmokeShell);
@@ -118,18 +115,16 @@ class SOLDIER_CLASS(ft_tl) : SOLDIER_CLASS(soldier_base) {
     displayName = "FT Lead";
     #define _weaps WEAPONS_LEADER, BINOCULARS, Throw, Put
     #define _mags MAGAZINES_LOADED_LEADER, \
-                  MAGAZINES_CARRY_LEADER
+                  MAGAZINES_VEST_LEADER
     #define _items x2(ACE_CableTie), ACE_MapTools
     #define _linked VEST_FTL, HELMET_LEADER, ItemGPS
     ADD_GEAR;
     backpack = BACKPACK_CLASS(ft_tl);
 };
-class BACKPACK_CLASS(ft_tl) : BACKPACK_MAIN {
+class BACKPACK_CLASS(ft_tl) : BACKPACK_LEADER {
     scope = 1;
     class TransportMagazines {
-        xmags(8, MAGAZINE_GL_HE);
-        xmags(5, MAGAZINE_GL_SMOKE_WHITE);
-        xmags(5, MAGAZINE_GL_SMOKE_RED);
+        MAGAZINES_PACK_FTL
         xmags(3, SmokeShell);
         xmags(5, SmokeShellGreen);
         xmags(2, SmokeShellBlue);
@@ -144,7 +139,7 @@ class SOLDIER_CLASS(ft_ar) : SOLDIER_CLASS(soldier_base) {
     displayName = "FT AR";
     #define _weaps WEAPONS_AR, Throw, Put
     #define _mags MAGAZINES_LOADED_AR, \
-                  MAGAZINES_CARRY_AR
+                  MAGAZINES_VEST_AR
     #define _items
     #define _linked VEST_AR, HELMET_AR
     ADD_GEAR;
@@ -155,17 +150,16 @@ class SOLDIER_CLASS(ft_aar) : SOLDIER_CLASS(soldier_base) {
     displayName = "FT AAR";
     #define _weaps WEAPONS_AAR, BINOCULARS, Throw, Put
     #define _mags MAGAZINES_LOADED_OTHER, \
-                  MAGAZINES_CARRY_LEADER
+                  MAGAZINES_VEST_LEADER
     #define _items x2(ACE_CableTie), ACE_MapTools
     #define _linked VEST_AAR, HELMET_OTHER, ItemGPS
     ADD_GEAR;
     backpack = BACKPACK_CLASS(ft_aar);
 };
-class BACKPACK_CLASS(ft_aar) : BACKPACK_ALT {
+class BACKPACK_CLASS(ft_aar) : BACKPACK_AAR {
     scope = 1;
     class TransportMagazines {
-        xmags(2, MAGAZINE_PRIMARY_AR);
-        xmags(8, MAGAZINE_PRIMARY);
+        MAGAZINES_PACK_AAR
         xmags(2, MiniGrenade);
         xmags(3, SmokeShell);
         xmags(2, SmokeShellGreen);
@@ -181,7 +175,7 @@ class SOLDIER_CLASS(ft_at) : SOLDIER_CLASS(soldier_base) {
     displayName = "FT AT";
     #define _weaps WEAPONS_AT, Throw, Put
     #define _mags MAGAZINES_LOADED_OTHER, \
-                  MAGAZINES_CARRY_OTHER
+                  MAGAZINES_VEST_OTHER
     #define _items
     #define _linked VEST_OTHER, HELMET_OTHER
     ADD_GEAR;
@@ -195,18 +189,16 @@ class SOLDIER_CLASS(plt_co) : SOLDIER_CLASS(soldier_base) {
     displayName = "PLT Commander";
     #define _weaps WEAPONS_LEADER, BINOCULARS, Throw, Put
     #define _mags MAGAZINES_LOADED_LEADER_PLT, \
-                  MAGAZINES_CARRY_LEADER
+                  MAGAZINES_VEST_LEADER
     #define _items x2(ACE_CableTie), ACE_MapTools, ACRE_PRC152, ACRE_PRC148
     #define _linked VEST_SL, HELMET_COMMANDER, ItemGPS
     ADD_GEAR;
     backpack = BACKPACK_CLASS(plt_co);
 };
-class BACKPACK_CLASS(plt_co) : BACKPACK_MAIN {
+class BACKPACK_CLASS(plt_co) : BACKPACK_LEADER {
     scope = 1;
     class TransportMagazines {
-        xmags(5, MAGAZINE_GL_SMOKE_WHITE);
-        xmags(5, MAGAZINE_GL_SMOKE_RED);
-        xmags(5, MAGAZINE_GL_SMOKE_GREEN);
+        MAGAZINES_PACK_PLT
         xmags(3, SmokeShell);
         xmags(5, SmokeShellGreen);
         xmags(2, SmokeShellBlue);
@@ -221,7 +213,7 @@ class SOLDIER_CLASS(plt_sgt) : SOLDIER_CLASS(soldier_base) {
     displayName = "PLT Sergeant";
     #define _weaps WEAPONS_OTHER, BINOCULARS, Throw, Put
     #define _mags MAGAZINES_LOADED_OTHER, \
-                  MAGAZINES_CARRY_LEADER
+                  MAGAZINES_VEST_LEADER
     #define _items x2(ACE_CableTie), ACE_MapTools, ACRE_PRC152, ACRE_PRC148
     #define _linked VEST_AAR, HELMET_LEADER, ItemGPS
     ADD_GEAR;
@@ -236,7 +228,7 @@ class SOLDIER_CLASS(plt_rfl) : SOLDIER_CLASS(soldier_base) {
     displayName = "PLT Rifleman";
     #define _weaps WEAPONS_OTHER, Throw, Put
     #define _mags MAGAZINES_LOADED_OTHER, \
-                  MAGAZINES_CARRY_OTHER
+                  MAGAZINES_VEST_OTHER
     #define _items
     #define _linked VEST_OTHER, HELMET_OTHER
     ADD_GEAR;
@@ -250,25 +242,11 @@ class SOLDIER_CLASS(mmg_tl) : SOLDIER_CLASS(soldier_base) {
     displayName = "MMG Lead";
     #define _weaps WEAPONS_LEADER, BINOCULARS, Throw, Put
     #define _mags MAGAZINES_LOADED_LEADER, \
-                  MAGAZINES_CARRY_LEADER
+                  MAGAZINES_VEST_LEADER
     #define _items x2(ACE_CableTie), ACE_MapTools, ACRE_PRC152
     #define _linked VEST_FTL, HELMET_LEADER, ItemGPS
     ADD_GEAR;
-    backpack = BACKPACK_CLASS(mmg_tl);
-};
-class BACKPACK_CLASS(mmg_tl) : BACKPACK_MAIN {
-    scope = 1;
-    class TransportMagazines {
-        xmags(8, MAGAZINE_GL_HE);
-        xmags(2, MAGAZINE_GL_SMOKE_WHITE);
-        xmags(5, MAGAZINE_GL_SMOKE_RED);
-        xmags(3, SmokeShell);
-        xmags(5, SmokeShellGreen);
-        xmags(2, SmokeShellBlue);
-    };
-    class TransportItems {
-        xitems(1, ACE_IR_Strobe_Item);
-    };
+    backpack = BACKPACK_CLASS(sq_sl);
 };
 
 class SOLDIER_CLASS(mmg_gunner) : SOLDIER_CLASS(soldier_base) {
@@ -276,10 +254,17 @@ class SOLDIER_CLASS(mmg_gunner) : SOLDIER_CLASS(soldier_base) {
     displayName = "MMG Gunner";
     #define _weaps WEAPONS_MMG, Throw, Put
     #define _mags MAGAZINES_LOADED_MMG, \
-                  MAGAZINES_CARRY_MMG
+                  MAGAZINES_VEST_MMG
     #define _items
     #define _linked VEST_AR, HELMET_AR
     ADD_GEAR;
+    backpack = BACKPACK_CLASS(mmg_gunner);
+};
+class BACKPACK_CLASS(mmg_gunner) : BACKPACK_MMG {
+    scope = 1;
+    class TransportMagazines {
+        MAGAZINES_PACK_MMG
+    };
 };
 
 class SOLDIER_CLASS(mmg_bearer) : SOLDIER_CLASS(soldier_base) {
@@ -287,19 +272,13 @@ class SOLDIER_CLASS(mmg_bearer) : SOLDIER_CLASS(soldier_base) {
     displayName = "MMG Bearer";
     #define _weaps WEAPONS_OTHER, Throw, Put
     #define _mags MAGAZINES_LOADED_OTHER, \
-                  MAGAZINES_CARRY_OTHER
+                  MAGAZINES_VEST_OTHER
     #define _items
     #define _linked VEST_OTHER, HELMET_OTHER
     ADD_GEAR;
-    backpack = BACKPACK_CLASS(mmg_bearer);
+    backpack = BACKPACK_CLASS(mmg_gunner);
 };
-class BACKPACK_CLASS(mmg_bearer) : BACKPACK_ALT {
-    scope = 1;
-    class TransportMagazines {
-        xmags(5, MAGAZINE_PRIMARY_MMG);
-        xmags(2, MAGAZINE_PRIMARY_MMG_TRACER);
-    };
-};
+
 
 /*
  * MAT
@@ -313,17 +292,16 @@ class SOLDIER_CLASS(mat_gunner) : SOLDIER_CLASS(soldier_base) {
     displayName = "MAT Rocketman";
     #define _weaps WEAPONS_MAT, Throw, Put
     #define _mags MAGAZINES_LOADED_MAT, \
-                  MAGAZINES_CARRY_MAT
+                  MAGAZINES_VEST_MAT
     #define _items
     #define _linked VEST_OTHER, HELMET_AR
     ADD_GEAR;
     backpack = BACKPACK_CLASS(mat_gunner);
 };
-class BACKPACK_CLASS(mat_gunner) : BACKPACK_ALT {
+class BACKPACK_CLASS(mat_gunner) : BACKPACK_MAT {
     scope = 1;
     class TransportMagazines {
-        xmags(2, MAGAZINE_LAUNCHER_MAT_PRI);
-        xmags(1, MAGAZINE_LAUNCHER_MAT_SEC);
+        MAGAZINES_PACK_MAT
     };
 };
 
@@ -332,18 +310,11 @@ class SOLDIER_CLASS(mat_bearer) : SOLDIER_CLASS(soldier_base) {
     displayName = "MAT Carrier";
     #define _weaps WEAPONS_OTHER, Throw, Put
     #define _mags MAGAZINES_LOADED_OTHER, \
-                  MAGAZINES_CARRY_OTHER
+                  MAGAZINES_VEST_OTHER
     #define _items
     #define _linked VEST_OTHER, HELMET_OTHER
     ADD_GEAR;
-    backpack = BACKPACK_CLASS(mat_bearer);
-};
-class BACKPACK_CLASS(mat_bearer) : BACKPACK_ALT {
-    scope = 1;
-    class TransportMagazines {
-        xmags(2, MAGAZINE_LAUNCHER_MAT_PRI);
-        xmags(1, MAGAZINE_LAUNCHER_MAT_SEC);
-    };
+    backpack = BACKPACK_CLASS(mat_gunner);
 };
 
 /*
@@ -354,11 +325,11 @@ class SOLDIER_CLASS(mortar_assist) : SOLDIER_CLASS(soldier_base) {
     displayName = "Mortar Ass. Gunner";
     #define _weaps WEAPONS_OTHER, BINOCULARS, Throw, Put
     #define _mags MAGAZINES_LOADED_OTHER, \
-                  x2(SmokeShellGreen), SmokeShellBlue, MAGAZINES_CARRY_OTHER
+                  x2(SmokeShellGreen), SmokeShellBlue, MAGAZINES_VEST_OTHER
     #define _items ACE_MapTools, ACE_RangeTable_82mm, ACRE_PRC152
     #define _linked VEST_AAR, HELMET_LEADER, ItemGPS
     ADD_GEAR;
-    backpack = B_Mortar_01_support_F;
+    backpack = BACKPACK_MORTAR_TRIPOD;
 };
 
 class SOLDIER_CLASS(mortar_gunner) : SOLDIER_CLASS(soldier_base) {
@@ -366,11 +337,11 @@ class SOLDIER_CLASS(mortar_gunner) : SOLDIER_CLASS(soldier_base) {
     displayName = "Mortar Gunner";
     #define _weaps WEAPONS_OTHER, Throw, Put
     #define _mags MAGAZINES_LOADED_OTHER, \
-                  MAGAZINES_CARRY_OTHER
+                  MAGAZINES_VEST_OTHER
     #define _items ACE_MapTools, ACE_RangeTable_82mm
     #define _linked VEST_OTHER, HELMET_OTHER
     ADD_GEAR;
-    backpack = B_Mortar_01_weapon_F;
+    backpack = BACKPACK_MORTAR_TUBE;
 };
 
 /*
@@ -381,7 +352,7 @@ class SOLDIER_CLASS(eng_tl) : SOLDIER_CLASS(soldier_base) {
     displayName = "Eng TL";
     #define _weaps WEAPONS_OTHER, BINOCULARS, Throw, Put
     #define _mags MAGAZINES_LOADED_OTHER, \
-                  x4(MAGAZINE_PRIMARY)
+                  MAGAZINES_VEST_ENG
     #define _items ACE_MapTools, ACRE_PRC148, ACRE_PRC152, ACE_M26_Clacker, ACE_DefusalKit, ACE_EntrenchingTool, ACE_wirecutter
     #define _linked VEST_AAR, HELMET_LEADER, ItemGPS
     ADD_GEAR;
@@ -389,7 +360,7 @@ class SOLDIER_CLASS(eng_tl) : SOLDIER_CLASS(soldier_base) {
     engineer = 1;
     canDeactivateMines = 1;
 };
-class BACKPACK_CLASS(eng_tl) : BACKPACK_BIG {
+class BACKPACK_CLASS(eng_tl) : BACKPACK_ENG {
     scope = 1;
     class TransportItems {
         xitems(1, ToolKit);
@@ -401,7 +372,7 @@ class SOLDIER_CLASS(eng_rfl) : SOLDIER_CLASS(soldier_base) {
     displayName = "Eng Rifleman";
     #define _weaps WEAPONS_OTHER, BINOCULARS, Throw, Put
     #define _mags MAGAZINES_LOADED_OTHER, \
-                  x4(MAGAZINE_PRIMARY)
+                  MAGAZINES_VEST_ENG
     #define _items ACE_MapTools, ACRE_PRC148, ACE_M26_Clacker, ACE_DefusalKit, ACE_EntrenchingTool, ACE_wirecutter
     #define _linked VEST_AR, HELMET_OTHER, ItemGPS
     ADD_GEAR;
@@ -417,8 +388,8 @@ class SOLDIER_CLASS(crew_base) : BASE_BASE_CLASS {
     faction = JOIN2(CNTO_,FACTION_META);
     #define _weaps WEAPONS_CREW, Throw, Put
     #define _mags MAGAZINES_LOADED_CREW, \
-                  x2(SmokeShell), x2(SmokeShellGreen), x2(SmokeShellBlue), x2(MiniGrenade), MAGAZINES_CARRY_CREW
-    #define _items x10(ACE_quikclot), ACE_morphine, FLASHLIGHT, ACRE_PRC343
+                  x2(SmokeShell), x2(SmokeShellGreen), x2(SmokeShellBlue), x2(MiniGrenade), MAGAZINES_VEST_CREW
+    #define _items MEDICAL_ITEMS_CREW, FLASHLIGHT, ACRE_PRC343
     #define _linked ItemMap, ItemCompass, ItemWatch, ItemRadioAcreFlagged
     ASSIGN_GEAR;
     backpack =;
@@ -453,7 +424,7 @@ class SOLDIER_CLASS(veh_driver) : SOLDIER_CLASS(crew_base) {
 class BACKPACK_CLASS(veh_driver) : BACKPACK_MAIN {
     scope = 1;
     class TransportMagazines {
-        xmags(4, MAGAZINE_PRIMARY);
+        MAGAZINES_PACK_CREW
     };
     class TransportItems {
         xitems(1, ToolKit);
@@ -517,7 +488,7 @@ class SOLDIER_CLASS(air_jetpilot) : SOLDIER_CLASS(crew_base) {
     #define _items ACE_MapTools, ACRE_PRC152, ACRE_PRC148
     #define _linked VEST_CREW, HELMET_CREW_JETPILOT, ItemGPS
     ADD_GEAR;
-    backpack = B_Parachute;
+    backpack = BACKPACK_JETPILOT;
     uniformClass = UNIFORM_CREW_PILOT;
     engineer = 1;
 };

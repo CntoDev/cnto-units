@@ -27,6 +27,10 @@
 #define VEST_OTHER  rhs_6b23_6sh116_od
 #define VEST_CREW   rhs_6b23_6sh116_od
 
+#define BACKPACK_MAIN  B_AssaultPack_rgr
+#define BACKPACK_ALT   B_Kitbag_rgr
+#define BACKPACK_BIG   B_Carryall_oli
+
 #define HELMET_COMMANDER      rhs_6b7_1m_olive
 #define HELMET_LEADER         rhs_6b7_1m_olive
 #define HELMET_AR             rhs_6b7_1m_olive
@@ -52,7 +56,7 @@
 #define MAGAZINE_PRIMARY_MMG_TRACER  rhs_100Rnd_762x54mmR_green
 #define MAGAZINE_SECONDARY           rhs_mag_9x19_17
 #define MAGAZINE_LAUNCHER_MAT_PRI    rhs_rpg7_PG7VL_mag
-#define MAGAZINE_LAUNCHER_MAT_SEC    rhs_rpg7_PG7VR_mag
+#define MAGAZINE_LAUNCHER_MAT_SEC    rhs_rpg7_OG7V_mag
 
 #define MAGAZINE_GL_HE           rhs_VOG25
 #define MAGAZINE_GL_SMOKE_WHITE  rhs_GRD40_White
@@ -63,6 +67,22 @@
 
 #define RESUPPLY_BOX_SMALL   Box_EAST_Ammo_F
 #define RESUPPLY_BOX_MEDIUM  O_supplyCrate_F
+
+/*
+ * Per-role gear assignment
+ */
+
+/* PK ammo is heavy - give 1 box less to AAR and use a bigger
+ * backpack for MMG */
+#define MAGAZINES_PACK_AAR  xmags(3, MAGAZINE_PRIMARY_AR); \
+                            xmags(8, MAGAZINE_PRIMARY);
+#define BACKPACK_MMG        BACKPACK_ALT
+
+/* RPGv7 is shorter-range and has lighter rockets, give MAT more
+ * and use smaller backpacks, though make HEDP just HE (above) */
+#define BACKPACK_MAT        BACKPACK_MAIN
+#define MAGAZINES_PACK_MAT  xmags(3, MAGAZINE_LAUNCHER_MAT_PRI); \
+                            xmags(2, MAGAZINE_LAUNCHER_MAT_SEC);
 
 /*
  * Groups

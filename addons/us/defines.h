@@ -25,9 +25,9 @@
 #define VEST_OTHER  rhsusf_iotv_ocp_Rifleman
 #define VEST_CREW   TacVest_black
 
-#define BACKPACK_MAIN  B_AssaultPack_rgr
-#define BACKPACK_ALT   B_Kitbag_rgr
-#define BACKPACK_BIG   B_Carryall_cbr
+#define BACKPACK_MAIN  B_AssaultPack_mcamo
+#define BACKPACK_ALT   B_Kitbag_mcamo
+#define BACKPACK_BIG   B_Carryall_mcamo
 
 #define HELMET_COMMANDER      rhsusf_patrolcap_ocp
 #define HELMET_LEADER         rhsusf_ach_helmet_headset_ocp
@@ -69,6 +69,9 @@
 #define RESUPPLY_BOX_SMALL   Box_NATO_Ammo_F
 #define RESUPPLY_BOX_MEDIUM  B_supplyCrate_F
 
+#define MEDICAL_ITEMS       x4(ACE_fieldDressing), x6(ACE_quikclot), ACE_morphine, ACE_tourniquet
+#define MEDICAL_ITEMS_CREW  x10(ACE_quikclot), ACE_morphine
+
 /*
  * Per-role gear assignment
  */
@@ -90,12 +93,41 @@
 #define MAGAZINES_LOADED_MAT         MAGAZINE_PRIMARY,     MAGAZINE_LAUNCHER_MAT_PRI, MAGAZINE_SECONDARY
 #define MAGAZINES_LOADED_CREW        MAGAZINE_PRIMARY,     MAGAZINE_SECONDARY
 
-#define MAGAZINES_CARRY_LEADER       x6(MAGAZINE_PRIMARY),     x4(MAGAZINE_PRIMARY_TRACER), MAGAZINE_SECONDARY
-#define MAGAZINES_CARRY_OTHER        x8(MAGAZINE_PRIMARY),     x2(MAGAZINE_PRIMARY_TRACER), MAGAZINE_SECONDARY
-#define MAGAZINES_CARRY_AR           x3(MAGAZINE_PRIMARY_AR),  MAGAZINE_SECONDARY
-#define MAGAZINES_CARRY_MMG          x3(MAGAZINE_PRIMARY_MMG), MAGAZINE_PRIMARY_MMG_TRACER, MAGAZINE_SECONDARY
-#define MAGAZINES_CARRY_MAT          MAGAZINES_CARRY_OTHER
-#define MAGAZINES_CARRY_CREW         x5(MAGAZINE_PRIMARY)
+#define MAGAZINES_VEST_LEADER        x6(MAGAZINE_PRIMARY),     x4(MAGAZINE_PRIMARY_TRACER), MAGAZINE_SECONDARY
+#define MAGAZINES_VEST_OTHER         x8(MAGAZINE_PRIMARY),     x2(MAGAZINE_PRIMARY_TRACER), MAGAZINE_SECONDARY
+#define MAGAZINES_VEST_AR            x2(MAGAZINE_PRIMARY_AR),  MAGAZINE_SECONDARY
+#define MAGAZINES_VEST_MMG           x6(MAGAZINE_SECONDARY),   x6(MiniGrenade)
+#define MAGAZINES_VEST_MAT           MAGAZINES_VEST_OTHER
+#define MAGAZINES_VEST_ENG           x4(MAGAZINE_PRIMARY)
+#define MAGAZINES_VEST_CREW          x5(MAGAZINE_PRIMARY)
+
+#define MAGAZINES_PACK_PLT           xmags(5, MAGAZINE_GL_SMOKE_WHITE); \
+                                     xmags(5, MAGAZINE_GL_SMOKE_RED); \
+                                     xmags(5, MAGAZINE_GL_SMOKE_GREEN);
+#define MAGAZINES_PACK_SL            xmags(4, MAGAZINE_GL_HE); \
+                                     xmags(4, MAGAZINE_GL_SMOKE_WHITE); \
+                                     xmags(4, MAGAZINE_GL_SMOKE_RED); \
+                                     xmags(4, MAGAZINE_GL_SMOKE_GREEN);
+#define MAGAZINES_PACK_FTL           xmags(8, MAGAZINE_GL_HE); \
+                                     xmags(5, MAGAZINE_GL_SMOKE_WHITE); \
+                                     xmags(5, MAGAZINE_GL_SMOKE_RED);
+#define MAGAZINES_PACK_AAR           xmags(4, MAGAZINE_PRIMARY_AR); \
+                                     xmags(8, MAGAZINE_PRIMARY);
+#define MAGAZINES_PACK_MMG           xmags(4, MAGAZINE_PRIMARY_MMG); \
+                                     xmags(1, MAGAZINE_PRIMARY_MMG_TRACER);
+#define MAGAZINES_PACK_MAT           xmags(2, MAGAZINE_LAUNCHER_MAT_PRI); \
+                                     xmags(1, MAGAZINE_LAUNCHER_MAT_SEC);
+#define MAGAZINES_PACK_CREW          xmags(4, MAGAZINE_PRIMARY);
+
+#define BACKPACK_LEADER         BACKPACK_MAIN
+#define BACKPACK_MEDIC          BACKPACK_ALT
+#define BACKPACK_AAR            BACKPACK_ALT
+#define BACKPACK_MMG            BACKPACK_MAIN
+#define BACKPACK_MAT            BACKPACK_ALT
+#define BACKPACK_ENG            BACKPACK_BIG
+#define BACKPACK_MORTAR_TUBE    B_Mortar_01_weapon_F
+#define BACKPACK_MORTAR_TRIPOD  B_Mortar_01_support_F
+#define BACKPACK_JETPILOT       B_Parachute
 
 /*
  * Groups
