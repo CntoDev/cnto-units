@@ -35,7 +35,7 @@ class cnto_tfnsf_blackop_base : cnto_tfnsf_base {
     #define _mags \
                   x2(SmokeShellGreen), x2(MiniGrenade)
     #define _items x6(ACE_quikclot), ACE_morphine, ACE_Flashlight_XL50, x2(ACE_CableTie), x2(ACE_IR_Strobe_Item), ACE_MapTools, ACRE_PRC148
-    #define _linked ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadioAcreFlagged, NVGoggles_OPFOR
+    #define _linked ItemMap, ItemCompass, ItemWatch, ItemGPS, NVGoggles_OPFOR
     ASSIGN_GEAR;
     uniformClass = CamoU_Black;
 };

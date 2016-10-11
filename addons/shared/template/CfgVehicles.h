@@ -41,7 +41,7 @@ class SOLDIER_CLASS(soldier_base) : BASE_BASE_CLASS {
     #define _mags \
                   x4(SmokeShell), x2(MiniGrenade)
     #define _items MEDICAL_ITEMS, FLASHLIGHT, ACRE_PRC343
-    #define _linked ItemMap, ItemCompass, ItemWatch, ItemRadioAcreFlagged
+    #define _linked ItemMap, ItemCompass, ItemWatch
     ASSIGN_GEAR;
     uniformClass = UNIFORM_DEFAULT;
     backpack =;
@@ -390,7 +390,7 @@ class SOLDIER_CLASS(crew_base) : BASE_BASE_CLASS {
     #define _mags MAGAZINES_LOADED_CREW, \
                   x2(SmokeShell), x2(SmokeShellGreen), x2(SmokeShellBlue), x2(MiniGrenade), MAGAZINES_VEST_CREW
     #define _items MEDICAL_ITEMS_CREW, FLASHLIGHT, ACRE_PRC343
-    #define _linked ItemMap, ItemCompass, ItemWatch, ItemRadioAcreFlagged
+    #define _linked ItemMap, ItemCompass, ItemWatch
     ASSIGN_GEAR;
     backpack =;
 };
@@ -520,7 +520,7 @@ class SOLDIER_CLASS(gm) : BASE_BASE_CLASS {
     #define _mags MAGAZINE_SECONDARY, \
                   x10(MAGAZINE_SECONDARY)
     #define _items ACE_MapTools, FLASHLIGHT, ACRE_PRC343, ACRE_PRC152, ACRE_PRC148
-    #define _linked ItemMap, ItemCompass, ItemWatch, ItemRadioAcreFlagged, ItemGPS, G_Goggles_VR
+    #define _linked ItemMap, ItemCompass, ItemWatch, ItemGPS, G_Goggles_VR
     ASSIGN_GEAR;
     backpack =;
     //cannot use nested ifdefs in arma
