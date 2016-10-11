@@ -46,7 +46,9 @@
 #define WEAPON_PRIMARY_MMG     hlc_lmg_M60E4
 #define WEAPON_SECONDARY       rhsusf_weap_glock17g4
 
-#define MAGAZINE_SECONDARY  rhsusf_mag_17Rnd_9x19_JHP
+#define MAGAZINE_PRIMARY_MMG         hlc_100Rnd_762x51_Barrier_M60E4
+#define MAGAZINE_PRIMARY_MMG_TRACER  hlc_100Rnd_762x51_T_M60E4
+#define MAGAZINE_SECONDARY           rhsusf_mag_17Rnd_9x19_JHP
 
 /*
  * Per-role gear assignment
@@ -54,6 +56,9 @@
 
 /* use custom weapon for AAR, uses the same ammo as PRIMARY_OTHER */
 #define WEAPONS_AAR  hlc_rifle_SAMR, WEAPON_SECONDARY
+
+/* NIArsenal M60 has much lighter MG boxes, use smaller backpacks */
+#define BACKPACK_MMG  BACKPACK_MAIN
 
 /*
  * Groups

@@ -56,7 +56,7 @@
 #define MAGAZINE_PRIMARY             rhs_30Rnd_545x39_AK
 #define MAGAZINE_PRIMARY_TRACER      rhs_30Rnd_545x39_AK_green
 #define MAGAZINE_PRIMARY_AR          rhs_100Rnd_762x54mmR
-#define MAGAZINE_PRIMARY_MMG         rhs_100Rnd_762x54mmR
+#define MAGAZINE_PRIMARY_MMG         rhs_100Rnd_762x54mmR_7N13
 #define MAGAZINE_PRIMARY_MMG_TRACER  rhs_100Rnd_762x54mmR_green
 #define MAGAZINE_SECONDARY           rhs_mag_9x19_17
 #define MAGAZINE_LAUNCHER_MAT_PRI    rhs_rpg7_PG7VL_mag
@@ -76,11 +76,9 @@
  * Per-role gear assignment
  */
 
-/* PK ammo is heavy - give 1 box less to AAR and use a bigger
- * backpack for MMG */
+/* PK ammo is heavy - give 1 box less to AAR */
 #define MAGAZINES_PACK_AAR  xmags(3, MAGAZINE_PRIMARY_AR); \
                             xmags(8, MAGAZINE_PRIMARY);
-#define BACKPACK_MMG        BACKPACK_ALT
 
 /* RPGv7 is shorter-range and has lighter rockets, give MAT more
  * and use smaller backpacks, though make HEDP just HE (above) */

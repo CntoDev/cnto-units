@@ -1,4 +1,4 @@
-#include "\cnto\units\us\defines.h"
+#include "\cnto\units\tfn\defines.h"
 /* reset side setting */
 #undef FACTION_SIDE_WEST
 #undef FACTION_SIDE_EAST
@@ -22,7 +22,6 @@
 
 #define UNIFORM_DEFAULT       CamoU_CamoW
 #define UNIFORM_CREW_VEHICLE  CamoU_Black
-#define UNIFORM_CREW_PILOT    U_I_pilotCoveralls
 
 #define VEST_SL     AAFVest01_m_CamoW
 #define VEST_MEDIC  AAFVest01_l_CamoW
@@ -40,11 +39,12 @@
 #define HELMET_AR             CamoH_CamoW
 #define HELMET_OTHER          CamoH_CamoW
 #define HELMET_CREW_VEHICLE   CamoH_CamoW
-#define HELMET_CREW_JETPILOT  H_PilotHelmetFighter_I
 
 #define WEAPON_PRIMARY_LEADER  HLC_Rifle_g3ka4_GL
 #define WEAPON_PRIMARY_OTHER   hlc_rifle_g3ka4
+#define WEAPON_PRIMARY_AR      rhs_weap_m249_pip_L
 #define WEAPON_PRIMARY_CREW    hlc_smg_mp5a4
+#define WEAPON_PRIMARY_MMG     hlc_lmg_m60
 #define WEAPON_SECONDARY       rhsusf_weap_m1911a1
 #define WEAPON_LAUNCHER_MAT    cnto_col_rpg7_optic
 

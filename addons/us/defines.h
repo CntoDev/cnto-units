@@ -43,7 +43,7 @@
 #define WEAPON_PRIMARY_LEADER  rhs_weap_m4a1_carryhandle_m203S
 #define WEAPON_PRIMARY_OTHER   rhs_weap_m4a1_carryhandle_pmag
 #define WEAPON_PRIMARY_AR      rhs_weap_m249_pip_L
-#define WEAPON_PRIMARY_MMG     hlc_lmg_m60
+#define WEAPON_PRIMARY_MMG     rhs_weap_m240B
 #define WEAPON_PRIMARY_CREW    rhs_weap_m4_carryhandle_mstock
 #define WEAPON_SECONDARY       rhsusf_weap_m9
 #define WEAPON_LAUNCHER        rhs_weap_M136
@@ -52,8 +52,8 @@
 #define MAGAZINE_PRIMARY             rhs_mag_30Rnd_556x45_M855A1_Stanag
 #define MAGAZINE_PRIMARY_TRACER      rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red
 #define MAGAZINE_PRIMARY_AR          rhsusf_100Rnd_556x45_soft_pouch
-#define MAGAZINE_PRIMARY_MMG         hlc_100Rnd_762x51_M_M60E4
-#define MAGAZINE_PRIMARY_MMG_TRACER  hlc_100Rnd_762x51_T_M60E4
+#define MAGAZINE_PRIMARY_MMG         rhsusf_100Rnd_762x51_m61_ap
+#define MAGAZINE_PRIMARY_MMG_TRACER  rhsusf_100Rnd_762x51_m62_tracer
 #define MAGAZINE_PRIMARY_CREW        MAGAZINE_PRIMARY
 #define MAGAZINE_SECONDARY           rhsusf_mag_15Rnd_9x19_JHP
 #define MAGAZINE_LAUNCHER_MAT_PRI    tf47_m3maaws_HEAT
@@ -122,7 +122,7 @@
 #define BACKPACK_LEADER         BACKPACK_MAIN
 #define BACKPACK_MEDIC          BACKPACK_ALT
 #define BACKPACK_AAR            BACKPACK_ALT
-#define BACKPACK_MMG            BACKPACK_MAIN
+#define BACKPACK_MMG            BACKPACK_ALT
 #define BACKPACK_MAT            BACKPACK_ALT
 #define BACKPACK_ENG            BACKPACK_BIG
 #define BACKPACK_MORTAR_TUBE    B_Mortar_01_weapon_F
