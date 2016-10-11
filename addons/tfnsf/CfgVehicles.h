@@ -169,8 +169,8 @@ class cnto_tfnsf_blackop_mg : cnto_tfnsf_blackop_base {
     scope = 2;
     displayName = "Support Gunner";
     #define _weaps cnto_tfnsf_m60, hgun_P07_snds_F, ACE_Vector, Throw, Put
-    #define _mags hlc_100Rnd_762x51_B_M60E4, 16Rnd_9x21_Mag, \
-                  x4(hlc_100Rnd_762x51_B_M60E4), 16Rnd_9x21_Mag
+    #define _mags hlc_100Rnd_762x51_Barrier_M60E4, 16Rnd_9x21_Mag, \
+                  x4(hlc_100Rnd_762x51_Barrier_M60E4), 16Rnd_9x21_Mag
     #define _items ACE_EarPlugs
     #define _linked AAFVest01_m_black, H_Bandanna_gry, G_Bandanna_blk
     ADD_GEAR;
@@ -179,7 +179,7 @@ class cnto_tfnsf_blackop_mg : cnto_tfnsf_blackop_base {
 class cnto_tfnsf_blackop_mg_pack : B_FieldPack_blk {
     scope = 1;
     class TransportMagazines {
-        xmags(7, hlc_100Rnd_762x51_B_M60E4);
+        xmags(7, hlc_100Rnd_762x51_Barrier_M60E4);
         xmags(1, 16Rnd_9x21_Mag);
     };
 };
