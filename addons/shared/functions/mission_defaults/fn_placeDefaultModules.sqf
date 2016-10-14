@@ -45,6 +45,9 @@ private _modules = [
     /*
      * ACE
      */
+    ["ace_advanced_ballistics_ModuleSettings", [
+        ["ace_advanced_ballistics_ModuleSettings_enabled", true]
+    ]],
     ["ACE_ModuleBlueForceTracking", [
         ["ACE_ModuleBlueForceTracking_Enabled", true],
         ["ACE_ModuleBlueForceTracking_Interval", 2],
