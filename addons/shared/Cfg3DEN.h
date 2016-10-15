@@ -31,7 +31,7 @@ class Mission {
                         property = "cnto_chk_respawnmark";
                         displayName = "Place respawn marker(s)";
                         control = "Checkbox";
-                        tooltip = "From the markers (F6) category, place down any marker you like and name it (in Variable Name) one of:\n\n- respawn - any side will respawn here\n- respawn_west - only BLUFOR will respawn here\n- respawn_east - OPFOR\n- respawn_guerrila - Independents\n- respawn_civilian - Civilians\n\nThese are prefixes, so you can use ie. respawn_west_blah, which is useful for multiple respawn positions (picked randomly). This is very easy to do by naming a marker ie. respawn_west and copy/pasting it, which creates copies named respawn_west_1, respawn_west_2, etc.\n\n***When you place all respawn markers, select them and change Alpha to 0%, making them invisible.***";
+                        tooltip = "From the markers (F6) category, place down any marker you like and name it (in Variable Name) one of:\n\n- respawn - any side will respawn here\n- respawn_west - only BLUFOR will respawn here\n- respawn_east - OPFOR\n- respawn_guerrila - Independents\n- respawn_civilian - Civilians\n\nThese are prefixes, so you can use ie. respawn_west_blah, which is useful for multiple respawn positions (picked randomly). This is very easy to do by naming a marker ie. respawn_west and copy/pasting it, which creates copies named respawn_west_1, respawn_west_2, etc.";
                         defaultValue = "false";
                     };
                     class Start_Location {
