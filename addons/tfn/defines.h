@@ -44,10 +44,12 @@
 #define WEAPON_PRIMARY_OTHER   rhs_weap_hk416d10_LMT
 #define WEAPON_PRIMARY_AR      rhs_weap_m249_pip_S_vfg
 #define WEAPON_PRIMARY_MMG     hlc_lmg_M60E4
+#define WEAPON_PRIMARY_DMT     cnto_tfn_m14_optic
 #define WEAPON_SECONDARY       rhsusf_weap_glock17g4
 
 #define MAGAZINE_PRIMARY_MMG         hlc_100Rnd_762x51_Barrier_M60E4
 #define MAGAZINE_PRIMARY_MMG_TRACER  hlc_100Rnd_762x51_T_M60E4
+#define MAGAZINE_PRIMARY_DMT         hlc_20Rnd_762x51_barrier_M14
 #define MAGAZINE_SECONDARY           rhsusf_mag_17Rnd_9x19_JHP
 
 /*

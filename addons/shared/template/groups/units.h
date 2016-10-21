@@ -40,6 +40,9 @@ NAMED_SOLDIER(SOLDIER_CLASS(mat_tl),x,        'MAT %1 Team Leader',      'MAT%1'
 NAMED_SOLDIER(SOLDIER_CLASS(mat_gunner),x,    'MAT %1 Gunner',           'MAT%1', 'MAIN');
 NAMED_SOLDIER(SOLDIER_CLASS(mat_bearer),x,    'MAT %1 Ammo Bearer',      'MAT%1', 'MAIN');
 
+NAMED_SOLDIER(SOLDIER_CLASS(dmt_tl),x,        'DMT %1 Team Leader',      'DMT%1', 'MAIN');
+NAMED_SOLDIER(SOLDIER_CLASS(dmt_shooter),x,   'DMT %1 Shooter',          'DMT%1', 'MAIN');
+
 NAMED_SOLDIER(SOLDIER_CLASS(mortar_assist),x, 'Mortar %1 Ass. Gunner',   'MTR%1', 'MAIN');
 NAMED_SOLDIER(SOLDIER_CLASS(mortar_gunner),x, 'Mortar %1 Gunner',        'MTR%1', 'MAIN');
 

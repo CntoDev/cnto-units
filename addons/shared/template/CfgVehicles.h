@@ -279,7 +279,6 @@ class SOLDIER_CLASS(mmg_bearer) : SOLDIER_CLASS(soldier_base) {
     backpack = BACKPACK_CLASS(mmg_gunner);
 };
 
-
 /*
  * MAT
  */
@@ -315,6 +314,30 @@ class SOLDIER_CLASS(mat_bearer) : SOLDIER_CLASS(soldier_base) {
     #define _linked VEST_OTHER, HELMET_OTHER
     ADD_GEAR;
     backpack = BACKPACK_CLASS(mat_gunner);
+};
+
+/*
+ * DMT
+ */
+class SOLDIER_CLASS(dmt_tl) : SOLDIER_CLASS(mmg_tl) {
+    scope = 2;
+    displayName = "DMT Lead";
+    #define _weaps
+    #define _mags
+    #define _items ACE_Kestrel4500
+    #define _linked
+    ADD_GEAR;
+};
+
+class SOLDIER_CLASS(dmt_shooter) : SOLDIER_CLASS(soldier_base) {
+    scope = 2;
+    displayName = "DMT Shooter";
+    #define _weaps WEAPONS_DMT, Throw, Put
+    #define _mags MAGAZINES_LOADED_DMT, \
+                  MAGAZINES_VEST_DMT
+    #define _items ACE_RangeCard
+    #define _linked VEST_OTHER, HELMET_OTHER
+    ADD_GEAR;
 };
 
 /*
@@ -593,6 +616,7 @@ class SOLDIER_CLASS(resupply_medium) : RESUPPLY_BOX_MEDIUM {
         xmags(24, MiniGrenade);
         xmags(15, MAGAZINE_GL_HE);
         xmags(4, MAGAZINE_PRIMARY_MMG);
+        xmags(8, MAGAZINE_PRIMARY_DMT);
         xmags(4, MAGAZINE_LAUNCHER_MAT_PRI);
         xmags(2, MAGAZINE_LAUNCHER_MAT_SEC);
     };

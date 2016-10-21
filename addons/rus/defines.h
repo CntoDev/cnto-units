@@ -48,6 +48,7 @@
 #define WEAPON_PRIMARY_OTHER   rhs_weap_ak74m_camo_npz
 #define WEAPON_PRIMARY_AR      rhs_weap_pkm
 #define WEAPON_PRIMARY_MMG     rhs_weap_pkp
+#define WEAPON_PRIMARY_DMT     cnto_rus_svd_optic
 #define WEAPON_PRIMARY_CREW    rhs_weap_aks74un_folded
 #define WEAPON_SECONDARY       rhs_weap_pya
 #define WEAPON_LAUNCHER        rhs_weap_rpg26
@@ -58,6 +59,7 @@
 #define MAGAZINE_PRIMARY_AR          rhs_100Rnd_762x54mmR
 #define MAGAZINE_PRIMARY_MMG         rhs_100Rnd_762x54mmR_7N13
 #define MAGAZINE_PRIMARY_MMG_TRACER  rhs_100Rnd_762x54mmR_green
+#define MAGAZINE_PRIMARY_DMT         rhs_10Rnd_762x54mmR_7N1
 #define MAGAZINE_SECONDARY           rhs_mag_9x19_17
 #define MAGAZINE_LAUNCHER_MAT_PRI    rhs_rpg7_PG7VL_mag
 #define MAGAZINE_LAUNCHER_MAT_SEC    rhs_rpg7_OG7V_mag
@@ -85,6 +87,9 @@
 #define BACKPACK_MAT        BACKPACK_MAIN
 #define MAGAZINES_PACK_MAT  xmags(3, MAGAZINE_LAUNCHER_MAT_PRI); \
                             xmags(2, MAGAZINE_LAUNCHER_MAT_SEC);
+
+/* SVD has 10rnd mags, give DMT more of them */
+#define MAGAZINES_VEST_DMT  x15(MAGAZINE_PRIMARY_DMT), MAGAZINE_SECONDARY
 
 /*
  * Groups

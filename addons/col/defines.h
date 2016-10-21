@@ -45,12 +45,14 @@
 #define WEAPON_PRIMARY_AR      rhs_weap_m249_pip_L
 #define WEAPON_PRIMARY_CREW    hlc_smg_mp5a4
 #define WEAPON_PRIMARY_MMG     hlc_lmg_m60
+#define WEAPON_PRIMARY_DMT     cnto_col_psg_optic_bipod
 #define WEAPON_SECONDARY       rhsusf_weap_m1911a1
 #define WEAPON_LAUNCHER_MAT    cnto_col_rpg7_optic
 
 #define MAGAZINE_PRIMARY           hlc_20rnd_762x51_b_G3
 #define MAGAZINE_PRIMARY_TRACER    hlc_20rnd_762x51_T_G3
 #define MAGAZINE_PRIMARY_AR        rhsusf_200Rnd_556x45_soft_pouch
+#define MAGAZINE_PRIMARY_DMT       hlc_20rnd_762x51_barrier_G3
 #define MAGAZINE_PRIMARY_CREW      hlc_30Rnd_9x19_B_MP5
 #define MAGAZINE_SECONDARY         rhsusf_mag_7x45acp_MHP
 #define MAGAZINE_LAUNCHER_MAT_PRI  rhs_rpg7_PG7VL_mag

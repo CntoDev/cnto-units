@@ -76,6 +76,12 @@ class Infantry {
         class Unit1 { vehicle = SOLDIER_CLASS(mat_gunner_x); position[] = {1,0,0}; rank = "PRIVATE"; };
         class Unit2 { vehicle = SOLDIER_CLASS(mat_bearer_x); position[] = {2,0,0}; rank = "PRIVATE"; };
     };
+    class DMT {
+        name = "DMT Team";
+        icon = MARKER(inf);
+        class Unit0 { vehicle = SOLDIER_CLASS(dmt_tl_x);      position[] = {0,0,0}; rank = "SERGEANT"; };
+        class Unit1 { vehicle = SOLDIER_CLASS(dmt_shooter_x); position[] = {1,0,0}; rank = "PRIVATE"; };
+    };
     class Mortar {
         name = "Mortar Team";
         icon = MARKER(mortar);

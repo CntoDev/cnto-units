@@ -8,6 +8,7 @@ class CfgPatches {
             "cnto_units_shared",
             "A3_Characters_F",
             "A3_Weapons_F_Ammoboxes",
+            "rhsusf_c_weapons",
             "tf47_m3maaws"
         };
     };
