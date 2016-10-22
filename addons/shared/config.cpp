@@ -20,6 +20,7 @@ class CfgFunctions {
         };
         class OnStart {
             file = "\cnto\units\shared\functions\onstart";
+            //TODO: groupIDSync obsoleted by config-fixes, remove the function
             class groupIDSync { postInit = 1; };
             class respawnMarkInvisible { postInit = 1; };
             class ignoreFriendlyFire { postInit = 1; };
