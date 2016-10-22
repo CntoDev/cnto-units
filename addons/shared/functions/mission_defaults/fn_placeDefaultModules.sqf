@@ -57,9 +57,10 @@ private _modules = [
         ["ace_captives_moduleSettings_requireSurrender", 0]
     ]],
     ["ACE_ModuleCheckPBOs", [
-        ["ACE_ModuleCheckPBOs_CheckAll", true]
+        ["ACE_ModuleCheckPBOs_CheckAll", true],
         // use default action for now: warn once
-        //["ACE_ModuleCheckPBOs_Action", 2] // kick
+        //["ACE_ModuleCheckPBOs_Action", 2], // kick
+        ["ACE_ModuleCheckPBOs_Whitelist", "[""ocap""]"]
     ]],
     ["ACE_ModuleExplosive", [
         ["ACE_ModuleExplosive_RequireSpecialist", true],
