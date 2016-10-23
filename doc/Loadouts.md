@@ -1,3 +1,12 @@
+BIG WARNING
+===========
+
+This describes how to create a completely custom faction from scratch, incl.
+custom groups, custom unit roles, etc.
+
+If you "just" want to define a new loadout for the "standard" unit structure,
+(you most likely want that) look into `Loadout_Template.md`.
+
 Soldier loadouts
 ================
 
