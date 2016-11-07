@@ -24,11 +24,11 @@
 #define UNIFORM_CREW_VEHICLE  U_IG_Guerrilla_6_1
 #define UNIFORM_CREW_PILOT    U_I_pilotCoveralls
 
-#define VEST_SL     cnto_flecktarn_v_s_mediterranean
+#define VEST_SL     cnto_flecktarn_v_mediterranean
 #define VEST_MEDIC  cnto_flecktarn_v_l_mediterranean
-#define VEST_FTL    cnto_flecktarn_v_s_mediterranean
+#define VEST_FTL    cnto_flecktarn_v_mediterranean
 #define VEST_AR     cnto_flecktarn_v_h_mediterranean
-#define VEST_AAR    cnto_flecktarn_v_mediterranean
+#define VEST_AAR    cnto_flecktarn_v_l_mediterranean
 #define VEST_OTHER  cnto_flecktarn_v_l_mediterranean
 
 #define BACKPACK_MAIN  cnto_flecktarn_b_ap_mediterranean
