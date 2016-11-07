@@ -21,6 +21,7 @@
  */
 
 #define UNIFORM_DEFAULT       cnto_flecktarn_u_mediterranean
+#define UNIFORM_CREW_VEHICLE  U_IG_Guerrilla_6_1
 #define UNIFORM_CREW_PILOT    U_I_pilotCoveralls
 
 #define VEST_SL     cnto_flecktarn_v_s_mediterranean
