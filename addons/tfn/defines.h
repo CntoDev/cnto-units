@@ -36,9 +36,9 @@
 #define BACKPACK_BIG   B_Carryall_cbr
 
 #define HELMET_COMMANDER      cnto_flecktarn_h_boo_mediterranean
-#define HELMET_LEADER         cnto_flecktarn_h_6b27m_mediterranean
-#define HELMET_AR             cnto_flecktarn_h_6b27me_mediterranean
-#define HELMET_OTHER          cnto_flecktarn_h_6b27m_mediterranean
+#define HELMET_LEADER         cnto_flecktarn_h_c_mediterranean
+#define HELMET_AR             cnto_flecktarn_h_c_mediterranean
+#define HELMET_OTHER          cnto_flecktarn_h_c_mediterranean
 #define HELMET_CREW_JETPILOT  H_PilotHelmetFighter_I
 
 #define WEAPON_PRIMARY_LEADER  rhs_weap_hk416d145_m320
