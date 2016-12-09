@@ -36,6 +36,17 @@ private _modules = [
         ["ControlMP", true]
     ]],
     /*
+     * Spectators
+     */
+    ["VirtualSpectator_F", [
+        ["Name", "Spectator_0"],
+        ["ControlMP", true]
+    ]],
+    ["VirtualSpectator_F", [
+        ["Name", "Spectator_1"],
+        ["ControlMP", true]
+    ]],
+    /*
      * ACRE (shared settings)
      */
     ["acre_api_DifficultySettings", [
@@ -83,9 +94,7 @@ private _modules = [
     ]],
     ["ACEX_ModuleSitting"],
     ["ace_spectator_moduleSettings", [
-        ["ace_spectator_moduleSettings_unitsFilter", 1],
-        ["ace_spectator_moduleSettings_cameraModes", 3],
-        ["ace_spectator_moduleSettings_visionModes", 3]
+        ["ace_spectator_moduleSettings_sidesFilter", 3]
     ]],
     ["ace_weather_ModuleSettings", [
         ["ace_weather_ModuleSettings_enableServerController", false],

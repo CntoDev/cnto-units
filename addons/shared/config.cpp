@@ -27,6 +27,10 @@ class CfgFunctions {
             class disableChannels { postInit = 1; };
             class preparePvpDeath { postInit = 1; };
         };
+        class PreInit {
+            file = "\cnto\units\shared\functions\pre_init";
+            class spectatorACRE {preInit = 1; };
+        };
         class Misc {
             file = "\cnto\units\shared\functions\misc";
             class initGroupAttr;
