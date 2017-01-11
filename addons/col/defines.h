@@ -1,4 +1,4 @@
-#include "\cnto\units\tfn\defines.h"
+#include "\cnto\units\us\defines.h"
 /* reset side setting */
 #undef FACTION_SIDE_WEST
 #undef FACTION_SIDE_EAST
@@ -39,6 +39,7 @@
 #define HELMET_AR             CamoH_CamoW
 #define HELMET_OTHER          CamoH_CamoW
 #define HELMET_CREW_VEHICLE   CamoH_CamoW
+#define HELMET_CREW_JETPILOT  H_PilotHelmetFighter_I
 
 #define WEAPON_PRIMARY_LEADER  HLC_Rifle_g3ka4_GL
 #define WEAPON_PRIMARY_OTHER   hlc_rifle_g3ka4
@@ -49,14 +50,16 @@
 #define WEAPON_SECONDARY       rhsusf_weap_m1911a1
 #define WEAPON_LAUNCHER_MAT    cnto_col_rpg7_optic
 
-#define MAGAZINE_PRIMARY           hlc_20rnd_762x51_b_G3
-#define MAGAZINE_PRIMARY_TRACER    hlc_20rnd_762x51_T_G3
-#define MAGAZINE_PRIMARY_AR        rhsusf_200Rnd_556x45_soft_pouch
-#define MAGAZINE_PRIMARY_DMT       hlc_20rnd_762x51_barrier_G3
-#define MAGAZINE_PRIMARY_CREW      hlc_30Rnd_9x19_B_MP5
-#define MAGAZINE_SECONDARY         rhsusf_mag_7x45acp_MHP
-#define MAGAZINE_LAUNCHER_MAT_PRI  rhs_rpg7_PG7VL_mag
-#define MAGAZINE_LAUNCHER_MAT_SEC  rhs_rpg7_OG7V_mag
+#define MAGAZINE_PRIMARY             hlc_20rnd_762x51_b_G3
+#define MAGAZINE_PRIMARY_TRACER      hlc_20rnd_762x51_T_G3
+#define MAGAZINE_PRIMARY_AR          rhsusf_200Rnd_556x45_soft_pouch
+#define MAGAZINE_PRIMARY_MMG         hlc_100Rnd_762x51_Barrier_M60E4
+#define MAGAZINE_PRIMARY_MMG_TRACER  hlc_100Rnd_762x51_T_M60E4
+#define MAGAZINE_PRIMARY_DMT         hlc_20rnd_762x51_barrier_G3
+#define MAGAZINE_PRIMARY_CREW        hlc_30Rnd_9x19_B_MP5
+#define MAGAZINE_SECONDARY           rhsusf_mag_7x45acp_MHP
+#define MAGAZINE_LAUNCHER_MAT_PRI    rhs_rpg7_PG7VL_mag
+#define MAGAZINE_LAUNCHER_MAT_SEC    rhs_rpg7_OG7V_mag
 
 /*
  * Per-role gear assignment
@@ -71,6 +74,9 @@
 #define MAGAZINES_VEST_AR      x1(MAGAZINE_PRIMARY_AR), MAGAZINE_SECONDARY
 #define MAGAZINES_PACK_AAR     xmags(2, MAGAZINE_PRIMARY_AR); \
                                xmags(8, MAGAZINE_PRIMARY);
+
+/* NIArsenal M60 has much lighter MG boxes, use smaller backpacks */
+#define BACKPACK_MMG  BACKPACK_MAIN
 
 /* RPGv7 is shorter-range and has lighter rockets, give MAT more
  * and use smaller backpacks, though make HEDP just HE (above) */
