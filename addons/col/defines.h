@@ -50,7 +50,7 @@
 #define WEAPON_SECONDARY       rhsusf_weap_m1911a1
 #define WEAPON_LAUNCHER_MAT    cnto_col_rpg7_optic
 
-#define MAGAZINE_PRIMARY             hlc_20rnd_762x51_b_G3
+#define MAGAZINE_PRIMARY             hlc_20rnd_762x51_Mk316_G3
 #define MAGAZINE_PRIMARY_TRACER      hlc_20rnd_762x51_T_G3
 #define MAGAZINE_PRIMARY_AR          rhsusf_200Rnd_556x45_soft_pouch
 #define MAGAZINE_PRIMARY_MMG         hlc_100Rnd_762x51_Barrier_M60E4
