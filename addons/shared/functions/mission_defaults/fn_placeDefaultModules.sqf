@@ -168,6 +168,7 @@ _modules append [
      * ACRE
      */
     ["acre_api_basicMissionSetup", [
+        ["acre_api_basicMissionSetup_BabelSetup", 0],
         ["acre_api_basicMissionSetup_RadioSetup", true]  // channels per-side
     ]],
     /*
