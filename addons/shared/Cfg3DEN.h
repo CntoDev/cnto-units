@@ -41,13 +41,6 @@ class Mission {
                         tooltip = "In editor modules (F5), under A3EE, place down custom location where players start (ie. one per each side in PvP), select a desirable name (ie. ""CNTO Forward Airbase"", ane resize it (Transformation category within its properties) to envelop the desired area. Check any checkbox options that you feel are appropriate.";
                         defaultValue = "false";
                     };
-                    class Simple_Objects {
-                        property = "cnto_chk_sobjects";
-                        displayName = "Turn props into SimpleObjects";
-                        control = "Checkbox";
-                        tooltip = "Props like sandbags, barbed wire, but especially small decorative objects can be made into ""SimpleObjects"". This significantly reduces their performance impact, but makes them immovable and indestructible, which is mostly not a problem for Empty terrain or decorative objects.\n\nTo make an object into SimpleObject, see the A3EE category in its properties, all the way down.\n\n***Use this instead of disabling simulation, it has the same effect, but saves a lot more performance.***";
-                        defaultValue = "false";
-                    };
                     class Briefing {
                         property = "cnto_chk_briefing";
                         displayName = "Configure briefing";
