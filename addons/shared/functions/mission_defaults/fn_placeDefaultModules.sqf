@@ -16,15 +16,6 @@ private _n = toString [10];
  */
 private _modules = [
     /*
-     * ACRE2 Init settings (from init.sqf)
-     */
-    ["Logic", [
-        ["Init", "if (!is3DEN) then {" + _n +
-                 "    ACRE_TEST_OCCLUSION = false;" + _n +
-                 "    [0.2] call acre_api_fnc_setLossModelScale;" + _n +
-                 "}"]
-    ]],
-    /*
      * Headless clients
      */
     ["HeadlessClient_F", [

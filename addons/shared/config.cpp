@@ -20,8 +20,6 @@ class CfgFunctions {
         };
         class OnStart {
             file = "\cnto\units\shared\functions\onstart";
-            class respawnMarkInvisible { postInit = 1; };
-            class ignoreFriendlyFire { postInit = 1; };
             class preparePvpDeath { postInit = 1; };
         };
         class Misc {
