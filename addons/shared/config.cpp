@@ -18,15 +18,10 @@ class CfgFunctions {
             class setMissionDefaults;
             class placeDefaultModules;
         };
-        class OnStart {
-            file = "\cnto\units\shared\functions\onstart";
-            class preparePvpDeath { postInit = 1; };
-        };
         class Misc {
             file = "\cnto\units\shared\functions\misc";
             class initGroupAttr;
             class godlike;
-            class isPvp;
         };
     };
 };

@@ -38,7 +38,7 @@ private _modules = [
         ["ControlMP", true]
     ]],
     /*
-     * custom CNTO modules
+     * A3EE
      */
     ["basic_vehicle_cargo_filler"],
     /*
@@ -165,6 +165,10 @@ _modules append [
 
 if (_this == "pvp") then {
 _modules append [
+    /*
+     * A3EE
+     */
+    ["a3ee_kill_on_jip"],
     /*
      * ACRE
      */
