@@ -47,6 +47,10 @@ private _modules = [
         ["ControlMP", true]
     ]],
     /*
+     * custom CNTO modules
+     */
+    ["basic_vehicle_cargo_filler"],
+    /*
      * ACRE (shared settings)
      */
     ["acre_api_DifficultySettings", [
