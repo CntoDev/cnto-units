@@ -123,7 +123,7 @@ private _modules = [
         ["ACE_moduleMedicalSettings_bleedingCoefficient", 0.80000001],
         ["ACE_moduleMedicalSettings_level", 2]
     ]],
-	["ACE_moduleAdvancedMedicalSettings", [
+    ["ACE_moduleAdvancedMedicalSettings", [
         ["ACE_moduleAdvancedMedicalSettings_enableAdvancedWounds", true],
         ["ACE_moduleAdvancedMedicalSettings_consumeItem_PAK", 0],
         ["ACE_moduleAdvancedMedicalSettings_useLocation_PAK", 0],
@@ -162,6 +162,12 @@ _modules append [
         ["ACE_ModuleMap_MapShake", false],
         ["ACE_ModuleMap_MapShowCursorCoordinates", true],
         ["ACE_ModuleMap_DefaultChannel", 0]
+    ]],
+    /*
+     * Chat channel disablement; Coop - all except global+group (0+3)
+     */
+    ["Logic", [
+        ["Init", "{ _x enableChannel false } forEach [1,2,4,5]"]
     ]]
 ];
 };
@@ -183,6 +189,12 @@ _modules append [
         ["ACE_ModuleMap_MapShake", false],
         ["ACE_ModuleMap_MapShowCursorCoordinates", true],
         ["ACE_ModuleMap_DefaultChannel", 1]
+    ]],
+    /*
+     * Chat channel disablement; PvP - all except global+side+group (0+1+3)
+     */
+    ["Logic", [
+        ["Init", "{ _x enableChannel false } forEach [2,4,5]"]
     ]]
 ];
 };

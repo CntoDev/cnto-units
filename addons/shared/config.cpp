@@ -22,7 +22,6 @@ class CfgFunctions {
             file = "\cnto\units\shared\functions\onstart";
             class respawnMarkInvisible { postInit = 1; };
             class ignoreFriendlyFire { postInit = 1; };
-            class disableChannels { postInit = 1; };
             class preparePvpDeath { postInit = 1; };
         };
         class Misc {
