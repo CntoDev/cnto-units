@@ -46,7 +46,8 @@ private _modules = [
      */
     ["acre_api_DifficultySettings", [
         ["acre_api_DifficultySettings_FullDuplex", true],
-        ["acre_api_DifficultySettings_Interference", false]
+        ["acre_api_DifficultySettings_Interference", false],
+        ["acre_api_DifficultySettings_IgnoreAntennaDirection", true]
     ]],
     /*
      * ACE
