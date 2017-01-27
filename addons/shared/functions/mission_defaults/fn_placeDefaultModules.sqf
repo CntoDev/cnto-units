@@ -69,8 +69,7 @@ private _modules = [
     ]],
     ["ACE_ModuleCheckPBOs", [
         ["ACE_ModuleCheckPBOs_CheckAll", true],
-        // use default action for now: warn once
-        //["ACE_ModuleCheckPBOs_Action", 2], // kick
+        ["ACE_ModuleCheckPBOs_Action", 2], // kick
         ["ACE_ModuleCheckPBOs_Whitelist", "[""ocap""]"]
     ]],
     ["ACE_ModuleExplosive", [
