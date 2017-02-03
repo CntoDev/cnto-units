@@ -105,7 +105,10 @@ private _modules = [
     ["ACE_moduleRearmSettings", [
         ["ACE_moduleRearmSettings_level", 2]
     ]],
-    ["ACE_moduleRepairSettings"],
+    ["ACE_moduleRepairSettings", [
+        ["ACE_moduleRepairSettings_fullRepairLocation", 3]
+        ["ACE_moduleRepairSettings_engineerSettings_fullRepair", 1]
+    ]],
     /*
      * ACE Medical
      */
