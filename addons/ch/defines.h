@@ -27,7 +27,6 @@
  */
 #define UNIFORM_DEFAULT       CamoU_alpenflage
 #define UNIFORM_CREW_VEHICLE  CamoU_alpenflage
-#define UNIFORM_CREW_PILOT    U_I_pilotCoveralls
 
 #define VEST_SL     AAFVest01_l_m81
 #define VEST_MEDIC  AAFVest01_l_m81
