@@ -20,47 +20,47 @@ class High_Command {
 };
 class Infantry {
     name = "Infantry";
-    class SQ1_Lead {
-        name = QUOTE(JOIN2(GROUP_SQ1_NAME, SQ Lead));
+    class SQ1 {
+        name = QUOTE(JOIN2(GROUP_SQ1_NAME, Squad));
         icon = MARKER(inf);
-        class Unit0 { vehicle = SOLDIER_CLASS(sq_sl_a);    position[] = {0,0,0}; rank = "LIEUTENANT"; dir = 180; };
-        class Unit1 { vehicle = SOLDIER_CLASS(sq_medic_a); position[] = {1,0,0}; rank = "PRIVATE"; dir = 180; };
+        class Unit0 { vehicle = SOLDIER_CLASS(sq_sl_a);    position[] = {0,0,0}; rank = "LIEUTENANT"; };
+        class Unit1 { vehicle = SOLDIER_CLASS(sq_medic_a); position[] = {1,0,0}; rank = "PRIVATE"; };
+        class Unit2 { vehicle = SOLDIER_CLASS(ft_tl_a1);   position[] = {2,0,0}; rank = "SERGEANT"; };
+        class Unit3 { vehicle = SOLDIER_CLASS(ft_ar_a1);   position[] = {3,0,0}; rank = "PRIVATE"; };
+        class Unit4 { vehicle = SOLDIER_CLASS(ft_aar_a1);  position[] = {4,0,0}; rank = "CORPORAL"; };
+        class Unit5 { vehicle = SOLDIER_CLASS(ft_at_a1);   position[] = {5,0,0}; rank = "PRIVATE"; };
+        class Unit6 { vehicle = SOLDIER_CLASS(ft_tl_a2);   position[] = {6,0,0}; rank = "SERGEANT"; };
+        class Unit7 { vehicle = SOLDIER_CLASS(ft_ar_a2);   position[] = {7,0,0}; rank = "PRIVATE"; };
+        class Unit8 { vehicle = SOLDIER_CLASS(ft_aar_a2);  position[] = {8,0,0}; rank = "CORPORAL"; };
+        class Unit9 { vehicle = SOLDIER_CLASS(ft_at_a2);   position[] = {9,0,0}; rank = "PRIVATE"; };
     };
-    class SQ1_FT {
-        name = QUOTE(JOIN2(GROUP_SQ1_NAME, FT));
+    class SQ2 {
+        name = QUOTE(JOIN2(GROUP_SQ2_NAME, Squad));
         icon = MARKER(inf);
-        class Unit0 { vehicle = SOLDIER_CLASS(ft_tl_a);  position[] = {0,0,0}; rank = "SERGEANT"; };
-        class Unit1 { vehicle = SOLDIER_CLASS(ft_ar_a);  position[] = {1,0,0}; rank = "PRIVATE"; };
-        class Unit2 { vehicle = SOLDIER_CLASS(ft_aar_a); position[] = {2,0,0}; rank = "CORPORAL"; };
-        class Unit3 { vehicle = SOLDIER_CLASS(ft_at_a);  position[] = {3,0,0}; rank = "PRIVATE"; };
+        class Unit0 { vehicle = SOLDIER_CLASS(sq_sl_b);    position[] = {0,0,0}; rank = "LIEUTENANT"; };
+        class Unit1 { vehicle = SOLDIER_CLASS(sq_medic_b); position[] = {1,0,0}; rank = "PRIVATE"; };
+        class Unit2 { vehicle = SOLDIER_CLASS(ft_tl_b1);   position[] = {2,0,0}; rank = "SERGEANT"; };
+        class Unit3 { vehicle = SOLDIER_CLASS(ft_ar_b1);   position[] = {3,0,0}; rank = "PRIVATE"; };
+        class Unit4 { vehicle = SOLDIER_CLASS(ft_aar_b1);  position[] = {4,0,0}; rank = "CORPORAL"; };
+        class Unit5 { vehicle = SOLDIER_CLASS(ft_at_b1);   position[] = {5,0,0}; rank = "PRIVATE"; };
+        class Unit6 { vehicle = SOLDIER_CLASS(ft_tl_b2);   position[] = {6,0,0}; rank = "SERGEANT"; };
+        class Unit7 { vehicle = SOLDIER_CLASS(ft_ar_b2);   position[] = {7,0,0}; rank = "PRIVATE"; };
+        class Unit8 { vehicle = SOLDIER_CLASS(ft_aar_b2);  position[] = {8,0,0}; rank = "CORPORAL"; };
+        class Unit9 { vehicle = SOLDIER_CLASS(ft_at_b2);   position[] = {9,0,0}; rank = "PRIVATE"; };
     };
-    class SQ2_Lead {
-        name = QUOTE(JOIN2(GROUP_SQ2_NAME, SQ Lead));
+    class SQ3 {
+        name = QUOTE(JOIN2(GROUP_SQ3_NAME, Squad));
         icon = MARKER(inf);
-        class Unit0 { vehicle = SOLDIER_CLASS(sq_sl_b);    position[] = {0,0,0}; rank = "LIEUTENANT"; dir = 180; };
-        class Unit1 { vehicle = SOLDIER_CLASS(sq_medic_b); position[] = {1,0,0}; rank = "PRIVATE"; dir = 180; };
-    };
-    class SQ2_FT {
-        name = QUOTE(JOIN2(GROUP_SQ2_NAME, FT));
-        icon = MARKER(inf);
-        class Unit0 { vehicle = SOLDIER_CLASS(ft_tl_b);  position[] = {0,0,0}; rank = "SERGEANT"; };
-        class Unit1 { vehicle = SOLDIER_CLASS(ft_ar_b);  position[] = {1,0,0}; rank = "PRIVATE"; };
-        class Unit2 { vehicle = SOLDIER_CLASS(ft_aar_b); position[] = {2,0,0}; rank = "CORPORAL"; };
-        class Unit3 { vehicle = SOLDIER_CLASS(ft_at_b);  position[] = {3,0,0}; rank = "PRIVATE"; };
-    };
-    class SQ3_Lead {
-        name = QUOTE(JOIN2(GROUP_SQ3_NAME, SQ Lead));
-        icon = MARKER(inf);
-        class Unit0 { vehicle = SOLDIER_CLASS(sq_sl_c);    position[] = {0,0,0}; rank = "LIEUTENANT"; dir = 180; };
-        class Unit1 { vehicle = SOLDIER_CLASS(sq_medic_c); position[] = {1,0,0}; rank = "PRIVATE"; dir = 180; };
-    };
-    class SQ3_FT {
-        name = QUOTE(JOIN2(GROUP_SQ3_NAME, FT));
-        icon = MARKER(inf);
-        class Unit0 { vehicle = SOLDIER_CLASS(ft_tl_c);  position[] = {0,0,0}; rank = "SERGEANT"; };
-        class Unit1 { vehicle = SOLDIER_CLASS(ft_ar_c);  position[] = {1,0,0}; rank = "PRIVATE"; };
-        class Unit2 { vehicle = SOLDIER_CLASS(ft_aar_c); position[] = {2,0,0}; rank = "CORPORAL"; };
-        class Unit3 { vehicle = SOLDIER_CLASS(ft_at_c);  position[] = {3,0,0}; rank = "PRIVATE"; };
+        class Unit0 { vehicle = SOLDIER_CLASS(sq_sl_c);    position[] = {0,0,0}; rank = "LIEUTENANT"; };
+        class Unit1 { vehicle = SOLDIER_CLASS(sq_medic_c); position[] = {1,0,0}; rank = "PRIVATE"; };
+        class Unit2 { vehicle = SOLDIER_CLASS(ft_tl_c1);   position[] = {2,0,0}; rank = "SERGEANT"; };
+        class Unit3 { vehicle = SOLDIER_CLASS(ft_ar_c1);   position[] = {3,0,0}; rank = "PRIVATE"; };
+        class Unit4 { vehicle = SOLDIER_CLASS(ft_aar_c1);  position[] = {4,0,0}; rank = "CORPORAL"; };
+        class Unit5 { vehicle = SOLDIER_CLASS(ft_at_c1);   position[] = {5,0,0}; rank = "PRIVATE"; };
+        class Unit6 { vehicle = SOLDIER_CLASS(ft_tl_c2);   position[] = {6,0,0}; rank = "SERGEANT"; };
+        class Unit7 { vehicle = SOLDIER_CLASS(ft_ar_c2);   position[] = {7,0,0}; rank = "PRIVATE"; };
+        class Unit8 { vehicle = SOLDIER_CLASS(ft_aar_c2);  position[] = {8,0,0}; rank = "CORPORAL"; };
+        class Unit9 { vehicle = SOLDIER_CLASS(ft_at_c2);   position[] = {9,0,0}; rank = "PRIVATE"; };
     };
     class MMG {
         name = "MMG Team";
