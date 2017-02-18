@@ -103,12 +103,9 @@ private _modules = [
      * ACE Logistics
      */
     ["ACE_moduleRearmSettings", [
-        ["ACE_moduleRearmSettings_level", 2]
+        ["ACE_moduleRearmSettings_level", 1]
     ]],
-    ["ACE_moduleRepairSettings", [
-        ["ACE_moduleRepairSettings_fullRepairLocation", 3]
-        ["ACE_moduleRepairSettings_engineerSettings_fullRepair", 1]
-    ]],
+    ["ACE_moduleRepairSettings"],
     /*
      * ACE Medical
      */
