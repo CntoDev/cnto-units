@@ -41,6 +41,7 @@ private _modules = [
      * A3EE
      */
     ["basic_vehicle_cargo_filler"],
+    ["a3ee_locality_transfer"],
     /*
      * ACRE (shared settings)
      */
