@@ -90,7 +90,8 @@ private _modules = [
     ]],
     ["ACEX_ModuleSitting"],
     ["ace_spectator_moduleSettings", [
-        ["ace_spectator_moduleSettings_sidesFilter", 3]
+        ["ace_spectator_moduleSettings_sidesFilter", 3],
+        ["ace_spectator_moduleSettings_cameraModes",1]
     ]],
     ["ace_weather_ModuleSettings", [
         ["ace_weather_ModuleSettings_enableServerController", false],
