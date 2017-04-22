@@ -124,6 +124,30 @@ private _modules = [
         ["ACE_moduleAdvancedMedicalSettings_useLocation_SurgicalKit", 0],
         ["ACE_moduleAdvancedMedicalSettings_useCondition_SurgicalKit", 1],
         ["ACE_moduleAdvancedMedicalSettings_healHitPointAfterAdvBandage", true]
+    ]],
+    ["ModuleCreateDiaryRecord_F", [
+    	["ModuleCreateDiaryRecord_F_Title", "TTP'S Overview"],
+    	["ModuleCreateDiaryRecord_F_Description", "<br></br>This entire section will detail CNTO Tactics, Techniques and Procedures we use in game. Please read over and use to remind yourself and remind others."],
+    	["ModuleCreateDiaryRecord_F_Owner", 3],
+    	["ModuleCreateDiaryRecord_F_Subject", "CNTO TTP'S"]
+    ]],
+    ["ModuleCreateDiaryRecord_F", [
+    	["ModuleCreateDiaryRecord_F_Title", "AT PROCEDURE"],
+    	["ModuleCreateDiaryRecord_F_Description", "<font color='#FF0000' size='15'>AT PROCEDURE</font color> " + _n + "<br></br> " + _n + "<br></br> " + _n + "Check your surroundings while preparing the weapon. " + _n + "<br></br> " + _n + "<br></br> " + _n + "Shout “Clear Backblast!” once prepped. " + _n + "<br></br> " + _n + "<br></br> " + _n + "Team mates will respond with “Backblast Clear” or if no response received check visually if backblast is clear. " + _n + "<br></br> " + _n + "<br></br> " + _n + "Shout “Rocket” before pulling the trigger."],
+    	["ModuleCreateDiaryRecord_F_Owner", 3],
+    	["ModuleCreateDiaryRecord_F_Subject", "CNTO TTP'S"]
+    ]],
+    ["ModuleCreateDiaryRecord_F", [
+    	["ModuleCreateDiaryRecord_F_Title", "CONTACT REPORTS"],
+    	["ModuleCreateDiaryRecord_F_Description", "<font color='#FF0000' size='15'>CONTACT REPORTS</font color> " + _n + "<br></br> " + _n + "<br></br> " + _n + "A = Alert by saying “CONTACT”. " + _n + "<br></br> " + _n + "<br></br> " + _n + "O = Orient either using the relative bearing “LEFT” or “RIGHT”, general compass “NW” or “S”, specific compass bearing “280°” or “95°”. Range if immediate threat in meters. " + _n + "<br></br> " + _n + "<br></br> " + _n + "D = Describe what did you see? “Infantry”, “Fire Team”, “Tank”, “Truck”. " + _n + "<br></br> " + _n + "<br></br> " + _n + "E = Expound on range if not already given. Specific degree bearing to the target. Info about what the target is doing. Specific positioning of the target “two soldiers on the roof”. " + _n + "<br></br> " + _n + "<br></br> " + _n + "<br></br> " + _n + "Example: “Contact, South West 100m, Fire Team, Moving right to left."],
+    	["ModuleCreateDiaryRecord_F_Owner", 3],
+    	["ModuleCreateDiaryRecord_F_Subject", "CNTO TTP'S"]
+    ]],
+    ["ModuleCreateDiaryRecord_F", [
+    	["ModuleCreateDiaryRecord_F_Title", "ACE REPORT"],
+    	["ModuleCreateDiaryRecord_F_Description", "<font color='#FF0000' size='15'>ACE REPORT</font color> " + _n + "<br></br> " + _n + "<br></br> " + _n + "Individual to FTL " + _n + "<br></br> " + _n + "<br></br> " + _n + "Ammo = Give details (Red on ammo) 3 or less mags, AR 2 or less belts left in fire team. (Yellow on ammo) 4 - 7 mags, AR 3 - 4 belts in fire team, (Green on ammo) 8 mags or more, AR 5 belts or more in fire team. " + _n + "<br></br> " + _n + "<br></br> " + _n + "Casualties = (Red) heavily wounded need treatment ASAP, (Yellow) wounded fighting effective, (Green) all good. " + _n + "<br></br> " + _n + "<br></br> " + _n + "Equipment = If you still have specialist equipment for example AT, mines, explosives, ladder or AR state (Green), if you have lost or used specialist equipment state (Red). " + _n + "<br></br> " + _n + "<br></br> " + _n + "Example: I am good on ammo, not injured and carry no specialist equipment my response is “All Green” " + _n + "<br></br> " + _n + "<br></br> " + _n + "Example: I am low on ammo, lightly wounded and carry no specialist equipment my response is “Red, Yellow, Green” " + _n + "<br></br> " + _n + "<br></br> " + _n + "Example: I am good on ammo, not injured and have used my AT my response is “Green, Green, Red” " + _n + "<br></br> " + _n + "<br></br> " + _n + "<br></br> " + _n + "FTL to SL " + _n + "<br></br> " + _n + "<br></br> " + _n + "Ammo = Your combined ammo state after you have redistributed (Low or Good), if after redistribution you still have team members on red or yellow ammo states you overall ammo state is low. " + _n + "<br></br> " + _n + "<br></br> " + _n + "Casualties = State your dead first, then wounded after that. For example - “Alpha 2, 1 dead, 1 wounded”. Alternatively, “Alpha 2, 3 up, one is wounded”. " + _n + "<br></br> " + _n + "<br></br> " + _n + "Equipment = If the team has lost any important equipment, it is noted here. For example all AT used, AR lost or explosives lost etc. Be specific if down on any equipment if not down response is “Equipment good”. " + _n + "<br></br> " + _n + "<br></br> " + _n + "Example: “SL this is A1, ACE Report, Ammo Low, 1 Dead, Equipment good”. " + _n + "<br></br> " + _n + "<br></br> " + _n + "<br></br> " + _n + "<br></br> " + _n + "As a squad leader, ACE reports from your fireteam leaders are compiled to form the sitrep that you give to the platoon commander."],
+    	["ModuleCreateDiaryRecord_F_Owner", 3],
+    	["ModuleCreateDiaryRecord_F_Subject", "CNTO TTP'S"]
     ]]
 ];
 
