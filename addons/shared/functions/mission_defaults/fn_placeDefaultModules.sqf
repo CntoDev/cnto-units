@@ -67,7 +67,7 @@ private _modules = [
     ["ACE_ModuleCheckPBOs", [
         ["ACE_ModuleCheckPBOs_CheckAll", true],
         ["ACE_ModuleCheckPBOs_Action", 2], // kick
-        ["ACE_ModuleCheckPBOs_Whitelist", "[""ocap""]"]
+        ["ACE_ModuleCheckPBOs_Whitelist", "[""cntr""]"]
     ]],
     ["ACE_ModuleExplosive", [
         ["ACE_ModuleExplosive_RequireSpecialist", true],
