@@ -45,6 +45,11 @@ class SOLDIER_CLASS(soldier_base) : BASE_BASE_CLASS {
     ASSIGN_GEAR;
     uniformClass = UNIFORM_DEFAULT;
     backpack =;
+    class EventHandlers : EventHandlers {
+        class deprecated_warn {
+            init = "[] call cnto_units_fnc_warnDeprecated";
+        };
+    };
 };
 
 /*

@@ -22,6 +22,7 @@ class CfgFunctions {
             file = "\cnto\units\shared\functions\misc";
             class initGroupAttr;
             class godlike;
+            class warnDeprecated;
         };
     };
 };
