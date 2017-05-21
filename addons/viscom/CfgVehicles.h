@@ -19,6 +19,7 @@ class Land_CamoNetVar_EAST : House { class EventHandlers; };
         class EventHandlers : EventHandlers { \
             class viscom { init = "(_this select 0) addAction [""VISCOM"", {[true,false] call ace_spectator_fnc_setSpectator}]"; }; \
             class nosimul { init = "if (is3DEN) then { 0 = (_this select 0) spawn { waitUntil { !isNil {((_this get3DENAttribute ""enableSimulation"") select 0) } }; _this set3DENAttribute [""enableSimulation"", false] }}"; } \
+            class deprecated_warn { init = "[] call cnto_units_fnc_warnDeprecated"; }; \
         }; \
     }
 

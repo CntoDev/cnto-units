@@ -15,7 +15,10 @@
         statement = QUOTE(player addPrimaryWeaponItem QUOTE(QUOTE(item))); \
     }
 
-class Land_PlasticCase_01_small_F;
+class PlasticCase_01_base_F;
+class Land_PlasticCase_01_small_F : PlasticCase_01_base_F {
+    class EventHandlers;
+};
 class cnto_shared_scopebox : Land_PlasticCase_01_small_F {
     editorCategory = CNTO_Other;
     editorSubcategory = CNTO_Misc;
@@ -53,4 +56,9 @@ class cnto_shared_scopebox : Land_PlasticCase_01_small_F {
     ace_cargo_canLoad = 0;
     ace_dragging_canCarry = 0;
     ace_dragging_canDrag = 0;
+    class EventHandlers : EventHandlers {
+        class deprecated_warn {
+            init = "[] call cnto_units_fnc_warnDeprecated";
+        };
+    };
 };
