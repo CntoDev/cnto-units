@@ -56,7 +56,7 @@ class SOLDIER_CLASS(soldier_base) : BASE_BASE_CLASS {
  * squad (lead)
  */
 class SOLDIER_CLASS(sq_sl) : SOLDIER_CLASS(soldier_base) {
-    scope = 2;
+    scope = 1;
     displayName = "SQ SL";
     #define _weaps WEAPONS_LEADER, BINOCULARS, Throw, Put
     #define _mags MAGAZINES_LOADED_LEADER, \
@@ -81,7 +81,7 @@ class BACKPACK_CLASS(sq_sl) : BACKPACK_LEADER {
 };
 
 class SOLDIER_CLASS(sq_medic) : SOLDIER_CLASS(soldier_base) {
-    scope = 2;
+    scope = 1;
     displayName = "SQ Medic";
     #define _weaps WEAPONS_OTHER, Throw, Put
     #define _mags MAGAZINES_LOADED_OTHER, \
@@ -116,7 +116,7 @@ class BACKPACK_CLASS(sq_medic) : BACKPACK_MEDIC {
  * fireteam
  */
 class SOLDIER_CLASS(ft_tl) : SOLDIER_CLASS(soldier_base) {
-    scope = 2;
+    scope = 1;
     displayName = "FT Lead";
     #define _weaps WEAPONS_LEADER, BINOCULARS, Throw, Put
     #define _mags MAGAZINES_LOADED_LEADER, \
@@ -140,7 +140,7 @@ class BACKPACK_CLASS(ft_tl) : BACKPACK_LEADER {
 };
 
 class SOLDIER_CLASS(ft_ar) : SOLDIER_CLASS(soldier_base) {
-    scope = 2;
+    scope = 1;
     displayName = "FT AR";
     #define _weaps WEAPONS_AR, Throw, Put
     #define _mags MAGAZINES_LOADED_AR, \
@@ -151,7 +151,7 @@ class SOLDIER_CLASS(ft_ar) : SOLDIER_CLASS(soldier_base) {
 };
 
 class SOLDIER_CLASS(ft_aar) : SOLDIER_CLASS(soldier_base) {
-    scope = 2;
+    scope = 1;
     displayName = "FT AAR";
     #define _weaps WEAPONS_AAR, BINOCULARS, Throw, Put
     #define _mags MAGAZINES_LOADED_OTHER, \
@@ -176,7 +176,7 @@ class BACKPACK_CLASS(ft_aar) : BACKPACK_AAR {
 };
 
 class SOLDIER_CLASS(ft_at) : SOLDIER_CLASS(soldier_base) {
-    scope = 2;
+    scope = 1;
     displayName = "FT AT";
     #define _weaps WEAPONS_AT, Throw, Put
     #define _mags MAGAZINES_LOADED_OTHER, \
@@ -190,7 +190,7 @@ class SOLDIER_CLASS(ft_at) : SOLDIER_CLASS(soldier_base) {
  * platoon (lead)
  */
 class SOLDIER_CLASS(plt_co) : SOLDIER_CLASS(soldier_base) {
-    scope = 2;
+    scope = 1;
     displayName = "PLT Commander";
     #define _weaps WEAPONS_LEADER, BINOCULARS, Throw, Put
     #define _mags MAGAZINES_LOADED_LEADER_PLT, \
@@ -214,7 +214,7 @@ class BACKPACK_CLASS(plt_co) : BACKPACK_LEADER {
 };
 
 class SOLDIER_CLASS(plt_sgt) : SOLDIER_CLASS(soldier_base) {
-    scope = 2;
+    scope = 1;
     displayName = "PLT Sergeant";
     #define _weaps WEAPONS_OTHER, BINOCULARS, Throw, Put
     #define _mags MAGAZINES_LOADED_OTHER, \
@@ -229,7 +229,7 @@ class SOLDIER_CLASS(plt_medic) : SOLDIER_CLASS(sq_medic) {
 };
 
 class SOLDIER_CLASS(plt_rfl) : SOLDIER_CLASS(soldier_base) {
-    scope = 2;
+    scope = 1;
     displayName = "PLT Rifleman";
     #define _weaps WEAPONS_OTHER, Throw, Put
     #define _mags MAGAZINES_LOADED_OTHER, \
@@ -243,7 +243,7 @@ class SOLDIER_CLASS(plt_rfl) : SOLDIER_CLASS(soldier_base) {
  * MMG
  */
 class SOLDIER_CLASS(mmg_tl) : SOLDIER_CLASS(soldier_base) {
-    scope = 2;
+    scope = 1;
     displayName = "MMG Lead";
     #define _weaps WEAPONS_LEADER, BINOCULARS, Throw, Put
     #define _mags MAGAZINES_LOADED_LEADER, \
@@ -255,7 +255,7 @@ class SOLDIER_CLASS(mmg_tl) : SOLDIER_CLASS(soldier_base) {
 };
 
 class SOLDIER_CLASS(mmg_gunner) : SOLDIER_CLASS(soldier_base) {
-    scope = 2;
+    scope = 1;
     displayName = "MMG Gunner";
     #define _weaps WEAPONS_MMG, Throw, Put
     #define _mags MAGAZINES_LOADED_MMG, \
@@ -273,7 +273,7 @@ class BACKPACK_CLASS(mmg_gunner) : BACKPACK_MMG {
 };
 
 class SOLDIER_CLASS(mmg_bearer) : SOLDIER_CLASS(soldier_base) {
-    scope = 2;
+    scope = 1;
     displayName = "MMG Bearer";
     #define _weaps WEAPONS_OTHER, Throw, Put
     #define _mags MAGAZINES_LOADED_OTHER, \
@@ -292,7 +292,7 @@ class SOLDIER_CLASS(mat_tl) : SOLDIER_CLASS(mmg_tl) {
 };
 
 class SOLDIER_CLASS(mat_gunner) : SOLDIER_CLASS(soldier_base) {
-    scope = 2;
+    scope = 1;
     displayName = "MAT Rocketman";
     #define _weaps WEAPONS_MAT, Throw, Put
     #define _mags MAGAZINES_LOADED_MAT, \
@@ -310,7 +310,7 @@ class BACKPACK_CLASS(mat_gunner) : BACKPACK_MAT {
 };
 
 class SOLDIER_CLASS(mat_bearer) : SOLDIER_CLASS(soldier_base) {
-    scope = 2;
+    scope = 1;
     displayName = "MAT Carrier";
     #define _weaps WEAPONS_OTHER, Throw, Put
     #define _mags MAGAZINES_LOADED_OTHER, \
@@ -325,7 +325,7 @@ class SOLDIER_CLASS(mat_bearer) : SOLDIER_CLASS(soldier_base) {
  * DMT
  */
 class SOLDIER_CLASS(dmt_tl) : SOLDIER_CLASS(mmg_tl) {
-    scope = 2;
+    scope = 1;
     displayName = "DMT Lead";
     #define _weaps
     #define _mags
@@ -335,7 +335,7 @@ class SOLDIER_CLASS(dmt_tl) : SOLDIER_CLASS(mmg_tl) {
 };
 
 class SOLDIER_CLASS(dmt_shooter) : SOLDIER_CLASS(soldier_base) {
-    scope = 2;
+    scope = 1;
     displayName = "DMT Shooter";
     #define _weaps WEAPONS_DMT, Throw, Put
     #define _mags MAGAZINES_LOADED_DMT, \
@@ -349,7 +349,7 @@ class SOLDIER_CLASS(dmt_shooter) : SOLDIER_CLASS(soldier_base) {
  * Mortar
  */
 class SOLDIER_CLASS(mortar_assist) : SOLDIER_CLASS(soldier_base) {
-    scope = 2;
+    scope = 1;
     displayName = "Mortar Ass. Gunner";
     #define _weaps WEAPONS_OTHER, BINOCULARS, Throw, Put
     #define _mags MAGAZINES_LOADED_OTHER, \
@@ -361,7 +361,7 @@ class SOLDIER_CLASS(mortar_assist) : SOLDIER_CLASS(soldier_base) {
 };
 
 class SOLDIER_CLASS(mortar_gunner) : SOLDIER_CLASS(soldier_base) {
-    scope = 2;
+    scope = 1;
     displayName = "Mortar Gunner";
     #define _weaps WEAPONS_OTHER, Throw, Put
     #define _mags MAGAZINES_LOADED_OTHER, \
@@ -376,7 +376,7 @@ class SOLDIER_CLASS(mortar_gunner) : SOLDIER_CLASS(soldier_base) {
  * Engineering Team
  */
 class SOLDIER_CLASS(eng_tl) : SOLDIER_CLASS(soldier_base) {
-    scope = 2;
+    scope = 1;
     displayName = "Eng TL";
     #define _weaps WEAPONS_OTHER, BINOCULARS, Throw, Put
     #define _mags MAGAZINES_LOADED_OTHER, \
@@ -396,7 +396,7 @@ class BACKPACK_CLASS(eng_tl) : BACKPACK_ENG {
 };
 
 class SOLDIER_CLASS(eng_rfl) : SOLDIER_CLASS(soldier_base) {
-    scope = 2;
+    scope = 1;
     displayName = "Eng Rifleman";
     #define _weaps WEAPONS_OTHER, BINOCULARS, Throw, Put
     #define _mags MAGAZINES_LOADED_OTHER, \
@@ -427,7 +427,7 @@ class SOLDIER_CLASS(crew_base) : BASE_BASE_CLASS {
  * Vehicle Crew
  */
 class SOLDIER_CLASS(veh_co) : SOLDIER_CLASS(crew_base) {
-    scope = 2;
+    scope = 1;
     displayName = "Vehicle Commander";
     #define _weaps BINOCULARS_CREW
     #define _mags
@@ -438,7 +438,7 @@ class SOLDIER_CLASS(veh_co) : SOLDIER_CLASS(crew_base) {
 };
 
 class SOLDIER_CLASS(veh_driver) : SOLDIER_CLASS(crew_base) {
-    scope = 2;
+    scope = 1;
     displayName = "Vehicle Driver";
     #define _weaps
     #define _mags
@@ -457,7 +457,7 @@ class BACKPACK_CLASS(veh_driver) : BACKPACK_MAIN {
 };
 
 class SOLDIER_CLASS(veh_gunner) : SOLDIER_CLASS(crew_base) {
-    scope = 2;
+    scope = 1;
     displayName = "Vehicle Gunner";
     #define _weaps
     #define _mags
@@ -472,7 +472,7 @@ class SOLDIER_CLASS(veh_gunner) : SOLDIER_CLASS(crew_base) {
  * Air crew
  */
 class SOLDIER_CLASS(air_pilot) : SOLDIER_CLASS(crew_base) {
-    scope = 2;
+    scope = 1;
     displayName = "Air Pilot";
     #define _weaps BINOCULARS_CREW
     #define _mags
@@ -484,7 +484,7 @@ class SOLDIER_CLASS(air_pilot) : SOLDIER_CLASS(crew_base) {
 };
 
 class SOLDIER_CLASS(air_copilot) : SOLDIER_CLASS(crew_base) {
-    scope = 2;
+    scope = 1;
     displayName = "Air Copilot";
     #define _weaps BINOCULARS_CREW
     #define _mags
@@ -503,7 +503,7 @@ class BACKPACK_CLASS(air_copilot) : BACKPACK_MAIN {
 };
 
 class SOLDIER_CLASS(air_jetpilot) : SOLDIER_CLASS(crew_base) {
-    scope = 2;
+    scope = 1;
     displayName = "Jet Pilot";
     #define _weaps BINOCULARS_CREW
     #define _mags
@@ -521,7 +521,7 @@ class SOLDIER_CLASS(air_jetpilot) : SOLDIER_CLASS(crew_base) {
  * Trainer
  */
 class SOLDIER_CLASS(trainer) : SOLDIER_CLASS(soldier_base) {
-    scope = 2;
+    scope = 1;
     displayName = "Trainer";
     #define _weaps WEAPON_SECONDARY, Throw, Put
     #define _mags MAGAZINE_SECONDARY, \
@@ -541,7 +541,7 @@ class SOLDIER_CLASS(trainer) : SOLDIER_CLASS(soldier_base) {
  * GM - completely custom soldier, not from base
  */
 class SOLDIER_CLASS(gm) : BASE_BASE_CLASS {
-    scope = 2;
+    scope = 1;
     faction = JOIN2(CNTO_,FACTION_META);
     displayName = "GM";
     #define _weaps WEAPON_SECONDARY, Throw, Put
@@ -581,6 +581,7 @@ class SOLDIER_CLASS(gm) : BASE_BASE_CLASS {
 
 class RESUPPLY_BOX_SMALL;
 class SOLDIER_CLASS(resupply_small) : RESUPPLY_BOX_SMALL {
+    scope = 1;
     editorCategory = CNTO_Other;
     editorSubcategory = JOIN3(CNTO_,FACTION_META,_Supplies);
     displayName = "Infantry Resupply (Small)";
@@ -605,6 +606,7 @@ class SOLDIER_CLASS(resupply_small) : RESUPPLY_BOX_SMALL {
 
 class RESUPPLY_BOX_MEDIUM;
 class SOLDIER_CLASS(resupply_medium) : RESUPPLY_BOX_MEDIUM {
+    scope = 1;
     editorCategory = CNTO_Other;
     editorSubcategory = JOIN3(CNTO_,FACTION_META,_Supplies);
     displayName = "Infantry Resupply (Medium)";

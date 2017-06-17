@@ -20,6 +20,7 @@ class Land_PlasticCase_01_small_F : PlasticCase_01_base_F {
     class EventHandlers;
 };
 class cnto_shared_scopebox : Land_PlasticCase_01_small_F {
+    scope = 1;
     editorCategory = CNTO_Other;
     editorSubcategory = CNTO_Misc;
     displayName = "Scopebox";

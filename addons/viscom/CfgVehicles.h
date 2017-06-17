@@ -13,6 +13,7 @@ class Land_CamoNetVar_EAST : House { class EventHandlers; };
 
 #define VISCOM_OBJECT(new, base, name) \
     class new : base { \
+        scope = 1; \
         editorCategory = CNTO_Other; \
         editorSubcategory = CNTO_VISCOM; \
         displayName = name; \

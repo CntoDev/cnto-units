@@ -27,7 +27,7 @@ class CfgGroups {
         class CNTO_Other {
             class VISCOM {
                 name = "VISCOM";
-#include "CfgGroups.h"
+//#include "CfgGroups.h"
             };
         };
     };

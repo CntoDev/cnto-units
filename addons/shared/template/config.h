@@ -67,7 +67,7 @@ class CfgGroups {
     class GROUP_SIDE_CLASS {
         class JOIN2(CNTO_,FACTION_META) {
             name = QUOTE(JOIN2(CNTO ,FACTION_HUMAN));
-#include "groups\groups.h"
+//#include "groups\groups.h"
         };
     };
 };

@@ -41,7 +41,7 @@ class cnto_tfnsf_blackop_base : cnto_tfnsf_base {
 };
 
 class cnto_tfnsf_blackop_cqb : cnto_tfnsf_blackop_base {
-    scope = 2;
+    scope = 1;
     displayName = "CQB Specialist";
     #define _weaps cnto_tfnsf_sting, ACE_Vector, Throw, Put
     #define _mags 30Rnd_9x21_Mag, \
@@ -61,7 +61,7 @@ class cnto_tfnsf_blackop_cqb_pack : B_AssaultPack_blk {
 };
 
 class cnto_tfnsf_blackop_rifle : cnto_tfnsf_blackop_base {
-    scope = 2;
+    scope = 1;
     displayName = "Grenadier";
     #define _weaps cnto_tfnsf_katiba_gl, hgun_P07_snds_F, ACE_Vector, Throw, Put
     #define _mags 30Rnd_65x39_caseless_green, 1Rnd_HE_Grenade_shell, 16Rnd_9x21_Mag, \
@@ -86,7 +86,7 @@ class cnto_tfnsf_blackop_rifle_pack : B_AssaultPack_blk {
 };
 
 class cnto_tfnsf_blackop_mark : cnto_tfnsf_blackop_base {
-    scope = 2;
+    scope = 1;
     displayName = "Marksman (AT/Utility)";
     #define _weaps rhs_weap_asval, rhs_weap_m72a7, hgun_P07_snds_F, ACE_Vector, Throw, Put
     #define _mags SW_10rnd_SP5_SuperHeavy_Frag, 16Rnd_9x21_Mag, \
@@ -105,7 +105,7 @@ class cnto_tfnsf_blackop_mark_pack : B_AssaultPack_blk {
 };
 
 class cnto_tfnsf_blackop_demo : cnto_tfnsf_blackop_base {
-    scope = 2;
+    scope = 1;
     displayName = "Demo Expert";
     #define _weaps cnto_tfnsf_katiba, hgun_P07_snds_F, ACE_Vector, Throw, Put
     #define _mags 30Rnd_65x39_caseless_green, 16Rnd_9x21_Mag, \
@@ -126,7 +126,7 @@ class cnto_tfnsf_blackop_demo_pack : B_FieldPack_blk {
 };
 
 class cnto_tfnsf_blackop_scout : cnto_tfnsf_blackop_base {
-    scope = 2;
+    scope = 1;
     displayName = "Scout";
     #define _weaps cnto_tfnsf_pdw, Laserdesignator_03, Throw, Put
     #define _mags 30Rnd_9x21_Mag, Laserbatteries, \
@@ -147,7 +147,7 @@ class cnto_tfnsf_blackop_scout : cnto_tfnsf_blackop_base {
 };
 
 class cnto_tfnsf_blackop_sniper : cnto_tfnsf_blackop_base {
-    scope = 2;
+    scope = 1;
     displayName = "Support Sniper";
     #define _weaps cnto_tfnsf_gm6lynx, hgun_P07_snds_F, ACE_Vector, Throw, Put
     #define _mags 5Rnd_127x108_APDS_Mag, 16Rnd_9x21_Mag, \
@@ -166,7 +166,7 @@ class cnto_tfnsf_blackop_sniper_pack : B_AssaultPack_blk {
 };*/
 
 class cnto_tfnsf_blackop_mg : cnto_tfnsf_blackop_base {
-    scope = 2;
+    scope = 1;
     displayName = "Support Gunner";
     #define _weaps cnto_tfnsf_m60, hgun_P07_snds_F, ACE_Vector, Throw, Put
     #define _mags hlc_100Rnd_762x51_Barrier_M60E4, 16Rnd_9x21_Mag, \
@@ -185,7 +185,7 @@ class cnto_tfnsf_blackop_mg_pack : B_FieldPack_blk {
 };
 
 class cnto_tfnsf_blackop_missile : cnto_tfnsf_blackop_base {
-    scope = 2;
+    scope = 1;
     displayName = "Missile Master (AT)";
     #define _weaps cnto_tfnsf_katiba, launch_I_Titan_short_F, hgun_P07_snds_F, ACE_Vector, Throw, Put
     #define _mags 30Rnd_65x39_caseless_green, Titan_AT, 16Rnd_9x21_Mag, \
