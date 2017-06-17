@@ -60,7 +60,7 @@ class display3DEN {
             class Items {
                 /* Attributes menu */
                 class Attributes {
-                    items[] += {"CNTO_Mission_Data"};
+                    //items[] += {"CNTO_Mission_Data"};
                 };
                 class CNTO_Mission_Data {
                     text = "CNTO Mission Data";
@@ -70,7 +70,7 @@ class display3DEN {
                 };
                 /* Tools menu */
                 class Tools {
-                    items[] += {"CNTO_Defaults_Coop","CNTO_Defaults_PvP"};
+                    //items[] += {"CNTO_Defaults_Coop","CNTO_Defaults_PvP"};
                 };
                 class CNTO_Defaults_Coop {
                     text = "Set CNTO Defaults (Coop)";
